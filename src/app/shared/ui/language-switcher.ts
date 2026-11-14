@@ -6,6 +6,7 @@ import {
   inject,
   input,
 } from '@angular/core';
+import { PlatformLocation } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter, map } from 'rxjs';
@@ -130,6 +131,16 @@ export class LanguageSwitcher {
   private readonly document = inject(DOCUMENT);
 
   private readonly router = inject(Router);
+  /**
+   * Path the whole site is served under, without trailing slash: '' at a domain root, '/hajaro'
+   * on GitHub Pages. Each build's <base href> is that root plus its own locale prefix
+   * ('/hajaro/' for Dutch, '/hajaro/en/' for English), so strip the current prefix.
+   */
+  private readonly siteRoot = (() => {
+    const base = (inject(PlatformLocation).getBaseHrefFromDOM() || '/').replace(/\/+$/, '');
+    const prefix = this.current.prefix;
+    return prefix && base.endsWith(prefix) ? base.slice(0, -prefix.length) : base;
+  })();
   private readonly path = toSignal(
     this.router.events.pipe(
       filter((e) => e instanceof NavigationEnd),
@@ -144,7 +155,7 @@ export class LanguageSwitcher {
       SITE_LOCALES.map((l) => [
         l.code,
         // In development each language has its own dev server (see environment.localeOrigins).
-        `${environment.localeOrigins?.[l.code] ?? ''}${localeUrl(canonical, l)}`,
+        `${environment.localeOrigins?.[l.code] ?? this.siteRoot}${localeUrl(canonical, l)}`,
       ]),
     ) as Record<LocaleCode, string>;
   });
