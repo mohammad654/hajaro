@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="2461294555485264241" datatype="html">
         <source>Coaching</source>
-        <target state="translated">Coaching</target>
+        <target state="final">Coaching</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">11</context>
@@ -120,7 +120,7 @@
       </trans-unit>
       <trans-unit id="1518549923629986824" datatype="html">
         <source>Calculators</source>
-        <target state="translated">Calculators</target>
+        <target state="final">Calculators</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">38</context>
@@ -156,7 +156,7 @@
       </trans-unit>
       <trans-unit id="7751010942038334793" datatype="html">
         <source>Blog</source>
-        <target state="translated">Blog</target>
+        <target state="final">Blog</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">46</context>
@@ -208,7 +208,7 @@
       </trans-unit>
       <trans-unit id="4013060476269413412" datatype="html">
         <source>Training</source>
-        <target state="translated">Training</target>
+        <target state="final">Training</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">62</context>
@@ -248,7 +248,7 @@
       </trans-unit>
       <trans-unit id="7922989125096435449" datatype="html">
         <source>Contact</source>
-        <target state="translated">Contact</target>
+        <target state="final">Contact</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">82</context>
@@ -284,7 +284,7 @@
       </trans-unit>
       <trans-unit id="1324539601317619429" datatype="html">
         <source>Premium bodybuilding &amp; personal training</source>
-        <target state="translated">Premium bodybuilding &amp; personal training</target>
+        <target state="final">Premium bodybuilding &amp; personal training</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
           <context context-type="linenumber">11</context>
@@ -390,7 +390,7 @@
       </trans-unit>
       <trans-unit id="6570363013146073520" datatype="html">
         <source>Dashboard</source>
-        <target state="translated">Dashboard</target>
+        <target state="final">Dashboard</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
           <context context-type="linenumber">63</context>
@@ -458,12 +458,12 @@
         <target state="translated">Taal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/language-switcher.ts</context>
-          <context context-type="linenumber">17,18</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4971258145071452140" datatype="html">
-        <source>Chat with us on WhatsApp (opens in a new tab)</source>
-        <target state="translated">Chat met ons via WhatsApp (opent in een nieuw tabblad)</target>
+      <trans-unit id="2026872660338003795" datatype="html">
+        <source>Chat on WhatsApp (opens in a new tab)</source>
+        <target state="translated">Chat via WhatsApp (opent in een nieuw tabblad)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/whatsapp-button.ts</context>
           <context context-type="linenumber">30,32</context>

@@ -405,11 +405,11 @@
         <source>Language</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/language-switcher.ts</context>
-          <context context-type="linenumber">17,18</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4971258145071452140" datatype="html">
-        <source>Chat with us on WhatsApp (opens in a new tab)</source>
+      <trans-unit id="2026872660338003795" datatype="html">
+        <source>Chat on WhatsApp (opens in a new tab)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/whatsapp-button.ts</context>
           <context context-type="linenumber">30,32</context>
