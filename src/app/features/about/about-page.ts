@@ -27,38 +27,41 @@ export class AboutPage {
   protected readonly journey = computed(() =>
     this.content().trainerJourney.filter((p) => !isPlaceholder(p)),
   );
-  protected readonly qualifications = computed(() => verified(this.content().qualifications));
-  protected readonly competitions = computed(() => verified(this.content().competitionHistory));
-  protected readonly achievements = computed(() => verified(this.content().achievements));
-  protected readonly hasCredentials = computed(
-    () =>
-      this.qualifications().length + this.competitions().length + this.achievements().length > 0,
-  );
+  /** Only verified credentials are shown; groups without any are left out. */
+  protected readonly credentialGroups = computed(() => {
+    const c = this.content();
+    return [
+      { title: $localize`Qualifications and certificates`, items: verified(c.qualifications) },
+      { title: $localize`Competitions`, items: verified(c.competitionHistory) },
+      { title: $localize`Achievements`, items: verified(c.achievements) },
+    ].filter((group) => group.items.length > 0);
+  });
+
+  protected readonly breadcrumbs = [{ label: $localize`About`, url: '/about' }];
 
   protected readonly reasons = [
     {
-      title: 'Individual, never templated',
-      text: 'Your plan is written for you — your body, your schedule, your equipment and your goals.',
+      title: $localize`A plan written for you`,
+      text: $localize`Your plan fits your body, your schedule, your equipment and your goal. Nothing is copied from someone else.`,
     },
     {
-      title: 'Evidence-based',
-      text: 'Training and nutrition decisions are grounded in current research and refined by experience.',
+      title: $localize`Based on evidence`,
+      text: $localize`I base training and food advice on current research, and on what I see working with real people.`,
     },
     {
-      title: 'Accountability that works',
-      text: 'Weekly check-ins and direct communication keep you consistent when motivation dips.',
+      title: $localize`Someone who checks in`,
+      text: $localize`A weekly check-in and direct contact help you keep going when motivation drops.`,
     },
     {
-      title: 'Honest and health-first',
-      text: 'No crash diets, no unrealistic promises — sustainable progress you can maintain.',
+      title: $localize`Honest, health first`,
+      text: $localize`No crash diets and no promises I can't keep. Progress you can hold on to.`,
     },
   ];
 
   constructor() {
     applyPageSeo('about', {
-      title: 'About Your Bodybuilding Coach',
-      description:
-        'Meet your bodybuilding and personal training coach: background, coaching philosophy, training methodology, qualifications and experience.',
+      title: $localize`About the Coach`,
+      description: $localize`Meet the bodybuilder and personal trainer behind Hajaro Coaching: how I train, what I believe in and who I work best with.`,
       type: 'profile',
     });
   }

@@ -1,18 +1,12 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ServiceCatalogStore } from '../../core/data-access/service-catalog.store';
-import { CoachingService, ServiceDelivery } from '../../core/models';
+import { CoachingService, SERVICE_DELIVERY_LABELS } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
-
-export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
-  online: 'Online',
-  'in-person': 'In person',
-  hybrid: 'Online or in person',
-};
 
 @Component({
   selector: 'app-services-page',
@@ -20,13 +14,16 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
-      eyebrow="Coaching services"
-      title="Personal training & bodybuilding coaching"
-      lead="From your first structured program to contest preparation — choose the support that fits your goal. Every service is personalised and backed by weekly accountability."
-      [breadcrumbs]="[{ label: 'Coaching services', url: '/services' }]"
+      i18n-eyebrow
+      eyebrow="Services"
+      i18n-title
+      title="Personal training and coaching"
+      i18n-lead
+      lead="In-person training, online coaching, contest prep and food guidance. Pick what fits your goal, or ask me and we'll work it out together."
+      [breadcrumbs]="breadcrumbs"
     />
 
-    <section class="section" aria-label="All services">
+    <section class="section" i18n-aria-label aria-label="All services">
       <div class="container grid grid--3">
         @for (service of services.all(); track service.id) {
           <article class="card card--interactive service">
@@ -40,7 +37,7 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
               }}</a>
             </h2>
             <p class="text-muted">{{ service.shortDescription }}</p>
-            <span class="link-arrow">Learn more</span>
+            <span class="link-arrow" aria-hidden="true" i18n>Read more</span>
           </article>
         }
       </div>
@@ -49,19 +46,19 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
     <section class="section section--alt" aria-labelledby="compare-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Not sure where to start?</p>
-          <h2 id="compare-title">Find the right fit</h2>
+          <p class="eyebrow" i18n>Not sure where to start?</p>
+          <h2 id="compare-title" i18n>Find what fits you</h2>
         </div>
         <div class="table-wrap">
           <table class="table">
-            <caption class="visually-hidden">
+            <caption class="visually-hidden" i18n>
               Which coaching service fits your goal
             </caption>
             <thead>
               <tr>
-                <th scope="col">Your situation</th>
-                <th scope="col">Recommended</th>
-                <th scope="col">Format</th>
+                <th scope="col" i18n>Your situation</th>
+                <th scope="col" i18n>Good fit</th>
+                <th scope="col" i18n>Format</th>
               </tr>
             </thead>
             <tbody>
@@ -119,25 +116,29 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
 })
 export class ServicesPage {
   protected readonly services = inject(ServiceCatalogStore);
-  protected readonly deliveryLabels = DELIVERY_LABELS;
+  protected readonly deliveryLabels = SERVICE_DELIVERY_LABELS;
+  protected readonly breadcrumbs = [{ label: $localize`Services`, url: '/services' }];
 
   private static readonly GUIDE: readonly { situation: string; slug: string }[] = [
-    { situation: 'I am new to lifting and want to learn properly', slug: 'beginner-bodybuilding' },
     {
-      situation: 'I want to build muscle as efficiently as possible',
-      slug: 'muscle-building-programs',
+      situation: $localize`I'm new to lifting and want to learn it properly`,
+      slug: 'beginner-bodybuilding',
     },
-    { situation: 'I want to lose fat without losing muscle', slug: 'fat-loss-coaching' },
+    { situation: $localize`I want to build muscle`, slug: 'muscle-building-programs' },
+    { situation: $localize`I want to lose fat and keep my muscle`, slug: 'fat-loss-coaching' },
     {
-      situation: 'I want to build muscle and lose fat at the same time',
+      situation: $localize`I want to build muscle and lose fat at the same time`,
       slug: 'body-recomposition',
     },
     {
-      situation: 'I have trained for years and progress has stalled',
+      situation: $localize`I've trained for years and stopped progressing`,
       slug: 'advanced-bodybuilding',
     },
-    { situation: 'I want to compete on stage', slug: 'competition-preparation' },
-    { situation: 'I want a coach but train far away', slug: 'online-personal-training' },
+    { situation: $localize`I want to compete on stage`, slug: 'competition-preparation' },
+    {
+      situation: $localize`I want a coach, but I live too far away to train together`,
+      slug: 'online-personal-training',
+    },
   ];
 
   protected readonly guide = computed(() =>
@@ -149,9 +150,8 @@ export class ServicesPage {
 
   constructor() {
     applyPageSeo('services', {
-      title: 'Personal Training & Bodybuilding Coaching Services',
-      description:
-        'Online personal training, in-person coaching, muscle building, fat loss, body recomposition, strength, competition preparation and posing coaching.',
+      title: $localize`Personal Training & Coaching Services`,
+      description: $localize`In-person training, online coaching, contest prep and nutrition guidance. See what fits your goal and how to get started.`,
     });
   }
 }

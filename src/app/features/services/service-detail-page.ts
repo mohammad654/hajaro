@@ -12,7 +12,7 @@ import { CtaSection } from '../../shared/ui/cta-section';
 import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
 import { NotFoundContent } from '../not-found/not-found-content';
-import { DELIVERY_LABELS } from './services-page';
+import { BILLING_PERIOD_LABELS, SERVICE_DELIVERY_LABELS } from '../../core/models';
 import { canonicalSlug } from '../../core/i18n/current-locale';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
@@ -41,7 +41,8 @@ export class ServiceDetailPage {
 
   readonly slug = input.required<string>();
 
-  protected readonly deliveryLabels = DELIVERY_LABELS;
+  protected readonly deliveryLabels = SERVICE_DELIVERY_LABELS;
+  protected readonly periodLabels = BILLING_PERIOD_LABELS;
   protected readonly service = computed(() => this.services.bySlug(canonicalSlug(this.slug())));
   protected readonly relatedPackage = computed(() =>
     this.packages.get(this.service()?.relatedPackageId),
@@ -51,6 +52,13 @@ export class ServiceDetailPage {
       .map((slug) => this.programs.bySlug(slug))
       .filter((p) => !!p),
   );
+  protected readonly breadcrumbs = computed(() => {
+    const service = this.service();
+    return [
+      { label: $localize`Services`, url: '/services' },
+      ...(service ? [{ label: service.name, url: `/services/${service.slug}` }] : []),
+    ];
+  });
   protected readonly otherServices = computed(() =>
     this.services
       .all()
@@ -64,14 +72,14 @@ export class ServiceDetailPage {
       if (!service) {
         this.markNotFound();
         this.seo.update({
-          title: 'Service not found',
-          description: 'This coaching service could not be found.',
+          title: $localize`Service not found`,
+          description: $localize`This coaching service doesn't exist or has moved.`,
           noindex: true,
         });
         return;
       }
       this.seo.update({
-        title: `${service.name} — ${this.deliveryLabels[service.delivery]} Coaching`,
+        title: service.name,
         description: service.shortDescription,
         path: `/services/${service.slug}`,
       });

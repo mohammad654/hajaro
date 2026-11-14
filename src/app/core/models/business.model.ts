@@ -2,6 +2,12 @@ import { Entity, Sluggable } from './common.model';
 
 export type ServiceDelivery = 'online' | 'in-person' | 'hybrid';
 
+export const SERVICE_DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
+  online: $localize`Online`,
+  'in-person': $localize`In person`,
+  hybrid: $localize`Online or in person`,
+};
+
 export interface CoachingService extends Sluggable {
   readonly name: string;
   readonly icon: string;
@@ -18,6 +24,14 @@ export interface CoachingService extends Sluggable {
 }
 
 export type BillingPeriod = 'month' | 'program' | 'session' | 'week';
+
+/** Shown after a price, e.g. "€ 149 / month". */
+export const BILLING_PERIOD_LABELS: Readonly<Record<BillingPeriod, string>> = {
+  month: $localize`/ month`,
+  week: $localize`/ week`,
+  program: $localize`one-off`,
+  session: $localize`/ session`,
+};
 
 export interface CoachingPackage extends Entity {
   readonly name: string;

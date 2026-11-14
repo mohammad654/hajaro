@@ -1,15 +1,8 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
-import { CoachingPackage } from '../../core/models';
+import { BILLING_PERIOD_LABELS, CoachingPackage } from '../../core/models';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
-
-const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> = {
-  month: $localize`/ month`,
-  week: $localize`/ week`,
-  program: $localize`one-off`,
-  session: $localize`/ session`,
-};
 
 @Component({
   selector: 'app-package-card',
@@ -148,6 +141,6 @@ export class PackageCard {
   readonly detailed = input(false);
 
   protected periodLabel(): string {
-    return PERIOD_LABELS[this.pkg().billingPeriod];
+    return BILLING_PERIOD_LABELS[this.pkg().billingPeriod];
   }
 }

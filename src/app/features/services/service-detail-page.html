@@ -1,21 +1,19 @@
 @if (service(); as service) {
   <app-page-hero
-    [eyebrow]="deliveryLabels[service.delivery] + ' coaching'"
+    [eyebrow]="deliveryLabels[service.delivery]"
     [title]="service.name"
     [lead]="service.shortDescription"
-    [breadcrumbs]="[
-      { label: 'Coaching services', url: '/services' },
-      { label: service.name, url: '/services/' + service.slug },
-    ]"
+    [breadcrumbs]="breadcrumbs()"
   >
     <div class="cluster hero-ctas">
       <a
         class="btn btn--primary btn--lg"
         [routerLink]="'/contact' | localePath"
         [queryParams]="{ service: service.slug }"
-        >Book a free consultation</a
+        i18n
+        >Book a free intro</a
       >
-      <a class="btn btn--lg" [routerLink]="'/pricing' | localePath">View pricing</a>
+      <a class="btn btn--lg" [routerLink]="'/pricing' | localePath" i18n>See prices</a>
     </div>
   </app-page-hero>
 
@@ -25,7 +23,7 @@
         <p class="lead">{{ service.intro }}</p>
 
         <section aria-labelledby="who-title">
-          <h2 id="who-title">Who it’s for</h2>
+          <h2 id="who-title" i18n>Who it's for</h2>
           <ul class="check-list">
             @for (item of service.whoItsFor; track item) {
               <li>{{ item }}</li>
@@ -34,7 +32,7 @@
         </section>
 
         <section aria-labelledby="included-title">
-          <h2 id="included-title">What’s included</h2>
+          <h2 id="included-title" i18n>What you get</h2>
           <ul class="check-list">
             @for (item of service.included; track item) {
               <li>{{ item }}</li>
@@ -43,7 +41,7 @@
         </section>
 
         <section aria-labelledby="how-title">
-          <h2 id="how-title">How it works</h2>
+          <h2 id="how-title" i18n>How it works</h2>
           <ol class="numbered-list">
             @for (step of service.howItWorks; track step) {
               <li>{{ step }}</li>
@@ -52,32 +50,33 @@
         </section>
 
         <section aria-labelledby="start-title" class="card card--featured">
-          <h2 id="start-title">How to get started</h2>
+          <h2 id="start-title" i18n>How to get started</h2>
           <p class="text-muted">{{ service.gettingStarted }}</p>
           <a
             class="btn btn--primary"
             [routerLink]="'/contact' | localePath"
             [queryParams]="{ service: service.slug }"
-            >Book your consultation</a
+            i18n
+            >Book a free intro</a
           >
         </section>
       </div>
 
-      <aside class="sticky-aside stack" aria-label="Service summary">
+      <aside class="sticky-aside stack" i18n-aria-label aria-label="Service summary">
         @if (relatedPackage(); as pkg) {
           <div class="card">
-            <p class="eyebrow">Recommended package</p>
+            <p class="eyebrow" i18n>Recommended package</p>
             <h3>{{ pkg.name }}</h3>
             <p class="price">
               {{ pkg.price | currency: pkg.currency : 'symbol' : '1.0-0' }}
-              <span>/ {{ pkg.billingPeriod }}</span>
+              <span>{{ periodLabels[pkg.billingPeriod] }}</span>
             </p>
             <p class="text-muted text-small">{{ pkg.tagline }}</p>
-            <a [routerLink]="'/pricing' | localePath" class="link-arrow">Compare packages</a>
+            <a [routerLink]="'/pricing' | localePath" class="link-arrow" i18n>Compare packages</a>
           </div>
         }
-        <nav class="card card--flat" aria-label="Other services">
-          <p class="eyebrow">Other services</p>
+        <nav class="card card--flat" i18n-aria-label aria-label="Other services">
+          <p class="eyebrow" i18n>Other services</p>
           <ul class="other">
             @for (other of otherServices(); track other.id) {
               <li>
@@ -96,8 +95,8 @@
     <section class="section section--alt" aria-labelledby="related-programs">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Related programs</p>
-          <h2 id="related-programs">Programs that pair with this service</h2>
+          <p class="eyebrow" i18n>Related programs</p>
+          <h2 id="related-programs" i18n>Training programs that go well with this</h2>
         </div>
         <div class="grid grid--3">
           @for (program of relatedPrograms(); track program!.id) {

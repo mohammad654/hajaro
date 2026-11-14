@@ -1,8 +1,8 @@
 <app-page-hero
-  eyebrow="About the coach"
+  [eyebrow]="content().trainerRole"
   [title]="content().trainerName"
-  [lead]="content().trainerRole + ' — ' + content().trainerShortBio"
-  [breadcrumbs]="[{ label: 'About', url: '/about' }]"
+  [lead]="content().trainerShortBio"
+  [breadcrumbs]="breadcrumbs"
 />
 
 <section class="section" aria-labelledby="bio-title">
@@ -16,19 +16,19 @@
       [caption]="content().trainerName"
     />
     <div class="prose">
-      <h2 id="bio-title">Biography</h2>
+      <h2 id="bio-title" i18n>About me</h2>
       @for (paragraph of bio(); track $index) {
         <p>{{ paragraph }}</p>
       }
 
       @if (journey().length) {
-        <h2>My fitness journey</h2>
+        <h2 i18n>My background</h2>
         @for (paragraph of journey(); track $index) {
           <p>{{ paragraph }}</p>
         }
       }
 
-      <h2>Coaching philosophy</h2>
+      <h2 i18n>What I believe</h2>
       <ul>
         @for (belief of content().philosophy; track belief) {
           <li>{{ belief }}</li>
@@ -41,11 +41,10 @@
 <section class="section section--alt" aria-labelledby="method-title">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Training methodology</p>
-      <h2 id="method-title">A clear, repeatable process</h2>
-      <p>
-        Every client follows the same proven framework — the details inside it are entirely
-        individual.
+      <p class="eyebrow" i18n>How I work</p>
+      <h2 id="method-title" i18n>The same four steps, a different plan for each person</h2>
+      <p i18n>
+        Everyone goes through the same process. What happens inside each step depends on you.
       </p>
     </div>
     <ol class="method grid grid--4">
@@ -60,53 +59,19 @@
   </div>
 </section>
 
-<section class="section" aria-labelledby="credentials-title">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow">Experience</p>
-      <h2 id="credentials-title">Qualifications & achievements</h2>
-    </div>
-    @if (hasCredentials()) {
+@if (credentialGroups().length) {
+  <section class="section" aria-labelledby="credentials-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" i18n>Experience</p>
+        <h2 id="credentials-title" i18n>Qualifications and achievements</h2>
+      </div>
       <div class="grid grid--3">
-        @if (qualifications().length) {
+        @for (group of credentialGroups(); track group.title) {
           <div class="card">
-            <h3>Qualifications & certifications</h3>
+            <h3>{{ group.title }}</h3>
             <ul class="credential-list">
-              @for (item of qualifications(); track item.title) {
-                <li>
-                  <strong>{{ item.title }}</strong><span
-                    >{{ item.detail }}
-                    @if (item.year) {
-                      · {{ item.year }}
-                    }
-                  </span>
-                </li>
-              }
-            </ul>
-          </div>
-        }
-        @if (competitions().length) {
-          <div class="card">
-            <h3>Competitive bodybuilding</h3>
-            <ul class="credential-list">
-              @for (item of competitions(); track item.title) {
-                <li>
-                  <strong>{{ item.title }}</strong><span
-                    >{{ item.detail }}
-                    @if (item.year) {
-                      · {{ item.year }}
-                    }
-                  </span>
-                </li>
-              }
-            </ul>
-          </div>
-        }
-        @if (achievements().length) {
-          <div class="card">
-            <h3>Achievements & awards</h3>
-            <ul class="credential-list">
-              @for (item of achievements(); track item.title) {
+              @for (item of group.items; track item.title) {
                 <li>
                   <strong>{{ item.title }}</strong><span
                     >{{ item.detail }}
@@ -120,20 +85,15 @@
           </div>
         }
       </div>
-    } @else {
-      <p class="placeholder-note">
-        Verified qualifications, competition history and achievements will be listed here. We only
-        publish credentials that can be verified.
-      </p>
-    }
-  </div>
-</section>
+    </div>
+  </section>
+}
 
 <section class="section section--alt" aria-labelledby="why-title">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">Why work together</p>
-      <h2 id="why-title">What you can expect</h2>
+      <p class="eyebrow" i18n>Why train with me</p>
+      <h2 id="why-title" i18n>What you can expect</h2>
     </div>
     <div class="grid grid--4">
       @for (reason of reasons; track reason.title) {
@@ -144,10 +104,10 @@
       }
     </div>
     <p class="about__links">
-      <a [routerLink]="'/services' | localePath" class="link-arrow">Explore coaching services</a>
-      <a [routerLink]="'/pricing' | localePath" class="link-arrow">See packages & pricing</a>
+      <a [routerLink]="'/services' | localePath" class="link-arrow" i18n>See coaching services</a>
+      <a [routerLink]="'/pricing' | localePath" class="link-arrow" i18n>See packages and prices</a>
     </p>
   </div>
 </section>
 
-<app-cta-section title="Train with a coach who knows the details" />
+<app-cta-section />
