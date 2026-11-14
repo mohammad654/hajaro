@@ -1,10 +1,12 @@
 // Global styling architecture:
+//   fonts       → self-hosted @font-face rules
 //   tokens      → CSS custom properties (colour, type, spacing, motion)
 //   base        → reset and element defaults
 //   typography  → headings, prose, text utilities
 //   layout      → container, sections, grids
 //   components  → buttons, cards, forms, tables, alerts and other reusable primitives
 // Component-specific styles live next to their component and use `@use 'mixins'`.
+@use 'fonts';
 @use 'tokens';
 @use 'base';
 @use 'typography';
