@@ -24,11 +24,9 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
           <p class="hero__lead">{{ content().heroSubheadline }}</p>
           <div class="cluster hero__ctas">
             <a class="btn btn--primary btn--lg" [routerLink]="'/contact' | localePath">
-              Start your transformation <app-icon name="arrow-right" [size]="18" />
+              <span i18n>Book a free intro</span> <app-icon name="arrow-right" [size]="18" />
             </a>
-            <a class="btn btn--lg" [routerLink]="'/programs' | localePath"
-              >Explore training programs</a
-            >
+            <a class="btn btn--lg" [routerLink]="'/services' | localePath" i18n>See services</a>
           </div>
           <ul class="hero__pillars">
             @for (pillar of pillars; track pillar.label) {
@@ -50,8 +48,8 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
             [primary]="backFocus"
             [animated]="true"
           />
-          <a [routerLink]="'/muscle-chart' | localePath" class="hero__chart-link" tabindex="-1"
-            >Interactive muscle chart →</a
+          <a [routerLink]="'/muscle-chart' | localePath" class="hero__chart-link" tabindex="-1" i18n
+            >Interactive muscle chart</a
           >
         </div>
       </div>

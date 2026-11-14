@@ -1,36 +1,32 @@
 export const COACHING_STEPS = [
   {
-    title: 'Free consultation',
-    description:
-      'A no-pressure call to understand your goals, history, schedule and whether we are a good fit.',
+    title: $localize`Free intro`,
+    description: $localize`We talk about your goal, your training history and your week. No pressure: you decide afterwards.`,
   },
   {
-    title: 'Assessment & onboarding',
-    description:
-      'A detailed questionnaire, starting measurements and photos, and a review of your training and nutrition.',
+    title: $localize`Starting point`,
+    description: $localize`A short questionnaire, starting measurements (photos only if you're comfortable with that) and a look at how you train and eat now.`,
   },
   {
-    title: 'Your individual plan',
-    description:
-      'Training, nutrition targets and habits built for you — delivered in your private client dashboard.',
+    title: $localize`Your plan`,
+    description: $localize`A training plan, and food targets if you want them, in your own client dashboard.`,
   },
   {
-    title: 'Train, check in, adjust',
-    description:
-      'Log your sessions, submit weekly check-ins and receive feedback. Your plan evolves with your progress.',
+    title: $localize`Train, check in, adjust`,
+    description: $localize`You log your sessions and send a weekly check-in. I look at it and change what isn't working.`,
   },
 ] as const;
 
 export const HERO_PILLARS = [
-  { icon: 'target', label: 'Individual programming' },
-  { icon: 'pie', label: 'Nutrition coaching' },
-  { icon: 'calendar', label: 'Weekly check-ins' },
-  { icon: 'medal', label: 'Competition prep' },
+  { icon: 'target', label: $localize`Personal training plan` },
+  { icon: 'pie', label: $localize`Food guidance` },
+  { icon: 'calendar', label: $localize`Weekly check-ins` },
+  { icon: 'medal', label: $localize`Contest prep` },
 ] as const;
 
 export const NUTRITION_PILLARS = [
-  'Calorie and macronutrient targets matched to your goal',
-  'Simple meal structures you can sustain',
-  'Hydration, sleep and recovery habits',
-  'Evidence-based supplement education — no hype',
+  $localize`Calorie and macro targets that match your goal`,
+  $localize`Simple meal structures you can keep up`,
+  $localize`Habits for water, sleep and recovery`,
+  $localize`What supplements do, and what they don't`,
 ] as const;

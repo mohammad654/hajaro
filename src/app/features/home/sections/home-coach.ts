@@ -18,7 +18,7 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
           [caption]="content().trainerName"
         />
         <div>
-          <p class="eyebrow">Your coach</p>
+          <p class="eyebrow" i18n>Your coach</p>
           <h2 id="coach-title">{{ content().trainerName }}</h2>
           <p class="lead">{{ content().trainerShortBio }}</p>
 
@@ -46,7 +46,7 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
               }
             </ol>
           }
-          <a [routerLink]="'/about' | localePath" class="link-arrow">Meet your coach</a>
+          <a [routerLink]="'/about' | localePath" class="link-arrow" i18n>More about me</a>
         </div>
       </div>
     </section>

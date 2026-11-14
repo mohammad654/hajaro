@@ -12,11 +12,11 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section section--alt" aria-labelledby="services-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Coaching services</p>
-          <h2 id="services-title">Coaching built around your goal</h2>
-          <p>
-            Whether you are building your first foundation of muscle or preparing for the stage,
-            every service combines expert programming with genuine accountability.
+          <p class="eyebrow" i18n>Coaching</p>
+          <h2 id="services-title" i18n>Coaching around your goal</h2>
+          <p i18n>
+            From your first months in the gym to your first show: you get a plan written for you,
+            and someone who checks in every week.
           </p>
         </div>
         <div class="grid grid--4">
@@ -33,7 +33,7 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
           }
         </div>
         <div class="section-foot">
-          <a [routerLink]="'/services' | localePath" class="btn">All coaching services</a>
+          <a [routerLink]="'/services' | localePath" class="btn" i18n>All services</a>
         </div>
       </div>
     </section>

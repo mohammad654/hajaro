@@ -16,11 +16,10 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section section--alt" aria-labelledby="results-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Client results</p>
-          <h2 id="results-title">Real people. Real work. Real results.</h2>
-          <p>
-            Every story shared here is from a real client and published only with their written
-            consent.
+          <p class="eyebrow" i18n>Client results</p>
+          <h2 id="results-title" i18n>Progress from real clients</h2>
+          <p i18n>
+            Every story here is from a real client and is shared only with their written permission.
           </p>
         </div>
 
@@ -31,20 +30,24 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
                 <div class="pair">
                   <app-media-frame
                     [src]="story.beforeImageUrl"
-                    [alt]="story.clientName + ' before'"
+                    i18n-alt
+                    alt="{{ story.clientName }} before"
                     ratio="3 / 4"
+                    i18n-caption
                     caption="Before"
                   />
                   <app-media-frame
                     [src]="story.afterImageUrl"
-                    [alt]="story.clientName + ' after'"
+                    i18n-alt
+                    alt="{{ story.clientName }} after"
                     ratio="3 / 4"
+                    i18n-caption
                     caption="After"
                   />
                 </div>
                 <h3 class="card__title">{{ story.headline }}</h3>
-                <p class="text-small text-muted">
-                  {{ story.clientName }} · {{ story.durationWeeks }} weeks
+                <p class="text-small text-muted" i18n>
+                  {{ story.clientName }}, {{ story.durationWeeks }} weeks
                 </p>
               </article>
             }
@@ -67,18 +70,17 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
         @if (!transformations.public().length && !testimonials.public().length) {
           <div class="card empty">
-            <h3>Our results gallery is being built — honestly.</h3>
-            <p class="text-muted">
-              We only publish genuine client transformations and testimonials, with each client's
-              explicit permission. New stories are added as clients complete their programs and
-              choose to share them.
+            <h3 i18n>No client stories here yet</h3>
+            <p class="text-muted" i18n>
+              I only publish real results, with each client's written permission. New stories appear
+              when clients finish a program and choose to share them.
             </p>
           </div>
         }
 
         <div class="section-foot">
-          <a [routerLink]="'/transformations' | localePath" class="link-arrow"
-            >How we share client results</a
+          <a [routerLink]="'/transformations' | localePath" class="link-arrow" i18n
+            >How I share client results</a
           >
         </div>
       </div>

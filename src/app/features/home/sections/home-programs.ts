@@ -13,11 +13,11 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section" aria-labelledby="programs-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Training programs</p>
-          <h2 id="programs-title">Structured programs for every level</h2>
-          <p>
-            Proven training splits with clear progression rules, warm-ups, rest periods and recovery
-            guidance — from your first gym session to advanced bodybuilding.
+          <p class="eyebrow" i18n>Training programs</p>
+          <h2 id="programs-title" i18n>Training programs for every level</h2>
+          <p i18n>
+            Training splits with clear rules for progress, warm-ups and rest times. From your first
+            gym session to advanced bodybuilding.
           </p>
         </div>
         <div class="grid grid--4">
@@ -26,7 +26,7 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
           }
         </div>
         <div class="section-foot">
-          <a [routerLink]="'/programs' | localePath" class="btn">Browse all programs</a>
+          <a [routerLink]="'/programs' | localePath" class="btn" i18n>All programs</a>
         </div>
 
         <aside class="tools card" aria-labelledby="tools-title">
@@ -38,19 +38,18 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
             />
           </div>
           <div>
-            <p class="eyebrow">Free training tools</p>
-            <h3 id="tools-title">Explore every muscle. Plan every session.</h3>
-            <p class="text-muted">
-              Select any muscle on the interactive anatomy chart to see what it does, how to train
-              it and the best exercises — then build and log your own routines in the workout
-              planner.
+            <p class="eyebrow" i18n>Free training tools</p>
+            <h3 id="tools-title" i18n>Look up any muscle, then plan your sessions</h3>
+            <p class="text-muted" i18n>
+              Tap a muscle on the anatomy chart to see what it does and which exercises train it.
+              Then build and log your own routines in the workout planner.
             </p>
             <div class="cluster">
-              <a [routerLink]="'/muscle-chart' | localePath" class="btn btn--primary"
+              <a [routerLink]="'/muscle-chart' | localePath" class="btn btn--primary" i18n
                 >Open the muscle chart</a
               >
-              <a [routerLink]="'/workout-planner' | localePath" class="btn">Workout planner</a>
-              <a [routerLink]="'/exercises' | localePath" class="btn btn--ghost"
+              <a [routerLink]="'/workout-planner' | localePath" class="btn" i18n>Workout planner</a>
+              <a [routerLink]="'/exercises' | localePath" class="btn btn--ghost" i18n
                 >Exercise library</a
               >
             </div>

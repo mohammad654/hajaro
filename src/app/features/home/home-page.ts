@@ -52,9 +52,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       <section class="section" aria-labelledby="pricing-title">
         <div class="container">
           <div class="section-head section-head--center">
-            <p class="eyebrow">Pricing</p>
-            <h2 id="pricing-title">Transparent coaching packages</h2>
-            <p>No hidden fees. Choose the level of support that matches your goals.</p>
+            <p class="eyebrow" i18n>Pricing</p>
+            <h2 id="pricing-title" i18n>Coaching packages</h2>
+            <p i18n>Clear prices from the start. Pick a package, or ask me which one fits.</p>
           </div>
           <div class="grid grid--3">
             @for (pkg of packages.active().slice(0, 3); track pkg.id) {
@@ -62,7 +62,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
             }
           </div>
           <p class="section-foot">
-            <a [routerLink]="'/pricing' | localePath" class="link-arrow">Compare all packages</a>
+            <a [routerLink]="'/pricing' | localePath" class="link-arrow" i18n
+              >Compare all packages</a
+            >
           </p>
         </div>
       </section>
@@ -72,9 +74,11 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       <section class="section section--alt" aria-labelledby="articles-title">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Learn</p>
-            <h2 id="articles-title">Training & nutrition education</h2>
-            <p>Practical, evidence-based articles to help you train smarter.</p>
+            <p class="eyebrow" i18n>Blog</p>
+            <h2 id="articles-title" i18n>Articles on training and food</h2>
+            <p i18n>
+              Practical articles on strength training, building muscle and eating for performance.
+            </p>
           </div>
           <div class="grid grid--3">
             @for (article of articles.featured().slice(0, 3); track article.id) {
@@ -82,7 +86,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
             }
           </div>
           <p class="section-foot">
-            <a [routerLink]="'/blog' | localePath" class="link-arrow">Read the blog</a>
+            <a [routerLink]="'/blog' | localePath" class="link-arrow" i18n>Read the blog</a>
           </p>
         </div>
       </section>
@@ -92,8 +96,8 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       <section class="section" aria-labelledby="faq-title">
         <div class="container container--narrow">
           <div class="section-head section-head--center">
-            <p class="eyebrow">FAQ</p>
-            <h2 id="faq-title">Questions, answered</h2>
+            <p class="eyebrow" i18n>FAQ</p>
+            <h2 id="faq-title" i18n>Frequently asked questions</h2>
           </div>
           <app-faq-list [items]="faqs" />
         </div>
@@ -116,9 +120,8 @@ export class HomePage {
 
   constructor() {
     applyPageSeo('home', {
-      title: 'Online Bodybuilding Coach & Personal Trainer',
-      description:
-        'Personal bodybuilding coaching online and in person: individual training programs, nutrition coaching and weekly check-ins to build muscle and lose fat.',
+      title: $localize`Personal Trainer & Bodybuilding Coach`,
+      description: $localize`Strength training and bodybuilding coaching, in person and online. Clear plans, honest feedback, steady progress. Book a free intro.`,
       path: '/',
     });
   }

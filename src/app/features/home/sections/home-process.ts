@@ -11,8 +11,8 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section" aria-labelledby="process-title">
       <div class="container">
         <div class="section-head section-head--center">
-          <p class="eyebrow">How coaching works</p>
-          <h2 id="process-title">Four steps to a better physique</h2>
+          <p class="eyebrow" i18n>How coaching works</p>
+          <h2 id="process-title" i18n>From intro to your first check-in</h2>
         </div>
         <ol class="steps">
           @for (step of steps; track step.title; let i = $index) {
@@ -31,11 +31,11 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section section--alt" aria-labelledby="nutrition-title">
       <div class="container split">
         <div>
-          <p class="eyebrow">Nutrition & lifestyle</p>
-          <h2 id="nutrition-title">You cannot out-train your kitchen</h2>
-          <p class="lead">
-            Training builds the stimulus — nutrition, sleep and recovery determine what you get from
-            it. Coaching covers all of it, in a way that fits real life.
+          <p class="eyebrow" i18n>Food and recovery</p>
+          <h2 id="nutrition-title" i18n>You can't out-train your kitchen</h2>
+          <p class="lead" i18n>
+            Training gives your body a reason to change. Food, sleep and recovery decide how much it
+            actually changes. Coaching covers all of it, in a way that fits your week.
           </p>
           <ul class="check-list">
             @for (item of nutrition; track item) {
@@ -43,14 +43,14 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
             }
           </ul>
           <div class="cluster nutrition__ctas">
-            <a [routerLink]="'/nutrition' | localePath" class="btn">Nutrition guide</a>
-            <a [routerLink]="'/nutrition/calculators' | localePath" class="btn btn--ghost"
+            <a [routerLink]="'/nutrition' | localePath" class="btn" i18n>Nutrition guide</a>
+            <a [routerLink]="'/nutrition/calculators' | localePath" class="btn btn--ghost" i18n
               >Free calculators</a
             >
           </div>
         </div>
-        <div class="macro card" aria-label="Example macronutrient split">
-          <p class="eyebrow">Example daily targets</p>
+        <div class="macro card" i18n-aria-label aria-label="Example macronutrient split">
+          <p class="eyebrow" i18n>Example daily targets</p>
           @for (macro of macros; track macro.label) {
             <div class="macro__row">
               <div class="macro__label">
@@ -59,9 +59,8 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
               <div class="macro__bar"><span [style.width.%]="macro.pct"></span></div>
             </div>
           }
-          <p class="disclaimer">
-            Illustrative only. Your targets are calculated individually from your goal, size and
-            activity.
+          <p class="disclaimer" i18n>
+            Example only. Your own targets depend on your goal, size and activity.
           </p>
         </div>
       </div>
@@ -132,8 +131,8 @@ export class HomeProcess {
   protected readonly steps = COACHING_STEPS;
   protected readonly nutrition = NUTRITION_PILLARS;
   protected readonly macros = [
-    { label: 'Protein', value: '170 g', pct: 30 },
-    { label: 'Carbohydrates', value: '300 g', pct: 50 },
-    { label: 'Fats', value: '75 g', pct: 20 },
+    { label: $localize`Protein`, value: '170 g', pct: 30 },
+    { label: $localize`Carbohydrates`, value: '300 g', pct: 50 },
+    { label: $localize`Fat`, value: '75 g', pct: 20 },
   ];
 }

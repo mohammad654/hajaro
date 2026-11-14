@@ -67,7 +67,7 @@
         </a>
       }
       <a class="btn btn--primary btn--sm header__cta" [routerLink]="'/contact' | localePath" i18n
-        >Free consultation</a
+        >Free intro</a
       >
       <button
         #menuToggle
@@ -118,7 +118,7 @@
       <div class="mobile__actions">
         <app-language-switcher [block]="true" />
         <a class="btn btn--primary btn--block btn--lg" [routerLink]="'/contact' | localePath" i18n
-          >Book a free consultation</a
+          >Book a free intro</a
         >
         @if (sessionUser(); as user) {
           <a class="btn btn--block" [routerLink]="auth.homeFor(user.role) | localePath" i18n

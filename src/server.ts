@@ -1,3 +1,5 @@
+// Must stay first: content modules imported below call $localize.
+import './server/localize-passthrough';
 import {
   AngularNodeAppEngine,
   createNodeRequestHandler,

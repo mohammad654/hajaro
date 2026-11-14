@@ -1,105 +1,97 @@
 import { SiteContent } from '../models';
 
 /**
- * Editable website copy (managed in Admin → Site content).
+ * Editable website copy (managed in Admin → Site content). Seed text is translated per language
+ * with $localize (src/locale); edits made in the admin apply to the language they were made in.
  *
- * IMPORTANT: qualifications, competition history and achievements are placeholders with
- * `verified: false`. Unverified items are never shown publicly — replace them with the
- * trainer's real credentials and set `verified: true`.
+ * IMPORTANT
+ * - Text starting with "[" (e.g. "[TODO-FACT: …]") is a placeholder and is never shown publicly.
+ *   Replace it with the trainer's real story.
+ * - Qualifications, competition history and achievements are placeholders with `verified: false`.
+ *   Unverified items are never shown publicly. Add real credentials and set `verified: true`.
+ * - Page titles and descriptions live with each page; `seo` holds optional admin overrides only.
  */
 export const SITE_CONTENT: readonly SiteContent[] = [
   {
     id: 'site',
-    heroEyebrow: 'Online & in-person bodybuilding coaching',
-    heroHeadline: 'Build a physique that',
-    heroHighlight: 'reflects your discipline',
-    heroSubheadline:
-      'Individual training, nutrition and weekly accountability from a dedicated bodybuilding coach. No templates, no guesswork — a plan built for your body and your goals.',
+    heroEyebrow: $localize`Bodybuilding coaching, in person and online`,
+    heroHeadline: $localize`Strength training`,
+    heroHighlight: $localize`that fits your life`,
+    heroSubheadline: $localize`I help people get stronger, build muscle and feel at home in the gym. You get a plan you can actually follow, and a coach who notices when something is off.`,
     trainerName: 'Coach Hajaro',
-    trainerRole: 'Bodybuilding & Personal Training Coach',
-    trainerShortBio:
-      'A bodybuilding coach focused on evidence-based training, sustainable nutrition and the details that turn consistent effort into visible results.',
+    trainerRole: $localize`Bodybuilder and personal trainer`,
+    trainerShortBio: $localize`I'm a bodybuilder and personal trainer. I write plans that fit your week, watch your technique, and change the plan when your progress asks for it.`,
     trainerBio: [
-      'I coach people who are serious about changing their physique — whether that means building their first real foundation of muscle, losing fat without losing their life, or stepping on stage.',
-      'My approach combines proven training principles with careful attention to the individual: your schedule, recovery, preferences and history. A good plan is one you can follow consistently, and consistency is what produces results.',
-      '[Replace this paragraph with your personal background — how long you have trained and coached, and the type of clients you work with best.]',
+      $localize`Most people don't need a perfect plan. They need a plan they can actually follow, and someone who notices when something is off. That is what I do.`,
+      $localize`I look at where you are now, set a goal we can measure, and adjust along the way. I work with beginners who feel lost in the gym, lifters who stopped progressing and people who want to compete on stage. If you are somewhere in between, we can talk about it.`,
+      $localize`[TODO-FACT: how long you have trained and coached, in your own words]`,
     ],
     trainerJourney: [
-      '[Describe how you started training and what drew you to bodybuilding.]',
-      '[Describe the turning points, challenges and lessons that shaped your coaching.]',
-      '[Describe why you coach today and what you want clients to experience.]',
+      $localize`[TODO-FACT: when and why you started training, in your own words]`,
+      $localize`[TODO-FACT: competition history, for example federation, show and year]`,
+      $localize`[TODO-FACT: one or two personal details, for example languages you speak or where you grew up]`,
     ],
     philosophy: [
-      'Results come from doing the fundamentals exceptionally well for a long time.',
-      'Every client is an individual — programs are adapted, never copied.',
-      'Health first: no crash diets, no reckless shortcuts, no unrealistic promises.',
-      'Education matters. You should understand why your plan is built the way it is.',
+      $localize`Consistency beats intensity.`,
+      $localize`Good technique protects your joints and your progress.`,
+      $localize`Food matters as much as training.`,
+      $localize`Rest is part of the plan.`,
     ],
     methodology: [
       {
-        title: 'Assess',
-        description:
-          'Training history, lifestyle, movement quality, nutrition habits and goals — before a single set is prescribed.',
+        title: $localize`Look at where you are`,
+        description: $localize`Your training history, schedule, recovery and eating habits, before I write a single set.`,
       },
       {
-        title: 'Plan',
-        description:
-          'Individual training and nutrition built on proven hypertrophy and strength principles.',
+        title: $localize`Plan`,
+        description: $localize`A training plan built on proven strength and muscle-building principles, with food guidance if you want it.`,
       },
       {
-        title: 'Execute',
-        description:
-          'Clear sessions, technique guidance and logging so every workout has a purpose.',
+        title: $localize`Train`,
+        description: $localize`Clear sessions with technique cues, and a log so you can see what you did last week.`,
       },
       {
-        title: 'Adjust',
-        description:
-          'Weekly check-ins turn your data — performance, weight, measurements, recovery — into decisions.',
+        title: $localize`Adjust`,
+        description: $localize`Weekly check-ins on your lifts, weight, measurements and recovery. We change what isn't working.`,
       },
     ],
     qualifications: [
       {
-        title: '[Personal training qualification]',
+        title: '[TODO-FACT: personal training qualification]',
         detail: '[Awarding body]',
         year: '',
         verified: false,
       },
-      { title: '[Nutrition qualification]', detail: '[Awarding body]', year: '', verified: false },
-      { title: '[First aid / CPR certificate]', detail: '[Provider]', year: '', verified: false },
+      {
+        title: '[TODO-FACT: nutrition qualification]',
+        detail: '[Awarding body]',
+        year: '',
+        verified: false,
+      },
+      {
+        title: '[TODO-FACT: first aid / CPR certificate]',
+        detail: '[Provider]',
+        year: '',
+        verified: false,
+      },
     ],
     competitionHistory: [
-      { title: '[Competition name]', detail: '[Division & placing]', year: '', verified: false },
+      {
+        title: '[TODO-FACT: competition name]',
+        detail: '[Division & placing]',
+        year: '',
+        verified: false,
+      },
     ],
     achievements: [
-      { title: '[Achievement or award]', detail: '[Details]', year: '', verified: false },
+      {
+        title: '[TODO-FACT: achievement or award]',
+        detail: '[Details]',
+        year: '',
+        verified: false,
+      },
     ],
-    trainerPhotoAlt: 'Portrait of the coach in the gym',
-    seo: {
-      home: {
-        title: 'Online Bodybuilding Coach & Personal Trainer',
-        description:
-          'Personal bodybuilding coaching online and in person. Individual training programs, nutrition coaching and weekly check-ins to build muscle, lose fat and transform your physique.',
-      },
-      about: {
-        title: 'About Your Bodybuilding Coach',
-        description:
-          'Meet your bodybuilding coach — coaching philosophy, training methodology, qualifications and experience.',
-      },
-      services: {
-        title: 'Personal Training & Bodybuilding Coaching Services',
-        description:
-          'Online personal training, in-person coaching, muscle building, fat loss, body recomposition, competition preparation and posing coaching.',
-      },
-      programs: {
-        title: 'Strength & Bodybuilding Training Programs',
-        description:
-          'Structured training programs for every level: muscle building, hypertrophy, strength, fat loss, push/pull/legs, upper/lower and home workouts.',
-      },
-      pricing: {
-        title: 'Coaching Packages & Pricing',
-        description:
-          'Transparent pricing for online personal coaching, premium transformation coaching, advanced bodybuilding coaching and competition prep.',
-      },
-    },
+    trainerPhotoAlt: $localize`Coach Hajaro in the gym`,
+    seo: {},
   },
 ];
