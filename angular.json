@@ -127,6 +127,9 @@
             "buildTarget": "hajaro:build",
             "outputPath": "src/locale"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       },
       "i18n": {
