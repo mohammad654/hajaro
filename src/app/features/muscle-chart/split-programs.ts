@@ -42,11 +42,7 @@ const SPLIT_SLUGS = [
                 <a [routerLink]="['/programs', p.slug] | localePath">{{ p.name }}</a>
               </th>
               <td>
-                <ol
-                  class="mini-week"
-                  i18n-aria-label
-                  aria-label="{{ p.name }}: weekly schedule"
-                >
+                <ol class="mini-week" i18n-aria-label aria-label="{{ p.name }}: weekly schedule">
                   @for (d of p.schedule; track d.id) {
                     <li
                       [class.is-rest]="d.isRestDay"
@@ -118,8 +114,8 @@ export class SplitPrograms {
     SPLIT_SLUGS.map((slug) => this.programs.bySlug(slug)).filter((p) => p !== undefined),
   );
 
-  /** "Push — chest, shoulders, triceps" → "Push" */
+  /** "Push: chest, shoulders, triceps" → "Push" */
   protected shortFocus(focus: string): string {
-    return focus.split(/\s[—+-]\s/)[0];
+    return focus.split(/:\s|\s[—+-]\s/)[0];
   }
 }

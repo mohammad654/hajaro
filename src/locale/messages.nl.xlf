@@ -1382,6 +1382,10 @@
           <context context-type="linenumber">83</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">351</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
           <context context-type="linenumber">190</context>
         </context-group>
@@ -1576,6 +1580,1950 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/packages.data.ts</context>
           <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8761101272634678528" datatype="html">
+        <source>Rest and recovery: walking or light mobility</source>
+        <target state="translated">Rust en herstel: wandelen of lichte mobiliteit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4320370320224293504" datatype="html">
+        <source>5 minutes of light cardio to raise body temperature</source>
+        <target state="translated">5 minuten lichte cardio om je lichaam op te warmen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4844740685671258935" datatype="html">
+        <source>Dynamic mobility for the joints you will train (hips, thoracic spine, shoulders)</source>
+        <target state="translated">Dynamische mobiliteit voor de gewrichten die je gaat trainen (heupen, bovenrug, schouders)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7770433449758525862" datatype="html">
+        <source>2 or 3 warm-up sets, each heavier, for the first compound exercise</source>
+        <target state="translated">2 of 3 opwarmsets, steeds iets zwaarder, voor de eerste samengestelde oefening</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7330047364543958265" datatype="html">
+        <source>1 lighter feeler set before each new type of movement</source>
+        <target state="translated">1 lichtere proefset voor elk nieuw type beweging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1392519297094324567" datatype="html">
+        <source>Use double progression: once every set reaches the top of the rep range with good form, add the smallest available load</source>
+        <target state="translated">Gebruik dubbele progressie: haal je in elke set met goede techniek de bovenkant van de herhalingsrange, voeg dan het kleinste beschikbare gewicht toe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2372236773379736201" datatype="html">
+        <source>Keep 1 to 3 reps in reserve on most sets; take only the last set of isolation exercises close to failure</source>
+        <target state="translated">Houd bij de meeste sets 1 tot 3 herhalingen over; ga alleen in de laatste set van isolatieoefeningen tot dicht bij falen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1777709268420322710" datatype="html">
+        <source>Log every session. Progress is measured, not guessed.</source>
+        <target state="translated">Houd elke training bij. Vooruitgang meet je, die raad je niet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="643270190547941713" datatype="html">
+        <source>Every 6 to 8 weeks, or when progress stalls, take a lighter week with about half the sets</source>
+        <target state="translated">Neem elke 6 tot 8 weken, of als je vastloopt, een lichtere week met ongeveer de helft van de sets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1022972756666662190" datatype="html">
+        <source>Aim for 7 to 9 hours of sleep a night</source>
+        <target state="translated">Mik op 7 tot 9 uur slaap per nacht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3216200294798406549" datatype="html">
+        <source>Eat enough protein every day (usually 1.6 to 2.2 g per kg of body weight)</source>
+        <target state="translated">Eet elke dag genoeg eiwit (meestal 1,6 tot 2,2 g per kg lichaamsgewicht)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5622154664415302656" datatype="html">
+        <source>Keep rest days truly restful: light walking and mobility are ideal</source>
+        <target state="translated">Houd rustdagen echt rustig: licht wandelen en mobiliteit zijn ideaal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3425114984623914347" datatype="html">
+        <source>Chest</source>
+        <target state="translated">Borst</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">683</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8890553633144307762" datatype="html">
+        <source>Back</source>
+        <target state="translated">Rug</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">696</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7453226469593512253" datatype="html">
+        <source>Shoulders</source>
+        <target state="translated">Schouders</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">704</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1842992709083142984" datatype="html">
+        <source>Biceps</source>
+        <target state="final">Biceps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8669065722227062719" datatype="html">
+        <source>Triceps</source>
+        <target state="final">Triceps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4623042755374373674" datatype="html">
+        <source>Quadriceps</source>
+        <target state="final">Quadriceps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1392095425932077540" datatype="html">
+        <source>Hamstrings</source>
+        <target state="final">Hamstrings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3936897577035380966" datatype="html">
+        <source>Glutes</source>
+        <target state="translated">Bilspieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">140</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7210069398866774910" datatype="html">
+        <source>Calves</source>
+        <target state="translated">Kuiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="250327392495482133" datatype="html">
+        <source>Abs</source>
+        <target state="translated">Buikspieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6586790923864122316" datatype="html">
+        <source>Use assistance if needed</source>
+        <target state="translated">Gebruik zo nodig ondersteuning</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7794984041686544087" datatype="html">
+        <source>10–12 / leg</source>
+        <target state="translated">10–12 / been</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">788</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4791148273119511459" datatype="html">
+        <source>8–12 / leg</source>
+        <target state="translated">8–12 / been</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">775</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9200800964129662523" datatype="html">
+        <source>30–45 s</source>
+        <target state="final">30–45 s</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8787614388863515808" datatype="html">
+        <source>10 / leg</source>
+        <target state="translated">10 / been</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3541836177683910928" datatype="html">
+        <source>Beginner Muscle Building</source>
+        <target state="translated">Spieropbouw voor beginners</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4509883175283811713" datatype="html">
+        <source>Learn the lifts, build the habit, gain your first muscle.</source>
+        <target state="translated">Leer de oefeningen, bouw de gewoonte op en zet je eerste spiermassa neer.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">272</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7777784032042656668" datatype="html">
+        <source>A three-day full-body program for your first year of structured training. Every session practises the basic movements with a manageable amount of work, so you build technique, strength and muscle at the same time.</source>
+        <target state="translated">Een driedaags full-body schema voor je eerste jaar gestructureerd trainen. Elke training oefen je de basisbewegingen met een behapbare hoeveelheid werk, zodat je tegelijk techniek, kracht en spiermassa opbouwt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7736028615800493600" datatype="html">
+        <source>New lifters, or people returning after a long break</source>
+        <target state="translated">Nieuwe sporters, of mensen die terugkomen na een lange pauze</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">281</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4805490296764732835" datatype="html">
+        <source>Anyone who wants a simple, proven structure</source>
+        <target state="translated">Iedereen die een eenvoudige, beproefde opbouw wil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6949003131577560067" datatype="html">
+        <source>Gym members who aren&apos;t sure how to organise their week</source>
+        <target state="translated">Sportschoolleden die niet goed weten hoe ze hun week moeten indelen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7371499950651843935" datatype="html">
+        <source>Full-body sessions with a day off in between (for example Mon / Wed / Fri)</source>
+        <target state="translated">Full-body trainingen met steeds een dag rust ertussen (bijvoorbeeld ma / wo / vr)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">287</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="103912157543526870" datatype="html">
+        <source>Alternating A and B workouts</source>
+        <target state="translated">Afwisselend training A en B</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">288</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5587858689918729167" datatype="html">
+        <source>Each muscle trained 3 times a week with a moderate amount of work</source>
+        <target state="translated">Elke spier 3 keer per week getraind met een gemiddelde hoeveelheid werk</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">289</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="763014736383989011" datatype="html">
+        <source>Weeks 1 and 2: learn the technique with light weights, 2 or 3 reps in reserve</source>
+        <target state="translated">Week 1 en 2: leer de techniek met lichte gewichten, 2 of 3 herhalingen over</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">293</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1979957489842104550" datatype="html">
+        <source>Weeks 3 to 12: add weight once all sets reach the top of the rep range</source>
+        <target state="translated">Week 3 tot 12: voeg gewicht toe zodra je in alle sets de bovenkant van de range haalt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">294</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5550643416581001462" datatype="html">
+        <source>Always leave at least one rest day between sessions</source>
+        <target state="translated">Houd altijd minstens één rustdag tussen de trainingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">297</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8739442281958563044" datatype="html">
+        <source>Monday</source>
+        <target state="translated">Maandag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">301</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">383</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">431</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">499</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">542</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">578</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">612</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">646</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">683</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">765</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6194649039088398598" datatype="html">
+        <source>Full body A</source>
+        <target state="final">Full body A</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">301</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">509</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">612</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">646</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">650</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9176037901730521018" datatype="html">
+        <source>Tuesday</source>
+        <target state="translated">Dinsdag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">302</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">503</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">543</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">579</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">613</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">647</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">696</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">772</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8798932904948432529" datatype="html">
+        <source>Wednesday</source>
+        <target state="translated">Woensdag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">341</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">385</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">445</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">504</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">544</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">580</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">614</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">648</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">704</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">779</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7076070990735625885" datatype="html">
+        <source>Full body B</source>
+        <target state="final">Full body B</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">503</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">614</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">647</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1433683192825895947" datatype="html">
+        <source>Thursday</source>
+        <target state="translated">Donderdag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">505</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">545</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">581</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">615</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">649</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">711</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">780</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3730139500618908668" datatype="html">
+        <source>Friday</source>
+        <target state="translated">Vrijdag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">509</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">546</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">582</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">616</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">650</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">719</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">787</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1830554030016307335" datatype="html">
+        <source>Saturday</source>
+        <target state="translated">Zaterdag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">306</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">344</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">388</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">460</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">547</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">583</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">617</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">651</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">727</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">794</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6950140976689343775" datatype="html">
+        <source>Sunday</source>
+        <target state="translated">Zondag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">345</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">461</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">511</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">548</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">584</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">618</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">652</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">728</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">795</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5263884037323031770" datatype="html">
+        <source>Hypertrophy for Intermediates</source>
+        <target state="translated">Spieropbouw voor gevorderden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">313</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8440369561581562095" datatype="html">
+        <source>Five focused sessions a week, for lifters ready to do more.</source>
+        <target state="translated">Vijf gerichte trainingen per week, voor sporters die klaar zijn voor meer.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4008727049441966286" datatype="html">
+        <source>A five-day mix of upper/lower and push/pull/legs, built for muscle growth. Each muscle is trained twice a week, with more sets and a mix of heavy compound work and targeted isolation exercises.</source>
+        <target state="translated">Een vijfdaagse mix van upper/lower en push/pull/legs, gericht op spiergroei. Elke spier train je twee keer per week, met meer sets en een mix van zware samengestelde oefeningen en gerichte isolatieoefeningen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1837115237118053298" datatype="html">
+        <source>Lifters with 1 to 3 years of consistent training</source>
+        <target state="translated">Sporters met 1 tot 3 jaar regelmatige training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">323</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6111452021645150388" datatype="html">
+        <source>People whose beginner progress has slowed down</source>
+        <target state="translated">Mensen bij wie de beginnerswinst is vertraagd</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2402979382297523751" datatype="html">
+        <source>People who train mainly for bodybuilding</source>
+        <target state="translated">Mensen die vooral voor bodybuilding trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">325</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8451746151848097698" datatype="html">
+        <source>Upper / Lower / rest / Push / Pull / Legs / rest</source>
+        <target state="final">Upper / Lower / rest / Push / Pull / Legs / rest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">329</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8424739088766387469" datatype="html">
+        <source>Each muscle trained twice a week</source>
+        <target state="translated">Elke spier twee keer per week getraind</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">330</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">533</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6822313448910985404" datatype="html">
+        <source>12 to 18 sets a week for the big muscle groups</source>
+        <target state="translated">12 tot 18 sets per week voor de grote spiergroepen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">331</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4004314649200162964" datatype="html">
+        <source>Upper</source>
+        <target state="final">Upper</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">765</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">780</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8836929076850477386" datatype="html">
+        <source>Lower</source>
+        <target state="final">Lower</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">772</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">787</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7732071935730624137" datatype="html">
+        <source>Push: chest, shoulders, triceps</source>
+        <target state="translated">Push: borst, schouders, triceps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">342</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2151236852167102756" datatype="html">
+        <source>Pull: back, rear delts, biceps</source>
+        <target state="translated">Pull: rug, achterkant schouders, biceps</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4889792233550668453" datatype="html">
+        <source>Legs: quads, glutes, hamstrings</source>
+        <target state="translated">Legs: quadriceps, bilspieren, hamstrings</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">344</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3987344540510088356" datatype="html">
+        <source>Lots of sets, trained often, for experienced physique athletes.</source>
+        <target state="translated">Veel sets, vaak getraind, voor ervaren physique-atleten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">352</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="755321315439911314" datatype="html">
+        <source>A six-day push/pull/legs rotation with two different versions of each session. For advanced lifters who recover well, track their training closely and want to bring up every body part.</source>
+        <target state="translated">Een zesdaagse push/pull/legs-rotatie met twee verschillende versies van elke training. Voor ervaren sporters die goed herstellen, hun training nauwkeurig bijhouden en elk lichaamsdeel willen verbeteren.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">353</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5807073018002529496" datatype="html">
+        <source>Lifters with 3 or more years of serious training</source>
+        <target state="translated">Sporters met 3 jaar of meer serieuze training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">361</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7808912978750607521" datatype="html">
+        <source>Physique competitors in their off-season</source>
+        <target state="translated">Physique-deelnemers in hun off-season</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">362</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4365575171038148444" datatype="html">
+        <source>Athletes with very good recovery habits</source>
+        <target state="translated">Atleten met heel goede herstelgewoontes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">363</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="115101142596484894" datatype="html">
+        <source>Push A / Pull A / Legs A / Push B / Pull B / Legs B / rest</source>
+        <target state="final">Push A / Pull A / Legs A / Push B / Pull B / Legs B / rest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">367</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3209181388256065018" datatype="html">
+        <source>16 to 22 sets a week for muscle groups that lag behind</source>
+        <target state="translated">16 tot 22 sets per week voor achterblijvende spiergroepen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">368</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1535144729360131151" datatype="html">
+        <source>Heavy compound exercises first, pump-focused isolation at the end</source>
+        <target state="translated">Eerst zware samengestelde oefeningen, aan het eind isolatie gericht op de pomp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">369</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3604788896192798445" datatype="html">
+        <source>Change exercise variations every training phase to spare your joints</source>
+        <target state="translated">Wissel elke trainingsfase van oefenvariant om je gewrichten te sparen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">374</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4948256244440485673" datatype="html">
+        <source>Check sleep, appetite and performance every week, and do fewer sets if all three go down</source>
+        <target state="translated">Kijk elke week naar slaap, eetlust en prestaties, en doe minder sets als alle drie dalen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">379</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1978378671751777017" datatype="html">
+        <source>Push A</source>
+        <target state="final">Push A</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">383</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7390150583753963464" datatype="html">
+        <source>Pull A</source>
+        <target state="final">Pull A</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2308317984850547044" datatype="html">
+        <source>Legs A</source>
+        <target state="final">Legs A</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">385</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5982297880015301346" datatype="html">
+        <source>Push B</source>
+        <target state="final">Push B</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">386</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6353173251278725990" datatype="html">
+        <source>Pull B</source>
+        <target state="final">Pull B</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">387</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5445179619726322217" datatype="html">
+        <source>Legs B</source>
+        <target state="final">Legs B</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">388</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3426485769516204876" datatype="html">
+        <source>Strength &amp; Conditioning</source>
+        <target state="final">Strength &amp; Conditioning</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">395</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6437384416046139111" datatype="html">
+        <source>Get properly strong on the big lifts and stay athletic.</source>
+        <target state="translated">Word echt sterk in de grote oefeningen en blijf atletisch.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">396</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8359900169799980919" datatype="html">
+        <source>A four-day strength program built around the squat, bench press, deadlift and overhead press, with targeted extra exercises and short conditioning finishers.</source>
+        <target state="translated">Een vierdaags krachtschema rond de squat, het bankdrukken, de deadlift en de overhead press, met gerichte extra oefeningen en korte conditie-afsluiters.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">397</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3343372166502558195" datatype="html">
+        <source>Lifters who want to get measurably stronger</source>
+        <target state="translated">Sporters die meetbaar sterker willen worden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3049207554834771724" datatype="html">
+        <source>Athletes in sports where strength matters</source>
+        <target state="translated">Atleten in sporten waarin kracht telt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5374360057970788241" datatype="html">
+        <source>Bodybuilders building a strength base in the off-season</source>
+        <target state="translated">Bodybuilders die in de off-season een krachtbasis opbouwen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">407</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3900268304048124072" datatype="html">
+        <source>Two heavy lower-body days and two heavy upper-body days</source>
+        <target state="translated">Twee zware dagen onderlichaam en twee zware dagen bovenlichaam</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">411</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1657760644043555834" datatype="html">
+        <source>Main lifts for 3 to 6 reps</source>
+        <target state="translated">Hoofdoefeningen in 3 tot 6 herhalingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">412</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3743216717863632763" datatype="html">
+        <source>Extra exercises for 8 to 12 reps</source>
+        <target state="translated">Extra oefeningen in 8 tot 12 herhalingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">413</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5210816282238047869" datatype="html">
+        <source>A 10-minute conditioning finisher twice a week</source>
+        <target state="translated">Twee keer per week een conditie-afsluiter van 10 minuten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">414</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1372534443981096705" datatype="html">
+        <source>Work up to your first working set in 4 or 5 sets, each heavier</source>
+        <target state="translated">Werk naar je eerste werkset toe in 4 of 5 sets, steeds iets zwaarder</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">418</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4560238457842163201" datatype="html">
+        <source>Main lifts: add 2.5 kg (upper body) or 5 kg (lower body) once you complete all the reps</source>
+        <target state="translated">Hoofdoefeningen: voeg 2,5 kg (bovenlichaam) of 5 kg (onderlichaam) toe zodra je alle herhalingen haalt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">421</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3428799606980524315" datatype="html">
+        <source>If you miss reps two sessions in a row, take 10% off the weight and build back up</source>
+        <target state="translated">Mis je twee trainingen achter elkaar herhalingen, haal dan 10% van het gewicht af en bouw weer op</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">422</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8963842494553223212" datatype="html">
+        <source>Take your full rest on the main lifts: strength needs recovery between sets</source>
+        <target state="translated">Neem bij de hoofdoefeningen je volledige rust: kracht vraagt herstel tussen de sets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">427</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5636493297149871720" datatype="html">
+        <source>Lower: squat focus</source>
+        <target state="translated">Lower: focus op de squat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">431</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6960516640395872312" datatype="html">
+        <source>8 / leg</source>
+        <target state="translated">8 / been</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">434</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4191321388886168147" datatype="html">
+        <source>6 × 20 s</source>
+        <target state="final">6 × 20 s</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">436</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8580125365120560844" datatype="html">
+        <source>Conditioning finisher</source>
+        <target state="translated">Conditie-afsluiter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">436</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">451</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1619928351316681706" datatype="html">
+        <source>Upper: bench press focus</source>
+        <target state="translated">Upper: focus op bankdrukken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">438</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1131353949394705910" datatype="html">
+        <source>Lower: deadlift focus</source>
+        <target state="translated">Lower: focus op de deadlift</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7029679797765119641" datatype="html">
+        <source>30–40 m</source>
+        <target state="final">30–40 m</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">450</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5382606303859689594" datatype="html">
+        <source>Upper: overhead press focus</source>
+        <target state="translated">Upper: focus op de overhead press</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">453</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5727797498129428403" datatype="html">
+        <source>Active recovery: a 30 to 45 minute walk</source>
+        <target state="translated">Actief herstel: 30 tot 45 minuten wandelen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">460</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6630628038790566854" datatype="html">
+        <source>Fat Loss &amp; Definition</source>
+        <target state="translated">Vetverlies &amp; definitie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">467</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2638142986770032301" datatype="html">
+        <source>Keep your muscle, lose the fat and show your definition.</source>
+        <target state="translated">Behoud je spieren, verlies vet en laat je definitie zien.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">468</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1164431426556738361" datatype="html">
+        <source>Four strength sessions a week to keep your muscle in a calorie deficit, with gentle cardio that helps fat loss without hurting your recovery.</source>
+        <target state="translated">Vier krachttrainingen per week om je spieren te behouden in een calorietekort, met rustige cardio die vetverlies helpt zonder je herstel te schaden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">469</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5766772002252388700" datatype="html">
+        <source>45–60 + cardio</source>
+        <target state="final">45–60 + cardio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6574716732668236008" datatype="html">
+        <source>Anyone in a fat-loss phase</source>
+        <target state="translated">Iedereen in een vetverliesfase</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">477</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5169465903078665685" datatype="html">
+        <source>Lifters getting ready for a photoshoot or holiday</source>
+        <target state="translated">Sporters die zich klaarmaken voor een fotoshoot of vakantie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">478</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1260034679570922637" datatype="html">
+        <source>Beginners and more experienced lifters who want a balanced plan</source>
+        <target state="translated">Beginners en meer ervaren sporters die een evenwichtig plan willen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">479</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4300705611630235679" datatype="html">
+        <source>Four full-body strength sessions</source>
+        <target state="translated">Vier full-body krachttrainingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">483</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8450003896477402613" datatype="html">
+        <source>2 or 3 sessions of 20 to 40 minutes of easy cardio</source>
+        <target state="translated">2 of 3 keer 20 tot 40 minuten rustige cardio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">484</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4759643282848281030" datatype="html">
+        <source>A daily step target that we set together</source>
+        <target state="translated">Een dagelijks stappendoel dat we samen bepalen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">485</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="459231353478536566" datatype="html">
+        <source>Try to keep your strength: holding your weights in a deficit is a win</source>
+        <target state="translated">Probeer je kracht te behouden: je gewichten vasthouden in een tekort is winst</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">489</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5609630978210505871" datatype="html">
+        <source>When fat loss stalls for 2 weeks or more, slowly add daily steps or cardio time</source>
+        <target state="translated">Stokt het vetverlies 2 weken of langer, voeg dan geleidelijk stappen of cardiotijd toe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">490</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3154503874479648722" datatype="html">
+        <source>Late in the diet, do slightly fewer sets if your recovery suffers</source>
+        <target state="translated">Doe laat in het dieet iets minder sets als je herstel eronder lijdt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">491</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8625195929018025854" datatype="html">
+        <source>Keep protein high (around 2 g per kg) to keep your muscle during the deficit</source>
+        <target state="translated">Houd je eiwit hoog (rond 2 g per kg) om je spieren te behouden tijdens het tekort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">495</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2382370508721145063" datatype="html">
+        <source>Full body A + 20 min uphill walk</source>
+        <target state="translated">Full body A + 20 min wandelen op een helling</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">499</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1051384376938504427" datatype="html">
+        <source>20 min</source>
+        <target state="final">20 min</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">501</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1859324875387281878" datatype="html">
+        <source>Easy cardio, 30 to 40 min</source>
+        <target state="translated">Rustige cardio, 30 tot 40 min</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">504</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">510</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5790641740160179345" datatype="html">
+        <source>Full body C + 20 min rowing</source>
+        <target state="translated">Full body C + 20 min roeien</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">505</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="232202816024073368" datatype="html">
+        <source>15–20 min</source>
+        <target state="final">15–20 min</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">507</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2485740977156046750" datatype="html">
+        <source>Push / Pull / Legs</source>
+        <target state="final">Push / Pull / Legs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">517</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2576150876903273486" datatype="html">
+        <source>The classic bodybuilding split, organised by movement.</source>
+        <target state="translated">De klassieke bodybuildingsplit, ingedeeld per beweging.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">518</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="288745938174166249" datatype="html">
+        <source>Push/pull/legs groups muscles that work together, so each session is focused and efficient. Run it on three days if you have less time, or six days to train each muscle more often.</source>
+        <target state="translated">Push/pull/legs groepeert spieren die samenwerken, zodat elke training gericht en efficiënt is. Doe het op drie dagen als je minder tijd hebt, of op zes dagen om elke spier vaker te trainen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">519</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1482775720988495560" datatype="html">
+        <source>Lifters with some experience who like focused sessions</source>
+        <target state="translated">Sporters met wat ervaring die van gerichte trainingen houden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5943583023298154120" datatype="html">
+        <source>People with time to train 6 days (or 3 for a lighter version)</source>
+        <target state="translated">Mensen met tijd om 6 dagen te trainen (of 3 voor een lichtere versie)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">528</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8070820361717347597" datatype="html">
+        <source>Push / Pull / Legs / Push / Pull / Legs / rest</source>
+        <target state="final">Push / Pull / Legs / Push / Pull / Legs / rest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">532</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3013236825751890772" datatype="html">
+        <source>Three-day option: do each session once a week</source>
+        <target state="translated">Driedaagse variant: doe elke training één keer per week</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">534</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7501722761944013926" datatype="html">
+        <source>Push</source>
+        <target state="final">Push</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">542</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">545</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7593000025262916359" datatype="html">
+        <source>Pull</source>
+        <target state="final">Pull</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">543</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">546</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7430664322933223267" datatype="html">
+        <source>Legs</source>
+        <target state="final">Legs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">544</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">547</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">719</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8893937732054503034" datatype="html">
+        <source>Upper / Lower Split</source>
+        <target state="final">Upper / Lower Split</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">554</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="73894470723914434" datatype="html">
+        <source>Balanced training that saves time, four days a week.</source>
+        <target state="translated">Evenwichtig trainen dat tijd bespaart, vier dagen per week.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">555</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5072038582149228004" datatype="html">
+        <source>An upper/lower split trains every muscle twice a week over four sessions, with a good balance between workload, frequency and recovery.</source>
+        <target state="translated">Een upper/lower split traint elke spier twee keer per week in vier trainingen, met een goede balans tussen belasting, frequentie en herstel.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">556</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8994344534093628050" datatype="html">
+        <source>Lifters with busy weeks</source>
+        <target state="translated">Sporters met een drukke week</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">564</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1616796812779975218" datatype="html">
+        <source>People moving on from full-body training</source>
+        <target state="translated">Mensen die doorgaan na full-body training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">565</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9108393782367104069" datatype="html">
+        <source>Anyone who wants strength and size together</source>
+        <target state="translated">Iedereen die tegelijk kracht en spiermassa wil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">566</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7173781455737295329" datatype="html">
+        <source>Upper / Lower / rest / Upper / Lower / rest / rest</source>
+        <target state="final">Upper / Lower / rest / Upper / Lower / rest / rest</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">570</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">750</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8206929319887835213" datatype="html">
+        <source>Heavier A days and B days with more reps</source>
+        <target state="translated">Zwaardere A-dagen en B-dagen met meer herhalingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">571</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2880635937559483897" datatype="html">
+        <source>Upper A: strength focus</source>
+        <target state="translated">Upper A: focus op kracht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">578</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7055043838385730412" datatype="html">
+        <source>Lower A: strength focus</source>
+        <target state="translated">Lower A: focus op kracht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">579</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7989555456160589904" datatype="html">
+        <source>Upper B: muscle-building focus</source>
+        <target state="translated">Upper B: focus op spieropbouw</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">581</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4238778427160205331" datatype="html">
+        <source>Lower B: muscle-building focus</source>
+        <target state="translated">Lower B: focus op spieropbouw</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">582</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4727319245617814717" datatype="html">
+        <source>Full Body Workout (3 Days)</source>
+        <target state="translated">Full-body training (3 dagen)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">590</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2425779998520524724" datatype="html">
+        <source>Train everything, three times a week, in under an hour.</source>
+        <target state="translated">Train alles, drie keer per week, in minder dan een uur.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">591</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4611450547033603602" datatype="html">
+        <source>Three different full-body sessions that cover every major muscle group each time. You train often, the workload stays manageable, and it works well for most lifters.</source>
+        <target state="translated">Drie verschillende full-body trainingen die elke keer alle grote spiergroepen raken. Je traint vaak, de belasting blijft behapbaar, en het werkt goed voor de meeste sporters.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">592</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5771634812839637683" datatype="html">
+        <source>Beginners and busy lifters with some experience</source>
+        <target state="translated">Beginners en drukke sporters met wat ervaring</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">600</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2616040867445121962" datatype="html">
+        <source>Anyone who can only train three days a week</source>
+        <target state="translated">Iedereen die maar drie dagen per week kan trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">601</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3926499807483064046" datatype="html">
+        <source>Sessions A, B and C with a day off in between</source>
+        <target state="translated">Training A, B en C met steeds een dag rust ertussen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">605</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="114125448363609391" datatype="html">
+        <source>A compound exercise for every main movement, every session</source>
+        <target state="translated">Elke training een samengestelde oefening voor elke hoofdbeweging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">606</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6367346361265499545" datatype="html">
+        <source>Keep at least 48 hours between sessions</source>
+        <target state="translated">Houd minstens 48 uur tussen de trainingen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">610</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5679525401190464041" datatype="html">
+        <source>Full body C</source>
+        <target state="final">Full body C</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">616</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">649</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6829297640457400128" datatype="html">
+        <source>Full Body Workout (4 Days)</source>
+        <target state="translated">Full-body training (4 dagen)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">624</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5137560083285889193" datatype="html">
+        <source>Train more often, practise more, progress more.</source>
+        <target state="translated">Vaker trainen, meer oefenen, meer vooruitgang.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">625</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6218416115036515329" datatype="html">
+        <source>Four full-body sessions spread over the week. Each session has fewer sets, so you train each muscle often and stay fresh. Good for recomposition and steady strength gains.</source>
+        <target state="translated">Vier full-body trainingen verspreid over de week. Elke training heeft minder sets, zodat je elke spier vaak traint en fris blijft. Goed voor recompositie en gestage krachtwinst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">626</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3871317019410748169" datatype="html">
+        <source>Lifters with some experience who like to train often</source>
+        <target state="translated">Sporters met wat ervaring die graag vaak trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">634</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="370645176754868173" datatype="html">
+        <source>Lifters who prefer shorter sessions</source>
+        <target state="translated">Sporters die liever kortere trainingen doen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">635</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2523362623346485333" datatype="html">
+        <source>A / B / rest / C / A / rest / rest (change the order every week)</source>
+        <target state="translated">A / B / rust / C / A / rust / rust (wissel elke week de volgorde)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">639</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4881667439652268133" datatype="html">
+        <source>Each muscle trained four times a week, with fewer sets per session</source>
+        <target state="translated">Elke spier vier keer per week getraind, met minder sets per training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">640</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="367098683778643087" datatype="html">
+        <source>Bro Split</source>
+        <target state="final">Bro Split</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">658</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2614990613691562025" datatype="html">
+        <source>One body part per day, for maximum focus and pump.</source>
+        <target state="translated">Eén lichaamsdeel per dag, voor maximale focus en pomp.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">659</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7580037854075244149" datatype="html">
+        <source>The traditional bodybuilding split: each muscle group gets its own session every week. Best for experienced lifters who like lots of sets per session and longer recovery between body parts.</source>
+        <target state="translated">De traditionele bodybuildingsplit: elke spiergroep krijgt elke week een eigen training. Het best voor ervaren sporters die van veel sets per training houden en van langer herstel tussen lichaamsdelen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">660</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1973703639655117002" datatype="html">
+        <source>Experienced lifters who like training one body part at a time</source>
+        <target state="translated">Ervaren sporters die graag één lichaamsdeel tegelijk trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">668</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5433099238237201047" datatype="html">
+        <source>People who prefer intense sessions with a single focus</source>
+        <target state="translated">Mensen die liever intensieve trainingen met één focus doen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">669</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8059852269125929520" datatype="html">
+        <source>Chest / Back / Shoulders / Arms / Legs</source>
+        <target state="translated">Borst / Rug / Schouders / Armen / Benen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">673</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4756223522755513765" datatype="html">
+        <source>Each muscle trained once a week, with lots of sets</source>
+        <target state="translated">Elke spier één keer per week getraind, met veel sets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">674</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1276098229533199442" datatype="html">
+        <source>Think about adding a second, smaller session for muscles that lag behind</source>
+        <target state="translated">Overweeg een tweede, kleinere training voor achterblijvende spieren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">679</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2817590389220961121" datatype="html">
+        <source>AMRAP</source>
+        <target state="final">AMRAP</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">691</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8630516904026541944" datatype="html">
+        <source>As many reps as possible with good form</source>
+        <target state="translated">Zoveel mogelijk herhalingen met goede techniek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">693</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5812742434340239644" datatype="html">
+        <source>Arms</source>
+        <target state="translated">Armen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">711</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="314768309046007428" datatype="html">
+        <source>Home Workout Program</source>
+        <target state="translated">Thuistrainingsschema</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">734</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4224922549447525786" datatype="html">
+        <source>Build muscle at home with dumbbells, a band and your bodyweight.</source>
+        <target state="translated">Bouw thuis spiermassa op met dumbbells, een band en je eigen lichaamsgewicht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">735</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5438798118524607231" datatype="html">
+        <source>A four-day upper/lower program for training at home with adjustable dumbbells, a resistance band and a bench. More reps and a slower tempo make light equipment properly challenging.</source>
+        <target state="translated">Een vierdaags upper/lower schema voor thuis, met verstelbare dumbbells, een weerstandsband en een bankje. Meer herhalingen en een lager tempo maken licht materiaal echt uitdagend.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">736</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8669252116530151171" datatype="html">
+        <source>Anyone training at home</source>
+        <target state="translated">Iedereen die thuis traint</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">744</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8245975831900972954" datatype="html">
+        <source>People who travel a lot or have busy jobs</source>
+        <target state="translated">Mensen die veel reizen of een drukke baan hebben</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">745</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3654808768594560883" datatype="html">
+        <source>Beginners who don&apos;t feel comfortable in a gym yet</source>
+        <target state="translated">Beginners die zich nog niet op hun gemak voelen in de sportschool</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">746</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4089762431074432518" datatype="html">
+        <source>Take 3 seconds to lower the weight on every rep</source>
+        <target state="translated">Neem bij elke herhaling 3 seconden om het gewicht te laten zakken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">751</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1880647855245838257" datatype="html">
+        <source>5 minutes of marching, jumping jacks or skipping</source>
+        <target state="translated">5 minuten marcheren, jumping jacks of touwtjespringen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">754</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6143305588007930032" datatype="html">
+        <source>Band pull-aparts and bodyweight squats</source>
+        <target state="translated">Band pull-aparts en squats met eigen gewicht</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">755</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6804873728349909420" datatype="html">
+        <source>1 light set of the first exercise</source>
+        <target state="translated">1 lichte set van de eerste oefening</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">756</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="559344691571402189" datatype="html">
+        <source>Add reps first, then slow the tempo, then add weight</source>
+        <target state="translated">Voeg eerst herhalingen toe, verlaag dan het tempo en voeg daarna gewicht toe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">759</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1225392993628775018" datatype="html">
+        <source>Once you do 3 or more reps above the top of the range, use heavier dumbbells or a harder variation</source>
+        <target state="translated">Haal je 3 of meer herhalingen boven de bovenkant van de range, neem dan zwaardere dumbbells of een zwaardere variant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">760</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3525559213200897026" datatype="html">
+        <source>10–15 / side</source>
+        <target state="translated">10–15 / kant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">767</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">782</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3763058010454738249" datatype="html">
+        <source>Use dumbbells</source>
+        <target state="translated">Gebruik dumbbells</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">774</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="149818568757987886" datatype="html">
+        <source>8 / side</source>
+        <target state="translated">8 / kant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">777</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5695071787130261917" datatype="html">
+        <source>30–60 s</source>
+        <target state="final">30–60 s</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">785</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5364582909326730696" datatype="html">
+        <source>Single-leg on a step</source>
+        <target state="translated">Op één been op een opstapje</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">791</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4876136467675893254" datatype="html">
+        <source>10 / side</source>
+        <target state="translated">10 / kant</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">792</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5815041864181148364" datatype="html">
+        <source>Use a band</source>
+        <target state="translated">Gebruik een band</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">792</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7837817060690804882" datatype="html">
@@ -2110,14 +4058,6 @@
           <context context-type="linenumber">141</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3049207554834771724" datatype="html">
-        <source>Athletes in sports where strength matters</source>
-        <target state="translated">Atleten in sporten waarin kracht telt</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">142</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2223322160840182569" datatype="html">
         <source>A strength program in planned blocks</source>
         <target state="translated">Een krachtschema in geplande blokken</target>
@@ -2324,14 +4264,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
           <context context-type="linenumber">193</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5807073018002529496" datatype="html">
-        <source>Lifters with 3 or more years of serious training</source>
-        <target state="translated">Sporters met 3 jaar of meer serieuze training</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">196</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8079557213652857093" datatype="html">
@@ -3368,70 +5300,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/models/common.model.ts</context>
           <context context-type="linenumber">16</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3425114984623914347" datatype="html">
-        <source>Chest</source>
-        <target state="translated">Borst</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8890553633144307762" datatype="html">
-        <source>Back</source>
-        <target state="translated">Rug</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7453226469593512253" datatype="html">
-        <source>Shoulders</source>
-        <target state="translated">Schouders</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1842992709083142984" datatype="html">
-        <source>Biceps</source>
-        <target state="final">Biceps</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8669065722227062719" datatype="html">
-        <source>Triceps</source>
-        <target state="final">Triceps</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7430664322933223267" datatype="html">
-        <source>Legs</source>
-        <target state="translated">Benen</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">22</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3936897577035380966" datatype="html">
-        <source>Glutes</source>
-        <target state="translated">Bilspieren</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">23</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="250327392495482133" datatype="html">
-        <source>Abs</source>
-        <target state="translated">Buikspieren</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">24</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3335643747238180126" datatype="html">
@@ -4899,7 +6767,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
-          <context context-type="linenumber">115</context>
+          <context context-type="linenumber">111</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
@@ -6194,7 +8062,7 @@
       </trans-unit>
       <trans-unit id="5661397096913715080" datatype="html">
         <source> Back </source>
-        <target state="translated"> Achterkant </target>
+        <target state="translated"> Rug </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
           <context context-type="linenumber">51,54</context>
@@ -6699,7 +8567,7 @@
         <target state="translated"><x id="INTERPOLATION" equiv-text="{{ p.name }}"/>: weekschema</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
-          <context context-type="linenumber">48,49</context>
+          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3017349275866470327" datatype="html">
