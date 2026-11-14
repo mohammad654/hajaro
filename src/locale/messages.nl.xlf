@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="nl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target state="translated">Over</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2461294555485264241" datatype="html">
+        <source>Coaching</source>
+        <target state="translated">Coaching</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6697326904524934689" datatype="html">
+        <source>Programs</source>
+        <target state="translated">Programma's</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7009869773854523300" datatype="html">
+        <source>Training Tools</source>
+        <target state="translated">Trainingstools</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1395257048346805625" datatype="html">
+        <source>Muscle Chart</source>
+        <target state="translated">Spierkaart</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8755102937436749375" datatype="html">
+        <source>Explore every muscle and how to train it</source>
+        <target state="translated">Ontdek elke spier en hoe je die traint</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8989869551315405653" datatype="html">
+        <source>Exercise Library</source>
+        <target state="translated">Oefeningenbibliotheek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1095661330134890881" datatype="html">
+        <source>Technique, cues and common mistakes</source>
+        <target state="translated">Techniek, aandachtspunten en veelgemaakte fouten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8603269727298364472" datatype="html">
+        <source>Workout Planner</source>
+        <target state="translated">Trainingsplanner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5299957871569391615" datatype="html">
+        <source>Build routines and log your sessions</source>
+        <target state="translated">Stel schema's samen en houd je trainingen bij</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4531960510824900278" datatype="html">
+        <source>Nutrition</source>
+        <target state="translated">Voeding</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3157243748974494193" datatype="html">
+        <source>Nutrition education for performance</source>
+        <target state="translated">Voedingskennis voor betere prestaties</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1518549923629986824" datatype="html">
+        <source>Calculators</source>
+        <target state="translated">Calculators</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3864029730667347532" datatype="html">
+        <source>Calories, protein, macros and more</source>
+        <target state="translated">Calorieën, eiwitten, macro's en meer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5968132631442328843" datatype="html">
+        <source>Results</source>
+        <target state="translated">Resultaten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5080775557941296581" datatype="html">
+        <source>Pricing</source>
+        <target state="translated">Prijzen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7751010942038334793" datatype="html">
+        <source>Blog</source>
+        <target state="translated">Blog</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7877548448480730035" datatype="html">
+        <source>Online Coaching</source>
+        <target state="translated">Online coaching</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4535175276353008762" datatype="html">
+        <source>Personal Training</source>
+        <target state="translated">Personal training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1554539726798439944" datatype="html">
+        <source>Competition Prep</source>
+        <target state="translated">Wedstrijdvoorbereiding</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3302847914503014594" datatype="html">
+        <source>Pricing &amp; Packages</source>
+        <target state="translated">Prijzen &amp; pakketten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5007865896915473722" datatype="html">
+        <source>Client Results</source>
+        <target state="translated">Resultaten van klanten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4013060476269413412" datatype="html">
+        <source>Training</source>
+        <target state="translated">Training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8528150951258890931" datatype="html">
+        <source>Training Programs</source>
+        <target state="translated">Trainingsprogramma's</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6899134966533859260" datatype="html">
+        <source>Learn</source>
+        <target state="translated">Leren</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4357632236653912315" datatype="html">
+        <source>About the Coach</source>
+        <target state="translated">Over de coach</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1826215573205981970" datatype="html">
+        <source>Company</source>
+        <target state="translated">Bedrijf</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target state="translated">Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8439955599488894226" datatype="html">
+        <source>Privacy Policy</source>
+        <target state="translated">Privacybeleid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2029980907058777630" datatype="html">
+        <source>Terms of Service</source>
+        <target state="translated">Algemene voorwaarden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="898601236377987240" datatype="html">
+        <source>Health Disclaimer</source>
+        <target state="translated">Gezondheidsdisclaimer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1324539601317619429" datatype="html">
+        <source>Premium bodybuilding &amp; personal training</source>
+        <target state="translated">Premium bodybuilding &amp; personal training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1942753787000667662" datatype="html">
+        <source>Online and in-person bodybuilding coaching with individual training programs, nutrition guidance and weekly check-ins. Build muscle, lose fat and train with structure.</source>
+        <target state="translated">Online en persoonlijke bodybuildingcoaching met individuele trainingsprogramma's, voedingsadvies en wekelijkse check-ins. Bouw spiermassa op, verlies vet en train met structuur.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6497062407659942520" datatype="html">
+        <source>Hi Hajaro, I would like to know more about your coaching.</source>
+        <target state="translated">Hoi Hajaro, ik wil graag meer weten over jullie coaching.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2605179817078164756" datatype="html">
+        <source>Online worldwide · In-person by appointment</source>
+        <target state="translated">Wereldwijd online · Persoonlijk op afspraak</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9192342854506088590" datatype="html">
+        <source>We reply to every enquiry within two working days.</source>
+        <target state="translated">We beantwoorden elke aanvraag binnen twee werkdagen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2699764639060274569" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ brand.tagline }}"/>. Individual training, nutrition and accountability for people serious about their physique. </source>
+        <target state="translated"> <x id="INTERPOLATION" equiv-text="{{ brand.tagline }}"/>. Individuele training, voeding en begeleiding voor mensen die serieus werk maken van hun fysiek. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1252755575755332939" datatype="html">
+        <source> Chat on WhatsApp<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;visually-hidden&quot;&gt;"/> (opens in a new tab)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target state="translated"> Chat via WhatsApp<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;visually-hidden&quot;&gt;"/> (opent in een nieuw tabblad)<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1340298141300120234" datatype="html">
+        <source>Social media</source>
+        <target state="translated">Sociale media</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5745582653119754338" datatype="html">
+        <source>© <x id="INTERPOLATION" equiv-text="{{ year }}"/> <x id="INTERPOLATION_1" equiv-text="{{ brand.legalName }}"/>. All rights reserved.</source>
+        <target state="translated">© <x id="INTERPOLATION" equiv-text="{{ year }}"/> <x id="INTERPOLATION_1" equiv-text="{{ brand.legalName }}"/>. Alle rechten voorbehouden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5499880891684165918" datatype="html">
+        <source> Information on this website is for general education and is not medical advice. Consult a qualified healthcare professional before starting a new exercise or nutrition program. </source>
+        <target state="translated"> De informatie op deze website is bedoeld als algemene voorlichting en is geen medisch advies. Raadpleeg een gekwalificeerde zorgprofessional voordat je aan een nieuw trainings- of voedingsprogramma begint. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3428204039932102164" datatype="html">
+        <source>Back to top</source>
+        <target state="translated">Terug naar boven</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-footer/site-footer.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4115682998157157857" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ brand.brandName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ brand.brandSuffix }}"/> — home</source>
+        <target state="translated"><x id="INTERPOLATION" equiv-text="{{ brand.brandName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ brand.brandSuffix }}"/> — startpagina</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+        <note priority="1" from="description">Logo link to the home page</note>
+      </trans-unit>
+      <trans-unit id="3815928829326879804" datatype="html">
+        <source>Main</source>
+        <target state="translated">Hoofdmenu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <note priority="1" from="description">Main navigation landmark</note>
+      </trans-unit>
+      <trans-unit id="6570363013146073520" datatype="html">
+        <source>Dashboard</source>
+        <target state="translated">Dashboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8740283058482317967" datatype="html">
+        <source>Free consultation</source>
+        <target state="translated">Gratis kennismaking</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">67,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1556270137829928334" datatype="html">
+        <source>Close menu</source>
+        <target state="translated">Menu sluiten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2005818722469409502" datatype="html">
+        <source>Open menu</source>
+        <target state="translated">Menu openen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4653540968485750756" datatype="html">
+        <source>Site menu</source>
+        <target state="translated">Sitemenu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">95,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1002165214775409029" datatype="html">
+        <source>Mobile</source>
+        <target state="translated">Mobiel menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+        <note priority="1" from="description">Mobile navigation landmark</note>
+      </trans-unit>
+      <trans-unit id="496555177352786420" datatype="html">
+        <source>Book a free consultation</source>
+        <target state="translated">Plan een gratis kennismaking</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5631730423591436287" datatype="html">
+        <source>My dashboard</source>
+        <target state="translated">Mijn dashboard</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2826581353496868063" datatype="html">
+        <source>Language</source>
+        <target state="translated">Taal</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/language-switcher.ts</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4971258145071452140" datatype="html">
+        <source>Chat with us on WhatsApp (opens in a new tab)</source>
+        <target state="translated">Chat met ons via WhatsApp (opent in een nieuw tabblad)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/whatsapp-button.ts</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5036920217959822455" datatype="html">
+        <source>Chat on WhatsApp</source>
+        <target state="translated">Chat via WhatsApp</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/whatsapp-button.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

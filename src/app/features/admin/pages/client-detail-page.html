@@ -1,0 +1,184 @@
+<a routerLink="/admin/clients" class="link-arrow back">Back to clients</a>
+
+@if (isNew()) {
+  <header class="page-head"><h1>New client</h1></header>
+  <form [formGroup]="createForm" (ngSubmit)="create()" class="card" novalidate>
+    <app-schema-fields [group]="createForm" [fields]="createFields" />
+    <p class="text-small text-muted">
+      With a connected backend, creating a client also sends them an invitation to set their own
+      password.
+    </p>
+    <div class="form-actions">
+      <button type="submit" class="btn btn--primary" [disabled]="saving()">Create client</button>
+    </div>
+  </form>
+} @else if (client(); as c) {
+  <header class="page-head">
+    <h1>{{ c.name }}</h1>
+    <p class="text-muted">{{ c.email }} · client since {{ c.startDate | date: 'mediumDate' }}</p>
+  </header>
+
+  <div class="grid grid--2">
+    <section class="card block" aria-labelledby="profile-h">
+      <h2 id="profile-h" class="h-sm">Profile & program</h2>
+      <form [formGroup]="profileForm" (ngSubmit)="saveProfile()" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="c-status">Status</label>
+            <select id="c-status" class="select" formControlName="status">
+              @for (s of statuses; track s) {
+                <option [value]="s">{{ s }}</option>
+              }
+            </select>
+          </div>
+          <div class="field">
+            <label for="c-package">Package</label>
+            <select id="c-package" class="select" formControlName="packageId">
+              <option value="">—</option>
+              @for (p of packages.all(); track p.id) {
+                <option [value]="p.id">{{ p.name }}</option>
+              }
+            </select>
+          </div>
+          <div class="field span-2">
+            <label for="c-goal">Goal</label>
+            <input id="c-goal" class="input" formControlName="goal" />
+          </div>
+          <div class="field span-2">
+            <label for="c-program">Assigned program</label>
+            <select id="c-program" class="select" formControlName="assignedProgramId">
+              <option value="">— Not assigned —</option>
+              @for (p of programs.all(); track p.id) {
+                <option [value]="p.id">{{ p.name }}</option>
+              }
+            </select>
+          </div>
+          <div class="field span-2">
+            <label for="c-notes">Private coach notes</label>
+            <textarea
+              id="c-notes"
+              class="textarea"
+              rows="3"
+              formControlName="coachNotes"
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary btn--sm" [disabled]="saving()">
+            Save profile
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <section class="card block" aria-labelledby="nutrition-h">
+      <h2 id="nutrition-h" class="h-sm">Nutrition targets</h2>
+      <form [formGroup]="nutritionForm" (ngSubmit)="saveNutrition()" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="n-cal">Calories (kcal)</label
+            ><input id="n-cal" class="input" type="number" formControlName="calories" />
+          </div>
+          <div class="field">
+            <label for="n-water">Water (L)</label
+            ><input id="n-water" class="input" type="number" step="0.1" formControlName="waterL" />
+          </div>
+          <div class="field">
+            <label for="n-p">Protein (g)</label
+            ><input id="n-p" class="input" type="number" formControlName="proteinG" />
+          </div>
+          <div class="field">
+            <label for="n-c">Carbohydrates (g)</label
+            ><input id="n-c" class="input" type="number" formControlName="carbsG" />
+          </div>
+          <div class="field">
+            <label for="n-f">Fats (g)</label
+            ><input id="n-f" class="input" type="number" formControlName="fatG" />
+          </div>
+          <div class="field span-2">
+            <label for="n-notes">Notes for client</label
+            ><textarea id="n-notes" class="textarea" rows="2" formControlName="notes"></textarea>
+          </div>
+        </div>
+        @if (nutritionForm.invalid && nutritionForm.touched) {
+          <p class="field__error">Check the values (calories 800–8000).</p>
+        }
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary btn--sm" [disabled]="saving()">
+            Save targets
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <section class="card block" aria-labelledby="plan-h">
+    <div class="section-row">
+      <h2 id="plan-h" class="h-sm">Individual training plan</h2>
+      @if (!scheduleForm()) {
+        <button type="button" class="btn btn--sm" (click)="customiseSchedule()">
+          Customise program for this client
+        </button>
+      }
+    </div>
+    @if (scheduleForm(); as sf) {
+      <p class="text-small text-muted">
+        This client follows the custom plan below instead of the program template.
+      </p>
+      <app-schedule-editor [days]="sf" />
+      <div class="form-actions">
+        <button type="button" class="btn btn--danger btn--sm" (click)="revertSchedule()">
+          Revert to template
+        </button>
+        <button
+          type="button"
+          class="btn btn--primary btn--sm"
+          (click)="saveSchedule()"
+          [disabled]="saving()"
+        >
+          Save individual plan
+        </button>
+      </div>
+    } @else if (assignedProgram(); as p) {
+      <p class="text-small text-muted">
+        Following the <a [routerLink]="['/admin/programs', p.id]">{{ p.name }}</a> template ({{
+          p.daysPerWeek
+        }}
+        days / week).
+      </p>
+    } @else {
+      <p class="text-small text-muted">No program assigned yet.</p>
+    }
+  </section>
+
+  <section class="card block" id="check-ins" aria-labelledby="ci-h">
+    <h2 id="ci-h" class="h-sm">Weekly check-ins</h2>
+    @if (checkIns().length) {
+      <div class="stack">
+        @for (ci of checkIns(); track ci.id) {
+          <app-check-in-review [checkIn]="ci" />
+        }
+      </div>
+    } @else {
+      <p class="text-small text-muted">No check-ins submitted yet.</p>
+    }
+  </section>
+
+  <div class="grid grid--2">
+    <section class="card block" aria-labelledby="progress-h">
+      <h2 id="progress-h" class="h-sm">Body weight progress</h2>
+      <app-trend-chart [points]="weightTrend()" label="Client body weight" unit="kg" />
+    </section>
+    <section class="card block" aria-labelledby="notify-h">
+      <h2 id="notify-h" class="h-sm">Send a notification</h2>
+      <app-notify-client [clientId]="c.id" />
+    </section>
+  </div>
+
+  <section class="card block" aria-labelledby="sessions-h">
+    <h2 id="sessions-h" class="h-sm">Completed workouts</h2>
+    <app-session-history [sessions]="sessions()" [allowDelete]="false" />
+  </section>
+} @else {
+  <app-not-found-content what="client" backLink="/admin/clients" backLabel="Back to clients" />
+}

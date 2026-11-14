@@ -1,0 +1,104 @@
+<section class="login section">
+  <div class="container login__inner">
+    <div class="login__card card">
+      <p class="eyebrow">Client area</p>
+      <h1>Sign in</h1>
+      <p class="text-muted">
+        Access your training plan, log workouts, submit check-ins and track your progress.
+      </p>
+
+      @if (auth.isDemoMode) {
+        <div class="alert alert--info demo">
+          <app-icon name="info" />
+          <div>
+            <p>
+              <strong>Demo mode.</strong> No backend is connected, so data is stored only in this
+              browser.
+            </p>
+            <div class="cluster">
+              <button
+                type="button"
+                class="btn btn--sm"
+                (click)="demo('client')"
+                [disabled]="loading()"
+              >
+                Explore as client
+              </button>
+              <button
+                type="button"
+                class="btn btn--sm"
+                (click)="demo('admin')"
+                [disabled]="loading()"
+              >
+                Explore as coach (admin)
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+
+      @if (error()) {
+        <div class="alert alert--danger" role="alert">
+          <app-icon name="alert" />
+          <p>{{ error() }}</p>
+        </div>
+      }
+
+      <form [formGroup]="form" (ngSubmit)="submit()" novalidate class="stack">
+        <div class="field">
+          <label for="login-email">Email</label>
+          <input
+            id="login-email"
+            class="input"
+            type="email"
+            formControlName="email"
+            autocomplete="username"
+            aria-describedby="login-email-err"
+          />
+          <app-field-error [control]="form.controls.email" id="login-email-err" label="Email" />
+        </div>
+        <div class="field">
+          <label for="login-password">Password</label>
+          <div class="password">
+            <input
+              id="login-password"
+              class="input"
+              [type]="showPassword() ? 'text' : 'password'"
+              formControlName="password"
+              autocomplete="current-password"
+              aria-describedby="login-password-err"
+            />
+            <button
+              type="button"
+              class="password__toggle"
+              (click)="showPassword.set(!showPassword())"
+              [attr.aria-pressed]="showPassword()"
+            >
+              <app-icon name="eye" [size]="18" />
+              <span class="visually-hidden">{{
+                showPassword() ? 'Hide password' : 'Show password'
+              }}</span>
+            </button>
+          </div>
+          <app-field-error
+            [control]="form.controls.password"
+            id="login-password-err"
+            label="Password"
+          />
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block" [disabled]="loading()">
+          @if (loading()) {
+            <span class="spinner" aria-hidden="true"></span> Signing in…
+          } @else {
+            <app-icon name="log-in" [size]="18" /> Sign in
+          }
+        </button>
+      </form>
+
+      <p class="text-small text-muted login__foot">
+        Not a client yet? <a routerLink="/contact">Book a free consultation</a>. Forgot your
+        password? Contact your coach to reset access.
+      </p>
+    </div>
+  </div>
+</section>

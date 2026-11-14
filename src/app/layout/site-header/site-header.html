@@ -1,0 +1,126 @@
+<header class="header" [class.is-scrolled]="scrolled() || mobileOpen()">
+  <div class="container header__inner">
+    <a
+      routerLink="/"
+      class="logo"
+      i18n-aria-label="Logo link to the home page"
+      aria-label="{{ brand.brandName }} {{ brand.brandSuffix }} — home"
+    >
+      <span class="logo__mark" aria-hidden="true">{{ brand.brandName.slice(0, 1) }}</span>
+      <span class="logo__text"
+        >{{ brand.brandName }}<span>{{ brand.brandSuffix }}</span></span
+      >
+    </a>
+
+    <nav class="nav" i18n-aria-label="Main navigation landmark" aria-label="Main">
+      <ul class="nav__list">
+        @for (item of nav; track item.path) {
+          <li class="nav__item">
+            @if (item.children) {
+              <button
+                type="button"
+                class="nav__link nav__trigger"
+                [attr.aria-expanded]="openDropdown() === item.label"
+                [attr.aria-controls]="'menu-' + $index"
+                (click)="toggleDropdown(item.label)"
+              >
+                {{ item.label }} <app-icon name="chevron-down" [size]="16" />
+              </button>
+              <div
+                class="dropdown"
+                [id]="'menu-' + $index"
+                [hidden]="openDropdown() !== item.label"
+              >
+                <ul>
+                  @for (child of item.children; track child.path) {
+                    <li>
+                      <a [routerLink]="child.path" class="dropdown__link">
+                        <strong>{{ child.label }}</strong>
+                        <span>{{ child.description }}</span>
+                      </a>
+                    </li>
+                  }
+                </ul>
+              </div>
+            } @else {
+              <a
+                [routerLink]="item.path"
+                class="nav__link"
+                routerLinkActive="is-active"
+                ariaCurrentWhenActive="page"
+                >{{ item.label }}</a
+              >
+            }
+          </li>
+        }
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <app-language-switcher class="header__lang" />
+      @if (sessionUser(); as user) {
+        <a class="btn btn--ghost btn--sm header__account" [routerLink]="auth.homeFor(user.role)">
+          <app-icon name="user" [size]="18" /> <ng-container i18n>Dashboard</ng-container>
+        </a>
+      }
+      <a class="btn btn--primary btn--sm header__cta" routerLink="/contact" i18n
+        >Free consultation</a
+      >
+      <button
+        #menuToggle
+        type="button"
+        class="menu-toggle"
+        [attr.aria-expanded]="mobileOpen()"
+        aria-controls="mobile-menu"
+        (click)="toggleMobile()"
+      >
+        <app-icon [name]="mobileOpen() ? 'close' : 'menu'" [size]="24" />
+        @if (mobileOpen()) {
+          <span class="visually-hidden" i18n>Close menu</span>
+        } @else {
+          <span class="visually-hidden" i18n>Open menu</span>
+        }
+      </button>
+    </div>
+  </div>
+
+  @if (mobileOpen()) {
+    <div
+      #mobilePanel
+      id="mobile-menu"
+      class="mobile"
+      role="dialog"
+      aria-modal="true"
+      i18n-aria-label
+      aria-label="Site menu"
+    >
+      <nav i18n-aria-label="Mobile navigation landmark" aria-label="Mobile">
+        <ul>
+          @for (item of nav; track item.path) {
+            @if (item.children) {
+              @for (child of item.children; track child.path) {
+                <li>
+                  <a [routerLink]="child.path">{{ child.label }}</a>
+                </li>
+              }
+            } @else {
+              <li>
+                <a [routerLink]="item.path">{{ item.label }}</a>
+              </li>
+            }
+          }
+          <li><a routerLink="/contact" i18n>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile__actions">
+        <app-language-switcher [block]="true" />
+        <a class="btn btn--primary btn--block btn--lg" routerLink="/contact" i18n
+          >Book a free consultation</a
+        >
+        @if (sessionUser(); as user) {
+          <a class="btn btn--block" [routerLink]="auth.homeFor(user.role)" i18n>My dashboard</a>
+        }
+      </div>
+    </div>
+  }
+</header>

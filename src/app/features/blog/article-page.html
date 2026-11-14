@@ -1,0 +1,148 @@
+@if (article(); as article) {
+  <article class="article">
+    <header class="article__header">
+      <div class="container container--narrow">
+        <app-breadcrumbs
+          [items]="[
+            { label: 'Blog', url: '/blog' },
+            {
+              label: article.category | label: categories,
+              url: '/blog/category/' + article.category,
+            },
+            { label: article.title, url: '/blog/' + article.slug },
+          ]"
+        />
+        <a class="badge badge--accent" [routerLink]="['/blog/category', article.category]">{{
+          article.category | label: categories
+        }}</a>
+        <h1>{{ article.title }}</h1>
+        <p class="lead">{{ article.excerpt }}</p>
+        <p class="meta">
+          By <a routerLink="/about" rel="author">{{ article.author }}</a> · Published
+          <time [attr.datetime]="article.publishedAt">{{
+            article.publishedAt | date: 'longDate'
+          }}</time>
+          @if (article.updatedAt !== article.publishedAt) {
+            · Updated
+            <time [attr.datetime]="article.updatedAt">{{
+              article.updatedAt | date: 'longDate'
+            }}</time>
+          }
+          · {{ article.readingMinutes }} min read
+        </p>
+      </div>
+    </header>
+
+    <div class="container container--narrow">
+      <app-media-frame
+        class="article__image"
+        [src]="article.featuredImageUrl"
+        [alt]="article.featuredImageAlt ?? ''"
+        ratio="16 / 9"
+        [priority]="true"
+        [monogram]="(article.category | label: categories).slice(0, 1)"
+        [caption]="article.category | label: categories"
+        sizes="(min-width: 820px) 760px, 100vw"
+      />
+    </div>
+
+    <div class="container article__layout">
+      @if (toc().length) {
+        <nav class="toc" aria-labelledby="toc-title">
+          <p id="toc-title" class="toc__title">On this page</p>
+          <ol>
+            @for (h of toc(); track h.id) {
+              <li [class.is-sub]="h.type === 'h3'">
+                <a [routerLink]="[]" [fragment]="h.id">{{ h.text }}</a>
+              </li>
+            }
+          </ol>
+        </nav>
+      }
+
+      <div class="prose article__body">
+        @for (block of blocks(); track $index) {
+          @switch (block.type) {
+            @case ('h2') {
+              <h2 [id]="block.id">{{ block.text }}</h2>
+            }
+            @case ('h3') {
+              <h3 [id]="block.id">{{ block.text }}</h3>
+            }
+            @case ('p') {
+              <p>{{ block.text }}</p>
+            }
+            @case ('ul') {
+              <ul>
+                @for (item of block.items; track $index) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+            }
+            @case ('ol') {
+              <ol>
+                @for (item of block.items; track $index) {
+                  <li>{{ item }}</li>
+                }
+              </ol>
+            }
+            @case ('callout') {
+              <aside class="callout">{{ block.text }}</aside>
+            }
+            @case ('link') {
+              <p class="internal-link">
+                @if (isInternal(block.href!)) {
+                  <a
+                    class="link-arrow"
+                    [routerLink]="splitPath(block.href!).path"
+                    [queryParams]="splitPath(block.href!).query"
+                    >{{ block.text }}</a
+                  >
+                } @else {
+                  <a
+                    class="link-arrow"
+                    [href]="block.href!"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >{{ block.text }}</a
+                  >
+                }
+              </p>
+            }
+          }
+        }
+
+        <footer class="article__footer">
+          <p class="tags">
+            @for (tag of article.tags; track tag) {
+              <span class="badge">#{{ tag }}</span>
+            }
+          </p>
+          <app-share-links [url]="url()" [title]="article.title" />
+          <p class="disclaimer">
+            This article is general education and not medical advice. Consult a qualified healthcare
+            professional before changing your training or nutrition, especially if you have a
+            medical condition.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </article>
+
+  @if (related().length) {
+    <section class="section section--alt" aria-labelledby="related-title">
+      <div class="container">
+        <h2 id="related-title">Related articles</h2>
+        <div class="grid grid--3">
+          @for (r of related(); track r.id) {
+            <app-article-card [article]="r" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <app-cta-section />
+} @else {
+  <app-not-found-content what="article" backLink="/blog" backLabel="Browse the blog" />
+}

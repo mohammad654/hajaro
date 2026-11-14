@@ -1,0 +1,118 @@
+@if (service(); as service) {
+  <app-page-hero
+    [eyebrow]="deliveryLabels[service.delivery] + ' coaching'"
+    [title]="service.name"
+    [lead]="service.shortDescription"
+    [breadcrumbs]="[
+      { label: 'Coaching services', url: '/services' },
+      { label: service.name, url: '/services/' + service.slug },
+    ]"
+  >
+    <div class="cluster hero-ctas">
+      <a
+        class="btn btn--primary btn--lg"
+        routerLink="/contact"
+        [queryParams]="{ service: service.slug }"
+        >Book a free consultation</a
+      >
+      <a class="btn btn--lg" routerLink="/pricing">View pricing</a>
+    </div>
+  </app-page-hero>
+
+  <section class="section">
+    <div class="container split split--sidebar">
+      <div class="stack detail">
+        <p class="lead">{{ service.intro }}</p>
+
+        <section aria-labelledby="who-title">
+          <h2 id="who-title">Who it’s for</h2>
+          <ul class="check-list">
+            @for (item of service.whoItsFor; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </section>
+
+        <section aria-labelledby="included-title">
+          <h2 id="included-title">What’s included</h2>
+          <ul class="check-list">
+            @for (item of service.included; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </section>
+
+        <section aria-labelledby="how-title">
+          <h2 id="how-title">How it works</h2>
+          <ol class="numbered-list">
+            @for (step of service.howItWorks; track step) {
+              <li>{{ step }}</li>
+            }
+          </ol>
+        </section>
+
+        <section aria-labelledby="start-title" class="card card--featured">
+          <h2 id="start-title">How to get started</h2>
+          <p class="text-muted">{{ service.gettingStarted }}</p>
+          <a
+            class="btn btn--primary"
+            routerLink="/contact"
+            [queryParams]="{ service: service.slug }"
+            >Book your consultation</a
+          >
+        </section>
+      </div>
+
+      <aside class="sticky-aside stack" aria-label="Service summary">
+        @if (relatedPackage(); as pkg) {
+          <div class="card">
+            <p class="eyebrow">Recommended package</p>
+            <h3>{{ pkg.name }}</h3>
+            <p class="price">
+              {{ pkg.price | currency: pkg.currency : 'symbol' : '1.0-0' }}
+              <span>/ {{ pkg.billingPeriod }}</span>
+            </p>
+            <p class="text-muted text-small">{{ pkg.tagline }}</p>
+            <a routerLink="/pricing" class="link-arrow">Compare packages</a>
+          </div>
+        }
+        <nav class="card card--flat" aria-label="Other services">
+          <p class="eyebrow">Other services</p>
+          <ul class="other">
+            @for (other of otherServices(); track other.id) {
+              <li>
+                <a [routerLink]="['/services', other.slug]"
+                  ><app-icon [name]="other.icon" [size]="18" /> {{ other.name }}</a
+                >
+              </li>
+            }
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </section>
+
+  @if (relatedPrograms().length) {
+    <section class="section section--alt" aria-labelledby="related-programs">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Related programs</p>
+          <h2 id="related-programs">Programs that pair with this service</h2>
+        </div>
+        <div class="grid grid--3">
+          @for (program of relatedPrograms(); track program!.id) {
+            <app-program-card [program]="program!" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <app-cta-section />
+} @else {
+  <app-not-found-content
+    what="coaching service"
+    backLink="/services"
+    backLabel="View all services"
+  />
+}

@@ -1,0 +1,51 @@
+@use 'mixins' as *;
+
+.schedule {
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.day {
+  margin: 0;
+  padding: var(--sp-4);
+  display: grid;
+  gap: var(--sp-3);
+}
+
+.day__head {
+  display: grid;
+  gap: var(--sp-3);
+  align-items: end;
+
+  @include up($bp-md) {
+    grid-template-columns: 160px 1fr auto auto;
+  }
+}
+
+.day__rest {
+  padding-bottom: var(--sp-2);
+}
+
+.day__actions,
+.row-actions {
+  display: flex;
+  gap: 2px;
+}
+
+.exercises {
+  td {
+    padding: var(--sp-2);
+  }
+
+  select {
+    min-width: 200px;
+  }
+
+  .narrow {
+    width: 80px;
+  }
+}
+
+.add {
+  justify-self: start;
+}

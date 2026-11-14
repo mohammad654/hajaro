@@ -1,0 +1,103 @@
+<app-page-hero
+  eyebrow="Client transformations"
+  title="Real clients. Real progress."
+  lead="Before-and-after transformations and stories from clients who chose to share their journey — published only with their written consent."
+  [breadcrumbs]="[{ label: 'Transformations', url: '/transformations' }]"
+/>
+
+<section class="section" aria-labelledby="gallery-title">
+  <div class="container">
+    <h2 id="gallery-title" class="visually-hidden">Transformation gallery</h2>
+    @if (transformations.public().length) {
+      <div class="gallery">
+        @for (story of transformations.public(); track story.id) {
+          <article class="card story">
+            <div class="story__pair">
+              <app-media-frame
+                [src]="story.beforeImageUrl"
+                [alt]="story.clientName + ' before coaching'"
+                ratio="3 / 4"
+                caption="Before"
+                sizes="(min-width: 1080px) 20vw, 50vw"
+              />
+              <app-media-frame
+                [src]="story.afterImageUrl"
+                [alt]="story.clientName + ' after ' + story.durationWeeks + ' weeks'"
+                ratio="3 / 4"
+                caption="After"
+                sizes="(min-width: 1080px) 20vw, 50vw"
+              />
+            </div>
+            <div class="story__body">
+              <p class="eyebrow">{{ story.durationWeeks }} weeks · {{ story.goal }}</p>
+              <h3>{{ story.headline }}</h3>
+              <p class="text-muted">{{ story.story }}</p>
+              @if (story.results.length) {
+                <ul class="check-list text-small">
+                  @for (r of story.results; track r) {
+                    <li>{{ r }}</li>
+                  }
+                </ul>
+              }
+              @if (story.testimonial) {
+                <blockquote>“{{ story.testimonial }}”</blockquote>
+              }
+              <p class="text-small text-muted">— {{ story.clientName }}</p>
+            </div>
+          </article>
+        }
+      </div>
+    } @else {
+      <div class="card empty">
+        <p class="eyebrow">Gallery</p>
+        <h3>Client stories are on their way</h3>
+        <p class="text-muted">
+          We never use stock photos or invented testimonials. Transformations appear here as clients
+          complete their programs and choose to share their results.
+        </p>
+        <a class="btn btn--primary" routerLink="/contact">Become the first story</a>
+      </div>
+    }
+
+    @if (testimonials.public().length) {
+      <div class="quotes">
+        <h2>What clients say</h2>
+        <div class="grid grid--3">
+          @for (t of testimonials.public(); track t.id) {
+            <figure class="card card--flat quote">
+              <blockquote>“{{ t.quote }}”</blockquote>
+              <figcaption>
+                <strong>{{ t.clientName }}</strong> · {{ t.context }}
+                <time [attr.datetime]="t.createdAt">{{ t.createdAt | date: 'MMM y' }}</time>
+              </figcaption>
+            </figure>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="principles-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Privacy & image consent</p>
+      <h2 id="principles-title">How we share client results</h2>
+    </div>
+    <div class="grid grid--4">
+      @for (p of principles; track p.title) {
+        <div class="card">
+          <h3 class="card__title">{{ p.title }}</h3>
+          <p class="text-small text-muted">{{ p.text }}</p>
+        </div>
+      }
+    </div>
+    <p class="disclaimer note">
+      Individual results vary and depend on factors including starting point, consistency,
+      nutrition, sleep, genetics and health. Shared results are not a guarantee of future outcomes.
+      See our <a routerLink="/privacy">privacy policy</a>.
+    </p>
+  </div>
+</section>
+
+<app-cta-section title="Start your own transformation" />

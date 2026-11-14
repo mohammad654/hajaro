@@ -1,0 +1,121 @@
+<app-page-hero
+  eyebrow="Exercise library"
+  title="Master every movement"
+  lead="Step-by-step technique, target muscles, recommended sets and reps, common mistakes and safety notes for the exercises that build great physiques."
+  [breadcrumbs]="[{ label: 'Exercise library', url: '/exercises' }]"
+/>
+
+<section class="section section--tight">
+  <div class="container">
+    <form
+      class="toolbar"
+      role="search"
+      aria-label="Search exercises"
+      (submit)="$event.preventDefault()"
+    >
+      <div class="search">
+        <label for="ex-search" class="visually-hidden">Search exercises</label>
+        <app-icon name="search" class="search__icon" />
+        <input
+          id="ex-search"
+          class="input"
+          type="search"
+          placeholder="Search by exercise or muscle…"
+          autocomplete="off"
+          [value]="query()"
+          (input)="query.set(readValue($event))"
+        />
+      </div>
+      <div class="field">
+        <label for="ex-muscle" class="visually-hidden">Muscle</label>
+        <select
+          id="ex-muscle"
+          class="select"
+          [value]="muscle()"
+          (change)="muscle.set(readValue($event))"
+        >
+          <option value="">All muscles</option>
+          @for (m of muscles.all; track m.id) {
+            <option [value]="m.id">{{ m.name }}</option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="ex-equipment" class="visually-hidden">Equipment</label>
+        <select
+          id="ex-equipment"
+          class="select"
+          [value]="equipment()"
+          (change)="equipment.set($any(readValue($event)))"
+        >
+          <option value="">All equipment</option>
+          @for (o of equipmentOptions; track o[0]) {
+            <option [value]="o[0]">{{ o[1] }}</option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="ex-difficulty" class="visually-hidden">Difficulty</label>
+        <select
+          id="ex-difficulty"
+          class="select"
+          [value]="difficulty()"
+          (change)="difficulty.set($any(readValue($event)))"
+        >
+          <option value="">All levels</option>
+          @for (o of difficultyOptions; track o[0]) {
+            <option [value]="o[0]">{{ o[1] }}</option>
+          }
+        </select>
+      </div>
+    </form>
+
+    <nav class="categories" aria-label="Exercise categories">
+      <button
+        type="button"
+        class="chip"
+        [attr.aria-pressed]="category() === ''"
+        (click)="category.set('')"
+      >
+        All
+      </button>
+      @for (c of categories; track c[0]) {
+        <button
+          type="button"
+          class="chip"
+          [attr.aria-pressed]="category() === c[0]"
+          (click)="toggleCategory(c[0])"
+        >
+          {{ c[1] }}
+        </button>
+      }
+    </nav>
+
+    <div class="results-bar">
+      <p aria-live="polite">
+        <strong>{{ filtered().length }}</strong> exercises
+      </p>
+      <button type="button" class="btn btn--ghost btn--sm" (click)="reset()">Reset</button>
+    </div>
+
+    @if (visible().length) {
+      <div class="grid grid--3">
+        @for (exercise of visible(); track exercise.id) {
+          <app-exercise-card [exercise]="exercise" />
+        }
+      </div>
+      <app-paginator
+        [page]="page()"
+        [pageSize]="pageSize"
+        [total]="filtered().length"
+        (pageChange)="page.set($event)"
+      />
+    } @else {
+      <div class="card empty">
+        <h2>No exercises found</h2>
+        <p class="text-muted">Try a different search term or clear the filters.</p>
+        <button type="button" class="btn" (click)="reset()">Clear filters</button>
+      </div>
+    }
+  </div>
+</section>

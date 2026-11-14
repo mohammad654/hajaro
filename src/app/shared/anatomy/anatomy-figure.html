@@ -1,0 +1,66 @@
+<svg
+  [attr.viewBox]="viewBox"
+  class="figure"
+  [attr.role]="interactive() ? 'group' : 'img'"
+  [attr.aria-label]="ariaLabel()"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs>
+    <radialGradient [attr.id]="glowId" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color: var(--c-accent); stop-opacity: 0.18" />
+      <stop offset="100%" style="stop-color: var(--c-accent); stop-opacity: 0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="100" cy="190" rx="95" ry="200" [attr.fill]="glowFill" />
+
+  <g class="body" aria-hidden="true">
+    <path [attr.d]="silhouette" />
+    <path [attr.d]="silhouette" [attr.transform]="mirror" />
+    @for (d of figure().filler; track $index) {
+      <path class="filler" [attr.d]="d" />
+      <path class="filler" [attr.d]="d" [attr.transform]="mirror" />
+    }
+  </g>
+
+  @for (region of regions(); track region.id) {
+    <g
+      class="muscle"
+      [class.is-primary]="region.state === 'primary'"
+      [class.is-secondary]="region.state === 'secondary'"
+      [attr.data-muscle]="region.id"
+      [attr.role]="interactive() ? 'button' : null"
+      [attr.tabindex]="interactive() ? 0 : null"
+      [attr.aria-label]="interactive() ? region.name : null"
+      [attr.aria-pressed]="interactive() ? region.state === 'primary' : null"
+      (click)="select(region.id)"
+      (keydown.enter)="select(region.id, $event)"
+      (keydown.space)="select(region.id, $event)"
+      (mouseenter)="hover(region.id)"
+      (mouseleave)="hover(null)"
+      (focus)="hover(region.id)"
+      (blur)="hover(null)"
+    >
+      <title>{{ region.name }}</title>
+      @for (d of region.paths; track $index) {
+        <path [attr.d]="d" />
+        <path [attr.d]="d" [attr.transform]="mirror" />
+      }
+    </g>
+  }
+
+  @for (deep of deepRegions(); track deep.id) {
+    <g class="deep" [class.is-active]="deep.active" aria-hidden="true">
+      @for (d of deep.paths; track $index) {
+        <path [attr.d]="d" />
+        <path [attr.d]="d" [attr.transform]="mirror" />
+      }
+    </g>
+  }
+
+  <g class="details" aria-hidden="true">
+    @for (d of figure().detailLines; track $index) {
+      <path [attr.d]="d" />
+      <path [attr.d]="d" [attr.transform]="mirror" />
+    }
+  </g>
+</svg>

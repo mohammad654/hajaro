@@ -1,0 +1,172 @@
+<header class="page-head">
+  <p class="eyebrow">Progress</p>
+  <h1>Track your transformation</h1>
+  <p class="text-muted">Weekly measurements and photos show progress the scale alone can miss.</p>
+</header>
+
+<div class="grid grid--2">
+  <section class="card" aria-labelledby="weight-trend">
+    <h2 id="weight-trend" class="h-sm">Body weight</h2>
+    <app-trend-chart [points]="weightTrend()" label="Body weight trend" unit="kg" />
+  </section>
+  <section class="card" aria-labelledby="waist-trend">
+    <h2 id="waist-trend" class="h-sm">Waist</h2>
+    <app-trend-chart [points]="waistTrend()" label="Waist measurement trend" unit="cm" />
+  </section>
+</div>
+
+<section class="card form-card" aria-labelledby="add-measure" style="margin-top: var(--sp-5)">
+  <h2 id="add-measure">Add measurements</h2>
+  <form [formGroup]="form" (ngSubmit)="addMeasurement()" novalidate>
+    <div class="form-grid">
+      <div class="field">
+        <label for="m-date">Date</label>
+        <input id="m-date" class="input" type="date" formControlName="date" [max]="today" />
+      </div>
+      <div class="field">
+        <label for="m-weight">Weight (kg) *</label>
+        <input
+          id="m-weight"
+          class="input"
+          type="number"
+          step="0.1"
+          formControlName="weightKg"
+          aria-describedby="m-weight-err"
+        />
+        <app-field-error [control]="form.controls.weightKg" id="m-weight-err" label="Weight" />
+      </div>
+      <div class="field">
+        <label for="m-bf">Body fat (%)</label>
+        <input id="m-bf" class="input" type="number" step="0.1" formControlName="bodyFatPct" />
+      </div>
+      <div class="field">
+        <label for="m-waist">Waist (cm)</label>
+        <input id="m-waist" class="input" type="number" step="0.1" formControlName="waistCm" />
+      </div>
+      <div class="field">
+        <label for="m-chest">Chest (cm)</label>
+        <input id="m-chest" class="input" type="number" step="0.1" formControlName="chestCm" />
+      </div>
+      <div class="field">
+        <label for="m-arm">Arm (cm)</label>
+        <input id="m-arm" class="input" type="number" step="0.1" formControlName="armCm" />
+      </div>
+      <div class="field">
+        <label for="m-thigh">Thigh (cm)</label>
+        <input id="m-thigh" class="input" type="number" step="0.1" formControlName="thighCm" />
+      </div>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn--primary" [disabled]="saving()">
+        @if (saving()) {
+          <span class="spinner" aria-hidden="true"></span>
+        }
+        Save measurements
+      </button>
+    </div>
+  </form>
+</section>
+
+<section class="card form-card" aria-labelledby="history-title">
+  <h2 id="history-title">Measurement history</h2>
+  @if (portal.measurements().length) {
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col" class="num">Weight</th>
+            <th scope="col" class="num">Body fat</th>
+            <th scope="col" class="num">Waist</th>
+            <th scope="col" class="num">Chest</th>
+            <th scope="col" class="num">Arm</th>
+            <th scope="col" class="num">Thigh</th>
+            <th scope="col"><span class="visually-hidden">Actions</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (m of portal.measurements(); track m.id) {
+            <tr>
+              <td>{{ m.date | date: 'mediumDate' }}</td>
+              <td class="num">{{ m.weightKg }} kg</td>
+              <td class="num">{{ m.bodyFatPct ? m.bodyFatPct + '%' : '—' }}</td>
+              <td class="num">{{ m.waistCm ?? '—' }}</td>
+              <td class="num">{{ m.chestCm ?? '—' }}</td>
+              <td class="num">{{ m.armCm ?? '—' }}</td>
+              <td class="num">{{ m.thighCm ?? '—' }}</td>
+              <td class="actions">
+                <button
+                  type="button"
+                  class="btn btn--ghost btn--sm"
+                  (click)="deleteMeasurement(m)"
+                  [attr.aria-label]="'Delete entry from ' + m.date"
+                >
+                  <app-icon name="trash" [size]="16" />
+                </button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  } @else {
+    <p class="text-muted">No measurements yet.</p>
+  }
+</section>
+
+<section class="card" aria-labelledby="photos-title">
+  <h2 id="photos-title">Progress photos</h2>
+  <p class="text-small text-muted">
+    Photos are private to you and your coach. They are resized and stripped of location metadata
+    before upload.
+  </p>
+  <div class="upload">
+    <div class="field">
+      <label for="pose">Pose</label>
+      <select
+        id="pose"
+        class="select"
+        [value]="photoPose()"
+        (change)="photoPose.set(readPose($event))"
+      >
+        <option value="front">Front</option>
+        <option value="side">Side</option>
+        <option value="back">Back</option>
+      </select>
+    </div>
+    <label class="btn" [class.is-loading]="uploading()">
+      <app-icon name="upload" [size]="18" /> {{ uploading() ? 'Processing…' : 'Upload photo' }}
+      <input
+        type="file"
+        accept="image/jpeg,image/png,image/webp"
+        class="visually-hidden"
+        (change)="uploadPhoto($event)"
+        [disabled]="uploading()"
+      />
+    </label>
+  </div>
+  @if (portal.photos().length) {
+    <ul class="photos">
+      @for (photo of portal.photos(); track photo.id) {
+        <li>
+          <figure class="photo">
+            <img
+              [src]="photo.url"
+              [alt]="photo.pose + ' progress photo from ' + photo.date"
+              loading="lazy"
+            />
+            <figcaption>{{ photo.date | date: 'mediumDate' }} · {{ photo.pose }}</figcaption>
+            <button
+              type="button"
+              class="btn btn--ghost btn--sm"
+              (click)="deletePhoto(photo)"
+              aria-label="Delete photo"
+            >
+              <app-icon name="trash" [size]="16" />
+            </button>
+          </figure>
+        </li>
+      }
+    </ul>
+  }
+</section>

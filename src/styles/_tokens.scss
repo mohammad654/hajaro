@@ -1,0 +1,94 @@
+// Design tokens — the single source of truth for colour, type, spacing and motion.
+:root {
+  color-scheme: dark;
+
+  // Colour
+  --c-bg: #0b0b0c;
+  --c-bg-elevated: #101012;
+  --c-surface: #141416;
+  --c-surface-2: #1b1b1f;
+  --c-surface-3: #232328;
+  --c-border: #2b2b31;
+  --c-border-strong: #3a3a42;
+  --c-text: #f4f4f5;
+  --c-text-muted: #a8a8b3;
+  --c-text-subtle: #8a8a95;
+  --c-accent: #e8b04a;
+  --c-accent-strong: #f5c56a;
+  --c-accent-soft: rgb(232 176 74 / 14%);
+  --c-accent-line: rgb(232 176 74 / 40%);
+  --c-on-accent: #0b0b0c;
+  --c-success: #4ade80;
+  --c-success-soft: rgb(74 222 128 / 12%);
+  --c-danger: #f87171;
+  --c-danger-soft: rgb(248 113 113 / 12%);
+  --c-warning: #fbbf24;
+  --c-info: #7dd3fc;
+
+  // Anatomy chart
+  --muscle-base: #34343a;
+  --muscle-filler: #2a2a2f;
+  --muscle-body: #1c1c20;
+  --muscle-hover: #5b4a28;
+  --muscle-secondary: rgb(232 176 74 / 45%);
+  --muscle-selected: var(--c-accent);
+
+  // Typography
+  --font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-xl: clamp(1.5rem, 1.25rem + 1vw, 2rem);
+  --fs-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --fs-3xl: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+  --fs-hero: clamp(3rem, 1.8rem + 5.2vw, 6.25rem);
+  --lh-tight: 1.02;
+  --lh-snug: 1.25;
+  --lh-body: 1.65;
+
+  // Spacing (4px scale)
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --section-y: clamp(4rem, 2.5rem + 6vw, 8rem);
+  --gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
+
+  // Layout
+  --container: 1240px;
+  --container-narrow: 760px;
+  --header-h: 72px;
+
+  // Shape & depth
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
+  --shadow: 0 10px 30px -12px rgb(0 0 0 / 70%);
+  --shadow-glow: 0 0 0 1px var(--c-accent-line), 0 18px 40px -18px rgb(232 176 74 / 35%);
+
+  // Motion
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur-fast: 150ms;
+  --dur: 250ms;
+  --dur-slow: 500ms;
+
+  --focus-ring: 0 0 0 3px var(--c-bg), 0 0 0 5px var(--c-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+    --dur-slow: 0ms;
+  }
+}

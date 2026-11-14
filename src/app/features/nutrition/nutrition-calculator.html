@@ -1,0 +1,167 @@
+<div class="calc">
+  <form
+    [formGroup]="form"
+    class="calc__form card"
+    aria-labelledby="calc-form-title"
+    (submit)="$event.preventDefault()"
+  >
+    <h2 id="calc-form-title">Your details</h2>
+
+    <fieldset class="field">
+      <legend class="field__label">Sex (used for the energy equation)</legend>
+      <div class="cluster">
+        <label class="checkbox"
+          ><input type="radio" formControlName="sex" value="male" /> Male</label
+        >
+        <label class="checkbox"
+          ><input type="radio" formControlName="sex" value="female" /> Female</label
+        >
+      </div>
+    </fieldset>
+
+    <div class="form-grid">
+      <div class="field">
+        <label for="c-age">Age</label>
+        <input
+          id="c-age"
+          class="input"
+          type="number"
+          inputmode="numeric"
+          formControlName="age"
+          [min]="limits.age[0]"
+          [max]="limits.age[1]"
+          aria-describedby="c-age-err"
+        />
+        <app-field-error [control]="form.controls.age" id="c-age-err" label="Age" />
+      </div>
+      <div class="field">
+        <label for="c-height">Height (cm)</label>
+        <input
+          id="c-height"
+          class="input"
+          type="number"
+          inputmode="numeric"
+          formControlName="heightCm"
+          aria-describedby="c-height-err"
+        />
+        <app-field-error [control]="form.controls.heightCm" id="c-height-err" label="Height" />
+      </div>
+      <div class="field">
+        <label for="c-weight">Weight (kg)</label>
+        <input
+          id="c-weight"
+          class="input"
+          type="number"
+          inputmode="decimal"
+          step="0.1"
+          formControlName="weightKg"
+          aria-describedby="c-weight-err"
+        />
+        <app-field-error [control]="form.controls.weightKg" id="c-weight-err" label="Weight" />
+      </div>
+      <div class="field">
+        <label for="c-training">Training hours / day</label>
+        <input
+          id="c-training"
+          class="input"
+          type="number"
+          inputmode="decimal"
+          step="0.25"
+          formControlName="trainingHours"
+          aria-describedby="c-training-err"
+        />
+        <app-field-error
+          [control]="form.controls.trainingHours"
+          id="c-training-err"
+          label="Training hours"
+        />
+      </div>
+      <div class="field span-2">
+        <label for="c-activity">Activity level</label>
+        <select id="c-activity" class="select" formControlName="activity">
+          @for (o of activityOptions; track o[0]) {
+            <option [value]="o[0]">{{ o[1].label }}</option>
+          }
+        </select>
+      </div>
+      <div class="field span-2">
+        <label for="c-goal">Goal</label>
+        <select id="c-goal" class="select" formControlName="goal">
+          <option value="lose">Lose fat</option>
+          <option value="maintain">Maintain / recomposition</option>
+          <option value="gain">Build muscle</option>
+        </select>
+      </div>
+    </div>
+  </form>
+
+  <div class="calc__results" aria-live="polite">
+    @if (results(); as r) {
+      <section class="card result" id="bmi" aria-labelledby="bmi-title">
+        <h3 id="bmi-title">BMI calculator</h3>
+        <p class="result__value">{{ r.bmi.bmi }}</p>
+        <p class="result__label">{{ r.bmi.category }}</p>
+        <p class="result__note">
+          BMI does not distinguish muscle from fat, so it often overestimates risk for muscular
+          people.
+        </p>
+      </section>
+
+      <section class="card result" id="calories" aria-labelledby="cal-title">
+        <h3 id="cal-title">Daily calorie estimator</h3>
+        <p class="result__value">{{ r.calories.target | number }} <small>kcal / day</small></p>
+        <p class="result__label">
+          Maintenance ≈ {{ r.calories.maintenance | number }} kcal · Resting ≈
+          {{ r.calories.bmr | number }} kcal
+        </p>
+        <p class="result__note">
+          Mifflin–St Jeor equation × activity factor, adjusted for your goal.
+        </p>
+      </section>
+
+      <section class="card result" id="protein" aria-labelledby="protein-title">
+        <h3 id="protein-title">Protein calculator</h3>
+        <p class="result__value">{{ r.protein.min }}–{{ r.protein.max }} <small>g / day</small></p>
+        <p class="result__note">
+          Based on 1.6–2.2 g per kg of body weight for people who strength train.
+        </p>
+      </section>
+
+      <section class="card result" id="macros" aria-labelledby="macro-title">
+        <h3 id="macro-title">Macronutrient calculator</h3>
+        <ul class="macros">
+          <li>
+            <span>Protein</span><strong>{{ r.macros.proteinG }} g</strong
+            ><em>{{ r.macros.proteinPct }}%</em>
+          </li>
+          <li>
+            <span>Carbohydrates</span><strong>{{ r.macros.carbsG }} g</strong
+            ><em>{{ r.macros.carbsPct }}%</em>
+          </li>
+          <li>
+            <span>Fats</span><strong>{{ r.macros.fatG }} g</strong><em>{{ r.macros.fatPct }}%</em>
+          </li>
+        </ul>
+        <div class="macro-bar" aria-hidden="true">
+          <span class="p" [style.width.%]="r.macros.proteinPct"></span>
+          <span class="c" [style.width.%]="r.macros.carbsPct"></span>
+          <span class="f" [style.width.%]="r.macros.fatPct"></span>
+        </div>
+      </section>
+
+      <section class="card result" id="water" aria-labelledby="water-title">
+        <h3 id="water-title">Daily water intake estimator</h3>
+        <p class="result__value">{{ r.waterL }} <small>litres / day</small></p>
+        <p class="result__note">
+          Around 35 ml per kg plus roughly 0.5 L per hour of training. Needs increase in hot
+          conditions.
+        </p>
+      </section>
+    } @else {
+      <div class="card placeholder-note">Enter valid details to see your estimates.</div>
+    }
+    <p class="alert alert--info" role="note">
+      <strong>Estimates only.</strong>&nbsp;{{ disclaimer }}
+    </p>
+  </div>
+</div>

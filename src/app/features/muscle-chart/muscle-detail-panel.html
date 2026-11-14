@@ -1,0 +1,104 @@
+<article class="panel reveal" [attr.aria-labelledby]="'muscle-' + muscle().id">
+  <header class="panel__head">
+    <span class="badge badge--accent">{{ regionLabels[muscle().region] }}</span>
+    @if (muscle().deep) {
+      <span class="badge">Deep muscle</span>
+    }
+    <h2 [id]="'muscle-' + muscle().id">{{ muscle().name }}</h2>
+    <p class="panel__latin">{{ muscle().anatomicalName }}</p>
+    <p>{{ muscle().summary }}</p>
+  </header>
+
+  <dl class="panel__stats">
+    <div class="stat">
+      <dt class="stat__label">Recommended sets</dt>
+      <dd class="stat__value">{{ muscle().recommendedSets }}</dd>
+    </div>
+    <div class="stat">
+      <dt class="stat__label">Repetitions</dt>
+      <dd class="stat__value">{{ muscle().recommendedReps }}</dd>
+    </div>
+    <div class="stat">
+      <dt class="stat__label">Frequency</dt>
+      <dd class="stat__value">{{ muscle().frequency }}</dd>
+    </div>
+  </dl>
+
+  <div class="grid grid--2 panel__info">
+    <section aria-label="Muscle function">
+      <h3>Function</h3>
+      <ul class="check-list">
+        @for (f of muscle().functions; track f) {
+          <li>{{ f }}</li>
+        }
+      </ul>
+    </section>
+    <section aria-label="Technique instructions">
+      <h3>Technique</h3>
+      <ul class="check-list">
+        @for (tip of muscle().techniqueTips; track tip) {
+          <li>{{ tip }}</li>
+        }
+      </ul>
+    </section>
+    <section aria-label="Common mistakes" class="mistakes">
+      <h3>Common mistakes</h3>
+      <ul>
+        @for (m of muscle().commonMistakes; track m) {
+          <li>{{ m }}</li>
+        }
+      </ul>
+    </section>
+    <section aria-label="Equipment requirements">
+      <h3>Equipment</h3>
+      @if (equipment().length) {
+        <ul class="tags">
+          @for (e of equipment(); track e) {
+            <li class="badge">{{ e }}</li>
+          }
+        </ul>
+      } @else {
+        <p class="text-muted text-small">
+          Trained through compound movements and bracing — no specific equipment required.
+        </p>
+      }
+    </section>
+  </div>
+
+  <section class="panel__exercises" aria-label="Primary exercises">
+    <h3>Primary exercises</h3>
+    @if (primary().length) {
+      <div class="grid grid--2">
+        @for (e of primary(); track e.id) {
+          <app-exercise-card [exercise]="e" />
+        }
+      </div>
+    } @else {
+      <p class="text-muted text-small">
+        This muscle is trained mainly as a supporting muscle — see the secondary exercises below.
+      </p>
+    }
+  </section>
+
+  @if (secondary().length) {
+    <section class="panel__exercises" aria-label="Secondary exercises">
+      <h3>Secondary exercises</h3>
+      <ul class="secondary">
+        @for (e of secondary(); track e.id) {
+          <li>
+            <a [routerLink]="['/exercises', e.slug]">{{ e.name }}</a>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  <footer class="panel__foot">
+    <a class="btn btn--primary" routerLink="/exercises" [queryParams]="{ muscle: muscle().id }">
+      All {{ totalCount() }} {{ muscle().name.toLowerCase() }} exercises
+    </a>
+    <a class="btn" routerLink="/workout-planner" [queryParams]="{ muscle: muscle().id }"
+      >Build a workout</a
+    >
+  </footer>
+</article>

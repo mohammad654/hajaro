@@ -1,0 +1,60 @@
+@use 'mixins' as *;
+
+.toolbar {
+  display: grid;
+  gap: var(--sp-3);
+
+  @include up($bp-md) {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.search {
+  position: relative;
+
+  .input {
+    padding-left: 2.75rem;
+  }
+}
+
+.search__icon {
+  position: absolute;
+  left: var(--sp-4);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--c-text-subtle);
+  pointer-events: none;
+}
+
+.categories {
+  display: flex;
+  gap: var(--sp-2);
+  margin-top: var(--sp-5);
+  overflow-x: auto;
+  padding-bottom: var(--sp-2);
+  scrollbar-width: thin;
+
+  .chip {
+    flex-shrink: 0;
+  }
+}
+
+.results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: var(--sp-4) 0;
+
+  p {
+    margin: 0;
+    color: var(--c-text-muted);
+  }
+}
+
+.empty {
+  text-align: center;
+
+  h2 {
+    font-size: var(--fs-xl);
+  }
+}

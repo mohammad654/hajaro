@@ -1,0 +1,119 @@
+<section class="tracker" aria-labelledby="session-title">
+  <header class="tracker__head card">
+    <div>
+      <p class="eyebrow">Workout in progress</p>
+      <h2 id="session-title">{{ session().name }}</h2>
+    </div>
+    <div
+      class="progress"
+      role="progressbar"
+      [attr.aria-valuenow]="stats().percent"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-label="Workout completion"
+    >
+      <div class="progress__bar"><span [style.width.%]="stats().percent"></span></div>
+      <p>
+        {{ stats().completedSets }} / {{ stats().totalSets }} sets · {{ stats().volumeKg }} kg
+        volume
+      </p>
+    </div>
+  </header>
+
+  @for (exercise of session().exercises; track $index; let ei = $index) {
+    <article class="card block">
+      <header class="block__head">
+        <h3>
+          @if (exercises.get(exercise.exerciseId); as info) {
+            <a [routerLink]="['/exercises', info.slug]" target="_blank" rel="noopener">{{
+              info.name
+            }}</a>
+          } @else {
+            {{ exercise.exerciseId }}
+          }
+        </h3>
+        <p class="text-small text-muted">
+          Target {{ exercise.targetReps }} reps · Rest {{ exercise.restSeconds | rest }}
+        </p>
+      </header>
+      <table class="sets">
+        <thead>
+          <tr>
+            <th scope="col">Set</th>
+            <th scope="col">kg</th>
+            <th scope="col">Reps</th>
+            <th scope="col">
+              <span class="visually-hidden">Completed</span><app-icon name="check" [size]="16" />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (set of exercise.sets; track $index; let si = $index) {
+            <tr [class.is-done]="set.completed">
+              <td>{{ si + 1 }}</td>
+              <td>
+                <input
+                  class="input input--sm"
+                  type="number"
+                  inputmode="decimal"
+                  min="0"
+                  step="0.5"
+                  [value]="set.weightKg ?? ''"
+                  (change)="setNumber(ei, si, 'weightKg', $event)"
+                  [attr.aria-label]="'Set ' + (si + 1) + ' weight in kilograms'"
+                />
+              </td>
+              <td>
+                <input
+                  class="input input--sm"
+                  type="number"
+                  inputmode="numeric"
+                  min="0"
+                  [value]="set.reps ?? ''"
+                  [placeholder]="exercise.targetReps"
+                  (change)="setNumber(ei, si, 'reps', $event)"
+                  [attr.aria-label]="'Set ' + (si + 1) + ' repetitions completed'"
+                />
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="done"
+                  [attr.aria-pressed]="set.completed"
+                  [attr.aria-label]="'Mark set ' + (si + 1) + ' complete'"
+                  (click)="toggle(ei, si, set)"
+                >
+                  <app-icon name="check" [size]="18" />
+                </button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+      <button type="button" class="btn btn--ghost btn--sm" (click)="addSet(ei)">
+        <app-icon name="plus" [size]="16" /> Add set
+      </button>
+    </article>
+  }
+
+  <div class="field card">
+    <label for="session-notes">Session notes</label>
+    <textarea
+      id="session-notes"
+      class="textarea"
+      maxlength="1000"
+      [value]="session().notes ?? ''"
+      (change)="setNotes($event)"
+      placeholder="How did it feel? Anything to tell your coach?"
+    ></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button type="button" class="btn btn--danger" (click)="discarded.emit()">
+      Discard workout
+    </button>
+    <button type="button" class="btn btn--primary btn--lg" (click)="finish()" [disabled]="saving()">
+      <app-icon name="check" [size]="18" /> Finish & save workout
+    </button>
+  </div>
+</section>

@@ -1,0 +1,198 @@
+@if (program(); as program) {
+  <app-page-hero
+    [eyebrow]="(program.level | label: levels) + ' · ' + (program.goal | label: goals)"
+    [title]="program.name"
+    [lead]="program.tagline"
+    [breadcrumbs]="[
+      { label: 'Programs', url: '/programs' },
+      { label: program.name, url: '/programs/' + program.slug },
+    ]"
+  >
+    <dl class="facts">
+      <div>
+        <dt>Level</dt>
+        <dd>{{ program.level | label: levels }}</dd>
+      </div>
+      <div>
+        <dt>Frequency</dt>
+        <dd>{{ program.daysPerWeek }} days / week</dd>
+      </div>
+      <div>
+        <dt>Duration</dt>
+        <dd>{{ program.durationWeeks }} weeks</dd>
+      </div>
+      <div>
+        <dt>Session length</dt>
+        <dd>{{ program.sessionMinutes }} min</dd>
+      </div>
+      <div>
+        <dt>Training type</dt>
+        <dd>{{ program.trainingType | label: types }}</dd>
+      </div>
+    </dl>
+  </app-page-hero>
+
+  <section class="section">
+    <div class="container split split--sidebar">
+      <div class="stack content">
+        <section aria-labelledby="overview-title">
+          <h2 id="overview-title">Program overview</h2>
+          <p class="lead">{{ program.description }}</p>
+        </section>
+
+        <section aria-labelledby="audience-title">
+          <h2 id="audience-title">Who this program is for</h2>
+          <ul class="check-list">
+            @for (item of program.targetAudience; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </section>
+
+        <section aria-labelledby="structure-title">
+          <h2 id="structure-title">Training structure</h2>
+          <ul class="check-list">
+            @for (item of program.structure; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </section>
+
+        <section aria-labelledby="schedule-title">
+          <h2 id="schedule-title">Weekly training schedule</h2>
+          <ol class="week" aria-label="Week overview">
+            @for (day of program.schedule; track day.id) {
+              <li class="week__day" [class.is-rest]="day.isRestDay">
+                @if (day.isRestDay) {
+                  <span class="week__label">{{ day.label }}</span>
+                  <span class="week__focus">Rest</span>
+                } @else {
+                  <button
+                    type="button"
+                    class="week__btn"
+                    [attr.aria-pressed]="selectedDay()?.id === day.id"
+                    (click)="selectedDayId.set(day.id)"
+                  >
+                    <span class="week__label">{{ day.label }}</span>
+                    <span class="week__focus">{{ day.focus }}</span>
+                  </button>
+                }
+              </li>
+            }
+          </ol>
+
+          @if (selectedDay(); as day) {
+            <div class="day reveal">
+              <h3>{{ day.label }} — {{ day.focus }}</h3>
+              <app-workout-day-table [day]="day" />
+            </div>
+          }
+        </section>
+
+        <div class="grid grid--2">
+          <section class="card" aria-labelledby="warmup-title">
+            <h3 id="warmup-title">Warm-up</h3>
+            <ol class="numbered-list text-small">
+              @for (item of program.warmUp; track item) {
+                <li>{{ item }}</li>
+              }
+            </ol>
+          </section>
+          <section class="card" aria-labelledby="progression-title">
+            <h3 id="progression-title">Progression</h3>
+            <ul class="check-list text-small">
+              @for (item of program.progression; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </section>
+        </div>
+
+        <section class="card card--flat" aria-labelledby="recovery-title">
+          <h3 id="recovery-title">Recovery days & recovery habits</h3>
+          <ul class="check-list text-small">
+            @for (item of program.recovery; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </section>
+
+        <p class="disclaimer">
+          Sets, reps and rest periods are example programming ranges, not universal prescriptions.
+          Adjust them to your experience, recovery and physical capabilities — or get them
+          individualised through coaching. Stop any exercise that causes pain and consult a
+          healthcare professional if needed.
+        </p>
+      </div>
+
+      <aside class="sticky-aside stack" aria-label="Program summary">
+        <div class="card card--featured">
+          <p class="eyebrow">Get started</p>
+          @if (program.price) {
+            <p class="price">
+              {{ program.price | currency: currency : 'symbol' : '1.0-0' }} <span>one-off</span>
+            </p>
+            <p class="text-small text-muted">
+              Self-guided program with full schedule and progression rules.
+            </p>
+            <a
+              class="btn btn--primary btn--block"
+              routerLink="/contact"
+              [queryParams]="{ program: program.slug, intent: 'purchase' }"
+            >
+              Get this program
+            </a>
+          } @else {
+            <p class="text-small text-muted">
+              This program is delivered through coaching, adjusted to your needs.
+            </p>
+          }
+          <a class="btn btn--block" routerLink="/contact" [queryParams]="{ program: program.slug }"
+            >Request coaching</a
+          >
+          <a
+            class="btn btn--ghost btn--block"
+            routerLink="/workout-planner"
+            [queryParams]="{ program: program.id }"
+          >
+            Use in workout planner
+          </a>
+        </div>
+
+        <div class="card">
+          <h3 class="aside-title">Equipment</h3>
+          <ul class="tags">
+            @for (item of program.equipment; track item) {
+              <li class="badge">{{ item | label: equipmentLabels }}</li>
+            }
+          </ul>
+          <h3 class="aside-title">Example exercises</h3>
+          <ul class="examples">
+            @for (exercise of exampleExercises(); track exercise!.id) {
+              <li>
+                <a [routerLink]="['/exercises', exercise!.slug]">{{ exercise!.name }}</a>
+              </li>
+            }
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  @if (related().length) {
+    <section class="section section--alt" aria-labelledby="related-title">
+      <div class="container">
+        <h2 id="related-title">Related programs</h2>
+        <div class="grid grid--3">
+          @for (p of related(); track p.id) {
+            <app-program-card [program]="p" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <app-cta-section />
+} @else {
+  <app-not-found-content what="program" backLink="/programs" backLabel="Browse programs" />
+}

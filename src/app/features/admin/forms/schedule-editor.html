@@ -1,0 +1,162 @@
+<div class="schedule">
+  @for (
+    day of days().controls;
+    track day;
+    let di = $index;
+    let firstDay = $first;
+    let lastDay = $last
+  ) {
+    <fieldset class="day card" [formGroup]="day">
+      <legend class="visually-hidden">Day {{ di + 1 }}</legend>
+      <div class="day__head">
+        <div class="field">
+          <label [for]="'day-label-' + di">Day label</label>
+          <input [id]="'day-label-' + di" class="input input--sm" formControlName="label" />
+        </div>
+        <div class="field day__focus">
+          <label [for]="'day-focus-' + di">Focus</label>
+          <input
+            [id]="'day-focus-' + di"
+            class="input input--sm"
+            formControlName="focus"
+            placeholder="e.g. Push — chest, shoulders, triceps"
+          />
+        </div>
+        <label class="checkbox day__rest">
+          <input type="checkbox" formControlName="isRestDay" /> <span>Rest day</span>
+        </label>
+        <div class="day__actions">
+          <button
+            type="button"
+            class="btn btn--ghost btn--sm"
+            (click)="moveDay(di, -1)"
+            [disabled]="firstDay"
+            aria-label="Move day up"
+          >
+            <app-icon name="arrow-up" [size]="16" />
+          </button>
+          <button
+            type="button"
+            class="btn btn--ghost btn--sm"
+            (click)="moveDay(di, 1)"
+            [disabled]="lastDay"
+            aria-label="Move day down"
+          >
+            <app-icon name="arrow-down" [size]="16" />
+          </button>
+          <button
+            type="button"
+            class="btn btn--ghost btn--sm"
+            (click)="removeDay(di)"
+            aria-label="Remove day"
+          >
+            <app-icon name="trash" [size]="16" />
+          </button>
+        </div>
+      </div>
+
+      @if (!day.controls.isRestDay.value) {
+        <div class="table-wrap">
+          <table class="table exercises" formArrayName="exercises">
+            <thead>
+              <tr>
+                <th scope="col">Exercise</th>
+                <th scope="col">Sets</th>
+                <th scope="col">Reps</th>
+                <th scope="col">Rest (s)</th>
+                <th scope="col">Notes</th>
+                <th scope="col"><span class="visually-hidden">Actions</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (
+                ex of day.controls.exercises.controls;
+                track ex;
+                let ei = $index;
+                let first = $first;
+                let last = $last
+              ) {
+                <tr [formGroupName]="ei">
+                  <td>
+                    <select
+                      class="select input--sm"
+                      formControlName="exerciseId"
+                      [attr.aria-label]="'Exercise ' + (ei + 1)"
+                    >
+                      <option value="" disabled>Select…</option>
+                      @for (e of exercises.all(); track e.id) {
+                        <option [value]="e.id">{{ e.name }}</option>
+                      }
+                    </select>
+                  </td>
+                  <td>
+                    <input
+                      class="input input--sm narrow"
+                      formControlName="sets"
+                      aria-label="Sets"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="input input--sm narrow"
+                      formControlName="reps"
+                      aria-label="Reps"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      class="input input--sm narrow"
+                      type="number"
+                      min="0"
+                      max="600"
+                      step="15"
+                      formControlName="restSeconds"
+                      aria-label="Rest seconds"
+                    />
+                  </td>
+                  <td>
+                    <input class="input input--sm" formControlName="notes" aria-label="Notes" />
+                  </td>
+                  <td class="row-actions">
+                    <button
+                      type="button"
+                      class="btn btn--ghost btn--sm"
+                      (click)="moveExercise(day, ei, -1)"
+                      [disabled]="first"
+                      aria-label="Move up"
+                    >
+                      <app-icon name="arrow-up" [size]="14" />
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn--ghost btn--sm"
+                      (click)="moveExercise(day, ei, 1)"
+                      [disabled]="last"
+                      aria-label="Move down"
+                    >
+                      <app-icon name="arrow-down" [size]="14" />
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn--ghost btn--sm"
+                      (click)="removeExercise(day, ei)"
+                      aria-label="Remove exercise"
+                    >
+                      <app-icon name="trash" [size]="14" />
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+        <button type="button" class="btn btn--sm add" (click)="addExercise(day)">
+          <app-icon name="plus" [size]="16" /> Add exercise
+        </button>
+      }
+    </fieldset>
+  }
+  <button type="button" class="btn" (click)="addDay()">
+    <app-icon name="plus" [size]="18" /> Add day
+  </button>
+</div>

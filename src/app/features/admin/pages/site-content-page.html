@@ -1,0 +1,128 @@
+<header class="page-head">
+  <p class="eyebrow">Website</p>
+  <h1>Site content & SEO</h1>
+  <p class="text-muted">
+    Edit homepage copy, the trainer profile, credentials and per-page SEO metadata — no deployment
+    needed.
+  </p>
+</header>
+
+<form (submit)="$event.preventDefault(); save()" novalidate>
+  <section class="card block" aria-labelledby="main-h">
+    <h2 id="main-h" class="h-sm">Homepage & trainer profile</h2>
+    <app-schema-fields [group]="main()" [fields]="fields" />
+  </section>
+
+  <section class="card block" aria-labelledby="method-h">
+    <h2 id="method-h" class="h-sm">Training methodology</h2>
+    @for (pillar of methodology.controls; track pillar; let i = $index) {
+      <div class="item item--pillar" [formGroup]="pillar">
+        <input
+          class="input input--sm"
+          formControlName="title"
+          placeholder="Step title"
+          [attr.aria-label]="'Methodology step ' + (i + 1) + ' title'"
+        />
+        <input
+          class="input input--sm"
+          formControlName="description"
+          placeholder="Description"
+          [attr.aria-label]="'Methodology step ' + (i + 1) + ' description'"
+        />
+        <button
+          type="button"
+          class="btn btn--ghost btn--sm"
+          (click)="methodology.removeAt(i)"
+          aria-label="Remove step"
+        >
+          <app-icon name="trash" [size]="16" />
+        </button>
+      </div>
+    }
+    <button type="button" class="btn btn--sm" (click)="addPillar()">
+      <app-icon name="plus" [size]="16" /> Add step
+    </button>
+  </section>
+
+  @for (section of credentialSections; track section.key) {
+    <section class="card block" [attr.aria-labelledby]="section.key + '-h'">
+      <h2 [id]="section.key + '-h'" class="h-sm">{{ section.label }}</h2>
+      <p class="text-small text-muted">
+        Only items marked as verified are shown on the website. Never list credentials you cannot
+        prove.
+      </p>
+      @for (item of credentials[section.key].controls; track item; let i = $index) {
+        <div class="item item--credential" [formGroup]="item">
+          <input
+            class="input input--sm"
+            formControlName="title"
+            placeholder="Title"
+            aria-label="Title"
+          />
+          <input
+            class="input input--sm"
+            formControlName="detail"
+            placeholder="Issuer / details"
+            aria-label="Details"
+          />
+          <input
+            class="input input--sm"
+            formControlName="year"
+            placeholder="Year"
+            aria-label="Year"
+          />
+          <label class="checkbox"
+            ><input type="checkbox" formControlName="verified" /> <span>Verified</span></label
+          >
+          <button
+            type="button"
+            class="btn btn--ghost btn--sm"
+            (click)="credentials[section.key].removeAt(i)"
+            aria-label="Remove item"
+          >
+            <app-icon name="trash" [size]="16" />
+          </button>
+        </div>
+      }
+      <button type="button" class="btn btn--sm" (click)="addCredential(section.key)">
+        <app-icon name="plus" [size]="16" /> Add item
+      </button>
+    </section>
+  }
+
+  <section class="card block" aria-labelledby="seo-h">
+    <h2 id="seo-h" class="h-sm">SEO metadata</h2>
+    <p class="text-small text-muted">
+      Optional overrides. Leave empty to use the built-in defaults. Titles ≤ 70 characters,
+      descriptions ≤ 160.
+    </p>
+    @for (page of seoPages; track page.key) {
+      <div class="seo-row" [formGroup]="seo.controls[page.key]">
+        <strong class="text-small">{{ page.label }}</strong>
+        <input
+          class="input input--sm"
+          formControlName="title"
+          placeholder="SEO title"
+          [attr.aria-label]="page.label + ' SEO title'"
+          maxlength="70"
+        />
+        <input
+          class="input input--sm"
+          formControlName="description"
+          placeholder="Meta description"
+          [attr.aria-label]="page.label + ' meta description'"
+          maxlength="160"
+        />
+      </div>
+    }
+  </section>
+
+  <div class="form-actions">
+    <button type="submit" class="btn btn--primary btn--lg" [disabled]="saving()">
+      @if (saving()) {
+        <span class="spinner" aria-hidden="true"></span>
+      }
+      Save site content
+    </button>
+  </div>
+</form>

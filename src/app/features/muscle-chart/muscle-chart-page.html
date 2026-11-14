@@ -1,0 +1,131 @@
+<app-page-hero
+  eyebrow="Interactive anatomy"
+  title="Full body muscle workout chart"
+  lead="Select any muscle on the anatomy chart to see what it does, how to train it, the best primary and secondary exercises, recommended sets and reps and the mistakes to avoid."
+  [breadcrumbs]="[{ label: 'Muscle chart', url: '/muscle-chart' }]"
+/>
+
+<section class="section section--tight" aria-label="Interactive muscle anatomy chart">
+  <div class="container chart-layout">
+    <div class="chart-layout__explorer">
+      <app-anatomy-explorer
+        [selected]="selectedId()"
+        [(view)]="view"
+        (muscleSelect)="select($event)"
+      />
+    </div>
+
+    <div #detail class="chart-layout__detail" aria-live="polite">
+      @if (selectedMuscle(); as muscle) {
+        <app-muscle-detail-panel [muscle]="muscle" />
+      } @else {
+        <div class="intro card">
+          <p class="eyebrow">How to use the chart</p>
+          <h2>Explore your muscles</h2>
+          <ol class="numbered-list">
+            <li>Select a muscle on the body — or pick one from the list.</li>
+            <li>
+              Switch between the <strong>front</strong> and <strong>back</strong> views to reach
+              every muscle group.
+            </li>
+            <li>Learn its function, programming guidance and technique tips.</li>
+            <li>
+              Open any exercise for step-by-step instructions, or add it to your workout planner.
+            </li>
+          </ol>
+          <div class="cluster">
+            <button type="button" class="btn btn--primary" (click)="select('chest')">
+              Start with the chest
+            </button>
+            <button type="button" class="btn" (click)="select('lats')">Show the back</button>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="chart-title" id="workout-chart">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Workout chart</p>
+      <h2 id="chart-title">Complete full body workout chart</h2>
+      <p>
+        One proven exercise for every major muscle group. Select a muscle group to highlight it on
+        the anatomy chart.
+      </p>
+    </div>
+    <app-workout-chart-table
+      [chart]="chart"
+      [selected]="selectedId()"
+      (muscleSelect)="select($event, false)"
+    />
+    <div class="chart-actions">
+      <a
+        class="btn btn--primary"
+        routerLink="/workout-planner"
+        [queryParams]="{ template: 'full-body-chart' }"
+      >
+        Use this chart in the workout planner
+      </a>
+      <a class="btn" routerLink="/programs">Browse full programs</a>
+    </div>
+    <p class="disclaimer chart-note">
+      These are example programming ranges, not universal prescriptions. Sets, reps, load and rest
+      should be adapted to your goals, experience, recovery and physical capabilities. Coaching
+      clients receive charts customised by their coach.
+    </p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="splits-title">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Workout splits</p>
+      <h2 id="splits-title">Choose how to organise your training week</h2>
+      <p>
+        Every split includes a weekly schedule, exercises, sets and repetitions, rest periods,
+        warm-up instructions, progression recommendations and recovery days. Open a split to see the
+        full plan.
+      </p>
+    </div>
+    <app-split-programs />
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="overview-title">
+  <div class="container split">
+    <figure class="overview">
+      <img
+        ngSrc="/images/anatomy/muscle-groups-overview.webp"
+        width="1200"
+        height="1200"
+        alt="Grid of seven anatomy illustrations highlighting the abs, quads, glutes, triceps, biceps, back and chest"
+        sizes="(min-width: 1080px) 50vw, 100vw"
+      />
+      <figcaption class="text-small text-muted">Major muscle groups at a glance.</figcaption>
+    </figure>
+    <div>
+      <p class="eyebrow">Muscle group reference</p>
+      <h2 id="overview-title">Train every muscle group with balance</h2>
+      <p class="lead">
+        A balanced physique comes from training opposing muscle groups in proportion — chest and
+        back, quads and hamstrings, biceps and triceps — while giving each one enough weekly volume
+        to grow.
+      </p>
+      <ul class="check-list">
+        <li>Aim for roughly 10–20 hard sets per muscle group per week</li>
+        <li>Train each muscle at least twice per week for most goals</li>
+        <li>Pair pressing with pulling to protect your shoulders</li>
+        <li>Prioritise lagging muscle groups early in the session</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<app-cta-section
+  eyebrow="Personal programming"
+  title="Want a chart built for your body?"
+  text="Your coach builds a workout chart around your goals, experience, recovery and equipment — and updates it as you progress."
+  primaryLabel="Get a custom plan"
+/>

@@ -1,0 +1,87 @@
+:host {
+  display: block;
+}
+
+.figure {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.body path {
+  fill: var(--muscle-body);
+}
+
+.body .filler {
+  fill: var(--muscle-filler);
+}
+
+.muscle path {
+  fill: var(--muscle-base);
+  stroke: var(--c-bg);
+  stroke-width: 0.6;
+  transition:
+    fill var(--dur) var(--ease),
+    filter var(--dur) var(--ease);
+}
+
+.muscle.is-secondary path {
+  fill: var(--muscle-secondary);
+}
+
+.muscle.is-primary path {
+  fill: var(--muscle-selected);
+}
+
+.muscle.is-primary {
+  filter: drop-shadow(0 0 4px rgb(232 176 74 / 55%));
+}
+
+:host(.is-interactive) .muscle {
+  cursor: pointer;
+  outline: none;
+
+  &:hover:not(.is-primary) path,
+  &:focus-visible:not(.is-primary) path {
+    fill: var(--muscle-hover);
+  }
+
+  &:focus-visible path {
+    stroke: var(--c-accent-strong);
+    stroke-width: 1.2;
+  }
+}
+
+.deep path {
+  fill: none;
+  stroke: var(--c-text-subtle);
+  stroke-width: 0.7;
+  stroke-dasharray: 2 2;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.deep.is-active path {
+  stroke: var(--c-accent);
+  fill: rgb(232 176 74 / 22%);
+  opacity: 1;
+}
+
+.details path {
+  fill: none;
+  stroke: var(--c-bg);
+  stroke-width: 0.8;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :host(.is-animated) .muscle.is-primary {
+    animation: muscle-glow 3.2s ease-in-out infinite;
+  }
+}
+
+@keyframes muscle-glow {
+  50% {
+    filter: drop-shadow(0 0 9px rgb(232 176 74 / 75%));
+  }
+}

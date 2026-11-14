@@ -1,0 +1,35 @@
+@use 'mixins' as *;
+
+.filters {
+  display: grid;
+  gap: var(--sp-4);
+
+  @include up($bp-sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include up($bp-lg) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  margin: var(--sp-5) 0;
+
+  p {
+    margin: 0;
+    color: var(--c-text-muted);
+  }
+}
+
+.empty {
+  text-align: center;
+
+  h2 {
+    font-size: var(--fs-xl);
+  }
+}

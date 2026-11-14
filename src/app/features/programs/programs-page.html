@@ -1,0 +1,106 @@
+<app-page-hero
+  eyebrow="Training programs"
+  title="Programs built to make you progress"
+  lead="Every program includes a weekly schedule, exercises with sets, reps and rest periods, warm-up instructions, progression rules and recovery guidance. Filter by level, goal, duration and training style."
+  [breadcrumbs]="[{ label: 'Programs', url: '/programs' }]"
+/>
+
+<section class="section section--tight">
+  <div class="container">
+    <form
+      class="filters card card--flat"
+      role="search"
+      aria-label="Filter programs"
+      (submit)="$event.preventDefault()"
+    >
+      <div class="field">
+        <label for="f-level">Level</label>
+        <select
+          id="f-level"
+          class="select"
+          [value]="level()"
+          (change)="level.set($any(readValue($event)))"
+        >
+          <option value="">All levels</option>
+          @for (o of levelOptions; track o.value) {
+            <option [value]="o.value">{{ o.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-goal">Goal</label>
+        <select
+          id="f-goal"
+          class="select"
+          [value]="goal()"
+          (change)="goal.set($any(readValue($event)))"
+        >
+          <option value="">All goals</option>
+          @for (o of goalOptions; track o.value) {
+            <option [value]="o.value">{{ o.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-type">Training type</label>
+        <select
+          id="f-type"
+          class="select"
+          [value]="type()"
+          (change)="type.set($any(readValue($event)))"
+        >
+          <option value="">All types</option>
+          @for (o of typeOptions; track o.value) {
+            <option [value]="o.value">{{ o.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-duration">Duration</label>
+        <select
+          id="f-duration"
+          class="select"
+          [value]="duration()"
+          (change)="duration.set($any(readValue($event)))"
+        >
+          <option value="">Any duration</option>
+          @for (o of durationOptions; track o.value) {
+            <option [value]="o.value">{{ o.label }}</option>
+          }
+        </select>
+      </div>
+    </form>
+
+    <div class="results-bar">
+      <p aria-live="polite">
+        <strong>{{ results().length }}</strong> program{{ results().length === 1 ? '' : 's' }}
+      </p>
+      @if (hasFilters()) {
+        <button type="button" class="btn btn--ghost btn--sm" (click)="reset()">
+          Clear filters
+        </button>
+      }
+    </div>
+
+    @if (results().length) {
+      <div class="grid grid--3">
+        @for (program of results(); track program.id) {
+          <app-program-card [program]="program" />
+        }
+      </div>
+    } @else {
+      <div class="card empty">
+        <h2>No programs match those filters</h2>
+        <p class="text-muted">Try removing a filter — or request a custom program built for you.</p>
+        <button type="button" class="btn" (click)="reset()">Clear filters</button>
+      </div>
+    }
+  </div>
+</section>
+
+<app-cta-section
+  eyebrow="Want it personalised?"
+  title="Get a program built around you"
+  text="Programs are a great start. Coaching adapts every exercise, set and rep to your body, recovery and goals — and adjusts them every week."
+  primaryLabel="Request coaching"
+/>

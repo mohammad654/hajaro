@@ -1,0 +1,136 @@
+<div class="planner">
+  <div class="tabs" role="tablist" aria-label="Workout planner">
+    @for (t of tabs; track t.id) {
+      <button
+        type="button"
+        role="tab"
+        class="tab"
+        [id]="'tab-' + t.id"
+        [attr.aria-selected]="tab() === t.id"
+        [attr.aria-controls]="'panel-' + t.id"
+        (click)="selectTab(t.id)"
+      >
+        {{ t.label }}
+        @if (t.id === 'session' && activeSession()) {
+          <span class="live-dot" aria-label="in progress"></span>
+        }
+      </button>
+    }
+  </div>
+
+  @if (isGuest()) {
+    <p class="alert alert--info guest-note">
+      <app-icon name="info" [size]="18" />
+      <span
+        >Your routines and workouts are saved on this device.
+        <a routerLink="/login">Clients can sign in</a> to train from their coach's plan.</span
+      >
+    </p>
+  }
+
+  <div
+    class="panel"
+    role="tabpanel"
+    [id]="'panel-' + tab()"
+    [attr.aria-labelledby]="'tab-' + tab()"
+  >
+    @switch (tab()) {
+      @case ('routines') {
+        <div class="panel__head">
+          <h2>My routines</h2>
+          <button type="button" class="btn btn--primary" (click)="newRoutine()">
+            <app-icon name="plus" [size]="18" /> New routine
+          </button>
+        </div>
+        @if (myRoutines().length) {
+          <ul class="routines grid grid--3">
+            @for (routine of myRoutines(); track routine.id) {
+              <li class="card routine">
+                <h3>{{ routine.name }}</h3>
+                <p class="text-small text-muted">{{ exerciseCount(routine) }}</p>
+                <p class="text-small text-muted">
+                  Updated {{ routine.updatedAt | date: 'mediumDate' }}
+                </p>
+                <div class="routine__actions">
+                  <button type="button" class="btn btn--primary btn--sm" (click)="start(routine)">
+                    <app-icon name="play" [size]="16" /> Start
+                  </button>
+                  <button type="button" class="btn btn--sm" (click)="edit(routine)">Edit</button>
+                  <button
+                    type="button"
+                    class="btn btn--ghost btn--sm"
+                    (click)="duplicate(routine)"
+                    [attr.aria-label]="'Duplicate ' + routine.name"
+                  >
+                    <app-icon name="copy" [size]="16" />
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn--ghost btn--sm"
+                    (click)="deleteRoutine(routine)"
+                    [attr.aria-label]="'Delete ' + routine.name"
+                  >
+                    <app-icon name="trash" [size]="16" />
+                  </button>
+                </div>
+              </li>
+            }
+          </ul>
+        } @else {
+          <div class="card empty">
+            <h3>Create your first routine</h3>
+            <p class="text-muted">
+              Start from any program day or the full body workout chart, or pick exercises muscle by
+              muscle.
+            </p>
+            <button type="button" class="btn btn--primary" (click)="newRoutine()">
+              Build a routine
+            </button>
+          </div>
+        }
+      }
+      @case ('builder') {
+        <div class="panel__head">
+          <h2>{{ editing() ? 'Edit routine' : 'Build a routine' }}</h2>
+        </div>
+        @for (key of [builderKey()]; track key) {
+          <app-routine-builder
+            [routine]="editing()"
+            [initial]="draft()"
+            [initialMuscle]="draftMuscle()"
+            [saving]="saving()"
+            (save)="saveRoutine($event)"
+            (cancelled)="tab.set('routines')"
+          />
+        }
+      }
+      @case ('session') {
+        @if (activeSession(); as session) {
+          <app-session-tracker
+            [session]="session"
+            [saving]="saving()"
+            (changed)="updateSession($event)"
+            (finished)="finish($event)"
+            (discarded)="discard()"
+          />
+        } @else {
+          <div class="card empty">
+            <h3>No workout in progress</h3>
+            <p class="text-muted">
+              Choose a routine and press start to log your sets, weights and reps.
+            </p>
+            <button type="button" class="btn btn--primary" (click)="tab.set('routines')">
+              Choose a routine
+            </button>
+          </div>
+        }
+      }
+      @case ('history') {
+        <div class="panel__head">
+          <h2>Previous sessions</h2>
+        </div>
+        <app-session-history [sessions]="mySessions()" (deleted)="deleteSession($event)" />
+      }
+    }
+  </div>
+</div>

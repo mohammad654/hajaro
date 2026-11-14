@@ -1,0 +1,63 @@
+<app-skip-link target="portal-main" label="Skip to content" />
+<div class="portal" [class.is-open]="menuOpen()">
+  <header class="portal__topbar">
+    <button
+      type="button"
+      class="portal__menu-btn"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="portal-nav"
+      (click)="menuOpen.set(!menuOpen())"
+    >
+      <app-icon [name]="menuOpen() ? 'close' : 'menu'" />
+      <span class="visually-hidden">Toggle navigation</span>
+    </button>
+    <a routerLink="/" class="portal__brand"
+      >{{ brand.brandName }}<span>{{ title() }}</span></a
+    >
+  </header>
+
+  <aside id="portal-nav" class="portal__sidebar" aria-label="{{ title() }} navigation">
+    <a routerLink="/" class="portal__brand portal__brand--side"
+      >{{ brand.brandName }}<span>{{ title() }}</span></a
+    >
+    <nav>
+      <ul>
+        @for (item of nav(); track item.path) {
+          <li>
+            <a
+              [routerLink]="item.path"
+              routerLinkActive="is-active"
+              [routerLinkActiveOptions]="{ exact: !!item.exact }"
+              ariaCurrentWhenActive="page"
+            >
+              <app-icon [name]="item.icon" [size]="18" /> {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+    <div class="portal__user">
+      @if (auth.user(); as user) {
+        <p>
+          <strong>{{ user.name }}</strong>
+          <span>{{ user.email }}</span>
+        </p>
+      }
+      <a routerLink="/" class="btn btn--ghost btn--sm"
+        ><app-icon name="home" [size]="16" /> Website</a
+      >
+      <button type="button" class="btn btn--ghost btn--sm" (click)="auth.logout()">
+        <app-icon name="log-out" [size]="16" /> Sign out
+      </button>
+    </div>
+  </aside>
+
+  <main id="portal-main" class="portal__main" tabindex="-1">
+    @if (auth.isDemoMode) {
+      <p class="demo-banner">
+        <app-icon name="info" [size]="16" /> Demo mode — data is stored only in this browser.
+      </p>
+    }
+    <router-outlet />
+  </main>
+</div>

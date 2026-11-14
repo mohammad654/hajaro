@@ -1,0 +1,181 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="builder" novalidate>
+  <div class="builder__main stack">
+    <div class="form-grid">
+      <div class="field">
+        <label for="routine-name">Routine name</label>
+        <input
+          id="routine-name"
+          class="input"
+          formControlName="name"
+          placeholder="e.g. Upper body A"
+          aria-describedby="routine-name-error"
+        />
+        <app-field-error
+          [control]="form.controls.name"
+          id="routine-name-error"
+          label="Routine name"
+        />
+      </div>
+      <div class="field">
+        <label for="routine-template">Start from a template</label>
+        <select id="routine-template" class="select" (change)="applyTemplate(readValue($event))">
+          <option value="">Choose a program day…</option>
+          @for (t of templates(); track t.id) {
+            <option [value]="t.id">{{ t.label }}</option>
+          }
+        </select>
+        <span class="field__hint">Replaces the current exercise list.</span>
+      </div>
+    </div>
+
+    <div formArrayName="exercises" class="rows">
+      @if (rows.length === 0) {
+        <p class="placeholder-note">
+          No exercises yet. Choose a template or add exercises from the picker.
+        </p>
+      }
+      @for (row of rows.controls; track row; let i = $index; let first = $first; let last = $last) {
+        <fieldset class="row" [formGroupName]="i">
+          <legend>
+            <span class="row__index">{{ i + 1 }}</span>
+            {{ exerciseName(row.controls.exerciseId.value) }}
+          </legend>
+          <div class="row__fields">
+            <div class="field">
+              <label [for]="'sets-' + i">Sets</label>
+              <input
+                [id]="'sets-' + i"
+                class="input input--sm"
+                type="number"
+                min="1"
+                max="12"
+                formControlName="sets"
+              />
+            </div>
+            <div class="field">
+              <label [for]="'reps-' + i">Reps</label>
+              <input [id]="'reps-' + i" class="input input--sm" formControlName="reps" />
+            </div>
+            <div class="field">
+              <label [for]="'rest-' + i">Rest (s)</label>
+              <input
+                [id]="'rest-' + i"
+                class="input input--sm"
+                type="number"
+                min="0"
+                max="600"
+                step="15"
+                formControlName="restSeconds"
+              />
+            </div>
+            <div class="field">
+              <label [for]="'kg-' + i">Target kg</label>
+              <input
+                [id]="'kg-' + i"
+                class="input input--sm"
+                type="number"
+                min="0"
+                step="0.5"
+                formControlName="targetWeightKg"
+                placeholder="—"
+              />
+            </div>
+          </div>
+          <div class="row__actions">
+            <button
+              type="button"
+              class="btn btn--ghost btn--sm"
+              (click)="move(i, -1)"
+              [disabled]="first"
+              aria-label="Move up"
+            >
+              <app-icon name="arrow-up" [size]="16" />
+            </button>
+            <button
+              type="button"
+              class="btn btn--ghost btn--sm"
+              (click)="move(i, 1)"
+              [disabled]="last"
+              aria-label="Move down"
+            >
+              <app-icon name="arrow-down" [size]="16" />
+            </button>
+            <button
+              type="button"
+              class="btn btn--ghost btn--sm"
+              (click)="removeRow(i)"
+              [attr.aria-label]="'Remove ' + exerciseName(row.controls.exerciseId.value)"
+            >
+              <app-icon name="trash" [size]="16" />
+            </button>
+          </div>
+          @if (row.invalid && row.touched) {
+            <p class="field__error">Check the values: sets 1–12, rest 0–600 s, reps required.</p>
+          }
+        </fieldset>
+      }
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="btn btn--ghost" (click)="cancelled.emit()">Cancel</button>
+      <button type="submit" class="btn btn--primary" [disabled]="saving()">
+        @if (saving()) {
+          <span class="spinner" aria-hidden="true"></span> Saving…
+        } @else {
+          <app-icon name="save" [size]="18" /> Save routine
+        }
+      </button>
+    </div>
+  </div>
+
+  <aside class="picker card" aria-label="Exercise picker">
+    <h3>Add exercises</h3>
+    <div class="field">
+      <label for="picker-muscle">Muscle group</label>
+      <select
+        id="picker-muscle"
+        class="select"
+        [value]="muscleFilter()"
+        (change)="muscleFilter.set($any(readValue($event)))"
+      >
+        <option value="">All muscle groups</option>
+        @for (m of muscles.all; track m.id) {
+          <option [value]="m.id">{{ m.name }}</option>
+        }
+      </select>
+    </div>
+    <div class="field">
+      <label for="picker-search">Search</label>
+      <input
+        id="picker-search"
+        class="input"
+        type="search"
+        [value]="search()"
+        (input)="search.set(readValue($event))"
+        placeholder="Exercise name"
+      />
+    </div>
+    <ul class="picker__list">
+      @for (e of pickerResults(); track e.id) {
+        <li>
+          <span>{{ e.name }}</span>
+          <button
+            type="button"
+            class="btn btn--sm"
+            (click)="addExercise(e.id)"
+            [attr.aria-label]="'Add ' + e.name"
+          >
+            <app-icon name="plus" [size]="16" />
+            @if (selectedIds().includes(e.id)) {
+              Again
+            } @else {
+              Add
+            }
+          </button>
+        </li>
+      } @empty {
+        <li class="text-muted">No exercises match.</li>
+      }
+    </ul>
+  </aside>
+</form>

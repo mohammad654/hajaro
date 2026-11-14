@@ -1,0 +1,179 @@
+@if (exercise(); as exercise) {
+  <app-page-hero
+    [eyebrow]="(exercise.category | label: categoryLabels) + ' exercise'"
+    [title]="exercise.name"
+    [lead]="exercise.summary"
+    [breadcrumbs]="[
+      { label: 'Exercise library', url: '/exercises' },
+      { label: exercise.name, url: '/exercises/' + exercise.slug },
+    ]"
+  >
+    <div class="cluster hero-tags">
+      <span class="badge badge--accent">{{ exercise.difficulty | label: difficultyLabels }}</span>
+      @for (item of exercise.equipment; track item) {
+        <span class="badge">{{ item | label: equipmentLabels }}</span>
+      }
+    </div>
+  </app-page-hero>
+
+  <section class="section">
+    <div class="container split split--sidebar">
+      <div class="stack content">
+        @if (exercise.media; as media) {
+          @if (media.videoUrl) {
+            <app-video-embed [url]="media.videoUrl" [title]="exercise.name + ' demonstration'" />
+          } @else if (media.imageUrl) {
+            <div class="demo-image">
+              <img
+                [ngSrc]="media.imageUrl"
+                [alt]="media.imageAlt || exercise.name + ' demonstration'"
+                fill
+                priority
+              />
+            </div>
+          }
+        }
+
+        <section aria-labelledby="steps-title">
+          <h2 id="steps-title">How to perform the {{ exercise.name }}</h2>
+          <div class="phases">
+            <div class="phase card card--flat">
+              <span class="phase__label">1 · Starting position</span>
+              <p>{{ exercise.startingPosition }}</p>
+            </div>
+            <div class="phase card card--flat">
+              <span class="phase__label">2 · Movement execution</span>
+              <ol class="numbered-list">
+                @for (step of exercise.execution; track step) {
+                  <li>{{ step }}</li>
+                }
+              </ol>
+            </div>
+            <div class="phase card card--flat">
+              <span class="phase__label">3 · Ending position</span>
+              <p>{{ exercise.endingPosition }}</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="posture-title">
+          <h2 id="posture-title">Correct posture cues</h2>
+          <ul class="check-list">
+            @for (cue of exercise.postureCues; track cue) {
+              <li>{{ cue }}</li>
+            }
+          </ul>
+        </section>
+
+        <div class="grid grid--2">
+          <section class="card mistakes" aria-labelledby="mistakes-title">
+            <h2 id="mistakes-title">Common mistakes</h2>
+            <ul>
+              @for (m of exercise.commonMistakes; track m) {
+                <li>{{ m }}</li>
+              }
+            </ul>
+          </section>
+          <section class="card" aria-labelledby="safety-title">
+            <h2 id="safety-title">Safety considerations</h2>
+            <ul class="check-list">
+              @for (s of exercise.safety; track s) {
+                <li>{{ s }}</li>
+              }
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <aside class="sticky-aside stack" aria-label="Exercise summary">
+        <div class="card">
+          <p class="eyebrow">Target muscles</p>
+          <div class="figures">
+            <app-anatomy-figure
+              view="front"
+              [primary]="exercise.primaryMuscles"
+              [secondary]="exercise.secondaryMuscles"
+              [label]="'Front view: muscles worked by ' + exercise.name"
+            />
+            <app-anatomy-figure
+              view="back"
+              [primary]="exercise.primaryMuscles"
+              [secondary]="exercise.secondaryMuscles"
+              [label]="'Back view: muscles worked by ' + exercise.name"
+            />
+          </div>
+          <div class="legend" aria-hidden="true">
+            <span><i class="dot dot--primary"></i> Primary</span>
+            <span><i class="dot dot--secondary"></i> Secondary</span>
+          </div>
+          <dl class="summary">
+            <div>
+              <dt>Primary</dt>
+              <dd>
+                @for (m of primaryNames(); track m.id; let last = $last) {
+                  <a routerLink="/muscle-chart" [queryParams]="{ muscle: m.id }">{{ m.name }}</a>
+                  @if (!last) {
+                    ,
+                  }
+                }
+              </dd>
+            </div>
+            @if (secondaryNames().length) {
+              <div>
+                <dt>Secondary</dt>
+                <dd>
+                  @for (m of secondaryNames(); track m.id; let last = $last) {
+                    <a routerLink="/muscle-chart" [queryParams]="{ muscle: m.id }">{{ m.name }}</a>
+                    @if (!last) {
+                      ,
+                    }
+                  }
+                </dd>
+              </div>
+            }
+            <div>
+              <dt>Sets</dt>
+              <dd>{{ exercise.recommendedSets }}</dd>
+            </div>
+            <div>
+              <dt>Reps</dt>
+              <dd>{{ exercise.recommendedReps }}</dd>
+            </div>
+            <div>
+              <dt>Rest</dt>
+              <dd>{{ exercise.restSeconds | rest }}</dd>
+            </div>
+          </dl>
+          <p class="disclaimer">
+            Typical ranges — your coach adjusts these to your goals and recovery.
+          </p>
+        </div>
+        <a
+          class="btn btn--primary btn--block"
+          routerLink="/workout-planner"
+          [queryParams]="{ add: exercise.id }"
+          >Add to my workout</a
+        >
+      </aside>
+    </div>
+  </section>
+
+  @if (related().length) {
+    <section class="section section--alt" aria-labelledby="related-title">
+      <div class="container">
+        <h2 id="related-title">Related exercises</h2>
+        <div class="grid grid--3">
+          @for (r of related(); track r.id) {
+            <app-exercise-card [exercise]="r" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+} @else {
+  <app-not-found-content
+    what="exercise"
+    backLink="/exercises"
+    backLabel="Browse the exercise library"
+  />
+}
