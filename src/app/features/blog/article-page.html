@@ -12,13 +12,16 @@
             { label: article.title, url: '/blog/' + article.slug },
           ]"
         />
-        <a class="badge badge--accent" [routerLink]="['/blog/category', article.category]">{{
-          article.category | label: categories
-        }}</a>
+        <a
+          class="badge badge--accent"
+          [routerLink]="['/blog/category', article.category] | localePath"
+          >{{ article.category | label: categories }}</a
+        >
         <h1>{{ article.title }}</h1>
         <p class="lead">{{ article.excerpt }}</p>
         <p class="meta">
-          By <a routerLink="/about" rel="author">{{ article.author }}</a> · Published
+          By <a [routerLink]="'/about' | localePath" rel="author">{{ article.author }}</a> ·
+          Published
           <time [attr.datetime]="article.publishedAt">{{
             article.publishedAt | date: 'longDate'
           }}</time>
@@ -94,7 +97,7 @@
                 @if (isInternal(block.href!)) {
                   <a
                     class="link-arrow"
-                    [routerLink]="splitPath(block.href!).path"
+                    [routerLink]="splitPath(block.href!).path | localePath"
                     [queryParams]="splitPath(block.href!).query"
                     >{{ block.text }}</a
                   >

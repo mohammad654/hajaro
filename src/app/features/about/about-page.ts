@@ -6,13 +6,14 @@ import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 /** Bracketed text marks copy the trainer still needs to replace. */
 const isPlaceholder = (text: string) => text.trim().startsWith('[');
 
 @Component({
   selector: 'app-about-page',
-  imports: [RouterLink, PageHero, MediaFrame, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, MediaFrame, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './about-page.html',
   styleUrl: './about-page.scss',

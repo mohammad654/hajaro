@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CoachingPackage } from '../../core/models';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> = {
   month: '/ month',
@@ -12,7 +13,7 @@ const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> 
 
 @Component({
   selector: 'app-package-card',
-  imports: [CurrencyPipe, RouterLink],
+  imports: [LocalePathPipe, CurrencyPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article
@@ -66,7 +67,7 @@ const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> 
       <a
         class="btn btn--block"
         [class.btn--primary]="pkg().highlighted"
-        routerLink="/contact"
+        [routerLink]="'/contact' | localePath"
         [queryParams]="{ package: pkg().id }"
       >
         {{ pkg().ctaLabel }}

@@ -4,10 +4,11 @@ import { RouterLink } from '@angular/router';
 import { ARTICLE_CATEGORY_LABELS, Article } from '../../core/models';
 import { LabelPipe } from '../pipes/format.pipes';
 import { MediaFrame } from '../ui/media-frame';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-article-card',
-  imports: [RouterLink, DatePipe, LabelPipe, MediaFrame],
+  imports: [LocalePathPipe, RouterLink, DatePipe, LabelPipe, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article class="card card--interactive article-card">
@@ -28,7 +29,9 @@ import { MediaFrame } from '../ui/media-frame';
           <span>· {{ article().readingMinutes }} min read</span>
         </p>
         <h3 class="card__title">
-          <a class="card__link" [routerLink]="['/blog', article().slug]">{{ article().title }}</a>
+          <a class="card__link" [routerLink]="['/blog', article().slug] | localePath">{{
+            article().title
+          }}</a>
         </h3>
         <p class="text-muted text-small">{{ article().excerpt }}</p>
       </div>

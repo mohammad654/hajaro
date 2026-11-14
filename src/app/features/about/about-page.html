@@ -74,8 +74,7 @@
             <ul class="credential-list">
               @for (item of qualifications(); track item.title) {
                 <li>
-                  <strong>{{ item.title }}</strong
-                  ><span
+                  <strong>{{ item.title }}</strong><span
                     >{{ item.detail }}
                     @if (item.year) {
                       · {{ item.year }}
@@ -92,8 +91,7 @@
             <ul class="credential-list">
               @for (item of competitions(); track item.title) {
                 <li>
-                  <strong>{{ item.title }}</strong
-                  ><span
+                  <strong>{{ item.title }}</strong><span
                     >{{ item.detail }}
                     @if (item.year) {
                       · {{ item.year }}
@@ -110,8 +108,7 @@
             <ul class="credential-list">
               @for (item of achievements(); track item.title) {
                 <li>
-                  <strong>{{ item.title }}</strong
-                  ><span
+                  <strong>{{ item.title }}</strong><span
                     >{{ item.detail }}
                     @if (item.year) {
                       · {{ item.year }}
@@ -147,8 +144,8 @@
       }
     </div>
     <p class="about__links">
-      <a routerLink="/services" class="link-arrow">Explore coaching services</a>
-      <a routerLink="/pricing" class="link-arrow">See packages & pricing</a>
+      <a [routerLink]="'/services' | localePath" class="link-arrow">Explore coaching services</a>
+      <a [routerLink]="'/pricing' | localePath" class="link-arrow">See packages & pricing</a>
     </p>
   </div>
 </section>

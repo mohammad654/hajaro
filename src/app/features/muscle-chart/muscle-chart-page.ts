@@ -22,10 +22,12 @@ import { AnatomyExplorer } from './anatomy-explorer';
 import { MuscleDetailPanel } from './muscle-detail-panel';
 import { SplitPrograms } from './split-programs';
 import { WorkoutChartTable } from './workout-chart-table';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-muscle-chart-page',
   imports: [
+    LocalePathPipe,
     RouterLink,
     NgOptimizedImage,
     PageHero,

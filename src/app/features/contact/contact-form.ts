@@ -27,6 +27,7 @@ import {
 import { FieldError } from '../../shared/forms/field-error';
 import { phoneValidator } from '../../shared/forms/validation-messages';
 import { Icon } from '../../shared/ui/icon/icon';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
@@ -53,7 +54,7 @@ const clean = (value: string) =>
 
 @Component({
   selector: 'app-contact-form',
-  imports: [ReactiveFormsModule, RouterLink, FieldError, Icon],
+  imports: [LocalePathPipe, ReactiveFormsModule, RouterLink, FieldError, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.scss',

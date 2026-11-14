@@ -16,12 +16,14 @@ import { ArticleCard } from '../../shared/cards/article-card';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { PageHero } from '../../shared/ui/page-hero';
 import { Paginator, paginate } from '../../shared/ui/paginator';
+import { canonicalSlug } from '../../core/i18n/current-locale';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const PAGE_SIZE = 9;
 
 @Component({
   selector: 'app-blog-page',
-  imports: [RouterLink, PageHero, ArticleCard, Paginator, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, ArticleCard, Paginator, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -36,7 +38,7 @@ const PAGE_SIZE = 9;
         <nav class="categories" aria-label="Blog categories">
           <a
             class="chip"
-            routerLink="/blog"
+            [routerLink]="'/blog' | localePath"
             [class.is-active]="!category()"
             [attr.aria-current]="!category() ? 'page' : null"
             >All</a
@@ -44,7 +46,7 @@ const PAGE_SIZE = 9;
           @for (c of categories; track c[0]) {
             <a
               class="chip"
-              [routerLink]="['/blog/category', c[0]]"
+              [routerLink]="['/blog/category', c[0]] | localePath"
               [class.is-active]="category() === c[0]"
               [attr.aria-current]="category() === c[0] ? 'page' : null"
               >{{ c[1] }}</a
@@ -70,7 +72,7 @@ const PAGE_SIZE = 9;
             <p class="text-muted">
               New articles are published regularly. Browse all articles in the meantime.
             </p>
-            <a class="btn" routerLink="/blog">All articles</a>
+            <a class="btn" [routerLink]="'/blog' | localePath">All articles</a>
           </div>
         }
       </div>
@@ -104,8 +106,13 @@ export class BlogPage {
   private readonly seo = inject(SeoService);
   private readonly markNotFound = injectNotFoundStatus();
 
-  /** Route param on /blog/category/:category; undefined on /blog. */
-  readonly category = input<string | undefined>(undefined);
+  /** Route param on /blog/category/:category (public, per-language slug); undefined on /blog. */
+  readonly categoryParam = input<string | undefined>(undefined, { alias: 'category' });
+  /** Canonical category key. */
+  protected readonly category = computed(() => {
+    const param = this.categoryParam();
+    return param === undefined ? undefined : canonicalSlug(param);
+  });
 
   protected readonly categories = Object.entries(ARTICLE_CATEGORY_LABELS) as [
     ArticleCategory,

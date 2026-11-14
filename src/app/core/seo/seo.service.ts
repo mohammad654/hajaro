@@ -4,12 +4,14 @@ import { NavigationStart, Router } from '@angular/router';
 import { filter } from 'rxjs';
 import { environment } from '../../../environments/environment';
 import { SITE_CONFIG } from '../config/site.config';
-import { DEFAULT_LOCALE, SITE_LOCALES, injectSiteLocale, localizedPath } from '../i18n/locales';
+import { CURRENT_LOCALE, toCanonical } from '../i18n/current-locale';
+import { DEFAULT_LOCALE, SITE_LOCALES, SiteLocale } from '../i18n/locales';
+import { localeUrl } from '../i18n/paths';
 
 export interface PageMeta {
   readonly title: string;
   readonly description: string;
-  /** Canonical path. Defaults to the current router URL without query string or fragment. */
+  /** Canonical app path (e.g. '/services'). Defaults to the current page. */
   readonly path?: string;
   readonly image?: string;
   readonly imageAlt?: string;
@@ -24,7 +26,8 @@ type JsonLd = Record<string, unknown>;
 /**
  * Owns every SEO-relevant tag in <head>: title, description, canonical, robots,
  * Open Graph, Twitter cards, hreflang alternates and JSON-LD structured data.
- * Works identically during SSR/prerendering. URLs are always built for the language of this build.
+ * Works identically during SSR/prerendering. Paths are canonical app paths; URLs are built for the
+ * language of this build (see core/i18n/paths.ts).
  */
 @Injectable({ providedIn: 'root' })
 export class SeoService {
@@ -33,7 +36,6 @@ export class SeoService {
   private readonly document = inject(DOCUMENT);
   private readonly router = inject(Router);
   private readonly pageSchemaKeys = new Set<string>();
-  private readonly locale = injectSiteLocale();
 
   constructor() {
     const verification = environment.analytics.searchConsoleVerification;
@@ -54,6 +56,7 @@ export class SeoService {
     const path = page.path ?? this.currentPath();
     const url = this.absoluteUrl(path);
     const image = this.absoluteUrl(page.image ?? SITE_CONFIG.defaultOgImage);
+    const alternateLocales = SITE_LOCALES.filter((l) => l !== CURRENT_LOCALE);
 
     this.title.setTitle(fullTitle);
     this.setName('description', page.description);
@@ -65,7 +68,11 @@ export class SeoService {
     this.setAlternates(page.noindex ? null : path);
 
     this.setProperty('og:site_name', `${SITE_CONFIG.brandName} ${SITE_CONFIG.brandSuffix}`);
-    this.setProperty('og:locale', this.locale.ogLocale);
+    this.setProperty('og:locale', CURRENT_LOCALE.ogLocale);
+    this.meta.getTags("property='og:locale:alternate'").forEach((tag) => tag.remove());
+    for (const l of alternateLocales) {
+      this.meta.addTag({ property: 'og:locale:alternate', content: l.ogLocale });
+    }
     this.setProperty('og:type', page.type ?? 'website');
     this.setProperty('og:title', fullTitle);
     this.setProperty('og:description', page.description);
@@ -94,10 +101,14 @@ export class SeoService {
     this.setSchema(key, data);
   }
 
-  /** Absolute URL of an app path (or public asset) in the current language, e.g. '/about' → 'https://…/nl/about'. */
-  absoluteUrl(path: string, locale = this.locale): string {
+  /**
+   * Absolute URL of a canonical app path in a language (default: this build's), e.g. '/about' →
+   * 'https://…/over-mij' (nl) or 'https://…/en/about' (en). Files ('/icons/x.png') are not translated.
+   */
+  absoluteUrl(path: string, locale: SiteLocale = CURRENT_LOCALE): string {
     if (/^https?:\/\//.test(path)) return path;
-    return `${this.origin}${localizedPath(locale, path)}`;
+    const isFile = /\.[a-z0-9]{2,5}$/i.test(path.split(/[?#]/)[0]);
+    return `${this.origin}${isFile ? path : localeUrl(path, locale)}`;
   }
 
   private get origin(): string {
@@ -126,9 +137,9 @@ export class SeoService {
     }
   }
 
+  /** Canonical path of the current page (router.url is the public, translated path). */
   private currentPath(): string {
-    const path = this.router.url.split(/[?#]/)[0] || '/';
-    return path === '' ? '/' : path;
+    return toCanonical(this.router.url.split(/[?#]/)[0] || '/');
   }
 
   private setSchema(key: string, data: JsonLd): void {

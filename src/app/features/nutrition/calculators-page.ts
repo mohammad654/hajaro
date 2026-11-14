@@ -4,10 +4,11 @@ import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { PageHero } from '../../shared/ui/page-hero';
 import { NutritionCalculator } from './nutrition-calculator';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-calculators-page',
-  imports: [RouterLink, PageHero, NutritionCalculator, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, NutritionCalculator, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -30,7 +31,7 @@ import { NutritionCalculator } from './nutrition-calculator';
         </nav>
         <app-nutrition-calculator />
         <p class="more">
-          <a routerLink="/nutrition" class="link-arrow"
+          <a [routerLink]="'/nutrition' | localePath" class="link-arrow"
             >Learn how to use these numbers in the nutrition guide</a
           >
         </p>

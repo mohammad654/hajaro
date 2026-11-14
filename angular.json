@@ -96,8 +96,11 @@
               ]
             },
             "nl": {
-              "localize": ["nl"],
-              "baseHref": "/nl/"
+              "localize": ["nl"]
+            },
+            "serve-en": {
+              "localize": ["en"],
+              "baseHref": "/en/"
             }
           },
           "defaultConfiguration": "production"
@@ -109,10 +112,10 @@
               "buildTarget": "hajaro:build:production"
             },
             "development": {
-              "buildTarget": "hajaro:build:development"
+              "buildTarget": "hajaro:build:development,nl"
             },
-            "nl": {
-              "buildTarget": "hajaro:build:development,nl",
+            "en": {
+              "buildTarget": "hajaro:build:development,serve-en",
               "port": 4201
             }
           },
@@ -129,12 +132,12 @@
       "i18n": {
         "sourceLocale": {
           "code": "en",
-          "subPath": ""
+          "subPath": "en"
         },
         "locales": {
           "nl": {
             "translation": "src/locale/messages.nl.xlf",
-            "subPath": "nl"
+            "subPath": ""
           }
         }
       }

@@ -11,6 +11,7 @@ import { PackageCard } from '../../shared/cards/package-card';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { FaqList } from '../../shared/ui/faq-list';
 import { PageHero } from '../../shared/ui/page-hero';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 type ComparisonKey = keyof Pick<
   CoachingPackage,
@@ -19,7 +20,7 @@ type ComparisonKey = keyof Pick<
 
 @Component({
   selector: 'app-pricing-page',
-  imports: [RouterLink, CurrencyPipe, PageHero, PackageCard, FaqList, CtaSection],
+  imports: [LocalePathPipe, RouterLink, CurrencyPipe, PageHero, PackageCard, FaqList, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -81,7 +82,7 @@ type ComparisonKey = keyof Pick<
                     <a
                       class="btn btn--sm"
                       [class.btn--primary]="pkg.highlighted"
-                      routerLink="/contact"
+                      [routerLink]="'/contact' | localePath"
                       [queryParams]="{ package: pkg.id }"
                       >{{ pkg.ctaLabel }}</a
                     >
@@ -93,8 +94,8 @@ type ComparisonKey = keyof Pick<
         </div>
         <p class="disclaimer note">
           Prices include VAT where applicable. Programs can also be purchased individually from the
-          <a routerLink="/programs">program catalog</a>. Not sure which package fits?
-          <a routerLink="/contact">Book a free consultation</a>.
+          <a [routerLink]="'/programs' | localePath">program catalog</a>. Not sure which package
+          fits? <a [routerLink]="'/contact' | localePath">Book a free consultation</a>.
         </p>
       </div>
     </section>

@@ -13,6 +13,7 @@ import { AuthService } from '../../core/auth/auth.service';
 import { SITE_CONFIG } from '../../core/config/site.config';
 import { Icon } from '../../shared/ui/icon/icon';
 import { SkipLink } from '../../shared/ui/skip-link';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 export interface PortalNavItem {
   readonly label: string;
@@ -24,7 +25,7 @@ export interface PortalNavItem {
 /** Application shell for authenticated areas: responsive sidebar navigation + content outlet. */
 @Component({
   selector: 'app-portal-shell',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, Icon, SkipLink],
+  imports: [LocalePathPipe, RouterOutlet, RouterLink, RouterLinkActive, Icon, SkipLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './portal-shell.html',
   styleUrl: './portal-shell.scss',

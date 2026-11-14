@@ -11,13 +11,13 @@
       <app-icon [name]="menuOpen() ? 'close' : 'menu'" />
       <span class="visually-hidden">Toggle navigation</span>
     </button>
-    <a routerLink="/" class="portal__brand"
+    <a [routerLink]="'/' | localePath" class="portal__brand"
       >{{ brand.brandName }}<span>{{ title() }}</span></a
     >
   </header>
 
   <aside id="portal-nav" class="portal__sidebar" aria-label="{{ title() }} navigation">
-    <a routerLink="/" class="portal__brand portal__brand--side"
+    <a [routerLink]="'/' | localePath" class="portal__brand portal__brand--side"
       >{{ brand.brandName }}<span>{{ title() }}</span></a
     >
     <nav>
@@ -25,7 +25,7 @@
         @for (item of nav(); track item.path) {
           <li>
             <a
-              [routerLink]="item.path"
+              [routerLink]="item.path | localePath"
               routerLinkActive="is-active"
               [routerLinkActiveOptions]="{ exact: !!item.exact }"
               ariaCurrentWhenActive="page"
@@ -43,7 +43,7 @@
           <span>{{ user.email }}</span>
         </p>
       }
-      <a routerLink="/" class="btn btn--ghost btn--sm"
+      <a [routerLink]="'/' | localePath" class="btn btn--ghost btn--sm"
         ><app-icon name="home" [size]="16" /> Website</a
       >
       <button type="button" class="btn btn--ghost btn--sm" (click)="auth.logout()">

@@ -137,7 +137,7 @@
             </p>
             <a
               class="btn btn--primary btn--block"
-              routerLink="/contact"
+              [routerLink]="'/contact' | localePath"
               [queryParams]="{ program: program.slug, intent: 'purchase' }"
             >
               Get this program
@@ -147,12 +147,15 @@
               This program is delivered through coaching, adjusted to your needs.
             </p>
           }
-          <a class="btn btn--block" routerLink="/contact" [queryParams]="{ program: program.slug }"
+          <a
+            class="btn btn--block"
+            [routerLink]="'/contact' | localePath"
+            [queryParams]="{ program: program.slug }"
             >Request coaching</a
           >
           <a
             class="btn btn--ghost btn--block"
-            routerLink="/workout-planner"
+            [routerLink]="'/workout-planner' | localePath"
             [queryParams]="{ program: program.id }"
           >
             Use in workout planner
@@ -170,7 +173,9 @@
           <ul class="examples">
             @for (exercise of exampleExercises(); track exercise!.id) {
               <li>
-                <a [routerLink]="['/exercises', exercise!.slug]">{{ exercise!.name }}</a>
+                <a [routerLink]="['/exercises', exercise!.slug] | localePath">{{
+                  exercise!.name
+                }}</a>
               </li>
             }
           </ul>

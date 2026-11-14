@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ServiceCatalogStore } from '../../../core/data-access/service-catalog.store';
 import { Icon } from '../../../shared/ui/icon/icon';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-services',
-  imports: [RouterLink, Icon],
+  imports: [LocalePathPipe, RouterLink, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section section--alt" aria-labelledby="services-title">
@@ -23,7 +24,7 @@ import { Icon } from '../../../shared/ui/icon/icon';
             <article class="card card--interactive service">
               <span class="service__icon"><app-icon [name]="service.icon" [size]="26" /></span>
               <h3 class="card__title">
-                <a class="card__link" [routerLink]="['/services', service.slug]">{{
+                <a class="card__link" [routerLink]="['/services', service.slug] | localePath">{{
                   service.name
                 }}</a>
               </h3>
@@ -32,7 +33,7 @@ import { Icon } from '../../../shared/ui/icon/icon';
           }
         </div>
         <div class="section-foot">
-          <a routerLink="/services" class="btn">All coaching services</a>
+          <a [routerLink]="'/services' | localePath" class="btn">All coaching services</a>
         </div>
       </div>
     </section>

@@ -111,7 +111,9 @@
               <dt>Primary</dt>
               <dd>
                 @for (m of primaryNames(); track m.id; let last = $last) {
-                  <a routerLink="/muscle-chart" [queryParams]="{ muscle: m.id }">{{ m.name }}</a>
+                  <a [routerLink]="'/muscle-chart' | localePath" [queryParams]="{ muscle: m.id }">{{
+                    m.name
+                  }}</a>
                   @if (!last) {
                     ,
                   }
@@ -123,7 +125,11 @@
                 <dt>Secondary</dt>
                 <dd>
                   @for (m of secondaryNames(); track m.id; let last = $last) {
-                    <a routerLink="/muscle-chart" [queryParams]="{ muscle: m.id }">{{ m.name }}</a>
+                    <a
+                      [routerLink]="'/muscle-chart' | localePath"
+                      [queryParams]="{ muscle: m.id }"
+                      >{{ m.name }}</a
+                    >
                     @if (!last) {
                       ,
                     }
@@ -150,7 +156,7 @@
         </div>
         <a
           class="btn btn--primary btn--block"
-          routerLink="/workout-planner"
+          [routerLink]="'/workout-planner' | localePath"
           [queryParams]="{ add: exercise.id }"
           >Add to my workout</a
         >

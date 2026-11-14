@@ -13,10 +13,21 @@ import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
 import { NotFoundContent } from '../not-found/not-found-content';
 import { DELIVERY_LABELS } from './services-page';
+import { canonicalSlug } from '../../core/i18n/current-locale';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-service-detail-page',
-  imports: [RouterLink, CurrencyPipe, PageHero, Icon, ProgramCard, CtaSection, NotFoundContent],
+  imports: [
+    LocalePathPipe,
+    RouterLink,
+    CurrencyPipe,
+    PageHero,
+    Icon,
+    ProgramCard,
+    CtaSection,
+    NotFoundContent,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './service-detail-page.html',
   styleUrl: './service-detail-page.scss',
@@ -31,7 +42,7 @@ export class ServiceDetailPage {
   readonly slug = input.required<string>();
 
   protected readonly deliveryLabels = DELIVERY_LABELS;
-  protected readonly service = computed(() => this.services.bySlug(this.slug()));
+  protected readonly service = computed(() => this.services.bySlug(canonicalSlug(this.slug())));
   protected readonly relatedPackage = computed(() =>
     this.packages.get(this.service()?.relatedPackageId),
   );

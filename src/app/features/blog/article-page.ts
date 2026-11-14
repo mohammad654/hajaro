@@ -13,6 +13,8 @@ import { CtaSection } from '../../shared/ui/cta-section';
 import { MediaFrame } from '../../shared/ui/media-frame';
 import { NotFoundContent } from '../not-found/not-found-content';
 import { ShareLinks } from './share-links';
+import { canonicalSlug } from '../../core/i18n/current-locale';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 type HeadingBlock = Extract<ArticleBlock, { type: 'h2' | 'h3' }>;
 
@@ -28,6 +30,7 @@ interface ViewBlock {
 @Component({
   selector: 'app-article-page',
   imports: [
+    LocalePathPipe,
     RouterLink,
     DatePipe,
     LabelPipe,
@@ -50,7 +53,7 @@ export class ArticlePage {
   readonly slug = input.required<string>();
 
   protected readonly categories = ARTICLE_CATEGORY_LABELS;
-  protected readonly article = computed(() => this.articles.bySlug(this.slug()));
+  protected readonly article = computed(() => this.articles.bySlug(canonicalSlug(this.slug())));
   protected readonly blocks = computed<readonly ViewBlock[]>(() => this.article()?.body ?? []);
   protected readonly toc = computed(
     () =>
@@ -61,7 +64,9 @@ export class ArticlePage {
     const a = this.article();
     return a ? this.articles.related(a) : [];
   });
-  protected readonly url = computed(() => this.seo.absoluteUrl(`/blog/${this.slug()}`));
+  protected readonly url = computed(() =>
+    this.seo.absoluteUrl(`/blog/${canonicalSlug(this.slug())}`),
+  );
 
   constructor() {
     effect(() => {

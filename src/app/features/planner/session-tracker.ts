@@ -5,6 +5,7 @@ import { LoggedSet, WorkoutSession } from '../../core/models';
 import { RestPipe } from '../../shared/pipes/format.pipes';
 import { Icon } from '../../shared/ui/icon/icon';
 import { sessionStats } from './planner.utils';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const MAX_WEIGHT_KG = 1000;
 const MAX_REPS = 200;
@@ -12,7 +13,7 @@ const MAX_REPS = 200;
 /** Live workout logging: record weight and reps per set and tick sets off as you go. */
 @Component({
   selector: 'app-session-tracker',
-  imports: [RouterLink, RestPipe, Icon],
+  imports: [LocalePathPipe, RouterLink, RestPipe, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './session-tracker.html',
   styleUrl: './session-tracker.scss',

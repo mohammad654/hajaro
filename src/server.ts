@@ -7,6 +7,7 @@ import {
 import compression from 'compression';
 import express from 'express';
 import { join } from 'node:path';
+import { legacyRedirect, rememberedLanguageRedirect } from './legacy-redirects';
 import { buildRobots, buildSitemap } from './seo-files';
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
@@ -30,6 +31,29 @@ app.use((_req, res, next) => {
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), payment=()');
   res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
   next();
+});
+
+/**
+ * Language routing: 301 for URLs of the earlier structure, and the bare root URL sends a returning
+ * visitor to the language they chose (302, private: never cached for everyone).
+ */
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next();
+  // originalUrl is the URL as requested (the dev server strips the /en base from req.path).
+  const [path, query = ''] = req.originalUrl.split(/(?=\?)/, 2);
+
+  const moved = legacyRedirect(path);
+  if (moved) return res.redirect(301, moved + query);
+
+  if (path === '/') {
+    res.setHeader('Vary', 'Cookie');
+    const preferred = rememberedLanguageRedirect(req.headers.cookie);
+    if (preferred) {
+      res.setHeader('Cache-Control', 'private, no-store');
+      return res.redirect(302, preferred + query);
+    }
+  }
+  return next();
 });
 
 /** SEO files generated from the same content data the application renders. */

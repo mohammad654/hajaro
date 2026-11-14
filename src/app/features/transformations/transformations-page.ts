@@ -6,10 +6,11 @@ import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-transformations-page',
-  imports: [RouterLink, DatePipe, PageHero, MediaFrame, CtaSection],
+  imports: [LocalePathPipe, RouterLink, DatePipe, PageHero, MediaFrame, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './transformations-page.html',
   styleUrl: './transformations-page.scss',

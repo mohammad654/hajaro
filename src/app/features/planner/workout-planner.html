@@ -23,7 +23,8 @@
       <app-icon name="info" [size]="18" />
       <span
         >Your routines and workouts are saved on this device.
-        <a routerLink="/login">Clients can sign in</a> to train from their coach's plan.</span
+        <a [routerLink]="'/login' | localePath">Clients can sign in</a> to train from their coach's
+        plan.</span
       >
     </p>
   }

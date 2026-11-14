@@ -25,9 +25,12 @@
       <header class="block__head">
         <h3>
           @if (exercises.get(exercise.exerciseId); as info) {
-            <a [routerLink]="['/exercises', info.slug]" target="_blank" rel="noopener">{{
-              info.name
-            }}</a>
+            <a
+              [routerLink]="['/exercises', info.slug] | localePath"
+              target="_blank"
+              rel="noopener"
+              >{{ info.name }}</a
+            >
           } @else {
             {{ exercise.exerciseId }}
           }

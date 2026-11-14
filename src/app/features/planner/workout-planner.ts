@@ -32,6 +32,7 @@ import {
   routineExerciseFrom,
   startSession,
 } from './planner.utils';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 type PlannerTab = 'routines' | 'builder' | 'session' | 'history';
 const GUEST_OWNER = 'guest';
@@ -42,7 +43,15 @@ const GUEST_OWNER = 'guest';
  */
 @Component({
   selector: 'app-workout-planner',
-  imports: [DatePipe, RouterLink, Icon, RoutineBuilder, SessionTracker, SessionHistory],
+  imports: [
+    LocalePathPipe,
+    DatePipe,
+    RouterLink,
+    Icon,
+    RoutineBuilder,
+    SessionTracker,
+    SessionHistory,
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './workout-planner.html',
   styleUrl: './workout-planner.scss',

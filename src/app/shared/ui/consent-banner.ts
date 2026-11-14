@@ -1,17 +1,19 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { AnalyticsService } from '../../core/services/analytics.service';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-consent-banner',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (analytics.needsConsent()) {
       <section class="consent" role="region" aria-label="Cookie consent">
         <p>
           We use optional analytics cookies to understand how the site is used and improve it. No
-          data is collected unless you accept. <a routerLink="/privacy">Privacy policy</a>
+          data is collected unless you accept.
+          <a [routerLink]="'/privacy' | localePath">Privacy policy</a>
         </p>
         <div class="cluster">
           <button type="button" class="btn btn--sm" (click)="analytics.setConsent('denied')">

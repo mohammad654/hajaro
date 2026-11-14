@@ -2,11 +2,12 @@ import { ChangeDetectionStrategy, Component, computed, inject, input, output } f
 import { RouterLink } from '@angular/router';
 import { ExerciseStore } from '../../core/data-access/exercise.store';
 import { MuscleId, WorkoutChartRow } from '../../core/models';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 /** The Full Body Muscle Workout Chart: one row per muscle/exercise with example sets and reps. */
 @Component({
   selector: 'app-workout-chart-table',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="table-wrap">
@@ -37,7 +38,9 @@ import { MuscleId, WorkoutChartRow } from '../../core/models';
               </th>
               <td>
                 @if (row.exercise; as exercise) {
-                  <a [routerLink]="['/exercises', exercise.slug]">{{ exercise.name }}</a>
+                  <a [routerLink]="['/exercises', exercise.slug] | localePath">{{
+                    exercise.name
+                  }}</a>
                 }
               </td>
               <td class="num">{{ row.sets }}</td>

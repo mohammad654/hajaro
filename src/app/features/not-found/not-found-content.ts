@@ -1,9 +1,10 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-not-found-content',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section not-found">
@@ -12,9 +13,9 @@ import { RouterLink } from '@angular/router';
         <h1>We couldn’t find that {{ what() }}</h1>
         <p class="lead">It may have been moved or renamed. Try one of these instead:</p>
         <div class="cluster">
-          <a class="btn btn--primary" [routerLink]="backLink()">{{ backLabel() }}</a>
-          <a class="btn" routerLink="/">Back to home</a>
-          <a class="btn btn--ghost" routerLink="/contact">Contact us</a>
+          <a class="btn btn--primary" [routerLink]="backLink() | localePath">{{ backLabel() }}</a>
+          <a class="btn" [routerLink]="'/' | localePath">Back to home</a>
+          <a class="btn btn--ghost" [routerLink]="'/contact' | localePath">Contact us</a>
         </div>
       </div>
     </section>

@@ -5,8 +5,8 @@
     <p class="text-muted">Your enquiry has been received. {{ responseTime }}</p>
     <p class="text-muted">In the meantime, explore the free training tools:</p>
     <div class="cluster success__links">
-      <a class="btn" routerLink="/muscle-chart">Muscle chart</a>
-      <a class="btn" routerLink="/programs">Programs</a>
+      <a class="btn" [routerLink]="'/muscle-chart' | localePath">Muscle chart</a>
+      <a class="btn" [routerLink]="'/programs' | localePath">Programs</a>
       <button type="button" class="btn btn--ghost" (click)="reset()">Send another message</button>
     </div>
   </div>
@@ -150,7 +150,7 @@
           />
           <span>
             I agree that my details are processed to respond to this enquiry, as described in the
-            <a routerLink="/privacy" target="_blank">privacy policy</a>. *
+            <a [routerLink]="'/privacy' | localePath" target="_blank">privacy policy</a>. *
           </span>
         </label>
         <app-field-error [control]="form.controls.consent" id="consent-err" label="Consent" />

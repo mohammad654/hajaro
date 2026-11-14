@@ -255,7 +255,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">112,113</context>
+          <context context-type="linenumber">115,116</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
@@ -320,6 +320,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/site.config.ts</context>
           <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="build.locale" datatype="html">
+        <source>en</source>
+        <target state="translated">nl</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/i18n/current-locale.ts</context>
+          <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2699764639060274569" datatype="html">
@@ -393,7 +401,7 @@
         <target state="final">Dashboard</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8740283058482317967" datatype="html">
@@ -401,7 +409,7 @@
         <target state="translated">Gratis kennismaking</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">67,68</context>
+          <context context-type="linenumber">70,71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1556270137829928334" datatype="html">
@@ -409,7 +417,7 @@
         <target state="translated">Menu sluiten</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">82,83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2005818722469409502" datatype="html">
@@ -417,7 +425,7 @@
         <target state="translated">Menu openen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">81,82</context>
+          <context context-type="linenumber">84,85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4653540968485750756" datatype="html">
@@ -425,7 +433,7 @@
         <target state="translated">Sitemenu</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">95,97</context>
+          <context context-type="linenumber">98,100</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1002165214775409029" datatype="html">
@@ -433,7 +441,7 @@
         <target state="translated">Mobiel menu</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">98,99</context>
+          <context context-type="linenumber">101,102</context>
         </context-group>
         <note priority="1" from="description">Mobile navigation landmark</note>
       </trans-unit>
@@ -442,7 +450,7 @@
         <target state="translated">Plan een gratis kennismaking</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">118,119</context>
+          <context context-type="linenumber">121,122</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5631730423591436287" datatype="html">
@@ -450,7 +458,7 @@
         <target state="translated">Mijn dashboard</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">121,122</context>
+          <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2826581353496868063" datatype="html">
@@ -458,7 +466,7 @@
         <target state="translated">Taal</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/language-switcher.ts</context>
-          <context context-type="linenumber">20,21</context>
+          <context context-type="linenumber">31,32</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2026872660338003795" datatype="html">

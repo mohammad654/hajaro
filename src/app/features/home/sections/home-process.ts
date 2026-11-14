@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { COACHING_STEPS, NUTRITION_PILLARS } from '../home.content';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-process',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section" aria-labelledby="process-title">
@@ -42,8 +43,10 @@ import { COACHING_STEPS, NUTRITION_PILLARS } from '../home.content';
             }
           </ul>
           <div class="cluster nutrition__ctas">
-            <a routerLink="/nutrition" class="btn">Nutrition guide</a>
-            <a routerLink="/nutrition/calculators" class="btn btn--ghost">Free calculators</a>
+            <a [routerLink]="'/nutrition' | localePath" class="btn">Nutrition guide</a>
+            <a [routerLink]="'/nutrition/calculators' | localePath" class="btn btn--ghost"
+              >Free calculators</a
+            >
           </div>
         </div>
         <div class="macro card" aria-label="Example macronutrient split">
@@ -51,8 +54,7 @@ import { COACHING_STEPS, NUTRITION_PILLARS } from '../home.content';
           @for (macro of macros; track macro.label) {
             <div class="macro__row">
               <div class="macro__label">
-                <span>{{ macro.label }}</span
-                ><strong>{{ macro.value }}</strong>
+                <span>{{ macro.label }}</span><strong>{{ macro.value }}</strong>
               </div>
               <div class="macro__bar"><span [style.width.%]="macro.pct"></span></div>
             </div>

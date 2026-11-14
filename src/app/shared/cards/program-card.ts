@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 import { DIFFICULTY_LABELS, PROGRAM_GOAL_LABELS, TrainingProgram } from '../../core/models';
 import { Icon } from '../ui/icon/icon';
 import { LabelPipe } from '../pipes/format.pipes';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-program-card',
-  imports: [RouterLink, Icon, LabelPipe],
+  imports: [LocalePathPipe, RouterLink, Icon, LabelPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article class="card card--interactive program-card" [class.card--featured]="highlight()">
@@ -15,7 +16,9 @@ import { LabelPipe } from '../pipes/format.pipes';
         <span class="badge">{{ program().goal | label: goals }}</span>
       </div>
       <h3 class="card__title">
-        <a class="card__link" [routerLink]="['/programs', program().slug]">{{ program().name }}</a>
+        <a class="card__link" [routerLink]="['/programs', program().slug] | localePath">{{
+          program().name
+        }}</a>
       </h3>
       <p class="text-muted">{{ program().tagline }}</p>
       <dl class="program-card__meta">

@@ -1,7 +1,7 @@
 <header class="header" [class.is-scrolled]="scrolled() || mobileOpen()">
   <div class="container header__inner">
     <a
-      routerLink="/"
+      [routerLink]="'/' | localePath"
       class="logo"
       i18n-aria-label="Logo link to the home page"
       aria-label="{{ brand.brandName }} {{ brand.brandSuffix }} — home"
@@ -34,7 +34,7 @@
                 <ul>
                   @for (child of item.children; track child.path) {
                     <li>
-                      <a [routerLink]="child.path" class="dropdown__link">
+                      <a [routerLink]="child.path | localePath" class="dropdown__link">
                         <strong>{{ child.label }}</strong>
                         <span>{{ child.description }}</span>
                       </a>
@@ -44,7 +44,7 @@
               </div>
             } @else {
               <a
-                [routerLink]="item.path"
+                [routerLink]="item.path | localePath"
                 class="nav__link"
                 routerLinkActive="is-active"
                 ariaCurrentWhenActive="page"
@@ -59,11 +59,14 @@
     <div class="header__actions">
       <app-language-switcher class="header__lang" />
       @if (sessionUser(); as user) {
-        <a class="btn btn--ghost btn--sm header__account" [routerLink]="auth.homeFor(user.role)">
+        <a
+          class="btn btn--ghost btn--sm header__account"
+          [routerLink]="auth.homeFor(user.role) | localePath"
+        >
           <app-icon name="user" [size]="18" /> <ng-container i18n>Dashboard</ng-container>
         </a>
       }
-      <a class="btn btn--primary btn--sm header__cta" routerLink="/contact" i18n
+      <a class="btn btn--primary btn--sm header__cta" [routerLink]="'/contact' | localePath" i18n
         >Free consultation</a
       >
       <button
@@ -100,25 +103,27 @@
             @if (item.children) {
               @for (child of item.children; track child.path) {
                 <li>
-                  <a [routerLink]="child.path">{{ child.label }}</a>
+                  <a [routerLink]="child.path | localePath">{{ child.label }}</a>
                 </li>
               }
             } @else {
               <li>
-                <a [routerLink]="item.path">{{ item.label }}</a>
+                <a [routerLink]="item.path | localePath">{{ item.label }}</a>
               </li>
             }
           }
-          <li><a routerLink="/contact" i18n>Contact</a></li>
+          <li><a [routerLink]="'/contact' | localePath" i18n>Contact</a></li>
         </ul>
       </nav>
       <div class="mobile__actions">
         <app-language-switcher [block]="true" />
-        <a class="btn btn--primary btn--block btn--lg" routerLink="/contact" i18n
+        <a class="btn btn--primary btn--block btn--lg" [routerLink]="'/contact' | localePath" i18n
           >Book a free consultation</a
         >
         @if (sessionUser(); as user) {
-          <a class="btn btn--block" [routerLink]="auth.homeFor(user.role)" i18n>My dashboard</a>
+          <a class="btn btn--block" [routerLink]="auth.homeFor(user.role) | localePath" i18n
+            >My dashboard</a
+          >
         }
       </div>
     </div>

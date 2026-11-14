@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a routerLink="/" class="footer__logo"
+        <a [routerLink]="'/' | localePath" class="footer__logo"
           >{{ brand.brandName }} <span>{{ brand.brandSuffix }}</span></a
         >
         <p i18n>
@@ -64,7 +64,7 @@
           <ul>
             @for (link of column.links; track link.path) {
               <li>
-                <a [routerLink]="link.path">{{ link.label }}</a>
+                <a [routerLink]="link.path | localePath">{{ link.label }}</a>
               </li>
             }
           </ul>

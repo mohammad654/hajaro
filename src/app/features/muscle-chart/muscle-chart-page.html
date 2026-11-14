@@ -63,12 +63,12 @@
     <div class="chart-actions">
       <a
         class="btn btn--primary"
-        routerLink="/workout-planner"
+        [routerLink]="'/workout-planner' | localePath"
         [queryParams]="{ template: 'full-body-chart' }"
       >
         Use this chart in the workout planner
       </a>
-      <a class="btn" routerLink="/programs">Browse full programs</a>
+      <a class="btn" [routerLink]="'/programs' | localePath">Browse full programs</a>
     </div>
     <p class="disclaimer chart-note">
       These are example programming ranges, not universal prescriptions. Sets, reps, load and rest

@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 import { ProgramStore } from '../../../core/data-access/program.store';
 import { ProgramCard } from '../../../shared/cards/program-card';
 import { AnatomyFigure } from '../../../shared/anatomy/anatomy-figure';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-programs',
-  imports: [RouterLink, ProgramCard, AnatomyFigure],
+  imports: [LocalePathPipe, RouterLink, ProgramCard, AnatomyFigure],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section" aria-labelledby="programs-title">
@@ -25,7 +26,7 @@ import { AnatomyFigure } from '../../../shared/anatomy/anatomy-figure';
           }
         </div>
         <div class="section-foot">
-          <a routerLink="/programs" class="btn">Browse all programs</a>
+          <a [routerLink]="'/programs' | localePath" class="btn">Browse all programs</a>
         </div>
 
         <aside class="tools card" aria-labelledby="tools-title">
@@ -45,9 +46,13 @@ import { AnatomyFigure } from '../../../shared/anatomy/anatomy-figure';
               planner.
             </p>
             <div class="cluster">
-              <a routerLink="/muscle-chart" class="btn btn--primary">Open the muscle chart</a>
-              <a routerLink="/workout-planner" class="btn">Workout planner</a>
-              <a routerLink="/exercises" class="btn btn--ghost">Exercise library</a>
+              <a [routerLink]="'/muscle-chart' | localePath" class="btn btn--primary"
+                >Open the muscle chart</a
+              >
+              <a [routerLink]="'/workout-planner' | localePath" class="btn">Workout planner</a>
+              <a [routerLink]="'/exercises' | localePath" class="btn btn--ghost"
+                >Exercise library</a
+              >
             </div>
           </div>
         </aside>

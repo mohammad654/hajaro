@@ -4,7 +4,8 @@ import { EXERCISES } from './app/core/data/exercises.data';
 import { PROGRAMS } from './app/core/data/programs.data';
 import { SERVICES } from './app/core/data/services.data';
 import { ARTICLE_CATEGORY_LABELS } from './app/core/models';
-import { DEFAULT_LOCALE, SITE_LOCALES, localizedPath } from './app/core/i18n/locales';
+import { DEFAULT_LOCALE, SITE_LOCALES, SiteLocale } from './app/core/i18n/locales';
+import { localeUrl } from './app/core/i18n/paths';
 
 interface SitemapEntry {
   readonly path: string;
@@ -69,8 +70,8 @@ export function buildSitemap(): string {
   ];
 
   // Every page exists in every language; each <url> lists all of its translations (hreflang).
-  const href = (locale: (typeof SITE_LOCALES)[number], path: string) =>
-    escapeXml(origin() + localizedPath(locale, path));
+  // Entry paths are canonical; each language gets its own translated URL.
+  const href = (locale: SiteLocale, path: string) => escapeXml(origin() + localeUrl(path, locale));
   const urls = entries
     .flatMap((e) => {
       const alternates = [
@@ -93,7 +94,7 @@ export function buildRobots(): string {
     'User-agent: *',
     'Allow: /',
     ...SITE_LOCALES.flatMap((l) =>
-      ['/dashboard', '/admin', '/login'].map((path) => `Disallow: ${localizedPath(l, path)}`),
+      ['/dashboard', '/admin', '/login'].map((path) => `Disallow: ${localeUrl(path, l)}`),
     ),
     '',
     `Sitemap: ${origin()}/sitemap.xml`,

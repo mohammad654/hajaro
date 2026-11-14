@@ -1,15 +1,26 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  DOCUMENT,
+  computed,
+  inject,
+  input,
+} from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter, map } from 'rxjs';
 import { environment } from '../../../environments/environment';
-import { SITE_LOCALES, SiteLocale, injectSiteLocale, localizedPath } from '../../core/i18n/locales';
+import { CURRENT_LOCALE, toCanonical } from '../../core/i18n/current-locale';
+import { LANGUAGE_COOKIE, LocaleCode, SITE_LOCALES } from '../../core/i18n/locales';
+import { localeUrl } from '../../core/i18n/paths';
 
 /**
  * Links to the current page in every site language, each with its flag.
  *
  * Each language is a separately compiled build served under its own URL prefix, so these are
  * plain `href` links (a full page load into the other bundle), not `routerLink`s.
+ * Choosing a language stores it in a cookie; the server uses it only to send a returning visitor
+ * from the bare root URL to their language (crawlers send no cookies, so they are never redirected).
  * Flags are inline SVG data URIs in CSS: no extra requests, no duplicate SVG ids when the
  * switcher is rendered twice (header + mobile menu), identical on every OS (unlike emoji flags).
  */
@@ -26,6 +37,7 @@ import { SITE_LOCALES, SiteLocale, injectSiteLocale, localizedPath } from '../..
             [attr.hreflang]="locale.code"
             [attr.lang]="locale.code"
             [attr.aria-current]="locale.code === current.code ? 'true' : null"
+            (click)="remember(locale.code)"
           >
             <span class="lang__flag lang__flag--{{ locale.code }}" aria-hidden="true"></span>
             @if (block()) {
@@ -114,7 +126,8 @@ export class LanguageSwitcher {
   readonly block = input(false);
 
   protected readonly locales = SITE_LOCALES;
-  protected readonly current = injectSiteLocale();
+  protected readonly current = CURRENT_LOCALE;
+  private readonly document = inject(DOCUMENT);
 
   private readonly router = inject(Router);
   private readonly path = toSignal(
@@ -125,16 +138,21 @@ export class LanguageSwitcher {
     { initialValue: this.routerPath() },
   );
 
-  protected readonly hrefs = computed(
-    () =>
-      Object.fromEntries(
-        SITE_LOCALES.map((l: SiteLocale) => [
-          l.code,
-          // In development each language has its own dev server (see environment.localeOrigins).
-          `${environment.localeOrigins?.[l.code] ?? ''}${localizedPath(l, this.path())}`,
-        ]),
-      ) as Record<SiteLocale['code'], string>,
-  );
+  protected readonly hrefs = computed(() => {
+    const canonical = toCanonical(this.path());
+    return Object.fromEntries(
+      SITE_LOCALES.map((l) => [
+        l.code,
+        // In development each language has its own dev server (see environment.localeOrigins).
+        `${environment.localeOrigins?.[l.code] ?? ''}${localeUrl(canonical, l)}`,
+      ]),
+    ) as Record<LocaleCode, string>;
+  });
+
+  /** Functional preference cookie (no tracking): one year, first party, sent only to this site. */
+  protected remember(code: LocaleCode): void {
+    this.document.cookie = `${LANGUAGE_COOKIE}=${code}; Path=/; Max-Age=31536000; SameSite=Lax`;
+  }
 
   /** Router URL without query string or fragment (those can carry personal data). */
   private routerPath(): string {

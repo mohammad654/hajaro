@@ -2,10 +2,11 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { RouterLink } from '@angular/router';
 import { SiteContentStore } from '../../../core/data-access/site-content.store';
 import { MediaFrame } from '../../../shared/ui/media-frame';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-coach',
-  imports: [RouterLink, MediaFrame],
+  imports: [LocalePathPipe, RouterLink, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section" aria-labelledby="coach-title">
@@ -45,7 +46,7 @@ import { MediaFrame } from '../../../shared/ui/media-frame';
               }
             </ol>
           }
-          <a routerLink="/about" class="link-arrow">Meet your coach</a>
+          <a [routerLink]="'/about' | localePath" class="link-arrow">Meet your coach</a>
         </div>
       </div>
     </section>

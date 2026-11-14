@@ -18,12 +18,15 @@ import { LabelPipe, RestPipe } from '../../shared/pipes/format.pipes';
 import { PageHero } from '../../shared/ui/page-hero';
 import { VideoEmbed } from '../../shared/ui/video-embed';
 import { NotFoundContent } from '../not-found/not-found-content';
+import { canonicalSlug } from '../../core/i18n/current-locale';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const RELATED_LIMIT = 3;
 
 @Component({
   selector: 'app-exercise-detail-page',
   imports: [
+    LocalePathPipe,
     RouterLink,
     NgOptimizedImage,
     PageHero,
@@ -51,7 +54,7 @@ export class ExerciseDetailPage {
   protected readonly equipmentLabels = EQUIPMENT_LABELS;
 
   protected readonly exercise = computed(() =>
-    this.exercises.all().find((e) => e.slug === this.slug()),
+    this.exercises.all().find((e) => e.slug === canonicalSlug(this.slug())),
   );
 
   protected readonly primaryNames = computed(() =>

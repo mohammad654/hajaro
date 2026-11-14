@@ -8,11 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:hajaro": "node dist/hajaro/server/server.mjs",
-    "start:nl": "ng serve --configuration nl",
     "extract-i18n": "ng extract-i18n",
-    "start:all": "ng serve --configuration nl & ng serve",
+    "start:all": "ng serve --configuration en & ng serve",
     "i18n": "ng extract-i18n && node scripts/i18n.mjs sync",
-    "i18n:check": "node scripts/i18n.mjs check"
+    "i18n:check": "node scripts/i18n.mjs check",
+    "start:en": "ng serve --configuration en"
   },
   "private": true,
   "packageManager": "npm@11.17.0",

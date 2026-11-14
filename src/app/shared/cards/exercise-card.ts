@@ -5,10 +5,11 @@ import { DIFFICULTY_LABELS, EXERCISE_CATEGORY_LABELS, Exercise } from '../../cor
 import { AnatomyFigure } from '../anatomy/anatomy-figure';
 import { LabelPipe } from '../pipes/format.pipes';
 import { preferredView } from '../anatomy/anatomy.utils';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-exercise-card',
-  imports: [RouterLink, AnatomyFigure, LabelPipe],
+  imports: [LocalePathPipe, RouterLink, AnatomyFigure, LabelPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <article class="card card--interactive ex-card">
@@ -26,7 +27,7 @@ import { preferredView } from '../anatomy/anatomy.utils';
           <span class="badge">{{ exercise().difficulty | label: difficultyLabels }}</span>
         </div>
         <h3 class="card__title">
-          <a class="card__link" [routerLink]="['/exercises', exercise().slug]">{{
+          <a class="card__link" [routerLink]="['/exercises', exercise().slug] | localePath">{{
             exercise().name
           }}</a>
         </h3>

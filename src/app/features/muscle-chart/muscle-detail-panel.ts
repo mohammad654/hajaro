@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { ExerciseStore } from '../../core/data-access/exercise.store';
 import { EQUIPMENT_LABELS, Equipment, MUSCLE_REGION_LABELS, MuscleGroup } from '../../core/models';
 import { ExerciseCard } from '../../shared/cards/exercise-card';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const MAX_PRIMARY_SHOWN = 6;
 const MAX_SECONDARY_SHOWN = 6;
@@ -10,7 +11,7 @@ const MAX_SECONDARY_SHOWN = 6;
 /** Everything a lifter needs to know about one muscle: function, programming and the best exercises. */
 @Component({
   selector: 'app-muscle-detail-panel',
-  imports: [RouterLink, ExerciseCard],
+  imports: [LocalePathPipe, RouterLink, ExerciseCard],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './muscle-detail-panel.html',
   styleUrl: './muscle-detail-panel.scss',

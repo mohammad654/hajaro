@@ -5,10 +5,11 @@ import { MuscleId } from '../../../core/models';
 import { AnatomyFigure } from '../../../shared/anatomy/anatomy-figure';
 import { Icon } from '../../../shared/ui/icon/icon';
 import { HERO_PILLARS } from '../home.content';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-hero',
-  imports: [RouterLink, AnatomyFigure, Icon],
+  imports: [LocalePathPipe, RouterLink, AnatomyFigure, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero" aria-labelledby="hero-title">
@@ -22,10 +23,12 @@ import { HERO_PILLARS } from '../home.content';
           </h1>
           <p class="hero__lead">{{ content().heroSubheadline }}</p>
           <div class="cluster hero__ctas">
-            <a class="btn btn--primary btn--lg" routerLink="/contact">
+            <a class="btn btn--primary btn--lg" [routerLink]="'/contact' | localePath">
               Start your transformation <app-icon name="arrow-right" [size]="18" />
             </a>
-            <a class="btn btn--lg" routerLink="/programs">Explore training programs</a>
+            <a class="btn btn--lg" [routerLink]="'/programs' | localePath"
+              >Explore training programs</a
+            >
           </div>
           <ul class="hero__pillars">
             @for (pillar of pillars; track pillar.label) {
@@ -47,7 +50,7 @@ import { HERO_PILLARS } from '../home.content';
             [primary]="backFocus"
             [animated]="true"
           />
-          <a routerLink="/muscle-chart" class="hero__chart-link" tabindex="-1"
+          <a [routerLink]="'/muscle-chart' | localePath" class="hero__chart-link" tabindex="-1"
             >Interactive muscle chart →</a
           >
         </div>

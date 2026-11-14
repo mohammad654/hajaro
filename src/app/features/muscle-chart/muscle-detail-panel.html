@@ -86,7 +86,7 @@
       <ul class="secondary">
         @for (e of secondary(); track e.id) {
           <li>
-            <a [routerLink]="['/exercises', e.slug]">{{ e.name }}</a>
+            <a [routerLink]="['/exercises', e.slug] | localePath">{{ e.name }}</a>
           </li>
         }
       </ul>
@@ -94,10 +94,17 @@
   }
 
   <footer class="panel__foot">
-    <a class="btn btn--primary" routerLink="/exercises" [queryParams]="{ muscle: muscle().id }">
+    <a
+      class="btn btn--primary"
+      [routerLink]="'/exercises' | localePath"
+      [queryParams]="{ muscle: muscle().id }"
+    >
       All {{ totalCount() }} {{ muscle().name.toLowerCase() }} exercises
     </a>
-    <a class="btn" routerLink="/workout-planner" [queryParams]="{ muscle: muscle().id }"
+    <a
+      class="btn"
+      [routerLink]="'/workout-planner' | localePath"
+      [queryParams]="{ muscle: muscle().id }"
       >Build a workout</a
     >
   </footer>

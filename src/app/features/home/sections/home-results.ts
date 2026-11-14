@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TestimonialStore, TransformationStore } from '../../../core/data-access/results.stores';
 import { MediaFrame } from '../../../shared/ui/media-frame';
+import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
 /**
  * Client results. Shows only real, consented transformations and testimonials.
@@ -9,7 +10,7 @@ import { MediaFrame } from '../../../shared/ui/media-frame';
  */
 @Component({
   selector: 'app-home-results',
-  imports: [RouterLink, MediaFrame],
+  imports: [LocalePathPipe, RouterLink, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section section--alt" aria-labelledby="results-title">
@@ -76,7 +77,9 @@ import { MediaFrame } from '../../../shared/ui/media-frame';
         }
 
         <div class="section-foot">
-          <a routerLink="/transformations" class="link-arrow">How we share client results</a>
+          <a [routerLink]="'/transformations' | localePath" class="link-arrow"
+            >How we share client results</a
+          >
         </div>
       </div>
     </section>

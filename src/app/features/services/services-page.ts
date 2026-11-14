@@ -6,6 +6,7 @@ import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
   online: 'Online',
@@ -15,7 +16,7 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
 
 @Component({
   selector: 'app-services-page',
-  imports: [RouterLink, PageHero, Icon, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, Icon, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -34,7 +35,7 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
               <span class="badge">{{ deliveryLabels[service.delivery] }}</span>
             </div>
             <h2 class="card__title">
-              <a class="card__link" [routerLink]="['/services', service.slug]">{{
+              <a class="card__link" [routerLink]="['/services', service.slug] | localePath">{{
                 service.name
               }}</a>
             </h2>
@@ -68,7 +69,9 @@ export const DELIVERY_LABELS: Readonly<Record<ServiceDelivery, string>> = {
                 <tr>
                   <td>{{ row.situation }}</td>
                   <td>
-                    <a [routerLink]="['/services', row.service.slug]">{{ row.service.name }}</a>
+                    <a [routerLink]="['/services', row.service.slug] | localePath">{{
+                      row.service.name
+                    }}</a>
                   </td>
                   <td>{{ deliveryLabels[row.service.delivery] }}</td>
                 </tr>

@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, effect, inject, input } from '@angu
 import { RouterLink } from '@angular/router';
 import { SeoService } from '../../core/seo/seo.service';
 import { breadcrumbSchema } from '../../core/seo/schema.builders';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 export interface Crumb {
   readonly label: string;
@@ -11,7 +12,7 @@ export interface Crumb {
 /** Visible breadcrumb trail that also publishes matching BreadcrumbList structured data. */
 @Component({
   selector: 'app-breadcrumbs',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <nav aria-label="Breadcrumb">
@@ -21,7 +22,7 @@ export interface Crumb {
             @if (last) {
               <span aria-current="page">{{ crumb.label }}</span>
             } @else {
-              <a [routerLink]="crumb.url">{{ crumb.label }}</a>
+              <a [routerLink]="crumb.url | localePath">{{ crumb.label }}</a>
             }
           </li>
         }

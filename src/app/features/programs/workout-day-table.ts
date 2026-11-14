@@ -3,11 +3,12 @@ import { RouterLink } from '@angular/router';
 import { ExerciseStore } from '../../core/data-access/exercise.store';
 import { WorkoutDay } from '../../core/models';
 import { RestPipe } from '../../shared/pipes/format.pipes';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 /** Read-only table of a workout day's exercises (sets, reps, rest, notes). */
 @Component({
   selector: 'app-workout-day-table',
-  imports: [RouterLink, RestPipe],
+  imports: [LocalePathPipe, RouterLink, RestPipe],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="table-wrap">
@@ -36,7 +37,9 @@ import { RestPipe } from '../../shared/pipes/format.pipes';
               <td class="idx">{{ i + 1 }}</td>
               <td>
                 @if (exercises.get(item.exerciseId); as exercise) {
-                  <a [routerLink]="['/exercises', exercise.slug]">{{ exercise.name }}</a>
+                  <a [routerLink]="['/exercises', exercise.slug] | localePath">{{
+                    exercise.name
+                  }}</a>
                 } @else {
                   {{ item.exerciseId }}
                 }

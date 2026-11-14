@@ -28,10 +28,13 @@ import { CtaSection } from '../../shared/ui/cta-section';
 import { PageHero } from '../../shared/ui/page-hero';
 import { NotFoundContent } from '../not-found/not-found-content';
 import { WorkoutDayTable } from './workout-day-table';
+import { canonicalSlug } from '../../core/i18n/current-locale';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-program-detail-page',
   imports: [
+    LocalePathPipe,
     RouterLink,
     CurrencyPipe,
     PageHero,
@@ -59,7 +62,7 @@ export class ProgramDetailPage {
   protected readonly types = TRAINING_TYPE_LABELS;
   protected readonly equipmentLabels = EQUIPMENT_LABELS;
 
-  protected readonly program = computed(() => this.programs.bySlug(this.slug()));
+  protected readonly program = computed(() => this.programs.bySlug(canonicalSlug(this.slug())));
   protected readonly selectedDayId = signal<string | null>(null);
 
   protected readonly trainingDays = computed(

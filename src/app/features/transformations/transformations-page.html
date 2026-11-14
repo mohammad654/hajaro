@@ -55,7 +55,9 @@
           We never use stock photos or invented testimonials. Transformations appear here as clients
           complete their programs and choose to share their results.
         </p>
-        <a class="btn btn--primary" routerLink="/contact">Become the first story</a>
+        <a class="btn btn--primary" [routerLink]="'/contact' | localePath"
+          >Become the first story</a
+        >
       </div>
     }
 
@@ -95,7 +97,7 @@
     <p class="disclaimer note">
       Individual results vary and depend on factors including starting point, consistency,
       nutrition, sleep, genetics and health. Shared results are not a guarantee of future outcomes.
-      See our <a routerLink="/privacy">privacy policy</a>.
+      See our <a [routerLink]="'/privacy' | localePath">privacy policy</a>.
     </p>
   </div>
 </section>

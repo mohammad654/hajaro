@@ -14,10 +14,12 @@ import { HomeProcess } from './sections/home-process';
 import { HomePrograms } from './sections/home-programs';
 import { HomeResults } from './sections/home-results';
 import { HomeServices } from './sections/home-services';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-home-page',
   imports: [
+    LocalePathPipe,
     RouterLink,
     HomeHero,
     HomeCoach,
@@ -60,7 +62,7 @@ import { HomeServices } from './sections/home-services';
             }
           </div>
           <p class="section-foot">
-            <a routerLink="/pricing" class="link-arrow">Compare all packages</a>
+            <a [routerLink]="'/pricing' | localePath" class="link-arrow">Compare all packages</a>
           </p>
         </div>
       </section>
@@ -79,7 +81,9 @@ import { HomeServices } from './sections/home-services';
               <app-article-card [article]="article" />
             }
           </div>
-          <p class="section-foot"><a routerLink="/blog" class="link-arrow">Read the blog</a></p>
+          <p class="section-foot">
+            <a [routerLink]="'/blog' | localePath" class="link-arrow">Read the blog</a>
+          </p>
         </div>
       </section>
     }

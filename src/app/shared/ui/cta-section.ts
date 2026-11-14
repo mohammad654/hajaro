@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 /** Closing conversion block used at the end of most pages. */
 @Component({
   selector: 'app-cta-section',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="cta" [attr.aria-labelledby]="headingId">
@@ -14,11 +15,13 @@ import { RouterLink } from '@angular/router';
           <h2 [id]="headingId">{{ title() }}</h2>
           <p class="cta__text">{{ text() }}</p>
           <div class="cluster cta__actions">
-            <a class="btn btn--primary btn--lg" [routerLink]="primaryLink()">{{
+            <a class="btn btn--primary btn--lg" [routerLink]="primaryLink() | localePath">{{
               primaryLabel()
             }}</a>
             @if (secondaryLabel()) {
-              <a class="btn btn--lg" [routerLink]="secondaryLink()">{{ secondaryLabel() }}</a>
+              <a class="btn btn--lg" [routerLink]="secondaryLink() | localePath">{{
+                secondaryLabel()
+              }}</a>
             }
           </div>
         </div>

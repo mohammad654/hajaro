@@ -8,10 +8,11 @@ import { AuthUser, UserRole } from '../../core/models';
 import { SeoService } from '../../core/seo/seo.service';
 import { FieldError } from '../../shared/forms/field-error';
 import { Icon } from '../../shared/ui/icon/icon';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-login-page',
-  imports: [ReactiveFormsModule, RouterLink, FieldError, Icon],
+  imports: [LocalePathPipe, ReactiveFormsModule, RouterLink, FieldError, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './login-page.html',
   styleUrl: './login-page.scss',

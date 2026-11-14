@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/c
 import { RouterLink } from '@angular/router';
 import { ProgramStore } from '../../core/data-access/program.store';
 import { DIFFICULTY_LABELS } from '../../core/models';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 /** Program slugs representing the classic workout splits, in teaching order. */
 const SPLIT_SLUGS = [
@@ -18,7 +19,7 @@ const SPLIT_SLUGS = [
 
 @Component({
   selector: 'app-split-programs',
-  imports: [RouterLink],
+  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="table-wrap">
@@ -38,7 +39,7 @@ const SPLIT_SLUGS = [
           @for (p of splits(); track p.id) {
             <tr>
               <th scope="row">
-                <a [routerLink]="['/programs', p.slug]">{{ p.name }}</a>
+                <a [routerLink]="['/programs', p.slug] | localePath">{{ p.name }}</a>
               </th>
               <td>
                 <ol class="mini-week" [attr.aria-label]="p.name + ' weekly schedule'">

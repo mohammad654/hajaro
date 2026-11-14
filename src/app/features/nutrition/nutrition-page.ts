@@ -7,10 +7,11 @@ import { ArticleCard } from '../../shared/cards/article-card';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
+import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-nutrition-page',
-  imports: [RouterLink, PageHero, Icon, ArticleCard, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, Icon, ArticleCard, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -20,8 +21,12 @@ import { PageHero } from '../../shared/ui/page-hero';
       [breadcrumbs]="[{ label: 'Nutrition', url: '/nutrition' }]"
     >
       <div class="cluster hero-ctas">
-        <a class="btn btn--primary" routerLink="/nutrition/calculators">Open the calculators</a>
-        <a class="btn" routerLink="/services/fat-loss-coaching">Nutrition coaching</a>
+        <a class="btn btn--primary" [routerLink]="'/nutrition/calculators' | localePath"
+          >Open the calculators</a
+        >
+        <a class="btn" [routerLink]="'/services/fat-loss-coaching' | localePath"
+          >Nutrition coaching</a
+        >
       </div>
     </app-page-hero>
 
