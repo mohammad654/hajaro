@@ -1,1 +1,0 @@
-import{Lt as YV,_ as E}from"./chunk-ZrBeCv_i.js";function e(){let t=E(YV,{optional:!0});return()=>{t&&(t.status=404)}}export{e as t};

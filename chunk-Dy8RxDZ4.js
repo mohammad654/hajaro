@@ -1,0 +1,1 @@
+import{t as f}from"./chunk-DBciHdoB.js";import"./chunk-ndNoG5v4.js";export{f as FaqList};
