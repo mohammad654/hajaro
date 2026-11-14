@@ -57,7 +57,9 @@ const REVERSE: Readonly<Record<LocaleCode, ReadonlyMap<string, string>>> = (() =
       const local = localizeSegment(canonical, code);
       const clash = map.get(local) ?? (local !== canonical && local in SEGMENTS ? local : null);
       if (clash !== null && clash !== canonical) {
-        throw new Error(`URL segment "${local}" (${code}) is used for "${canonical}" and "${clash}"`);
+        throw new Error(
+          `URL segment "${local}" (${code}) is used for "${canonical}" and "${clash}"`,
+        );
       }
       map.set(local, canonical);
     }

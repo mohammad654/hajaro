@@ -12,7 +12,10 @@
     "start:all": "ng serve --configuration en & ng serve",
     "i18n": "ng extract-i18n && node scripts/i18n.mjs sync",
     "i18n:check": "node scripts/i18n.mjs check",
-    "start:en": "ng serve --configuration en"
+    "start:en": "ng serve --configuration en",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit",
+    "format:check": "prettier --check \"src/**/*.{ts,html,scss}\" scripts",
+    "verify": "npm run typecheck && npm run format:check && npm run i18n:check"
   },
   "private": true,
   "packageManager": "npm@11.17.0",

@@ -42,8 +42,7 @@ const KCAL_PER_G = { protein: 4, carbs: 4, fat: 9 } as const;
           @for (row of split(); track row.label) {
             <div class="bar-row">
               <div class="bar-row__label">
-                <span>{{ row.label }}</span
-                ><span>{{ row.pct }}%</span>
+                <span>{{ row.label }}</span><span>{{ row.pct }}%</span>
               </div>
               <div class="bar"><span [style.width.%]="row.pct"></span></div>
             </div>

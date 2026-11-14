@@ -30,7 +30,12 @@ export class LocalePathPipe implements PipeTransform {
     if (typeof target === 'string') return target.startsWith('/') ? lp(target) : target;
     const [first] = target;
     if (typeof first !== 'string' || !first.startsWith('/')) return target;
-    return lp(target.map(String).join('/').replace(/\/{2,}/g, '/'));
+    return lp(
+      target
+        .map(String)
+        .join('/')
+        .replace(/\/{2,}/g, '/'),
+    );
   }
 }
 
