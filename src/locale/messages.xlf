@@ -528,6 +528,1899 @@
           <context context-type="linenumber">51</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3425114984623914347" datatype="html">
+        <source>Chest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">683</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5265636132872000890" datatype="html">
+        <source>The pectorals form the bulk of the chest. The clavicular (upper) head and sternal (mid/lower) head respond to slightly different pressing angles.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5512031173793609776" datatype="html">
+        <source>Horizontal adduction: bringing the arms across the body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6598228056762601356" datatype="html">
+        <source>Shoulder flexion (upper fibres) and extension from a raised position (lower fibres)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6827870622144525916" datatype="html">
+        <source>Internal rotation of the upper arm</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4423288849220090941" datatype="html">
+        <source>10–20 hard sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3381538386425820099" datatype="html">
+        <source>6–12 for presses, 10–15 for flyes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2498816323620097957" datatype="html">
+        <source>2 sessions per week, 48–72 hours apart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3856293843808515784" datatype="html">
+        <source>Set the shoulder blades back and down before every press</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8096566793775113853" datatype="html">
+        <source>Lower the weight under control to a deep, pain-free stretch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4596881921204892317" datatype="html">
+        <source>Keep the wrists stacked over the elbows at the bottom of the press</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6627543972865417899" datatype="html">
+        <source>Use an incline of 15–30° to work the upper chest more</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6989061573623533778" datatype="html">
+        <source>Flaring the elbows to 90°, which shifts stress to the shoulder joint</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3624250461985806440" datatype="html">
+        <source>Bouncing the bar off the chest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3403565987239583536" datatype="html">
+        <source>Shortening the range of motion to lift heavier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="580892175629426988" datatype="html">
+        <source>Losing upper-back tightness during the set</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="978014881622091502" datatype="html">
+        <source>Front Deltoids</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2308652140799329357" datatype="html">
+        <source>The front head of the shoulder works hard during every press, so many lifters need little direct isolation work for it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8307939274330442429" datatype="html">
+        <source>Shoulder flexion: raising the arm forward</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1275079229225214029" datatype="html">
+        <source>Assists horizontal adduction and internal rotation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="281078389269394402" datatype="html">
+        <source>6–12 direct sets per week (pressing counts heavily)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7404433969563630368" datatype="html">
+        <source>6–12 for overhead presses, 10–15 for raises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1820191090434582674" datatype="html">
+        <source>2 sessions per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">149</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">301</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">375</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">397</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">519</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1692146173787391091" datatype="html">
+        <source>Brace the core and squeeze the glutes during overhead pressing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8009642156817883142" datatype="html">
+        <source>Press the bar slightly back so it finishes over the mid-foot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2928760950230549934" datatype="html">
+        <source>Control the lowering phase rather than dropping the weight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="562088308184786310" datatype="html">
+        <source>Excessive lower-back arch during overhead presses</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5687258158842217464" datatype="html">
+        <source>Adding lots of front raises on top of a high chest-pressing volume</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="642217040081400600" datatype="html">
+        <source>Using momentum on raises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8781197772819019144" datatype="html">
+        <source>Side Deltoids</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4450457073260723220" datatype="html">
+        <source>The side head gives your shoulders their width, the base of the classic V-shape. It recovers quickly and can be trained often.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3146938464875836393" datatype="html">
+        <source>Shoulder abduction: raising the arm out to the side</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8811351680626873661" datatype="html">
+        <source>10–20 sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">373</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1914892670408726363" datatype="html">
+        <source>2–4 sessions per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">472</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5765302573219627317" datatype="html">
+        <source>Lead with the elbows and raise the arms slightly in front of the body (scapular plane)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7862297375968268845" datatype="html">
+        <source>Stop around shoulder height and control the descent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7884450984466794318" datatype="html">
+        <source>Cables keep tension on the muscle at the bottom of the movement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8725318514725950763" datatype="html">
+        <source>Swinging the torso to lift heavier dumbbells</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8303227079431635380" datatype="html">
+        <source>Shrugging the shoulders up towards the ears</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7102849426416338856" datatype="html">
+        <source>Using weights too heavy to control for 12 or more reps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="565495016068493631" datatype="html">
+        <source>Rear Deltoids</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7146394039684468788" datatype="html">
+        <source>The rear head balances heavy pressing, keeps your shoulders healthy and adds depth to the shoulder seen from the side and back.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="446579795861393515" datatype="html">
+        <source>Horizontal abduction: pulling the arm back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5649467328180769580" datatype="html">
+        <source>Shoulder extension and external rotation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4560462091592653173" datatype="html">
+        <source>8–16 sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">395</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">421</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">470</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8050536911253534739" datatype="html">
+        <source>2–3 sessions per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">200</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">223</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">326</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">423</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">448</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">496</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">544</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3894855818902251625" datatype="html">
+        <source>Think about moving the arms out and back rather than squeezing the shoulder blades</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3517444799016373608" datatype="html">
+        <source>Use light loads and a deliberate tempo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2650598745531696963" datatype="html">
+        <source>Keep a slight bend in the elbows throughout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7795807938497246235" datatype="html">
+        <source>Turning rear-delt work into a row with heavy weights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2066161096746888384" datatype="html">
+        <source>Retracting the shoulder blades so the traps take over</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3155501139175615958" datatype="html">
+        <source>Neglecting the rear delts entirely</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4511194079142439127" datatype="html">
+        <source>Trapezius</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3411920852509988227" datatype="html">
+        <source>A large, diamond-shaped muscle running from the skull to the mid-back. It controls the shoulder blades and supports posture.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="836010853089059479" datatype="html">
+        <source>Upper fibres: elevation of the shoulder blades (shrugging)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8127844880784109366" datatype="html">
+        <source>Middle fibres: retraction, pulling the shoulder blades together</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3668707876303888129" datatype="html">
+        <source>Lower fibres: depression and upward rotation of the shoulder blades</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2701834141059919699" datatype="html">
+        <source>6–12 direct sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1602388137238935061" datatype="html">
+        <source>10–15 for shrugs, 8–12 for rows</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6429459609121165546" datatype="html">
+        <source>Shrug straight up, without rolling the shoulders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7657109795233234206" datatype="html">
+        <source>Pause briefly at the top of each shrug</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8967952799298399828" datatype="html">
+        <source>Heavy rows and deadlifts train the traps substantially</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6764227946481681655" datatype="html">
+        <source>Rolling the shoulders during shrugs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="902728856904021876" datatype="html">
+        <source>Using a tiny range of motion with excessive load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8064317330960753923" datatype="html">
+        <source>Overlooking the middle and lower fibres</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4960247208838292281" datatype="html">
+        <source>Latissimus Dorsi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420707209843467206" datatype="html">
+        <source>The widest muscle of the back. Well-developed lats create the width that defines a bodybuilding physique from the front and back.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2590993338515213657" datatype="html">
+        <source>Shoulder extension: pulling the arm down and back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="895192713972919278" datatype="html">
+        <source>Shoulder adduction: pulling the arm into the side</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8269611511763994519" datatype="html">
+        <source>6–12 for pull-ups, 8–15 for pulldowns and rows</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="956613920174315038" datatype="html">
+        <source>Initiate pulls by driving the elbows down towards the hips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2834171690338884919" datatype="html">
+        <source>Allow a full stretch at the top of pulldowns and pull-ups</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5861284120989962543" datatype="html">
+        <source>Use a grip just outside shoulder width for vertical pulls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1263468739671369810" datatype="html">
+        <source>Pulling with the biceps and shortening the range of motion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6042305323365674889" datatype="html">
+        <source>Leaning far back and turning a pulldown into a row</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6040948183796200619" datatype="html">
+        <source>Using loads so heavy without straps that your form breaks down</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2383811966723582319" datatype="html">
+        <source>Rhomboids</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6812920126907698166" datatype="html">
+        <source>Small muscles between the spine and shoulder blades that sit beneath the trapezius. They stabilise the scapula and add mid-back thickness.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5038737360492075009" datatype="html">
+        <source>Scapular retraction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1307980459165547892" datatype="html">
+        <source>Downward rotation and elevation of the shoulder blade</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3557208711031015886" datatype="html">
+        <source>Trained with rows: 8–14 rowing sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="69925137995120477" datatype="html">
+        <source>Squeeze the shoulder blades together at the end of each row</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7817963086637459166" datatype="html">
+        <source>Let the shoulder blades protract fully on the way back for a full range of motion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7811638786847003042" datatype="html">
+        <source>Pause for one second in the contracted position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">178</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7574088469210462390" datatype="html">
+        <source>Using momentum on rows</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1029257805782537171" datatype="html">
+        <source>Short, choppy repetitions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4066168343784044405" datatype="html">
+        <source>Shrugging during the pull</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1842992709083142984" datatype="html">
+        <source>Biceps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">188</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5091454012902354141" datatype="html">
+        <source>The two-headed muscle on the front of the upper arm, supported by the brachialis underneath. Both respond well to varied curl angles.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7776360946609611656" datatype="html">
+        <source>Elbow flexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">194</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6810301296912373972" datatype="html">
+        <source>Forearm supination: turning the palm up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5614703492041932284" datatype="html">
+        <source>Assists shoulder flexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5774891584923640530" datatype="html">
+        <source>8–16 direct sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3766649530763275382" datatype="html">
+        <source>Keep the upper arm still and the elbows close to the body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">202</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7444949720768787332" datatype="html">
+        <source>Supinate the wrist fully at the top of dumbbell curls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4502677525251652532" datatype="html">
+        <source>Lower slowly: the lowering phase is very effective</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">204</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8822703323014495597" datatype="html">
+        <source>Include a stretched-position curl such as the incline curl</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1242394126525551072" datatype="html">
+        <source>Swinging the torso to move the weight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3507206464285238751" datatype="html">
+        <source>Cutting the bottom portion of the rep short</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2300570362830790209" datatype="html">
+        <source>Training biceps with too much volume on top of heavy back work</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8669065722227062719" datatype="html">
+        <source>Triceps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1450945143036739046" datatype="html">
+        <source>The triceps make up roughly two-thirds of upper-arm mass. The long head crosses the shoulder and grows best with overhead work.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">219</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6019642477579304449" datatype="html">
+        <source>Elbow extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8785001994681847520" datatype="html">
+        <source>Long head: shoulder extension and adduction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">220</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2161105198578952062" datatype="html">
+        <source>Keep the elbows fixed and pointing in the same direction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7309841515447497574" datatype="html">
+        <source>Use overhead extensions to load the long head in a stretch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1047359671586402316" datatype="html">
+        <source>Lock out fully and squeeze briefly at the end of each rep</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5813807807506389005" datatype="html">
+        <source>Letting the elbows flare during pushdowns</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6925696437001459908" datatype="html">
+        <source>Leaning over pushdowns so the chest and shoulders assist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">231</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2031698941685871561" datatype="html">
+        <source>Overloading skull crushers, which can irritate the elbows</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">232</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3211903503600383127" datatype="html">
+        <source>Forearms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">237</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7434988196605112567" datatype="html">
+        <source>Forearm muscles control the wrist and grip. Strong forearms support every pulling movement and complete the look of the arm.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="360007493077955711" datatype="html">
+        <source>Wrist flexion and extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">243</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8005593762016670618" datatype="html">
+        <source>Grip strength</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6811111601043815888" datatype="html">
+        <source>Brachioradialis: elbow flexion in a neutral grip</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6863526811006871338" datatype="html">
+        <source>4–10 direct sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8995545963899601061" datatype="html">
+        <source>12–20 or timed holds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4698679470245028083" datatype="html">
+        <source>Use hammer curls and reverse curls to train the brachioradialis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3079474466959674970" datatype="html">
+        <source>Carries and dead hangs build grip endurance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1428586620535175878" datatype="html">
+        <source>Move through the full wrist range of motion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1870504157970977856" datatype="html">
+        <source>Relying on straps for every pulling set</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">256</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2857873469658573378" datatype="html">
+        <source>Using bouncing, partial reps on wrist curls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">257</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4183090334171782066" datatype="html">
+        <source>Rectus Abdominis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8832133454475019618" datatype="html">
+        <source>The &quot;six-pack&quot; muscle running from the ribs to the pelvis. Its visibility depends mainly on body-fat level; training builds its thickness and strength.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">268</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3614261191922331072" datatype="html">
+        <source>Spinal flexion: curling the ribs towards the pelvis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">270</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6293999124814484106" datatype="html">
+        <source>Resists spinal extension under load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6293203330967518237" datatype="html">
+        <source>6–12 sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8193839916924123692" datatype="html">
+        <source>Think about curling the spine rather than hinging at the hips</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="30225701223431857" datatype="html">
+        <source>Exhale fully at the top of every crunch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1534412708225789969" datatype="html">
+        <source>Add load progressively, just like any other muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4580008124727942504" datatype="html">
+        <source>Pulling on the neck during crunches</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="870938021326961046" datatype="html">
+        <source>Using hip flexors to perform sit-ups</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8237048908439959050" datatype="html">
+        <source>Expecting ab training alone to reduce abdominal fat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2839229074216292440" datatype="html">
+        <source>Obliques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">289</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5193735928702479226" datatype="html">
+        <source>The obliques wrap around the sides of the torso. They rotate and side-bend the spine and, most importantly, resist rotation during heavy lifts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">293</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2739193434696184650" datatype="html">
+        <source>Trunk rotation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="42494599574393521" datatype="html">
+        <source>Lateral flexion: bending to the side</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">296</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6578610024683092744" datatype="html">
+        <source>Anti-rotation stability</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">297</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1365932928098642283" datatype="html">
+        <source>4–10 sets per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">299</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">446</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">494</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">517</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">542</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2017222389950562692" datatype="html">
+        <source>10–15 per side</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">300</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4016149892068578344" datatype="html">
+        <source>Use anti-rotation work such as the Pallof press</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3387528335312612222" datatype="html">
+        <source>Rotate slowly and avoid momentum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">304</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="420404701095631062" datatype="html">
+        <source>Keep the hips stable during cable rotations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="751796742803169767" datatype="html">
+        <source>Twisting rapidly with momentum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">308</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5934105593321710883" datatype="html">
+        <source>Neglecting anti-rotation training</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4990472875992215977" datatype="html">
+        <source>Transverse Abdominis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">314</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5150993767869592042" datatype="html">
+        <source>The deepest abdominal layer, wrapping around the torso like a corset. It is not visible on the surface, so the chart outlines it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4845509509963535236" datatype="html">
+        <source>Increases intra-abdominal pressure for spinal stability</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8272550875310465037" datatype="html">
+        <source>Compresses the abdomen, &quot;drawing in&quot; the stomach</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">322</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8679542131112054977" datatype="html">
+        <source>3–6 sets per week of bracing / stability work</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">324</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2554850844920910152" datatype="html">
+        <source>20–45 second holds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">325</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7130606127278807548" datatype="html">
+        <source>Practise 360° bracing: breathe into the belly and sides, then tighten</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">328</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="17463651692364474" datatype="html">
+        <source>Planks and dead bugs train it effectively</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">329</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4482446694660836463" datatype="html">
+        <source>Stomach vacuums can build control of the muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">330</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2231870810993509222" datatype="html">
+        <source>Holding the breath without bracing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">333</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4374548414638607807" datatype="html">
+        <source>Letting the lower back sag during planks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">334</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4227136864109617867" datatype="html">
+        <source>Lower Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">339</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4012491555326061224" datatype="html">
+        <source>Columns of muscle running along the spine. They hold the torso upright and keep the spine neutral during squats, deadlifts and rows.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">343</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4444772923470847438" datatype="html">
+        <source>Spinal extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">345</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5757362376977748233" datatype="html">
+        <source>Maintains a neutral spine under load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">346</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4562956446319935556" datatype="html">
+        <source>Lateral flexion of the spine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">347</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7765305275493656399" datatype="html">
+        <source>3–8 direct sets per week (heavy hinges count)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">349</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4668526936035108610" datatype="html">
+        <source>1–2 sessions per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">351</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4903134442571210079" datatype="html">
+        <source>Keep a neutral spine and move at the hips during hinges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">353</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6903932606513257175" datatype="html">
+        <source>Back extensions with a controlled tempo build endurance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">354</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="608094010158471794" datatype="html">
+        <source>Brace before every heavy lift</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">355</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4976361452731160499" datatype="html">
+        <source>Rounding the lower back under heavy load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">358</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7731084911262250136" datatype="html">
+        <source>Hyperextending at the top of back extensions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">359</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5532891260709392264" datatype="html">
+        <source>Excessive direct volume on top of heavy deadlifts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">360</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4623042755374373674" datatype="html">
+        <source>Quadriceps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">367</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5638124673198775113" datatype="html">
+        <source>Four muscles on the front of the thigh that straighten the knee. They are the largest muscle group of the legs and drive squats and lunges.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">371</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8168931715058795034" datatype="html">
+        <source>Knee extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9222952150125503104" datatype="html">
+        <source>Rectus femoris: hip flexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">372</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="140533789132026008" datatype="html">
+        <source>6–12 for squats, 10–15 for leg presses and extensions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">374</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3610294929755447054" datatype="html">
+        <source>Allow the knees to travel forward over the toes for deeper quad loading</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">377</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3055841549430684623" datatype="html">
+        <source>Squat to the depth you can control with a neutral spine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">378</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4797638079734355071" datatype="html">
+        <source>Use leg extensions to train the rectus femoris</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">379</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3329233788158659724" datatype="html">
+        <source>Cutting depth to lift heavier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">382</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6360798747494308809" datatype="html">
+        <source>Knees collapsing inwards</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">383</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2966575695136087538" datatype="html">
+        <source>Lifting the heels off the floor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">384</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1392095425932077540" datatype="html">
+        <source>Hamstrings</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">389</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7503568997409357603" datatype="html">
+        <source>The hamstrings cross both the hip and the knee, so they need both hinging (hip) and curling (knee) movements for complete development.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">393</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="589431577857884512" datatype="html">
+        <source>Knee flexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">394</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8830747744410884816" datatype="html">
+        <source>Hip extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">394</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">417</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="257564791903622940" datatype="html">
+        <source>Stabilises the knee</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">394</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5781663328700689332" datatype="html">
+        <source>6–10 for hinges, 10–15 for curls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">396</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7737237979351648005" datatype="html">
+        <source>Push the hips back and keep the shins nearly vertical on Romanian deadlifts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">399</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3581937345867979980" datatype="html">
+        <source>Include at least one curl variation each week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">400</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7017095352118529617" datatype="html">
+        <source>Seated leg curls train the hamstrings at long muscle lengths</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">401</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4042410797580140213" datatype="html">
+        <source>Rounding the back to reach lower on hinges</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">404</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1015672308340281224" datatype="html">
+        <source>Lifting the hips off the pad during lying curls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">405</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6377063625401388554" datatype="html">
+        <source>Training only hip-hinge movements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">406</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6458932981579225146" datatype="html">
+        <source>Gluteus Maximus</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">411</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6937989815110896788" datatype="html">
+        <source>The largest and most powerful muscle in the body. It extends the hip and is central to squatting, deadlifting, sprinting and posture.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">415</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7113528505769080502" datatype="html">
+        <source>External rotation of the hip</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">418</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7071392374602340015" datatype="html">
+        <source>Posterior pelvic tilt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">419</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6015414782191719288" datatype="html">
+        <source>Drive through the whole foot and squeeze at lockout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">425</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1229049962573275132" datatype="html">
+        <source>Keep the ribs down to avoid overextending the lower back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">426</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2703052199732574004" datatype="html">
+        <source>Deep squats and lunges load the glutes in a stretch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">427</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8585766812134675543" datatype="html">
+        <source>Hyperextending the lower back at the top of hip thrusts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">430</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7925050653497445176" datatype="html">
+        <source>Rushing repetitions without a full lockout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">431</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8976400558411776186" datatype="html">
+        <source>Gluteus Medius</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">436</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9068697262844009934" datatype="html">
+        <source>Sits on the upper, outer hip. It stabilises the pelvis on one leg and keeps the knees tracking well during squats and lunges.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">440</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7613084898773791918" datatype="html">
+        <source>Hip abduction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">442</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">538</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4864302450185263550" datatype="html">
+        <source>Pelvic stability in single-leg stance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">443</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9032913345160585814" datatype="html">
+        <source>Internal and external hip rotation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">444</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5025231784901190792" datatype="html">
+        <source>Lean the torso slightly forward on abduction machines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">450</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6705137474060077782" datatype="html">
+        <source>Single-leg work trains the glute medius as a stabiliser</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">451</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="226937272441365285" datatype="html">
+        <source>Control the return phase</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">452</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2607688372973242888" datatype="html">
+        <source>Using momentum on abduction</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">455</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4332372261098131470" datatype="html">
+        <source>Rotating the pelvis to compensate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">456</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7210069398866774910" datatype="html">
+        <source>Calves</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">461</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5735720205888434678" datatype="html">
+        <source>The diamond-shaped muscle on the back of the lower leg. It crosses the knee, so it is trained best with straight-leg calf raises.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">465</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="170155367693347181" datatype="html">
+        <source>Ankle plantar flexion: rising onto the toes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">467</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3923396188994397107" datatype="html">
+        <source>Assists knee flexion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">468</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3197768659396511677" datatype="html">
+        <source>8–15 with a pause in the stretch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">471</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4509796060851390967" datatype="html">
+        <source>Pause for 1–2 seconds at the bottom stretch to remove the bounce</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">474</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5323940477693487186" datatype="html">
+        <source>Rise as high as possible onto the big toe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2734805464492428125" datatype="html">
+        <source>Keep the knees straight for gastrocnemius emphasis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">476</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5948571619106677463" datatype="html">
+        <source>Bouncing through short, fast repetitions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">479</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="168778521389158786" datatype="html">
+        <source>Bending the knees to lift more weight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">480</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4419582568061276201" datatype="html">
+        <source>Soleus</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">485</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4375048885324040890" datatype="html">
+        <source>A broad, flat calf muscle beneath the gastrocnemius. Because it does not cross the knee, bent-knee calf raises train it most effectively.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">489</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5725397529847017547" datatype="html">
+        <source>Ankle plantar flexion, especially with the knee bent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">491</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6052542718928248103" datatype="html">
+        <source>Postural stability when standing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">492</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2126716150424782755" datatype="html">
+        <source>Use seated calf raises with the knees bent around 90°</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">498</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4951703501668619373" datatype="html">
+        <source>Control the full range of motion with a pause at the bottom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">499</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6572677219235315041" datatype="html">
+        <source>Only performing standing calf raises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">502</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8258038669365120340" datatype="html">
+        <source>Rushing through partial reps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">503</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7251754931190767494" datatype="html">
+        <source>Hip Adductors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">508</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8595605591508198653" datatype="html">
+        <source>The inner-thigh muscles. The adductor magnus is a powerful hip extender that contributes significantly to squats and thigh size.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">512</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2596285754629476144" datatype="html">
+        <source>Hip adduction: bringing the legs together</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">514</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4310781845031369293" datatype="html">
+        <source>Adductor magnus: hip extension</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">515</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6588504833449103809" datatype="html">
+        <source>Wide-stance squats and deep lunges load the adductors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">521</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3223971156819747421" datatype="html">
+        <source>Adduction machines work well with a controlled stretch</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">522</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1792640366538796202" datatype="html">
+        <source>Copenhagen planks build adductor strength and resilience</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">523</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8983663713364805194" datatype="html">
+        <source>Forcing an aggressive stretch with heavy load</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">526</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4147332952214030090" datatype="html">
+        <source>Ignoring the adductors entirely</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">527</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7036497817992093797" datatype="html">
+        <source>Hip Abductors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">532</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8288905035457722919" datatype="html">
+        <source>The outer-hip muscles that move the leg away from the body and keep the pelvis level when walking, running and lunging.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">536</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="523300433641845578" datatype="html">
+        <source>Pelvic stabilisation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">539</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6940284403447728073" datatype="html">
+        <source>Internal rotation of the hip (TFL)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">540</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3679225277081523039" datatype="html">
+        <source>Use controlled machine or cable abductions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">546</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8595799629790606150" datatype="html">
+        <source>Banded lateral walks make a useful warm-up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">547</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="47074264567794558" datatype="html">
+        <source>Keep the torso stable and avoid swinging</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">548</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="538420345855880747" datatype="html">
+        <source>Using momentum</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">551</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5431030743126385794" datatype="html">
+        <source>Rotating the hip so other muscles take over</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/muscles.data.ts</context>
+          <context context-type="linenumber">552</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4793228547576325421" datatype="html">
         <source>Eating to build muscle</source>
         <context-group purpose="location">
@@ -1495,25 +3388,6 @@
           <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3425114984623914347" datatype="html">
-        <source>Chest</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">70</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">77</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">683</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="8890553633144307762" datatype="html">
         <source>Back</source>
         <context-group purpose="location">
@@ -1552,42 +3426,6 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1842992709083142984" datatype="html">
-        <source>Biceps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">112</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">20</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8669065722227062719" datatype="html">
-        <source>Triceps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">119</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4623042755374373674" datatype="html">
-        <source>Quadriceps</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">126</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1392095425932077540" datatype="html">
-        <source>Hamstrings</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">133</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="3936897577035380966" datatype="html">
         <source>Glutes</source>
         <context-group purpose="location">
@@ -1597,13 +3435,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
           <context context-type="linenumber">23</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7210069398866774910" datatype="html">
-        <source>Calves</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
-          <context context-type="linenumber">147</context>
         </context-group>
       </trans-unit>
       <trans-unit id="250327392495482133" datatype="html">
