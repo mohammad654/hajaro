@@ -1,12 +1,9 @@
 @if (exercise(); as exercise) {
   <app-page-hero
-    [eyebrow]="(exercise.category | label: categoryLabels) + ' exercise'"
+    [eyebrow]="exercise.category | label: categoryLabels"
     [title]="exercise.name"
     [lead]="exercise.summary"
-    [breadcrumbs]="[
-      { label: 'Exercise library', url: '/exercises' },
-      { label: exercise.name, url: '/exercises/' + exercise.slug },
-    ]"
+    [breadcrumbs]="breadcrumbs()"
   >
     <div class="cluster hero-tags">
       <span class="badge badge--accent">{{ exercise.difficulty | label: difficultyLabels }}</span>
@@ -21,28 +18,27 @@
       <div class="stack content">
         @if (exercise.media; as media) {
           @if (media.videoUrl) {
-            <app-video-embed [url]="media.videoUrl" [title]="exercise.name + ' demonstration'" />
+            <app-video-embed
+              [url]="media.videoUrl"
+              i18n-title
+              title="{{ exercise.name }}: demonstration"
+            />
           } @else if (media.imageUrl) {
             <div class="demo-image">
-              <img
-                [ngSrc]="media.imageUrl"
-                [alt]="media.imageAlt || exercise.name + ' demonstration'"
-                fill
-                priority
-              />
+              <img [ngSrc]="media.imageUrl" [alt]="media.imageAlt || demoAlt()" fill priority />
             </div>
           }
         }
 
         <section aria-labelledby="steps-title">
-          <h2 id="steps-title">How to perform the {{ exercise.name }}</h2>
+          <h2 id="steps-title" i18n>How to do it: {{ exercise.name }}</h2>
           <div class="phases">
             <div class="phase card card--flat">
-              <span class="phase__label">1 · Starting position</span>
+              <span class="phase__label" i18n>1 · Starting position</span>
               <p>{{ exercise.startingPosition }}</p>
             </div>
             <div class="phase card card--flat">
-              <span class="phase__label">2 · Movement execution</span>
+              <span class="phase__label" i18n>2 · The movement</span>
               <ol class="numbered-list">
                 @for (step of exercise.execution; track step) {
                   <li>{{ step }}</li>
@@ -50,14 +46,14 @@
               </ol>
             </div>
             <div class="phase card card--flat">
-              <span class="phase__label">3 · Ending position</span>
+              <span class="phase__label" i18n>3 · End position</span>
               <p>{{ exercise.endingPosition }}</p>
             </div>
           </div>
         </section>
 
         <section aria-labelledby="posture-title">
-          <h2 id="posture-title">Correct posture cues</h2>
+          <h2 id="posture-title" i18n>Posture cues</h2>
           <ul class="check-list">
             @for (cue of exercise.postureCues; track cue) {
               <li>{{ cue }}</li>
@@ -67,7 +63,7 @@
 
         <div class="grid grid--2">
           <section class="card mistakes" aria-labelledby="mistakes-title">
-            <h2 id="mistakes-title">Common mistakes</h2>
+            <h2 id="mistakes-title" i18n>Common mistakes</h2>
             <ul>
               @for (m of exercise.commonMistakes; track m) {
                 <li>{{ m }}</li>
@@ -75,7 +71,7 @@
             </ul>
           </section>
           <section class="card" aria-labelledby="safety-title">
-            <h2 id="safety-title">Safety considerations</h2>
+            <h2 id="safety-title" i18n>Safety</h2>
             <ul class="check-list">
               @for (s of exercise.safety; track s) {
                 <li>{{ s }}</li>
@@ -85,30 +81,34 @@
         </div>
       </div>
 
-      <aside class="sticky-aside stack" aria-label="Exercise summary">
+      <aside class="sticky-aside stack" i18n-aria-label aria-label="Exercise summary">
         <div class="card">
-          <p class="eyebrow">Target muscles</p>
+          <p class="eyebrow" i18n>Muscles worked</p>
           <div class="figures">
             <app-anatomy-figure
               view="front"
               [primary]="exercise.primaryMuscles"
               [secondary]="exercise.secondaryMuscles"
-              [label]="'Front view: muscles worked by ' + exercise.name"
+              i18n-label
+              label="Front view: muscles worked by {{ exercise.name }}"
             />
             <app-anatomy-figure
               view="back"
               [primary]="exercise.primaryMuscles"
               [secondary]="exercise.secondaryMuscles"
-              [label]="'Back view: muscles worked by ' + exercise.name"
+              i18n-label
+              label="Back view: muscles worked by {{ exercise.name }}"
             />
           </div>
           <div class="legend" aria-hidden="true">
-            <span><i class="dot dot--primary"></i> Primary</span>
-            <span><i class="dot dot--secondary"></i> Secondary</span>
+            <span><i class="dot dot--primary"></i> <ng-container i18n>Primary</ng-container></span>
+            <span
+              ><i class="dot dot--secondary"></i> <ng-container i18n>Secondary</ng-container></span
+            >
           </div>
           <dl class="summary">
             <div>
-              <dt>Primary</dt>
+              <dt i18n>Primary</dt>
               <dd>
                 @for (m of primaryNames(); track m.id; let last = $last) {
                   <a [routerLink]="'/muscle-chart' | localePath" [queryParams]="{ muscle: m.id }">{{
@@ -122,7 +122,7 @@
             </div>
             @if (secondaryNames().length) {
               <div>
-                <dt>Secondary</dt>
+                <dt i18n>Secondary</dt>
                 <dd>
                   @for (m of secondaryNames(); track m.id; let last = $last) {
                     <a
@@ -138,26 +138,27 @@
               </div>
             }
             <div>
-              <dt>Sets</dt>
+              <dt i18n>Sets</dt>
               <dd>{{ exercise.recommendedSets }}</dd>
             </div>
             <div>
-              <dt>Reps</dt>
+              <dt i18n>Reps</dt>
               <dd>{{ exercise.recommendedReps }}</dd>
             </div>
             <div>
-              <dt>Rest</dt>
+              <dt i18n>Rest</dt>
               <dd>{{ exercise.restSeconds | rest }}</dd>
             </div>
           </dl>
-          <p class="disclaimer">
-            Typical ranges — your coach adjusts these to your goals and recovery.
+          <p class="disclaimer" i18n>
+            Typical ranges. With coaching, I adjust them to your goal and recovery.
           </p>
         </div>
         <a
           class="btn btn--primary btn--block"
           [routerLink]="'/workout-planner' | localePath"
           [queryParams]="{ add: exercise.id }"
+          i18n
           >Add to my workout</a
         >
       </aside>
@@ -167,7 +168,7 @@
   @if (related().length) {
     <section class="section section--alt" aria-labelledby="related-title">
       <div class="container">
-        <h2 id="related-title">Related exercises</h2>
+        <h2 id="related-title" i18n>Related exercises</h2>
         <div class="grid grid--3">
           @for (r of related(); track r.id) {
             <app-exercise-card [exercise]="r" />

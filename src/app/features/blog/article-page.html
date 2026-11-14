@@ -2,16 +2,7 @@
   <article class="article">
     <header class="article__header">
       <div class="container container--narrow">
-        <app-breadcrumbs
-          [items]="[
-            { label: 'Blog', url: '/blog' },
-            {
-              label: article.category | label: categories,
-              url: '/blog/category/' + article.category,
-            },
-            { label: article.title, url: '/blog/' + article.slug },
-          ]"
-        />
+        <app-breadcrumbs [items]="breadcrumbs()" />
         <a
           class="badge badge--accent"
           [routerLink]="['/blog/category', article.category] | localePath"
@@ -20,18 +11,29 @@
         <h1>{{ article.title }}</h1>
         <p class="lead">{{ article.excerpt }}</p>
         <p class="meta">
-          By <a [routerLink]="'/about' | localePath" rel="author">{{ article.author }}</a> ·
-          Published
-          <time [attr.datetime]="article.publishedAt">{{
-            article.publishedAt | date: 'longDate'
-          }}</time>
+          <ng-container i18n
+            >By
+            <a [routerLink]="'/about' | localePath" rel="author">{{
+              article.author
+            }}</a></ng-container
+          >
+          ·
+          <ng-container i18n
+            >Published
+            <time [attr.datetime]="article.publishedAt">{{
+              article.publishedAt | date: 'longDate'
+            }}</time></ng-container
+          >
           @if (article.updatedAt !== article.publishedAt) {
-            · Updated
-            <time [attr.datetime]="article.updatedAt">{{
-              article.updatedAt | date: 'longDate'
-            }}</time>
+            ·
+            <ng-container i18n
+              >Updated
+              <time [attr.datetime]="article.updatedAt">{{
+                article.updatedAt | date: 'longDate'
+              }}</time></ng-container
+            >
           }
-          · {{ article.readingMinutes }} min read
+          · <ng-container i18n>{{ article.readingMinutes }} min read</ng-container>
         </p>
       </div>
     </header>
@@ -52,7 +54,7 @@
     <div class="container article__layout">
       @if (toc().length) {
         <nav class="toc" aria-labelledby="toc-title">
-          <p id="toc-title" class="toc__title">On this page</p>
+          <p id="toc-title" class="toc__title" i18n>On this page</p>
           <ol>
             @for (h of toc(); track h.id) {
               <li [class.is-sub]="h.type === 'h3'">
@@ -122,9 +124,9 @@
             }
           </p>
           <app-share-links [url]="url()" [title]="article.title" />
-          <p class="disclaimer">
-            This article is general education and not medical advice. Consult a qualified healthcare
-            professional before changing your training or nutrition, especially if you have a
+          <p class="disclaimer" i18n>
+            This article is general information, not medical advice. Talk to a doctor or other
+            qualified professional before changing your training or food, especially if you have a
             medical condition.
           </p>
         </footer>
@@ -135,7 +137,7 @@
   @if (related().length) {
     <section class="section section--alt" aria-labelledby="related-title">
       <div class="container">
-        <h2 id="related-title">Related articles</h2>
+        <h2 id="related-title" i18n>Related articles</h2>
         <div class="grid grid--3">
           @for (r of related(); track r.id) {
             <app-article-card [article]="r" />

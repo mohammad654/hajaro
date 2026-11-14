@@ -27,20 +27,23 @@ const PAGE_SIZE = 9;
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
-      eyebrow="Fitness education"
-      [title]="categoryLabel() ? categoryLabel() + ' articles' : 'The training & nutrition blog'"
-      lead="Evidence-based articles on bodybuilding, muscle growth, strength, nutrition, fat loss, recovery and more — written to help you train smarter."
+      i18n-eyebrow
+      eyebrow="Blog"
+      [title]="pageTitle()"
+      i18n-lead
+      lead="Practical articles on strength training, building muscle and eating for performance, written by a coach who trains every day."
       [breadcrumbs]="crumbs()"
     />
 
     <section class="section section--tight">
       <div class="container">
-        <nav class="categories" aria-label="Blog categories">
+        <nav class="categories" i18n-aria-label aria-label="Blog categories">
           <a
             class="chip"
             [routerLink]="'/blog' | localePath"
             [class.is-active]="!category()"
             [attr.aria-current]="!category() ? 'page' : null"
+            i18n
             >All</a
           >
           @for (c of categories; track c[0]) {
@@ -68,20 +71,21 @@ const PAGE_SIZE = 9;
           />
         } @else {
           <div class="card empty">
-            <h2>No articles in this category yet</h2>
-            <p class="text-muted">
-              New articles are published regularly. Browse all articles in the meantime.
-            </p>
-            <a class="btn" [routerLink]="'/blog' | localePath">All articles</a>
+            <h2 i18n>No articles in this category yet</h2>
+            <p class="text-muted" i18n>Have a look at all articles in the meantime.</p>
+            <a class="btn" [routerLink]="'/blog' | localePath" i18n>All articles</a>
           </div>
         }
       </div>
     </section>
 
     <app-cta-section
+      i18n-eyebrow
       eyebrow="Put it into practice"
-      title="Knowledge is good. Coaching is faster."
-      text="Turn what you read into a plan built for you — with weekly feedback from your coach."
+      i18n-title
+      title="Want a plan instead of more reading?"
+      i18n-text
+      text="I turn what you read into a plan written for you, with feedback every week."
     />
   `,
   styles: `
@@ -132,8 +136,15 @@ export class BlogPage {
   });
   protected readonly visible = computed(() => paginate(this.filtered(), this.page(), PAGE_SIZE));
 
+  protected readonly pageTitle = computed(() => {
+    const label = this.categoryLabel();
+    return label
+      ? $localize`Articles about ${label}:CATEGORY:`
+      : $localize`Training and nutrition blog`;
+  });
+
   protected readonly crumbs = computed(() => {
-    const base = [{ label: 'Blog', url: '/blog' }];
+    const base = [{ label: $localize`Blog`, url: '/blog' }];
     const c = this.category();
     return c && this.categoryLabel()
       ? [...base, { label: this.categoryLabel(), url: `/blog/category/${c}` }]
@@ -146,8 +157,8 @@ export class BlogPage {
       if (c && !this.categoryLabel()) {
         this.markNotFound();
         this.seo.update({
-          title: 'Category not found',
-          description: 'This blog category does not exist.',
+          title: $localize`Category not found`,
+          description: $localize`This blog category doesn't exist.`,
           noindex: true,
         });
         return;
@@ -155,14 +166,13 @@ export class BlogPage {
       this.seo.update(
         c
           ? {
-              title: `${this.categoryLabel()} Articles`,
-              description: `Evidence-based ${this.categoryLabel().toLowerCase()} articles for lifters and bodybuilders: practical advice to train smarter and progress faster.`,
+              title: this.pageTitle(),
+              description: $localize`Practical articles about ${this.categoryLabel().toLowerCase()}:CATEGORY: for people who lift: what works, and how to apply it.`,
               path: `/blog/category/${c}`,
             }
           : {
-              title: 'Bodybuilding, Training & Nutrition Blog',
-              description:
-                'Evidence-based articles on bodybuilding, muscle growth, strength training, nutrition, fat loss, exercise technique, recovery, supplements and motivation.',
+              title: $localize`Training & Nutrition Blog`,
+              description: $localize`Practical articles on strength training, muscle building and eating for performance, written by a coach who trains daily.`,
               path: '/blog',
             },
       );

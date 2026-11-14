@@ -16,8 +16,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
         <caption class="visually-hidden">
           {{
             day().label
-          }}
-          —
+          }}:
           {{
             day().focus
           }}
@@ -25,10 +24,10 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Exercise</th>
-            <th scope="col" class="num">Sets</th>
-            <th scope="col" class="num">Reps</th>
-            <th scope="col" class="num">Rest</th>
+            <th scope="col" i18n>Exercise</th>
+            <th scope="col" class="num" i18n>Sets</th>
+            <th scope="col" class="num" i18n>Reps</th>
+            <th scope="col" class="num" i18n>Rest</th>
           </tr>
         </thead>
         <tbody>

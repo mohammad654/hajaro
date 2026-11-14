@@ -17,141 +17,153 @@ const BUSINESS = SITE_CONFIG.legalName;
 const EMAIL = SITE_CONFIG.contact.email;
 
 /**
- * Template legal copy. Have these documents reviewed by a qualified legal professional
- * for your jurisdiction before launch.
+ * Template legal copy, translated with $localize. Have these documents (in both languages)
+ * reviewed by a qualified legal professional for your jurisdiction before launch.
  */
 export const LEGAL_DOCUMENTS: Readonly<Record<'privacy' | 'terms' | 'disclaimer', LegalDocument>> =
   {
     privacy: {
-      title: 'Privacy Policy',
-      description: `How ${BUSINESS} collects, uses and protects personal data, including your rights under the GDPR.`,
-      updated: '2026-11-01',
-      intro: `${BUSINESS} ("we", "us") respects your privacy. This policy explains what personal data we process, why, and the rights you have under the EU General Data Protection Regulation (GDPR).`,
+      title: $localize`Privacy Policy`,
+      description: $localize`How ${BUSINESS}:BUSINESS: collects, uses and protects personal data, and your rights under the GDPR.`,
+      updated: '2026-11-14',
+      intro: $localize`${BUSINESS}:BUSINESS: ("we", "us") respects your privacy. This policy explains which personal data we process, why, and the rights you have under the EU General Data Protection Regulation (GDPR).`,
       sections: [
         {
-          heading: 'Data we collect',
+          heading: $localize`Data we collect`,
           paragraphs: [
-            'Enquiry data: your name, email address, optional phone number, training goals, experience and message when you contact us.',
-            'Client data: profile details, training logs, body measurements, progress photos, check-ins and nutrition targets if you become a coaching client. Some of this (for example health-related information you choose to share) may be special-category data, which we process only with your explicit consent.',
-            'Technical data: essential information required to deliver the website securely. Analytics are only enabled with your consent.',
+            $localize`Enquiry data: your name, email address, optional phone number, training goals, experience and message when you contact us.`,
+            $localize`Client data: profile details, training logs, body measurements, progress photos, check-ins and nutrition targets if you become a coaching client. Some of this (for example health information you choose to share) may be special-category data, which we process only with your explicit consent.`,
+            $localize`Technical data: the information needed to deliver the website securely. Analytics are only switched on with your consent.`,
           ],
         },
         {
-          heading: 'Why we use your data and our legal basis',
+          heading: $localize`Why we use your data and on what legal basis`,
           paragraphs: [
-            'To respond to enquiries and provide coaching services (contract / pre-contractual steps).',
-            'To process health-related information needed for safe coaching (explicit consent).',
-            'To meet legal and accounting obligations (legal obligation).',
-            'To improve the website using anonymised statistics (consent).',
+            $localize`To answer enquiries and provide coaching (contract, or steps before a contract).`,
+            $localize`To process health information needed for safe coaching (explicit consent).`,
+            $localize`To meet legal and accounting obligations (legal obligation).`,
+            $localize`To improve the website with anonymised statistics (consent).`,
           ],
         },
         {
-          heading: 'Progress photos and transformations',
+          heading: $localize`Contact form`,
           paragraphs: [
-            'Progress photos are private to you and your coach. We publish a transformation, photo or testimonial only with your separate, explicit written consent, which you may withdraw at any time — we will then remove it promptly.',
+            $localize`When you send the contact form, your message is delivered to us by email through our email provider. It is not stored on the website itself.`,
           ],
         },
         {
-          heading: 'Retention',
+          heading: $localize`Cookies`,
           paragraphs: [
-            'Enquiries that do not lead to coaching are deleted within 12 months. Client records are kept for the duration of coaching and up to the period required by law afterwards.',
+            $localize`The website stores one functional cookie ("lang") when you choose a language, so the site opens in that language next time. It contains only the language code.`,
+            $localize`Analytics cookies are only placed after you accept them in the cookie banner. You can change your choice at any time by clearing the site's cookies.`,
+            $localize`Fonts are served from this website itself, so no data is sent to font providers.`,
           ],
         },
         {
-          heading: 'Sharing',
+          heading: $localize`Progress photos and client results`,
           paragraphs: [
-            'We never sell your data. We use carefully selected processors (such as hosting and email providers) under data-processing agreements, and only as needed to provide our services.',
+            $localize`Progress photos are private to you and your coach. We only publish a result, photo or testimonial with your separate, written consent, which you can withdraw at any time. We then remove it quickly.`,
           ],
         },
         {
-          heading: 'Your rights',
+          heading: $localize`How long we keep data`,
           paragraphs: [
-            'You have the right to access, rectify, erase, restrict or object to processing of your data, the right to data portability and the right to withdraw consent at any time. You may also lodge a complaint with your local supervisory authority.',
-            `To exercise your rights, email ${EMAIL}. Clients can also request a data export or account deletion from their dashboard profile.`,
+            $localize`Enquiries that do not lead to coaching are deleted within 12 months. Client records are kept for the duration of coaching and afterwards for as long as the law requires.`,
           ],
         },
         {
-          heading: 'Security',
+          heading: $localize`Sharing`,
           paragraphs: [
-            'Data is transmitted over encrypted connections (HTTPS). Access to client data is restricted by role, and each client can only access their own information.',
+            $localize`We never sell your data. We work with carefully chosen processors (such as hosting and email providers) under data-processing agreements, and only as far as needed to provide our services.`,
+          ],
+        },
+        {
+          heading: $localize`Your rights`,
+          paragraphs: [
+            $localize`You have the right to access, correct, delete, restrict or object to the processing of your data, the right to data portability and the right to withdraw consent at any time. You can also file a complaint with your national data protection authority (in the Netherlands: the Autoriteit Persoonsgegevens).`,
+            $localize`To use your rights, email ${EMAIL}:EMAIL:. Clients can also request a data export or account deletion from their dashboard profile.`,
+          ],
+        },
+        {
+          heading: $localize`Security`,
+          paragraphs: [
+            $localize`Data is sent over encrypted connections (HTTPS). Access to client data is limited by role, and each client can only see their own information.`,
           ],
         },
       ],
     },
     terms: {
-      title: 'Terms of Service',
-      description: `Terms governing the use of the ${BUSINESS} website, programs and coaching services.`,
+      title: $localize`Terms of Service`,
+      description: $localize`Terms for using the ${BUSINESS}:BUSINESS: website, programs and coaching services.`,
       updated: '2026-11-01',
-      intro: `These terms apply to your use of this website and to any programs or coaching services purchased from ${BUSINESS}.`,
+      intro: $localize`These terms apply to your use of this website and to any programs or coaching services bought from ${BUSINESS}:BUSINESS:.`,
       sections: [
         {
-          heading: 'Services',
+          heading: $localize`Services`,
           paragraphs: [
-            'Coaching packages and programs are described on the pricing and program pages. The specific inclusions of your package are confirmed in writing before you start.',
+            $localize`Coaching packages and programs are described on the pricing and program pages. What exactly your package includes is confirmed in writing before you start.`,
           ],
         },
         {
-          heading: 'Payments, renewals and cancellation',
+          heading: $localize`Payment, renewal and cancellation`,
           paragraphs: [
-            'Monthly packages renew automatically until cancelled. You can cancel with notice before your next billing date. Minimum terms, where they apply, are stated on the pricing page.',
-            'Where applicable consumer law gives you a right of withdrawal, this is explained at the time of purchase.',
+            $localize`Monthly packages renew automatically until you cancel. You can cancel before your next billing date. Minimum terms, where they apply, are stated on the pricing page.`,
+            $localize`Where consumer law gives you a right of withdrawal, this is explained when you buy.`,
           ],
         },
         {
-          heading: 'Your responsibilities',
+          heading: $localize`Your responsibilities`,
           paragraphs: [
-            'You confirm that the information you provide is accurate, including relevant health information, and that you will seek medical clearance where advised.',
-            'You are responsible for training safely, using appropriate equipment and stopping any exercise that causes pain.',
+            $localize`You confirm that the information you give is correct, including relevant health information, and that you will get medical clearance when advised to.`,
+            $localize`You are responsible for training safely, using suitable equipment and stopping any exercise that causes pain.`,
           ],
         },
         {
-          heading: 'No guarantee of results',
+          heading: $localize`No guaranteed results`,
           paragraphs: [
-            'Results depend on many individual factors. We do not guarantee any specific outcome, such as a particular amount of weight loss or muscle gain.',
+            $localize`Results depend on many personal factors. We do not guarantee any specific outcome, such as a certain amount of weight loss or muscle gain.`,
           ],
         },
         {
-          heading: 'Intellectual property',
+          heading: $localize`Intellectual property`,
           paragraphs: [
-            'Programs, articles and materials are for your personal use only and may not be resold or redistributed.',
+            $localize`Programs, articles and materials are for your personal use only and may not be resold or shared.`,
           ],
         },
         {
-          heading: 'Contact',
-          paragraphs: [`Questions about these terms: ${EMAIL}.`],
+          heading: $localize`Contact`,
+          paragraphs: [$localize`Questions about these terms: ${EMAIL}:EMAIL:.`],
         },
       ],
     },
     disclaimer: {
-      title: 'Health Disclaimer',
-      description:
-        'Important information about the educational nature of the content on this website.',
+      title: $localize`Health Disclaimer`,
+      description: $localize`Important information about the educational nature of the content on this website.`,
       updated: '2026-11-01',
-      intro:
-        'The content on this website — including programs, the exercise library, the muscle chart, calculators and articles — is provided for general educational purposes only.',
+      intro: $localize`The content on this website, including programs, the exercise library, the muscle chart, calculators and articles, is general information for education only.`,
       sections: [
         {
-          heading: 'Not medical advice',
+          heading: $localize`Not medical advice`,
           paragraphs: [
-            'Nothing on this website is medical advice, diagnosis or treatment. Always consult a doctor or other qualified healthcare professional before beginning any exercise or nutrition program, especially if you are pregnant, have a medical condition, an injury or take medication.',
+            $localize`Nothing on this website is medical advice, diagnosis or treatment. Always talk to a doctor or other qualified healthcare professional before starting a new exercise or nutrition program, especially if you are pregnant, have a medical condition or injury, or take medication.`,
           ],
         },
         {
-          heading: 'Exercise risk',
+          heading: $localize`Risk of exercise`,
           paragraphs: [
-            'Strength training carries an inherent risk of injury. Use appropriate loads, learn correct technique, warm up and stop immediately if you feel pain, dizziness or shortness of breath.',
+            $localize`Strength training always carries some risk of injury. Use suitable weights, learn the right technique, warm up, and stop immediately if you feel pain, dizziness or shortness of breath.`,
           ],
         },
         {
-          heading: 'Calculators',
+          heading: $localize`Calculators`,
           paragraphs: [
-            'Calorie, macronutrient, protein, BMI and water calculators produce population-based estimates. They are informational and not individualised medical or dietary advice.',
+            $localize`The calorie, macro, protein, BMI and water calculators give estimates based on population averages. They are for information only and are not personal medical or dietary advice.`,
           ],
         },
         {
-          heading: 'Supplements',
+          heading: $localize`Supplements`,
           paragraphs: [
-            'Supplements are discussed for education only. They are not medicines and are not intended to diagnose, treat, cure or prevent any disease.',
+            $localize`Supplements are discussed for education only. They are not medicines and are not meant to diagnose, treat, cure or prevent any disease.`,
           ],
         },
       ],

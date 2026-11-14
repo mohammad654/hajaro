@@ -16,8 +16,8 @@ import { PageHero } from '../../shared/ui/page-hero';
 
 type DurationBucket = 'short' | 'medium';
 const DURATION_LABELS: Readonly<Record<DurationBucket, string>> = {
-  short: 'Up to 8 weeks',
-  medium: '9–12 weeks',
+  short: $localize`Up to 8 weeks`,
+  medium: $localize`9 to 12 weeks`,
 };
 const SHORT_PROGRAM_MAX_WEEKS = 8;
 
@@ -48,13 +48,13 @@ export class ProgramsPage {
     () => !!(this.level() || this.goal() || this.type() || this.duration()),
   );
 
+  protected readonly breadcrumbs = [{ label: $localize`Programs`, url: '/programs' }];
   protected readonly results = computed(() => this.programs.all().filter((p) => this.matches(p)));
 
   constructor() {
     applyPageSeo('programs', {
-      title: 'Strength & Bodybuilding Training Programs',
-      description:
-        'Structured training programs for every level: beginner muscle building, hypertrophy, strength, fat loss, push/pull/legs, upper/lower, full body and home workouts.',
+      title: $localize`Training Programs for Muscle & Strength`,
+      description: $localize`Training programs for every level: muscle building, strength, fat loss, push/pull/legs, upper/lower, full body and home workouts.`,
     });
   }
 

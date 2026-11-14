@@ -34,6 +34,14 @@
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">12</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="7009869773854523300" datatype="html">
         <source>Training Tools</source>
@@ -132,6 +140,10 @@
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">74</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="3864029730667347532" datatype="html">
         <source>Calories, protein, macros and more</source>
@@ -179,6 +191,18 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">147</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/home-page.ts</context>
@@ -286,6 +310,10 @@
           <context context-type="linenumber">134</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
           <context context-type="linenumber">115,116</context>
         </context-group>
@@ -296,6 +324,10 @@
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">83</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="2029980907058777630" datatype="html">
         <source>Terms of Service</source>
@@ -303,12 +335,20 @@
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">84</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="898601236377987240" datatype="html">
         <source>Health Disclaimer</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1324539601317619429" datatype="html">
@@ -554,6 +594,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/packages.data.ts</context>
           <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">126,127</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1253577004585404582" datatype="html">
@@ -2319,6 +2363,10 @@
           <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
           <context context-type="linenumber">22</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="6125031343798443633" datatype="html">
         <source>Fitness Motivation</source>
@@ -2367,6 +2415,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
           <context context-type="linenumber">32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">130,131</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8275267475261521455" datatype="html">
@@ -2894,18 +2946,242 @@
           <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2592614811575507939" datatype="html">
+        <source>By <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;&apos;/about&apos; | localePath&quot; rel=&quot;author&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{
+              article.author
+            }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4112198940579560492" datatype="html">
+        <source>Published <x id="START_TAG_TIME" ctype="x-time" equiv-text="&lt;time [attr.datetime]=&quot;article.publishedAt&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{
+              article.publishedAt | date: &apos;longDate&apos;
+            }}"/><x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="&lt;/time&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">22,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5804547238324476434" datatype="html">
+        <source>Updated <x id="START_TAG_TIME" ctype="x-time" equiv-text="&lt;time [attr.datetime]=&quot;article.updatedAt&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{
+                article.updatedAt | date: &apos;longDate&apos;
+              }}"/><x id="CLOSE_TAG_TIME" ctype="x-time" equiv-text="&lt;/time&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5837279635151065614" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ article.readingMinutes }}"/> min read</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/article-card.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3666056139586507823" datatype="html">
+        <source>On this page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5602516419203764621" datatype="html">
+        <source> This article is general information, not medical advice. Talk to a doctor or other qualified professional before changing your training or food, especially if you have a medical condition. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="708476170639654480" datatype="html">
+        <source>Related articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">140,141</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="6588902603208831548" datatype="html">
         <source>This article doesn&apos;t exist</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
-          <context context-type="linenumber">152,153</context>
+          <context context-type="linenumber">154,155</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3283630359497712931" datatype="html">
         <source>Browse the blog</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
-          <context context-type="linenumber">155,158</context>
+          <context context-type="linenumber">157,160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7653574755884581170" datatype="html">
+        <source>Article not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="182618155723572727" datatype="html">
+        <source>This article doesn&apos;t exist or has moved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.ts</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3049832417078354035" datatype="html">
+        <source>Practical articles on strength training, building muscle and eating for performance, written by a coach who trains every day.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3163319882731678834" datatype="html">
+        <source>Blog categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1616102757855967475" datatype="html">
+        <source>All</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3735221997955979199" datatype="html">
+        <source>No articles in this category yet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2216427606297588085" datatype="html">
+        <source>Have a look at all articles in the meantime.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3324196694518593624" datatype="html">
+        <source>All articles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">76,77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="198928697492494426" datatype="html">
+        <source>Put it into practice</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6923256098208875446" datatype="html">
+        <source>Want a plan instead of more reading?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="531490953138566061" datatype="html">
+        <source>I turn what you read into a plan written for you, with feedback every week.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">88,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1075535962000663225" datatype="html">
+        <source>Articles about <x id="CATEGORY" equiv-text="label"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8752705347762899250" datatype="html">
+        <source>Training and nutrition blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4853707110296897818" datatype="html">
+        <source>Category not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2253160266673119671" datatype="html">
+        <source>This blog category doesn&apos;t exist.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7746448239626528853" datatype="html">
+        <source>Practical articles about <x id="CATEGORY" equiv-text="this.categoryLabel().toLowerCase()"/> for people who lift: what works, and how to apply it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6501117316777836626" datatype="html">
+        <source>Training &amp; Nutrition Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="158761630877260601" datatype="html">
+        <source>Practical articles on strength training, muscle building and eating for performance, written by a coach who trains daily.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/blog-page.ts</context>
+          <context context-type="linenumber">175</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1064452920022744650" datatype="html">
+        <source>Share this article</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2618101617221155143" datatype="html">
+        <source>Copy link</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7574993740889368937" datatype="html">
+        <source>Link copied.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6721707856423262590" datatype="html">
+        <source>The link could not be copied. Copy it from the address bar instead.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7288867265734179365" datatype="html">
@@ -2942,6 +3218,10 @@
           <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
           <context context-type="linenumber">14,15</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="5287144225094966572" datatype="html">
         <source>Training programs</source>
@@ -2952,6 +3232,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/sections/home-programs.ts</context>
           <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">3,4</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7905314058646077483" datatype="html">
@@ -2987,13 +3271,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
           <context context-type="linenumber">55,56</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4768749765465246664" datatype="html">
-        <source>Email</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
-          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7626510707266552681" datatype="html">
@@ -3317,18 +3594,428 @@
           <context context-type="linenumber">139</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7505315505087949376" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ exercise.name }}"/>: demonstration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6057219190725519361" datatype="html">
+        <source>How to do it: <x id="INTERPOLATION" equiv-text="{{ exercise.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4302428228135635357" datatype="html">
+        <source>1 · Starting position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6448699902857364946" datatype="html">
+        <source>2 · The movement</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="431419909751744933" datatype="html">
+        <source>3 · End position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6765791128877228527" datatype="html">
+        <source>Posture cues</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2890679222603308282" datatype="html">
+        <source>Common mistakes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2538643401892722912" datatype="html">
+        <source>Safety</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3258960543260754704" datatype="html">
+        <source>Exercise summary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6370460041997261765" datatype="html">
+        <source>Muscles worked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5955674053612767420" datatype="html">
+        <source>Front view: muscles worked by <x id="INTERPOLATION" equiv-text="{{ exercise.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6942827637236506676" datatype="html">
+        <source>Back view: muscles worked by <x id="INTERPOLATION" equiv-text="{{ exercise.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">100,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5628164219997802241" datatype="html">
+        <source>Primary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">111,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4735777976043469220" datatype="html">
+        <source>Secondary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6876272905987136274" datatype="html">
+        <source>Sets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">141,142</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7860075696718747782" datatype="html">
+        <source>Reps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7377467231284431042" datatype="html">
+        <source>Rest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">149,150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8145564832570437758" datatype="html">
+        <source> Typical ranges. With coaching, I adjust them to your goal and recovery. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1738113875361673338" datatype="html">
+        <source>Add to my workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">162,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2459453964336579039" datatype="html">
+        <source>Related exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">171,172</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4053625362588593651" datatype="html">
         <source>This exercise isn&apos;t in the library</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
-          <context context-type="linenumber">182,183</context>
+          <context context-type="linenumber">183,184</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6004976675944044849" datatype="html">
         <source>Browse the exercise library</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
-          <context context-type="linenumber">185,188</context>
+          <context context-type="linenumber">186,189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2539006690604269656" datatype="html">
+        <source>Exercise library</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-programs.ts</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1845767720410623466" datatype="html">
+        <source><x id="NAME" equiv-text="this.exercise()?.name"/>: demonstration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6654508717934468208" datatype="html">
+        <source>Exercise not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2470628072570817452" datatype="html">
+        <source>This exercise doesn&apos;t exist or has moved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4869911203372553952" datatype="html">
+        <source><x id="NAME" equiv-text="exercise.name"/>: Technique &amp; Muscles Worked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1031659815868146515" datatype="html">
+        <source><x id="SUMMARY" equiv-text="exercise.summary"/> Technique, muscles worked, sets and reps.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4573513501863231050" datatype="html">
+        <source>Learn every exercise properly</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6984971090289907769" datatype="html">
+        <source>Step-by-step technique, the muscles each exercise trains, suggested sets and reps, common mistakes and safety notes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8956523730026860109" datatype="html">
+        <source>Search exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249354019207636297" datatype="html">
+        <source>Search by exercise or muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="60335043970879752" datatype="html">
+        <source>Muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3359116727101161135" datatype="html">
+        <source>All muscles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7595930936671323978" datatype="html">
+        <source>Equipment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">53,54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">166,167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="839884254191830688" datatype="html">
+        <source>All equipment</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1063462873103909661" datatype="html">
+        <source>Difficulty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6035549592328076369" datatype="html">
+        <source>All levels</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5496979006609868904" datatype="html">
+        <source>Exercise categories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8386976308507652568" datatype="html">
+        <source> All </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8856905278208146821" datatype="html">
+        <source> <x id="ICU" equiv-text="{filtered().length, plural, =1 {1 exercise} other {{{ filtered().length }} exercises}}" xid="2077360991502522751"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">102,104</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">80,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1590439255411127327" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 exercise} other {<x id="INTERPOLATION"/> exercises}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6634790566400449864" datatype="html">
+        <source> Clear filters </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2385333422868527884" datatype="html">
+        <source>No exercises found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">123,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6412525782197786895" datatype="html">
+        <source>Try another search term, or clear the filters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">124,125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6559246822757089203" datatype="html">
+        <source>Clear filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
+          <context context-type="linenumber">125,126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1336068893648662545" datatype="html">
+        <source>Exercise Library: Technique &amp; Muscles Worked</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.ts</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1621216571089428920" datatype="html">
+        <source>Search exercises for chest, back, shoulders, arms, legs, glutes, abs and cardio, with technique cues, sets, reps and safety tips.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.ts</context>
+          <context context-type="linenumber">90</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3418371731972377429" datatype="html">
@@ -3689,13 +4376,6 @@
           <context context-type="linenumber">51,52</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2539006690604269656" datatype="html">
-        <source>Exercise library</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-programs.ts</context>
-          <context context-type="linenumber">53,54</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="6646039483329228023" datatype="html">
         <source>Client results</source>
         <context-group purpose="location">
@@ -3820,6 +4500,884 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/services/services-page.ts</context>
           <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6065874990309746785" datatype="html">
+        <source>How <x id="BUSINESS" equiv-text="BUSINESS"/> collects, uses and protects personal data, and your rights under the GDPR.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2651212790271432736" datatype="html">
+        <source><x id="BUSINESS" equiv-text="BUSINESS"/> (&quot;we&quot;, &quot;us&quot;) respects your privacy. This policy explains which personal data we process, why, and the rights you have under the EU General Data Protection Regulation (GDPR).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1418744773928985937" datatype="html">
+        <source>Data we collect</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="412765774264881060" datatype="html">
+        <source>Enquiry data: your name, email address, optional phone number, training goals, experience and message when you contact us.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1971513147857789022" datatype="html">
+        <source>Client data: profile details, training logs, body measurements, progress photos, check-ins and nutrition targets if you become a coaching client. Some of this (for example health information you choose to share) may be special-category data, which we process only with your explicit consent.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6467165323936556421" datatype="html">
+        <source>Technical data: the information needed to deliver the website securely. Analytics are only switched on with your consent.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5812421565663851432" datatype="html">
+        <source>Why we use your data and on what legal basis</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7813404538371582349" datatype="html">
+        <source>To answer enquiries and provide coaching (contract, or steps before a contract).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8218918099124190074" datatype="html">
+        <source>To process health information needed for safe coaching (explicit consent).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8742647109774154090" datatype="html">
+        <source>To meet legal and accounting obligations (legal obligation).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7406876492399574283" datatype="html">
+        <source>To improve the website with anonymised statistics (consent).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7493272841294500845" datatype="html">
+        <source>Contact form</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="55789903327662356" datatype="html">
+        <source>When you send the contact form, your message is delivered to us by email through our email provider. It is not stored on the website itself.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4516124744118816397" datatype="html">
+        <source>Cookies</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2335407793538551215" datatype="html">
+        <source>The website stores one functional cookie (&quot;lang&quot;) when you choose a language, so the site opens in that language next time. It contains only the language code.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4838489766329253052" datatype="html">
+        <source>Analytics cookies are only placed after you accept them in the cookie banner. You can change your choice at any time by clearing the site&apos;s cookies.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4793858935829523944" datatype="html">
+        <source>Fonts are served from this website itself, so no data is sent to font providers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8828593376963927086" datatype="html">
+        <source>Progress photos and client results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5305202858414214985" datatype="html">
+        <source>Progress photos are private to you and your coach. We only publish a result, photo or testimonial with your separate, written consent, which you can withdraw at any time. We then remove it quickly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2025023119529119427" datatype="html">
+        <source>How long we keep data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4308563884157796898" datatype="html">
+        <source>Enquiries that do not lead to coaching are deleted within 12 months. Client records are kept for the duration of coaching and afterwards for as long as the law requires.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8422875188929347819" datatype="html">
+        <source>Sharing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8576845791625846481" datatype="html">
+        <source>We never sell your data. We work with carefully chosen processors (such as hosting and email providers) under data-processing agreements, and only as far as needed to provide our services.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6155876973774194934" datatype="html">
+        <source>Your rights</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5507233171037713289" datatype="html">
+        <source>You have the right to access, correct, delete, restrict or object to the processing of your data, the right to data portability and the right to withdraw consent at any time. You can also file a complaint with your national data protection authority (in the Netherlands: the Autoriteit Persoonsgegevens).</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6008853466840783931" datatype="html">
+        <source>To use your rights, email <x id="EMAIL" equiv-text="EMAIL"/>. Clients can also request a data export or account deletion from their dashboard profile.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8878700331247603166" datatype="html">
+        <source>Security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8223339194767379086" datatype="html">
+        <source>Data is sent over encrypted connections (HTTPS). Access to client data is limited by role, and each client can only see their own information.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4888687339454492706" datatype="html">
+        <source>Terms for using the <x id="BUSINESS" equiv-text="BUSINESS"/> website, programs and coaching services.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4285096451783286224" datatype="html">
+        <source>These terms apply to your use of this website and to any programs or coaching services bought from <x id="BUSINESS" equiv-text="BUSINESS"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7143579180750436311" datatype="html">
+        <source>Services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.ts</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/services-page.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/services-page.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7173964882953253454" datatype="html">
+        <source>Coaching packages and programs are described on the pricing and program pages. What exactly your package includes is confirmed in writing before you start.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1994324567397774894" datatype="html">
+        <source>Payment, renewal and cancellation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7658883378904527937" datatype="html">
+        <source>Monthly packages renew automatically until you cancel. You can cancel before your next billing date. Minimum terms, where they apply, are stated on the pricing page.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797326099970342477" datatype="html">
+        <source>Where consumer law gives you a right of withdrawal, this is explained when you buy.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="841682404452102661" datatype="html">
+        <source>Your responsibilities</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1178198264470828843" datatype="html">
+        <source>You confirm that the information you give is correct, including relevant health information, and that you will get medical clearance when advised to.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1112680708955655401" datatype="html">
+        <source>You are responsible for training safely, using suitable equipment and stopping any exercise that causes pain.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3906116509906290456" datatype="html">
+        <source>No guaranteed results</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8944192211547880936" datatype="html">
+        <source>Results depend on many personal factors. We do not guarantee any specific outcome, such as a certain amount of weight loss or muscle gain.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8907907920415433559" datatype="html">
+        <source>Intellectual property</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7380122598280712276" datatype="html">
+        <source>Programs, articles and materials are for your personal use only and may not be resold or shared.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1934975308653110285" datatype="html">
+        <source>Questions about these terms: <x id="EMAIL" equiv-text="EMAIL"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6521897175233914792" datatype="html">
+        <source>Important information about the educational nature of the content on this website.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1243797773116147543" datatype="html">
+        <source>The content on this website, including programs, the exercise library, the muscle chart, calculators and articles, is general information for education only.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4456326869496912410" datatype="html">
+        <source>Not medical advice</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="439974149459682075" datatype="html">
+        <source>Nothing on this website is medical advice, diagnosis or treatment. Always talk to a doctor or other qualified healthcare professional before starting a new exercise or nutrition program, especially if you are pregnant, have a medical condition or injury, or take medication.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6643788613058965282" datatype="html">
+        <source>Risk of exercise</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3345128838715205880" datatype="html">
+        <source>Strength training always carries some risk of injury. Use suitable weights, learn the right technique, warm up, and stop immediately if you feel pain, dizziness or shortness of breath.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8647906723140245543" datatype="html">
+        <source>The calorie, macro, protein, BMI and water calculators give estimates based on population averages. They are for information only and are not personal medical or dietary advice.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4759980053759263242" datatype="html">
+        <source>Supplements are discussed for education only. They are not medicines and are not meant to diagnose, treat, cure or prevent any disease.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
+          <context context-type="linenumber">166</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7814069298939347422" datatype="html">
+        <source>Legal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-page.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4578611765677088550" datatype="html">
+        <source>Last updated:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/legal/legal-page.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797083967367497878" datatype="html">
+        <source>Anatomy view</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3139900821782607475" datatype="html">
+        <source> Front </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">42,45</context>
+        </context-group>
+        <note priority="1" from="description">Toggle for the anatomy view</note>
+        <note priority="1" from="meaning">side of the body</note>
+      </trans-unit>
+      <trans-unit id="5661397096913715080" datatype="html">
+        <source> Back </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+        <note priority="1" from="description">Toggle for the anatomy view</note>
+        <note priority="1" from="meaning">side of the body</note>
+      </trans-unit>
+      <trans-unit id="1050269006235116171" datatype="html">
+        <source>Rotate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1097061735724445242" datatype="html">
+        <source>Tap or click a muscle to explore it</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6849248915426311478" datatype="html">
+        <source>Muscle groups</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9086705690766140994" datatype="html">
+        <source>deep</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2749038105472818474" datatype="html">
+        <source>Interactive anatomy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">3,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5798203678988292036" datatype="html">
+        <source>Full body muscle chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8968147011616157178" datatype="html">
+        <source>Tap any muscle to see what it does, how to train it, which exercises work it best, suggested sets and reps, and the mistakes to avoid.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8247221991535347652" datatype="html">
+        <source>Interactive muscle anatomy chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7086227138886238384" datatype="html">
+        <source>How to use the chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2712307026444655567" datatype="html">
+        <source>Explore your muscles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4488988938793722080" datatype="html">
+        <source>Tap a muscle on the body, or pick one from the list.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8016177894024914174" datatype="html">
+        <source> Switch between the <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>front<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> and <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>back<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> view to reach every muscle group. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1512911661934388080" datatype="html">
+        <source>Read what the muscle does, how to train it and technique tips.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7132443616025255714" datatype="html">
+        <source> Open any exercise for step-by-step instructions, or add it to your workout planner. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4477533524600682836" datatype="html">
+        <source> Start with the chest </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1977472770549565624" datatype="html">
+        <source>Show the back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4496607099547394952" datatype="html">
+        <source>Workout chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7830686596142644788" datatype="html">
+        <source>Full body workout chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5965579114732781324" datatype="html">
+        <source> One proven exercise for every major muscle group. Select a muscle group to highlight it on the anatomy chart. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4215971741379980569" datatype="html">
+        <source> Use this chart in the workout planner </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">77,78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7625019064089511858" datatype="html">
+        <source>See full programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">79,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9116371696700117102" datatype="html">
+        <source> These are example ranges, not rules for everyone. Adjust sets, reps, weight and rest to your goal, experience, recovery and body. Coaching clients get a chart I write for them. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6805617538164179785" datatype="html">
+        <source>Workout splits</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6838115999141494069" datatype="html">
+        <source>Choose how to organise your training week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">92,93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2320574149584995461" datatype="html">
+        <source> Each split has a weekly schedule, exercises, sets and reps, rest times, a warm-up, rules for progress and rest days. Open a split to see the full plan. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4883503093550856177" datatype="html">
+        <source>Seven anatomy illustrations highlighting the abs, quads, glutes, triceps, biceps, back and chest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1158596068437260434" datatype="html">
+        <source> The major muscle groups at a glance. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6435168889689520941" datatype="html">
+        <source>Train every muscle group in balance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">119,120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5639912603951204519" datatype="html">
+        <source> A balanced physique comes from training opposite muscle groups in proportion (chest and back, quads and hamstrings, biceps and triceps), and giving each one enough work every week to grow. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">121,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4766902219731680857" datatype="html">
+        <source>Aim for roughly 10 to 20 hard sets per muscle group per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">126,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1342144109494345648" datatype="html">
+        <source>Train each muscle at least twice a week for most goals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2868440464911147689" datatype="html">
+        <source>Balance pushing with pulling to protect your shoulders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">128,129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2029985876852101822" datatype="html">
+        <source>Train muscles that lag behind early in the session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">129,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2914512705213988995" datatype="html">
+        <source>Made for you</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5909293621100690642" datatype="html">
+        <source>Want a chart written for your body?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">139,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4100769468333340241" datatype="html">
+        <source>I write a workout chart around your goal, experience, recovery and equipment, and update it as you progress.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
+          <context context-type="linenumber">141,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2838307952388501345" datatype="html">
+        <source>Full Body Muscle Chart &amp; Workout Chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6859144841442505085" datatype="html">
+        <source>Tap any muscle to see what it does, the best exercises, sets and reps and common mistakes. With a full body workout chart and training splits.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6717208044780064360" datatype="html">
+        <source>Deep muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7537743578851176213" datatype="html">
+        <source>Suggested sets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6122030973291308530" datatype="html">
+        <source>Frequency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6106688324392573013" datatype="html">
+        <source>Muscle function</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="29445361772884824" datatype="html">
+        <source>Function</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8327345179543906855" datatype="html">
+        <source>Technique instructions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3248445660509657942" datatype="html">
+        <source>Technique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">37,38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7109698360526441947" datatype="html">
+        <source>Equipment requirements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5398163076107519993" datatype="html">
+        <source> Trained through compound exercises and bracing. No specific equipment needed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5159403398640770532" datatype="html">
+        <source>Primary exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6834386881173546420" datatype="html">
+        <source> This muscle mostly works as a helper. See the secondary exercises below. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7380266507097947681" datatype="html">
+        <source>Secondary exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">85,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1787794205827498472" datatype="html">
+        <source> All exercises for this muscle (<x id="INTERPOLATION" equiv-text="{{ totalCount() }}"/>) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">103,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8928568740433240678" datatype="html">
+        <source>Build a workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">110,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8269148459772915571" datatype="html">
+        <source> Workout splits </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2434944824726929798" datatype="html">
+        <source>Split</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="852907718270764268" datatype="html">
+        <source>Weekly schedule</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="840951359074313455" datatype="html">
+        <source>Days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3733215288982610673" datatype="html">
+        <source>Level</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7533257291927708052" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ p.name }}"/>: weekly schedule</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/split-programs.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3017349275866470327" datatype="html">
+        <source> Full body workout chart </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4442329332430745420" datatype="html">
+        <source>Muscle group</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9056543421332015840" datatype="html">
+        <source>Exercise</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="437680366882080368" datatype="html">
+        <source>Show <x id="INTERPOLATION" equiv-text="{{ row.muscleGroup }}"/> on the anatomy chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
+          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="795794497006112709" datatype="html">
@@ -3966,6 +5524,10 @@
           <context context-type="linenumber">147</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
           <context context-type="linenumber">32</context>
         </context-group>
@@ -4024,6 +5586,173 @@
           <context context-type="linenumber">159</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="176974182388688468" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ program.daysPerWeek }}"/> days / week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4605273802885589405" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ program.durationWeeks }}"/> weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4292771892447032303" datatype="html">
+        <source>Session length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="771135449401995553" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ program.sessionMinutes }}"/> min</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7824598510284385191" datatype="html">
+        <source>Training style</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1873137061889096173" datatype="html">
+        <source>About this program</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7911183503551556311" datatype="html">
+        <source>Who it&apos;s for</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="201284979944759877" datatype="html">
+        <source>How the training is set up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1864998313363390342" datatype="html">
+        <source>Week overview</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9222663307598031013" datatype="html">
+        <source>Warm-up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4122137229878143286" datatype="html">
+        <source>Progression</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">99,100</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4059347375121369879" datatype="html">
+        <source>Rest days and recovery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1271343277614911322" datatype="html">
+        <source> Sets, reps and rest times are example ranges, not rules for everyone. Adjust them to your experience, recovery and body, or have them set for you through coaching. Stop any exercise that causes pain, and see a healthcare professional if needed. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">118,120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4554739777874644539" datatype="html">
+        <source>Program summary</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">124,125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5452843328824045285" datatype="html">
+        <source> A program you follow on your own, with the full schedule and progression rules. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7220284473000453439" datatype="html">
+        <source> Get this program </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8800048279894817143" datatype="html">
+        <source> This program comes with coaching, adjusted to you. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2394387269674538265" datatype="html">
+        <source>Ask about coaching</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">153,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="139397510301278640" datatype="html">
+        <source> Use in the workout planner </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1425846154413751618" datatype="html">
+        <source>Example exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">172,173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4887063418669189018" datatype="html">
+        <source>Related programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">190,191</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1864108194119513052" datatype="html">
         <source>This program doesn&apos;t exist</source>
         <context-group purpose="location">
@@ -4038,18 +5767,165 @@
           <context context-type="linenumber">207,210</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="2184502281695804424" datatype="html">
+        <source>Program not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4172281691957581226" datatype="html">
+        <source>This training program doesn&apos;t exist or has moved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6335121383088028133" datatype="html">
+        <source><x id="NAME" equiv-text="program.name"/> (<x id="DAYS" equiv-text="program.daysPerWeek"/> days a week)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8419464428674552180" datatype="html">
+        <source><x id="TAGLINE" equiv-text="program.tagline"/> A <x id="WEEKS" equiv-text="program.durationWeeks"/>-week program with a weekly schedule, sets, reps and progression rules.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1499676178373495688" datatype="html">
+        <source>Training programs that make you progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2072809741117836747" datatype="html">
+        <source>Each program has a weekly schedule, exercises with sets, reps and rest times, a warm-up, rules for progress and tips for recovery. Filter by level, goal, length and style.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4972303702160454379" datatype="html">
+        <source>Filter programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="502130212127803987" datatype="html">
+        <source>Goal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6074084738172802418" datatype="html">
+        <source>All goals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="590860337429725662" datatype="html">
+        <source>All styles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2827233633791350200" datatype="html">
+        <source>Length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">63,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2110366060269556985" datatype="html">
+        <source>Any length</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">70,71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2697612999454763749" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 program} other {<x id="INTERPOLATION"/> programs}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8608771484838682686" datatype="html">
+        <source>No programs match these filters</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9010923543713668148" datatype="html">
+        <source>Remove a filter, or ask me for a program written for you.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7517728125755720071" datatype="html">
+        <source>Want it made for you?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3904491626955975199" datatype="html">
+        <source>A program written around you</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7672358980146528861" datatype="html">
+        <source>A ready-made program is a good start. With coaching, I fit every exercise, set and rep to your body, recovery and goal, and adjust it every week.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="697966622574045986" datatype="html">
+        <source>Up to 8 weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6472619788439040563" datatype="html">
+        <source>9 to 12 weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9131776443535741076" datatype="html">
+        <source>Training Programs for Muscle &amp; Strength</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.ts</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="596227356285737187" datatype="html">
+        <source>Training programs for every level: muscle building, strength, fat loss, push/pull/legs, upper/lower, full body and home workouts.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2977885921287350350" datatype="html">
         <source>See prices</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
           <context context-type="linenumber">16,17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7911183503551556311" datatype="html">
-        <source>Who it&apos;s for</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">26,27</context>
         </context-group>
       </trans-unit>
       <trans-unit id="110428476819898507" datatype="html">
@@ -4098,13 +5974,6 @@
           <context context-type="linenumber">79,80</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4887063418669189018" datatype="html">
-        <source>Related programs</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">98,99</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="2501350947127628479" datatype="html">
         <source>Training programs that go well with this</source>
         <context-group purpose="location">
@@ -4124,21 +5993,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
           <context context-type="linenumber">117,120</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7143579180750436311" datatype="html">
-        <source>Services</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.ts</context>
-          <context context-type="linenumber">58</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/services-page.ts</context>
-          <context context-type="linenumber">18,19</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/services-page.ts</context>
-          <context context-type="linenumber">120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="384972051791814482" datatype="html">
@@ -4508,13 +6362,6 @@
           <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5837279635151065614" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ article().readingMinutes }}"/> min read</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/cards/article-card.ts</context>
-          <context context-type="linenumber">30</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="4937031229274399474" datatype="html">
         <source>Muscles worked: <x id="INTERPOLATION" equiv-text="{{ musclesLabel() }}"/></source>
         <context-group purpose="location">
@@ -4541,27 +6388,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
           <context context-type="linenumber">45,46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6122030973291308530" datatype="html">
-        <source>Frequency</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="176974182388688468" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ program().daysPerWeek }}"/> days / week</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
-          <context context-type="linenumber">29,30</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4605273802885589405" datatype="html">
-        <source><x id="INTERPOLATION" equiv-text="{{ program().durationWeeks }}"/> weeks</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
-          <context context-type="linenumber">33,34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4862012612155363469" datatype="html">

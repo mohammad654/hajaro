@@ -64,6 +64,13 @@ export class ProgramDetailPage {
 
   protected readonly program = computed(() => this.programs.bySlug(canonicalSlug(this.slug())));
   protected readonly selectedDayId = signal<string | null>(null);
+  protected readonly breadcrumbs = computed(() => {
+    const p = this.program();
+    return [
+      { label: $localize`Programs`, url: '/programs' },
+      ...(p ? [{ label: p.name, url: `/programs/${p.slug}` }] : []),
+    ];
+  });
 
   protected readonly trainingDays = computed(
     () => this.program()?.schedule.filter((d) => !d.isRestDay) ?? [],
@@ -97,15 +104,15 @@ export class ProgramDetailPage {
       if (!program) {
         this.markNotFound();
         this.seo.update({
-          title: 'Program not found',
-          description: 'This training program could not be found.',
+          title: $localize`Program not found`,
+          description: $localize`This training program doesn't exist or has moved.`,
           noindex: true,
         });
         return;
       }
       this.seo.update({
-        title: `${program.name} Program — ${program.daysPerWeek} Days per Week`,
-        description: `${program.tagline} ${program.durationWeeks}-week ${this.levels[program.level].toLowerCase()} program with full weekly schedule, sets, reps and progression.`,
+        title: $localize`${program.name}:NAME: (${program.daysPerWeek}:DAYS: days a week)`,
+        description: $localize`${program.tagline}:TAGLINE: A ${program.durationWeeks}:WEEKS:-week program with a weekly schedule, sets, reps and progression rules.`,
         path: `/programs/${program.slug}`,
       });
       this.seo.setPageSchema(

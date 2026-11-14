@@ -24,15 +24,15 @@ const SPLIT_SLUGS = [
   template: `
     <div class="table-wrap">
       <table class="table">
-        <caption class="visually-hidden">
-          Workout split programs
+        <caption class="visually-hidden" i18n>
+          Workout splits
         </caption>
         <thead>
           <tr>
-            <th scope="col">Split</th>
-            <th scope="col">Weekly schedule</th>
-            <th scope="col" class="num">Days</th>
-            <th scope="col">Level</th>
+            <th scope="col" i18n>Split</th>
+            <th scope="col" i18n>Weekly schedule</th>
+            <th scope="col" class="num" i18n>Days</th>
+            <th scope="col" i18n>Level</th>
           </tr>
         </thead>
         <tbody>
@@ -42,14 +42,18 @@ const SPLIT_SLUGS = [
                 <a [routerLink]="['/programs', p.slug] | localePath">{{ p.name }}</a>
               </th>
               <td>
-                <ol class="mini-week" [attr.aria-label]="p.name + ' weekly schedule'">
+                <ol
+                  class="mini-week"
+                  i18n-aria-label
+                  aria-label="{{ p.name }}: weekly schedule"
+                >
                   @for (d of p.schedule; track d.id) {
                     <li
                       [class.is-rest]="d.isRestDay"
-                      [title]="d.label + ': ' + (d.isRestDay ? 'Rest' : d.focus)"
+                      [title]="d.label + ': ' + (d.isRestDay ? restLabel : d.focus)"
                     >
                       <span class="visually-hidden">{{ d.label }}: </span
-                      >{{ d.isRestDay ? 'Rest' : shortFocus(d.focus) }}
+                      >{{ d.isRestDay ? restLabel : shortFocus(d.focus) }}
                     </li>
                   }
                 </ol>
@@ -108,6 +112,7 @@ const SPLIT_SLUGS = [
 export class SplitPrograms {
   private readonly programs = inject(ProgramStore);
   protected readonly levels = DIFFICULTY_LABELS;
+  protected readonly restLabel = $localize`Rest`;
 
   protected readonly splits = computed(() =>
     SPLIT_SLUGS.map((slug) => this.programs.bySlug(slug)).filter((p) => p !== undefined),

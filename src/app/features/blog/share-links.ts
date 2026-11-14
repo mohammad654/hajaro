@@ -9,7 +9,7 @@ import { Icon } from '../../shared/ui/icon/icon';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="share">
-      <p class="share__title">Share this article</p>
+      <p class="share__title" i18n>Share this article</p>
       <ul>
         @for (link of links(); track link.label) {
           <li>
@@ -20,7 +20,7 @@ import { Icon } from '../../shared/ui/icon/icon';
         }
         <li>
           <button type="button" class="btn btn--sm" (click)="copy()">
-            <app-icon name="link" [size]="16" /> Copy link
+            <app-icon name="link" [size]="16" /> <ng-container i18n>Copy link</ng-container>
           </button>
         </li>
       </ul>
@@ -57,14 +57,18 @@ export class ShareLinks {
       { label: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${u}` },
       { label: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}` },
       { label: 'WhatsApp', href: `https://wa.me/?text=${t}%20${u}` },
-      { label: 'Email', href: `mailto:?subject=${t}&body=${u}` },
+      { label: $localize`Email`, href: `mailto:?subject=${t}&body=${u}` },
     ];
   });
 
   protected copy(): void {
     navigator.clipboard
       ?.writeText(this.url())
-      .then(() => this.toast.success('Link copied to clipboard.'))
-      .catch(() => this.toast.error('Could not copy the link.'));
+      .then(() => this.toast.success($localize`Link copied.`))
+      .catch(() =>
+        this.toast.error(
+          $localize`The link could not be copied. Copy it from the address bar instead.`,
+        ),
+      );
   }
 }

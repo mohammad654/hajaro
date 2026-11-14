@@ -23,6 +23,19 @@ export interface PageMeta {
 
 type JsonLd = Record<string, unknown>;
 
+/** Search engines show about 60 characters of a title. */
+const MAX_TITLE_LENGTH = 60;
+
+/** Adds the brand to a page title: the full name if it fits, else the short name, else nothing. */
+function withBrand(title: string): string {
+  const { brandName, brandSuffix } = SITE_CONFIG;
+  if (title.includes(brandName)) return title;
+  const suffix = [` | ${brandName} ${brandSuffix}`, ` | ${brandName}`].find(
+    (s) => title.length + s.length <= MAX_TITLE_LENGTH,
+  );
+  return title + (suffix ?? '');
+}
+
 /**
  * Owns every SEO-relevant tag in <head>: title, description, canonical, robots,
  * Open Graph, Twitter cards, hreflang alternates and JSON-LD structured data.
@@ -50,9 +63,7 @@ export class SeoService {
   }
 
   update(page: PageMeta): void {
-    const fullTitle = page.title.includes(SITE_CONFIG.brandName)
-      ? page.title
-      : `${page.title} | ${SITE_CONFIG.brandName} ${SITE_CONFIG.brandSuffix}`;
+    const fullTitle = withBrand(page.title);
     const path = page.path ?? this.currentPath();
     const url = this.absoluteUrl(path);
     const image = this.absoluteUrl(page.image ?? SITE_CONFIG.defaultOgImage);

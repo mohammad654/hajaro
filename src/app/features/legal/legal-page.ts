@@ -10,15 +10,16 @@ import { LEGAL_DOCUMENTS } from './legal-content';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
+      i18n-eyebrow
       eyebrow="Legal"
       [title]="document().title"
       [lead]="document().intro"
-      [breadcrumbs]="[{ label: document().title, url: '/' + doc() }]"
+      [breadcrumbs]="breadcrumbs()"
     />
     <section class="section">
       <div class="container container--narrow prose">
         <p class="text-small text-muted">
-          Last updated:
+          <ng-container i18n>Last updated:</ng-container>
           <time [attr.datetime]="document().updated">{{
             document().updated | date: 'longDate'
           }}</time>
@@ -38,6 +39,9 @@ export class LegalPage {
   /** Bound from route data. */
   readonly doc = input.required<'privacy' | 'terms' | 'disclaimer'>();
   protected readonly document = computed(() => LEGAL_DOCUMENTS[this.doc()]);
+  protected readonly breadcrumbs = computed(() => [
+    { label: this.document().title, url: `/${this.doc()}` },
+  ]);
 
   constructor() {
     effect(() =>

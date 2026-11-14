@@ -1,8 +1,11 @@
 <app-page-hero
+  i18n-eyebrow
   eyebrow="Training programs"
-  title="Programs built to make you progress"
-  lead="Every program includes a weekly schedule, exercises with sets, reps and rest periods, warm-up instructions, progression rules and recovery guidance. Filter by level, goal, duration and training style."
-  [breadcrumbs]="[{ label: 'Programs', url: '/programs' }]"
+  i18n-title
+  title="Training programs that make you progress"
+  i18n-lead
+  lead="Each program has a weekly schedule, exercises with sets, reps and rest times, a warm-up, rules for progress and tips for recovery. Filter by level, goal, length and style."
+  [breadcrumbs]="breadcrumbs"
 />
 
 <section class="section section--tight">
@@ -10,60 +13,61 @@
     <form
       class="filters card card--flat"
       role="search"
+      i18n-aria-label
       aria-label="Filter programs"
       (submit)="$event.preventDefault()"
     >
       <div class="field">
-        <label for="f-level">Level</label>
+        <label for="f-level" i18n>Level</label>
         <select
           id="f-level"
           class="select"
           [value]="level()"
           (change)="level.set($any(readValue($event)))"
         >
-          <option value="">All levels</option>
+          <option value="" i18n>All levels</option>
           @for (o of levelOptions; track o.value) {
             <option [value]="o.value">{{ o.label }}</option>
           }
         </select>
       </div>
       <div class="field">
-        <label for="f-goal">Goal</label>
+        <label for="f-goal" i18n>Goal</label>
         <select
           id="f-goal"
           class="select"
           [value]="goal()"
           (change)="goal.set($any(readValue($event)))"
         >
-          <option value="">All goals</option>
+          <option value="" i18n>All goals</option>
           @for (o of goalOptions; track o.value) {
             <option [value]="o.value">{{ o.label }}</option>
           }
         </select>
       </div>
       <div class="field">
-        <label for="f-type">Training type</label>
+        <label for="f-type" i18n>Training style</label>
         <select
           id="f-type"
           class="select"
           [value]="type()"
           (change)="type.set($any(readValue($event)))"
         >
-          <option value="">All types</option>
+          <option value="" i18n>All styles</option>
           @for (o of typeOptions; track o.value) {
             <option [value]="o.value">{{ o.label }}</option>
           }
         </select>
       </div>
       <div class="field">
-        <label for="f-duration">Duration</label>
+        <label for="f-duration" i18n>Length</label>
         <select
           id="f-duration"
           class="select"
           [value]="duration()"
           (change)="duration.set($any(readValue($event)))"
         >
-          <option value="">Any duration</option>
+          <option value="" i18n>Any length</option>
           @for (o of durationOptions; track o.value) {
             <option [value]="o.value">{{ o.label }}</option>
           }
@@ -72,11 +76,11 @@
     </form>
 
     <div class="results-bar">
-      <p aria-live="polite">
-        <strong>{{ results().length }}</strong> program{{ results().length === 1 ? '' : 's' }}
+      <p aria-live="polite" i18n>
+        {results().length, plural, =1 {1 program} other {{{ results().length }} programs}}
       </p>
       @if (hasFilters()) {
-        <button type="button" class="btn btn--ghost btn--sm" (click)="reset()">
+        <button type="button" class="btn btn--ghost btn--sm" (click)="reset()" i18n>
           Clear filters
         </button>
       }
@@ -90,17 +94,19 @@
       </div>
     } @else {
       <div class="card empty">
-        <h2>No programs match those filters</h2>
-        <p class="text-muted">Try removing a filter — or request a custom program built for you.</p>
-        <button type="button" class="btn" (click)="reset()">Clear filters</button>
+        <h2 i18n>No programs match these filters</h2>
+        <p class="text-muted" i18n>Remove a filter, or ask me for a program written for you.</p>
+        <button type="button" class="btn" (click)="reset()" i18n>Clear filters</button>
       </div>
     }
   </div>
 </section>
 
 <app-cta-section
-  eyebrow="Want it personalised?"
-  title="Get a program built around you"
-  text="Programs are a great start. Coaching adapts every exercise, set and rep to your body, recovery and goals — and adjusts them every week."
-  primaryLabel="Request coaching"
+  i18n-eyebrow
+  eyebrow="Want it made for you?"
+  i18n-title
+  title="A program written around you"
+  i18n-text
+  text="A ready-made program is a good start. With coaching, I fit every exercise, set and rep to your body, recovery and goal, and adjust it every week."
 />

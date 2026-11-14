@@ -12,15 +12,15 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   template: `
     <div class="table-wrap">
       <table class="table chart">
-        <caption class="visually-hidden">
-          Full body muscle workout chart
+        <caption class="visually-hidden" i18n>
+          Full body workout chart
         </caption>
         <thead>
           <tr>
-            <th scope="col">Muscle group</th>
-            <th scope="col">Exercise</th>
-            <th scope="col" class="num">Sets</th>
-            <th scope="col" class="num">Reps</th>
+            <th scope="col" i18n>Muscle group</th>
+            <th scope="col" i18n>Exercise</th>
+            <th scope="col" class="num" i18n>Sets</th>
+            <th scope="col" class="num" i18n>Reps</th>
           </tr>
         </thead>
         <tbody>
@@ -31,7 +31,8 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
                   type="button"
                   class="muscle-btn"
                   (click)="muscleSelect.emit(row.muscleId)"
-                  [attr.aria-label]="'Show ' + row.muscleGroup + ' on the anatomy chart'"
+                  i18n-aria-label
+                  aria-label="Show {{ row.muscleGroup }} on the anatomy chart"
                 >
                   <span class="swatch" aria-hidden="true"></span>{{ row.muscleGroup }}
                 </button>

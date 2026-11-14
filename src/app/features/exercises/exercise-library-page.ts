@@ -53,6 +53,7 @@ export class ExerciseLibraryPage {
     string,
   ][];
 
+  protected readonly breadcrumbs = [{ label: $localize`Exercise library`, url: '/exercises' }];
   protected readonly query = signal('');
   protected readonly category = linkedSignal<ExerciseCategory | ''>(() => {
     const param = this.ready() ? this.categoryParam() : undefined;
@@ -85,9 +86,8 @@ export class ExerciseLibraryPage {
 
   constructor() {
     applyPageSeo('exercises', {
-      title: 'Exercise Library — Technique, Muscles Worked & Common Mistakes',
-      description:
-        'Searchable bodybuilding exercise library for chest, back, shoulders, arms, legs, glutes, abs, full body and cardio with technique cues, sets, reps and safety tips.',
+      title: $localize`Exercise Library: Technique & Muscles Worked`,
+      description: $localize`Search exercises for chest, back, shoulders, arms, legs, glutes, abs and cardio, with technique cues, sets, reps and safety tips.`,
     });
   }
 

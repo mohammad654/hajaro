@@ -64,6 +64,16 @@ export class ExerciseDetailPage {
     this.names(this.exercise()?.secondaryMuscles ?? []),
   );
 
+  protected readonly breadcrumbs = computed(() => {
+    const e = this.exercise();
+    return [
+      { label: $localize`Exercise library`, url: '/exercises' },
+      ...(e ? [{ label: e.name, url: `/exercises/${e.slug}` }] : []),
+    ];
+  });
+  protected readonly demoAlt = computed(
+    () => $localize`${this.exercise()?.name}:NAME:: demonstration`,
+  );
   protected readonly related = computed(() => {
     const current = this.exercise();
     if (!current) return [];
@@ -84,15 +94,15 @@ export class ExerciseDetailPage {
       if (!exercise) {
         this.markNotFound();
         this.seo.update({
-          title: 'Exercise not found',
-          description: 'This exercise could not be found.',
+          title: $localize`Exercise not found`,
+          description: $localize`This exercise doesn't exist or has moved.`,
           noindex: true,
         });
         return;
       }
       this.seo.update({
-        title: `${exercise.name}: How to Do It, Muscles Worked & Mistakes`,
-        description: `${exercise.summary} Learn correct ${exercise.name.toLowerCase()} technique, muscles worked, sets and reps and common mistakes.`,
+        title: $localize`${exercise.name}:NAME:: Technique & Muscles Worked`,
+        description: $localize`${exercise.summary}:SUMMARY: Technique, muscles worked, sets and reps.`,
         path: `/exercises/${exercise.slug}`,
         image: exercise.media?.imageUrl,
       });

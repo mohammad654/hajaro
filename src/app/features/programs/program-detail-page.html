@@ -3,30 +3,27 @@
     [eyebrow]="(program.level | label: levels) + ' · ' + (program.goal | label: goals)"
     [title]="program.name"
     [lead]="program.tagline"
-    [breadcrumbs]="[
-      { label: 'Programs', url: '/programs' },
-      { label: program.name, url: '/programs/' + program.slug },
-    ]"
+    [breadcrumbs]="breadcrumbs()"
   >
     <dl class="facts">
       <div>
-        <dt>Level</dt>
+        <dt i18n>Level</dt>
         <dd>{{ program.level | label: levels }}</dd>
       </div>
       <div>
-        <dt>Frequency</dt>
-        <dd>{{ program.daysPerWeek }} days / week</dd>
+        <dt i18n>Frequency</dt>
+        <dd i18n>{{ program.daysPerWeek }} days / week</dd>
       </div>
       <div>
-        <dt>Duration</dt>
-        <dd>{{ program.durationWeeks }} weeks</dd>
+        <dt i18n>Duration</dt>
+        <dd i18n>{{ program.durationWeeks }} weeks</dd>
       </div>
       <div>
-        <dt>Session length</dt>
-        <dd>{{ program.sessionMinutes }} min</dd>
+        <dt i18n>Session length</dt>
+        <dd i18n>{{ program.sessionMinutes }} min</dd>
       </div>
       <div>
-        <dt>Training type</dt>
+        <dt i18n>Training style</dt>
         <dd>{{ program.trainingType | label: types }}</dd>
       </div>
     </dl>
@@ -36,12 +33,12 @@
     <div class="container split split--sidebar">
       <div class="stack content">
         <section aria-labelledby="overview-title">
-          <h2 id="overview-title">Program overview</h2>
+          <h2 id="overview-title" i18n>About this program</h2>
           <p class="lead">{{ program.description }}</p>
         </section>
 
         <section aria-labelledby="audience-title">
-          <h2 id="audience-title">Who this program is for</h2>
+          <h2 id="audience-title" i18n>Who it's for</h2>
           <ul class="check-list">
             @for (item of program.targetAudience; track item) {
               <li>{{ item }}</li>
@@ -50,7 +47,7 @@
         </section>
 
         <section aria-labelledby="structure-title">
-          <h2 id="structure-title">Training structure</h2>
+          <h2 id="structure-title" i18n>How the training is set up</h2>
           <ul class="check-list">
             @for (item of program.structure; track item) {
               <li>{{ item }}</li>
@@ -59,13 +56,13 @@
         </section>
 
         <section aria-labelledby="schedule-title">
-          <h2 id="schedule-title">Weekly training schedule</h2>
-          <ol class="week" aria-label="Week overview">
+          <h2 id="schedule-title" i18n>Weekly schedule</h2>
+          <ol class="week" i18n-aria-label aria-label="Week overview">
             @for (day of program.schedule; track day.id) {
               <li class="week__day" [class.is-rest]="day.isRestDay">
                 @if (day.isRestDay) {
                   <span class="week__label">{{ day.label }}</span>
-                  <span class="week__focus">Rest</span>
+                  <span class="week__focus" i18n>Rest</span>
                 } @else {
                   <button
                     type="button"
@@ -83,7 +80,7 @@
 
           @if (selectedDay(); as day) {
             <div class="day reveal">
-              <h3>{{ day.label }} — {{ day.focus }}</h3>
+              <h3>{{ day.label }}: {{ day.focus }}</h3>
               <app-workout-day-table [day]="day" />
             </div>
           }
@@ -91,7 +88,7 @@
 
         <div class="grid grid--2">
           <section class="card" aria-labelledby="warmup-title">
-            <h3 id="warmup-title">Warm-up</h3>
+            <h3 id="warmup-title" i18n>Warm-up</h3>
             <ol class="numbered-list text-small">
               @for (item of program.warmUp; track item) {
                 <li>{{ item }}</li>
@@ -99,7 +96,7 @@
             </ol>
           </section>
           <section class="card" aria-labelledby="progression-title">
-            <h3 id="progression-title">Progression</h3>
+            <h3 id="progression-title" i18n>Progression</h3>
             <ul class="check-list text-small">
               @for (item of program.progression; track item) {
                 <li>{{ item }}</li>
@@ -109,7 +106,7 @@
         </div>
 
         <section class="card card--flat" aria-labelledby="recovery-title">
-          <h3 id="recovery-title">Recovery days & recovery habits</h3>
+          <h3 id="recovery-title" i18n>Rest days and recovery</h3>
           <ul class="check-list text-small">
             @for (item of program.recovery; track item) {
               <li>{{ item }}</li>
@@ -117,59 +114,62 @@
           </ul>
         </section>
 
-        <p class="disclaimer">
-          Sets, reps and rest periods are example programming ranges, not universal prescriptions.
-          Adjust them to your experience, recovery and physical capabilities — or get them
-          individualised through coaching. Stop any exercise that causes pain and consult a
-          healthcare professional if needed.
+        <p class="disclaimer" i18n>
+          Sets, reps and rest times are example ranges, not rules for everyone. Adjust them to your
+          experience, recovery and body, or have them set for you through coaching. Stop any
+          exercise that causes pain, and see a healthcare professional if needed.
         </p>
       </div>
 
-      <aside class="sticky-aside stack" aria-label="Program summary">
+      <aside class="sticky-aside stack" i18n-aria-label aria-label="Program summary">
         <div class="card card--featured">
-          <p class="eyebrow">Get started</p>
+          <p class="eyebrow" i18n>Get started</p>
           @if (program.price) {
             <p class="price">
-              {{ program.price | currency: currency : 'symbol' : '1.0-0' }} <span>one-off</span>
+              {{ program.price | currency: currency : 'symbol' : '1.0-0' }}
+              <span i18n>one-off</span>
             </p>
-            <p class="text-small text-muted">
-              Self-guided program with full schedule and progression rules.
+            <p class="text-small text-muted" i18n>
+              A program you follow on your own, with the full schedule and progression rules.
             </p>
             <a
               class="btn btn--primary btn--block"
               [routerLink]="'/contact' | localePath"
               [queryParams]="{ program: program.slug, intent: 'purchase' }"
+              i18n
             >
               Get this program
             </a>
           } @else {
-            <p class="text-small text-muted">
-              This program is delivered through coaching, adjusted to your needs.
+            <p class="text-small text-muted" i18n>
+              This program comes with coaching, adjusted to you.
             </p>
           }
           <a
             class="btn btn--block"
             [routerLink]="'/contact' | localePath"
             [queryParams]="{ program: program.slug }"
-            >Request coaching</a
+            i18n
+            >Ask about coaching</a
           >
           <a
             class="btn btn--ghost btn--block"
             [routerLink]="'/workout-planner' | localePath"
             [queryParams]="{ program: program.id }"
+            i18n
           >
-            Use in workout planner
+            Use in the workout planner
           </a>
         </div>
 
         <div class="card">
-          <h3 class="aside-title">Equipment</h3>
+          <h3 class="aside-title" i18n>Equipment</h3>
           <ul class="tags">
             @for (item of program.equipment; track item) {
               <li class="badge">{{ item | label: equipmentLabels }}</li>
             }
           </ul>
-          <h3 class="aside-title">Example exercises</h3>
+          <h3 class="aside-title" i18n>Example exercises</h3>
           <ul class="examples">
             @for (exercise of exampleExercises(); track exercise!.id) {
               <li>
@@ -187,7 +187,7 @@
   @if (related().length) {
     <section class="section section--alt" aria-labelledby="related-title">
       <div class="container">
-        <h2 id="related-title">Related programs</h2>
+        <h2 id="related-title" i18n>Related programs</h2>
         <div class="grid grid--3">
           @for (p of related(); track p.id) {
             <app-program-card [program]="p" />

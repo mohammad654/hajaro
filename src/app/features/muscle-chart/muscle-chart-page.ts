@@ -51,6 +51,7 @@ export class MuscleChartPage {
   readonly muscleParam = input<string | undefined>(undefined, { alias: 'muscle' });
 
   protected readonly chart = FULL_BODY_WORKOUT_CHART;
+  protected readonly breadcrumbs = [{ label: $localize`Muscle chart`, url: '/muscle-chart' }];
   protected readonly selectedId = computed<MuscleId | null>(() => {
     const param = this.ready() ? this.muscleParam() : undefined;
     return this.muscles.isMuscleId(param) ? param : null;
@@ -67,9 +68,8 @@ export class MuscleChartPage {
 
   constructor() {
     applyPageSeo('muscle-chart', {
-      title: 'Full Body Muscle Chart & Workout Chart',
-      description:
-        'Interactive muscle anatomy chart: select any muscle to learn its function, the best exercises, recommended sets and reps, technique tips and common mistakes. Includes a full body workout chart and workout splits.',
+      title: $localize`Full Body Muscle Chart & Workout Chart`,
+      description: $localize`Tap any muscle to see what it does, the best exercises, sets and reps and common mistakes. With a full body workout chart and training splits.`,
       path: '/muscle-chart',
     });
   }

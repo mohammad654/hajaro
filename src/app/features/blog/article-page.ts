@@ -64,6 +64,15 @@ export class ArticlePage {
     const a = this.article();
     return a ? this.articles.related(a) : [];
   });
+  protected readonly breadcrumbs = computed(() => {
+    const a = this.article();
+    if (!a) return [];
+    return [
+      { label: $localize`Blog`, url: '/blog' },
+      { label: ARTICLE_CATEGORY_LABELS[a.category], url: `/blog/category/${a.category}` },
+      { label: a.title, url: `/blog/${a.slug}` },
+    ];
+  });
   protected readonly url = computed(() =>
     this.seo.absoluteUrl(`/blog/${canonicalSlug(this.slug())}`),
   );
@@ -74,8 +83,8 @@ export class ArticlePage {
       if (!article) {
         this.markNotFound();
         this.seo.update({
-          title: 'Article not found',
-          description: 'This article could not be found.',
+          title: $localize`Article not found`,
+          description: $localize`This article doesn't exist or has moved.`,
           noindex: true,
         });
         return;

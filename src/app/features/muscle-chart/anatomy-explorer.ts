@@ -31,12 +31,13 @@ import { Icon } from '../../shared/ui/icon/icon';
     <div class="explorer">
       <div class="explorer__stage card">
         <div class="explorer__toolbar">
-          <div class="toggle" role="group" aria-label="Anatomy view">
+          <div class="toggle" role="group" i18n-aria-label aria-label="Anatomy view">
             <button
               type="button"
               class="chip"
               [attr.aria-pressed]="view() === 'front'"
               (click)="view.set('front')"
+              i18n="side of the body|Toggle for the anatomy view"
             >
               Front
             </button>
@@ -45,12 +46,13 @@ import { Icon } from '../../shared/ui/icon/icon';
               class="chip"
               [attr.aria-pressed]="view() === 'back'"
               (click)="view.set('back')"
+              i18n="side of the body|Toggle for the anatomy view"
             >
               Back
             </button>
           </div>
           <button type="button" class="btn btn--ghost btn--sm" (click)="flip()">
-            <app-icon name="rotate" [size]="16" /> Rotate
+            <app-icon name="rotate" [size]="16" /> <ng-container i18n>Rotate</ng-container>
           </button>
         </div>
 
@@ -67,12 +69,12 @@ import { Icon } from '../../shared/ui/icon/icon';
           @if (labelMuscle(); as m) {
             <strong>{{ m.name }}</strong> <span>{{ m.anatomicalName }}</span>
           } @else {
-            <span>Tap or click a muscle to explore it</span>
+            <span i18n>Tap or click a muscle to explore it</span>
           }
         </p>
       </div>
 
-      <nav class="muscle-list" aria-label="Muscle groups">
+      <nav class="muscle-list" i18n-aria-label aria-label="Muscle groups">
         @for (group of groups; track group.region) {
           <div class="muscle-list__group">
             <h3>{{ group.label }}</h3>
@@ -87,7 +89,7 @@ import { Icon } from '../../shared/ui/icon/icon';
                   >
                     {{ m.name }}
                     @if (m.deep) {
-                      <span class="deep-tag">deep</span>
+                      <span class="deep-tag" i18n>deep</span>
                     }
                   </button>
                 </li>
