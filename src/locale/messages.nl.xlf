@@ -438,6 +438,1154 @@
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8352656357741820956" datatype="html">
+        <source>Coach Hajaro</source>
+        <target state="final">Coach Hajaro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="599971471467452258" datatype="html">
+        <source>Progressive Overload: The Principle Behind Every Good Program</source>
+        <target state="translated">Progressieve overload: het principe achter elk goed schema</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8525396521242520027" datatype="html">
+        <source>Progressive Overload Explained: How to Keep Building Muscle</source>
+        <target state="translated">Progressieve overload uitgelegd: zo blijf je spieren opbouwen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9086378040871395651" datatype="html">
+        <source>Learn what progressive overload is, the different ways to apply it, and a simple double-progression system to keep building muscle and strength.</source>
+        <target state="translated">Lees wat progressieve overload is, hoe je het toepast, en een eenvoudig systeem met dubbele progressie om spieren en kracht te blijven opbouwen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3982624970178919360" datatype="html">
+        <source>Muscles adapt to what you ask of them. Progressive overload is how you keep asking a little more. Here is how to apply it without burning out.</source>
+        <target state="translated">Spieren passen zich aan aan wat je van ze vraagt. Met progressieve overload vraag je steeds een beetje meer. Zo pas je het toe zonder op te branden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8063088039473084583" datatype="html">
+        <source>progressive overload</source>
+        <target state="translated">progressieve overload</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5990508354812311969" datatype="html">
+        <source>If one principle separates training from just exercising, it is progressive overload: slowly increasing what you ask of your muscles over time, so they have a reason to keep adapting.</source>
+        <target state="translated">Als één principe trainen onderscheidt van gewoon bewegen, dan is het progressieve overload: wat je van je spieren vraagt langzaam opvoeren, zodat ze een reden hebben om zich te blijven aanpassen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8597908064843032733" datatype="html">
+        <source>What progressive overload actually means</source>
+        <target state="translated">Wat progressieve overload echt betekent</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7469864807788610773" datatype="html">
+        <source>Your body adapts to the stress you put on it. Once a weight feels easy for the same number of reps, it is no longer a new challenge and progress slows. Overload means doing slightly more than before. Not every session, but steadily over weeks and months.</source>
+        <target state="translated">Je lichaam past zich aan aan de belasting die je het geeft. Voelt een gewicht licht voor hetzelfde aantal herhalingen, dan is het geen nieuwe uitdaging meer en vertraagt je vooruitgang. Overload betekent net iets meer doen dan eerst. Niet elke training, maar gestaag over weken en maanden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3941343753898683497" datatype="html">
+        <source>Ways to progress</source>
+        <target state="translated">Manieren om vooruit te gaan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8273744513201969008" datatype="html">
+        <source>Weight: lifting more for the same number of reps.</source>
+        <target state="translated">Gewicht: meer tillen voor hetzelfde aantal herhalingen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="394862218226682603" datatype="html">
+        <source>Reps: doing more reps with the same weight.</source>
+        <target state="translated">Herhalingen: meer herhalingen doen met hetzelfde gewicht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="766644088391685244" datatype="html">
+        <source>Sets: adding sets, carefully and within what you can recover from.</source>
+        <target state="translated">Sets: sets toevoegen, voorzichtig en binnen wat je kunt herstellen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7867524412190792767" datatype="html">
+        <source>Range and control: doing the same work through a fuller range, or lowering the weight more slowly.</source>
+        <target state="translated">Bewegingsuitslag en controle: hetzelfde werk doen met een grotere beweging, of het gewicht langzamer laten zakken.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8301712048979022051" datatype="html">
+        <source>Adding weight while your technique gets worse is not progressive overload. It&apos;s a different, easier exercise done badly.</source>
+        <target state="translated">Gewicht toevoegen terwijl je techniek slechter wordt, is geen progressieve overload. Het is een andere, makkelijkere oefening die je slecht uitvoert.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2405607649515546787" datatype="html">
+        <source>A simple system: double progression</source>
+        <target state="translated">Een eenvoudig systeem: dubbele progressie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2099285859731723197" datatype="html">
+        <source>Double progression is the simplest reliable method for most lifters. Pick a rep range, for example 8 to 12 reps.</source>
+        <target state="translated">Dubbele progressie is voor de meeste sporters de eenvoudigste betrouwbare methode. Kies een herhalingsrange, bijvoorbeeld 8 tot 12 herhalingen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8193589969936838495" datatype="html">
+        <source>Start with a weight you can lift for 8 reps with 1 to 3 reps to spare.</source>
+        <target state="translated">Begin met een gewicht dat je 8 keer kunt tillen, met nog 1 tot 3 herhalingen over.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5745676901185752088" datatype="html">
+        <source>Each session, try to add a rep to one or more sets.</source>
+        <target state="translated">Probeer elke training in een of meer sets een herhaling extra te doen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3668916593388224505" datatype="html">
+        <source>When every set reaches 12 reps with good form, add the smallest weight step available.</source>
+        <target state="translated">Haal je in elke set 12 herhalingen met goede techniek, voeg dan de kleinste gewichtsstap toe die er is.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4094142417470301540" datatype="html">
+        <source>Drop back towards 8 reps with the new weight and repeat.</source>
+        <target state="translated">Ga met het nieuwe gewicht terug naar ongeveer 8 herhalingen en herhaal.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3785106452700704885" datatype="html">
+        <source>Track everything</source>
+        <target state="translated">Houd alles bij</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1043066735827672592" datatype="html">
+        <source>Progress you don&apos;t write down is progress you can&apos;t steer. Log your sets, reps and weights. The workout planner on this site is made for exactly that.</source>
+        <target state="translated">Vooruitgang die je niet opschrijft, kun je niet sturen. Houd je sets, herhalingen en gewichten bij. De trainingsplanner op deze site is daar precies voor gemaakt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8594717526169821396" datatype="html">
+        <source>Open the workout planner</source>
+        <target state="translated">Open de trainingsplanner</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3430860657553376968" datatype="html">
+        <source>When progress stalls</source>
+        <target state="translated">Als je vastloopt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3852151410856198635" datatype="html">
+        <source>Getting stuck is normal. Before you change your program, check the basics: sleep, total calories, protein and stress. If those are fine and you&apos;ve been stuck for two or three weeks, try a deload week or a small change in exercises.</source>
+        <target state="translated">Vastlopen is normaal. Controleer eerst de basis voordat je je schema verandert: slaap, totale calorieën, eiwit en stress. Zit dat goed en loop je al twee of drie weken vast, probeer dan een deloadweek of een kleine wijziging in je oefeningen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3790323420646845773" datatype="html">
+        <source>See the training programs</source>
+        <target state="translated">Bekijk de trainingsschema&apos;s</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7093290529205140288" datatype="html">
+        <source>How Much Protein Do You Need to Build Muscle?</source>
+        <target state="translated">Hoeveel eiwit heb je nodig om spieren op te bouwen?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8994242683849916700" datatype="html">
+        <source>Protein Intake for Muscle Growth: How Much Do You Need?</source>
+        <target state="translated">Eiwit voor spiergroei: hoeveel heb je nodig?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7362617335979413185" datatype="html">
+        <source>What research says about protein for building muscle, how to spread it over the day, and practical high-protein foods.</source>
+        <target state="translated">Wat onderzoek zegt over eiwit voor spieropbouw, hoe je het over de dag verdeelt, en praktische eiwitrijke voeding.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5849072845824156826" datatype="html">
+        <source>Protein is what muscle is made of. Here is how much you need, how to spread it over your day and how to reach your target with normal food.</source>
+        <target state="translated">Eiwit is de bouwstof van spieren. Zo veel heb je nodig, zo verdeel je het over je dag en zo haal je je doel met gewoon eten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8320240489500958576" datatype="html">
+        <source>muscle growth</source>
+        <target state="translated">spiergroei</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2253975042394288542" datatype="html">
+        <source>Training gives your muscles a reason to grow; protein is the material they grow from. Without enough of it, your work in the gym gives you less than it could.</source>
+        <target state="translated">Training geeft je spieren een reden om te groeien; eiwit is het materiaal waarmee ze groeien. Zonder genoeg eiwit levert je werk in de sportschool minder op dan het zou kunnen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3024165456285757201" datatype="html">
+        <source>How much protein per day?</source>
+        <target state="translated">Hoeveel eiwit per dag?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6867825637477542721" datatype="html">
+        <source>For most people who lift and want to build muscle, research supports about 1.6 to 2.2 g of protein per kilogram of body weight per day. During a fat-loss phase, aiming for the higher end helps you keep your muscle.</source>
+        <target state="translated">Voor de meeste mensen die krachttraining doen en spieren willen opbouwen, ondersteunt onderzoek ongeveer 1,6 tot 2,2 g eiwit per kilo lichaamsgewicht per dag. Tijdens een vetverliesfase helpt het om naar de bovenkant te mikken, zodat je je spieren behoudt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8148782412562096572" datatype="html">
+        <source>Example: someone who weighs 80 kg would aim for about 130 to 175 g of protein a day.</source>
+        <target state="translated">Voorbeeld: iemand van 80 kg mikt op ongeveer 130 tot 175 g eiwit per dag.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2395402495558036262" datatype="html">
+        <source>Spread it across the day</source>
+        <target state="translated">Verdeel het over de dag</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4378911992013874213" datatype="html">
+        <source>Eating protein over three to five meals, each with about 0.3 to 0.5 g per kg of body weight, is a practical way to reach your target and keep muscle building going through the day.</source>
+        <target state="translated">Eiwit verdelen over drie tot vijf maaltijden, elk met ongeveer 0,3 tot 0,5 g per kg lichaamsgewicht, is een praktische manier om je doel te halen en de spieropbouw de hele dag te ondersteunen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3782758248913078612" datatype="html">
+        <source>High-quality protein sources</source>
+        <target state="translated">Goede eiwitbronnen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9080634966881483628" datatype="html">
+        <source>Lean meat and poultry: chicken, turkey, lean beef</source>
+        <target state="translated">Mager vlees en gevogelte: kip, kalkoen, mager rundvlees</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4611560703401272969" datatype="html">
+        <source>Fish and seafood: salmon, tuna, white fish, prawns</source>
+        <target state="translated">Vis en zeevruchten: zalm, tonijn, witvis, garnalen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1747891075142526067" datatype="html">
+        <source>Eggs and dairy: Greek yoghurt, skyr, cottage cheese, milk</source>
+        <target state="translated">Eieren en zuivel: Griekse yoghurt, skyr, hüttenkäse, melk</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2852886974407004922" datatype="html">
+        <source>Plant-based: tofu, tempeh, lentils, beans, edamame and blended plant proteins</source>
+        <target state="translated">Plantaardig: tofu, tempé, linzen, bonen, edamame en mixen van plantaardige eiwitten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8689266421793008961" datatype="html">
+        <source>Protein powder: handy when normal food falls short</source>
+        <target state="translated">Eiwitpoeder: handig als je met gewoon eten tekortkomt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7508330107050037151" datatype="html">
+        <source>A note on health</source>
+        <target state="translated">Over je gezondheid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5719447816595011679" datatype="html">
+        <source>If you have kidney disease or another medical condition, talk to your doctor or a registered dietitian before eating more protein.</source>
+        <target state="translated">Heb je een nierziekte of een andere aandoening, overleg dan met je arts of een diëtist voordat je meer eiwit gaat eten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5553172362807503834" datatype="html">
+        <source>Calculate your daily protein target</source>
+        <target state="translated">Bereken je dagelijkse eiwitdoel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2903563231525282875" datatype="html">
+        <source>Squat Technique: Squatting Safely, Step by Step</source>
+        <target state="translated">Squattechniek: veilig squatten, stap voor stap</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2996805147048432131" datatype="html">
+        <source>How to Squat Properly: Step-by-Step Barbell Squat Technique</source>
+        <target state="translated">Zo squat je goed: techniek van de back squat stap voor stap</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2474341240721469570" datatype="html">
+        <source>Learn the barbell squat: step-by-step setup, cues for the movement, common mistakes and how to find the right depth for your body.</source>
+        <target state="translated">Leer de back squat: opstelling stap voor stap, aandachtspunten voor de beweging, veelgemaakte fouten en hoe je de juiste diepte voor jouw lichaam vindt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1920633669255740919" datatype="html">
+        <source>Done well, the squat builds more lower-body muscle and strength than almost any other exercise. Here is how to set up, perform and progress it.</source>
+        <target state="translated">Goed uitgevoerd bouwt de squat meer spiermassa en kracht in je onderlichaam op dan bijna elke andere oefening. Zo stel je je op, voer je hem uit en ga je vooruit.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1570735772359124215" datatype="html">
+        <source>The barbell back squat trains your quads, glutes and adductors, and asks a lot of your core and upper back. Good technique lets you load it heavily and safely for years.</source>
+        <target state="translated">De back squat met halterstang traint je quadriceps, billen en adductoren, en vraagt veel van je romp en bovenrug. Met een goede techniek kun je hem jarenlang zwaar en veilig belasten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6492831808763156510" datatype="html">
+        <source>Setup</source>
+        <target state="translated">Opstelling</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4668944870833616342" datatype="html">
+        <source>Set the bar at mid-chest height in a rack with safety bars just below your bottom position.</source>
+        <target state="translated">Zet de stang op halve borsthoogte in een rek, met de veiligheidsstangen net onder je laagste punt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="808901380438134822" datatype="html">
+        <source>Step under the bar and place it on your upper back, resting on the muscle, not on your neck.</source>
+        <target state="translated">Stap onder de stang en leg hem op je bovenrug, op de spieren en niet op je nek.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71456258426019675" datatype="html">
+        <source>Grip the bar just outside your shoulders and pull your elbows down to tighten your upper back.</source>
+        <target state="translated">Pak de stang net buiten je schouders en trek je ellebogen omlaag om je bovenrug aan te spannen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3019445268244867148" datatype="html">
+        <source>Stand up to unrack, take two or three steps back and set your feet roughly shoulder-width apart with toes slightly turned out.</source>
+        <target state="translated">Kom omhoog om de stang uit het rek te halen, doe twee of drie stappen achteruit en zet je voeten ongeveer op schouderbreedte, tenen iets naar buiten.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5648120485645865953" datatype="html">
+        <source>Execution</source>
+        <target state="translated">Uitvoering</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7087635709003979608" datatype="html">
+        <source>Take a deep breath into your belly and sides, then brace as if preparing for a punch.</source>
+        <target state="translated">Adem diep in naar je buik en zijkanten en span je romp aan alsof je een stoot gaat opvangen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2898952362211064247" datatype="html">
+        <source>Sit down between your hips, allowing your knees to travel forward and track over your toes.</source>
+        <target state="translated">Zak tussen je heupen naar beneden en laat je knieën naar voren gaan, in lijn met je tenen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5042223477086786221" datatype="html">
+        <source>Descend to the deepest position you can control with a neutral spine and heels on the floor.</source>
+        <target state="translated">Zak zo diep als je kunt beheersen, met een neutrale rug en je hielen op de grond.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3306366386993637641" datatype="html">
+        <source>Drive up through your whole foot, keeping your chest up and your brace tight.</source>
+        <target state="translated">Duw jezelf omhoog met je hele voet, houd je borst omhoog en je romp gespannen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8749641202792742918" datatype="html">
+        <source>How deep should you squat?</source>
+        <target state="translated">Hoe diep moet je squatten?</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="280424826177908470" datatype="html">
+        <source>Squat as deep as you can while keeping a neutral lower back and your whole foot on the floor. For most people that is at or below parallel. Deeper squats train the quads and glutes through a longer range, which helps muscle growth.</source>
+        <target state="translated">Squat zo diep als je kunt met een neutrale onderrug en je hele voet op de grond. Voor de meeste mensen is dat op of onder parallel. Diepere squats trainen je quadriceps en billen over een grotere beweging, en dat helpt spiergroei.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2890679222603308282" datatype="html">
+        <source>Common mistakes</source>
+        <target state="translated">Veelgemaakte fouten</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2124416245428005411" datatype="html">
+        <source>Knees falling inwards: think about spreading the floor apart with your feet.</source>
+        <target state="translated">Knieën die naar binnen vallen: denk eraan de grond met je voeten uit elkaar te duwen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4729395608903260693" datatype="html">
+        <source>Heels lifting: work on ankle mobility, or put something under your heels for now.</source>
+        <target state="translated">Hielen die loskomen: werk aan je enkelmobiliteit, of leg voorlopig iets onder je hielen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3104267151841827200" datatype="html">
+        <source>Losing tension at the bottom: use less weight and practise pausing at the bottom.</source>
+        <target state="translated">Spanning verliezen onderin: neem minder gewicht en oefen met een pauze onderin.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2720427144883958484" datatype="html">
+        <source>Hips shooting up first (a &apos;good-morning squat&apos;): slow down and lead with your chest.</source>
+        <target state="translated">Heupen die als eerste omhoog schieten (een &apos;good-morning squat&apos;): ga langzamer en leid met je borst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7540022295990040750" datatype="html">
+        <source>See the barbell back squat in the exercise library</source>
+        <target state="translated">Bekijk de back squat in de oefeningenbibliotheek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3567158571357739571" datatype="html">
+        <source>See the leg muscles on the anatomy chart</source>
+        <target state="translated">Bekijk de beenspieren op de spierkaart</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3641532732343078126" datatype="html">
+        <source>Losing Fat Without Losing Muscle</source>
+        <target state="translated">Vet verliezen zonder spieren te verliezen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1860371880429295100" datatype="html">
+        <source>How to Lose Fat Without Losing Muscle: A Practical Guide</source>
+        <target state="translated">Vet verliezen zonder spierverlies: een praktische gids</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6179824085169318520" datatype="html">
+        <source>How to set a calorie deficit you can keep up, keep training heavy, eat enough protein and use cardio well, so you lose fat and keep your muscle.</source>
+        <target state="translated">Zo stel je een calorietekort in dat je volhoudt, blijf je zwaar trainen, eet je genoeg eiwit en gebruik je cardio slim, zodat je vet verliest en je spieren behoudt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6422245172412646246" datatype="html">
+        <source>Fat loss is simple on paper and hard in practice. These are the things that matter, and how to use them without losing muscle.</source>
+        <target state="translated">Vetverlies is simpel op papier en lastig in de praktijk. Dit zijn de dingen die ertoe doen, en zo gebruik je ze zonder spieren te verliezen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6981295601372037147" datatype="html">
+        <source>fat loss</source>
+        <target state="translated">vetverlies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5424139420828534401" datatype="html">
+        <source>calorie deficit</source>
+        <target state="translated">calorietekort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5893854842728663773" datatype="html">
+        <source>Losing fat requires a calorie deficit: taking in less energy than you use. Keeping your muscle while you do it takes more: hard training, plenty of protein and a deficit that isn&apos;t too big.</source>
+        <target state="translated">Vet verliezen vraagt een calorietekort: minder energie binnenkrijgen dan je verbruikt. Je spieren behouden terwijl je dat doet, vraagt meer: hard blijven trainen, genoeg eiwit en een tekort dat niet te groot is.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5294985443807274010" datatype="html">
+        <source>Set a moderate deficit</source>
+        <target state="translated">Kies een gematigd tekort</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4242506438862701904" datatype="html">
+        <source>Losing about 0.5 to 1% of your body weight per week is a sensible target for most people. Going faster raises the risk of muscle loss, hunger and tiredness, and is harder to keep up.</source>
+        <target state="translated">Ongeveer 0,5 tot 1% van je lichaamsgewicht per week verliezen is voor de meeste mensen een verstandig doel. Sneller gaan vergroot de kans op spierverlies, honger en vermoeidheid, en is moeilijker vol te houden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1750744721476258476" datatype="html">
+        <source>Keep training heavy</source>
+        <target state="translated">Blijf zwaar trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5697089214390399375" datatype="html">
+        <source>Strength training is the signal that tells your body to keep its muscle. Keep lifting the same weights, even if you do slightly fewer sets later in the diet.</source>
+        <target state="translated">Krachttraining is het signaal dat je lichaam vertelt zijn spieren te houden. Blijf dezelfde gewichten tillen, ook als je later in het dieet iets minder sets doet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6827397545504647443" datatype="html">
+        <source>Eat enough protein</source>
+        <target state="translated">Eet genoeg eiwit</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8010109694316868556" datatype="html">
+        <source>You need more protein in a deficit. Aiming for about 1.8 to 2.2 g per kg of body weight helps you keep your muscle and keeps you fuller between meals.</source>
+        <target state="translated">In een tekort heb je meer eiwit nodig. Mikken op ongeveer 1,8 tot 2,2 g per kg lichaamsgewicht helpt je spieren te behouden en geeft een voller gevoel tussen de maaltijden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8310084661049600718" datatype="html">
+        <source>Use cardio as a tool</source>
+        <target state="translated">Gebruik cardio als hulpmiddel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="442335007183686670" datatype="html">
+        <source>Daily steps are an underrated way to burn more energy without getting tired.</source>
+        <target state="translated">Dagelijkse stappen zijn een onderschatte manier om meer energie te verbruiken zonder moe te worden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5439750190963381334" datatype="html">
+        <source>Easy cardio like uphill walking is easy to recover from.</source>
+        <target state="translated">Rustige cardio zoals wandelen op een helling herstel je makkelijk van.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3007744096979660719" datatype="html">
+        <source>Hard intervals work, but they make you tired, so use them sparingly.</source>
+        <target state="translated">Zware intervallen werken, maar maken je moe, dus gebruik ze met mate.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5320328076192571895" datatype="html">
+        <source>Watch the trend, not a single weigh-in</source>
+        <target state="translated">Kijk naar het verloop, niet naar één weging</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3756103774553057485" datatype="html">
+        <source>Your weight changes every day because of water, how much food is in you and salt. Weigh yourself under the same conditions and compare weekly averages, together with measurements and photos.</source>
+        <target state="translated">Je gewicht schommelt elke dag door vocht, hoeveel eten je binnen hebt en zout. Weeg jezelf onder dezelfde omstandigheden en vergelijk weekgemiddelden, samen met metingen en foto&apos;s.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4341597483703786322" datatype="html">
+        <source>Only follow a very low-calorie diet under medical supervision.</source>
+        <target state="translated">Volg een zeer caloriearm dieet alleen onder medisch toezicht.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8027962183763612472" datatype="html">
+        <source>Estimate your daily calorie needs</source>
+        <target state="translated">Schat je dagelijkse caloriebehoefte</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4596038673010197733" datatype="html">
+        <source>See the Fat Loss &amp; Definition program</source>
+        <target state="translated">Bekijk het schema Vetverlies &amp; definitie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4566407560039841893" datatype="html">
+        <source>Sleep and Recovery: Where Muscle Is Built</source>
+        <target state="translated">Slaap en herstel: waar spieren gebouwd worden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8952688857985724724" datatype="html">
+        <source>Sleep and Recovery for Muscle Growth: A Lifter’s Guide</source>
+        <target state="translated">Slaap en herstel voor spiergroei: een gids voor krachtsporters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7181050334783431222" datatype="html">
+        <source>Why sleep and recovery matter for muscle growth and strength, and practical habits to recover better between training sessions.</source>
+        <target state="translated">Waarom slaap en herstel belangrijk zijn voor spiergroei en kracht, en praktische gewoontes om beter te herstellen tussen trainingen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="596644100387721358" datatype="html">
+        <source>Training tires your muscles out; recovery is when they come back stronger. These habits help you recover faster and train harder.</source>
+        <target state="translated">Training put je spieren uit; tijdens herstel komen ze sterker terug. Deze gewoontes helpen je sneller te herstellen en harder te trainen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5612661594350436878" datatype="html">
+        <source>Training is the reason muscle grows, but the growing itself happens while you recover. Poor recovery limits how hard you can train and how well your body responds.</source>
+        <target state="translated">Training is de reden dat spieren groeien, maar het groeien zelf gebeurt terwijl je herstelt. Slecht herstel beperkt hoe hard je kunt trainen en hoe goed je lichaam reageert.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7864001661125632418" datatype="html">
+        <source>Sleep comes first</source>
+        <target state="translated">Slaap gaat voor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3078141937493257530" datatype="html">
+        <source>Most adults do best with 7 to 9 hours of sleep a night. Too little sleep goes together with worse performance, more hunger and poorer recovery.</source>
+        <target state="translated">De meeste volwassenen functioneren het best met 7 tot 9 uur slaap per nacht. Te weinig slaap gaat samen met slechtere prestaties, meer honger en minder goed herstel.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2999644940633277839" datatype="html">
+        <source>Go to bed and get up at the same time, weekends included.</source>
+        <target state="translated">Ga op vaste tijden naar bed en sta op vaste tijden op, ook in het weekend.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3532589458251241981" datatype="html">
+        <source>Make your bedroom dark, quiet and cool.</source>
+        <target state="translated">Maak je slaapkamer donker, stil en koel.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3519620375882835984" datatype="html">
+        <source>Limit caffeine in the 8 hours before bed.</source>
+        <target state="translated">Beperk cafeïne in de 8 uur voor het slapengaan.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3576141038805467845" datatype="html">
+        <source>Wind down without bright screens in the last 30 to 60 minutes.</source>
+        <target state="translated">Kom tot rust zonder felle schermen in het laatste halfuur tot uur.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6289720315825775923" datatype="html">
+        <source>Plan deloads</source>
+        <target state="final">Plan deloads</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4824562445195619534" datatype="html">
+        <source>A deload is a planned week with fewer sets or lighter weights. Taking one every 6 to 8 weeks, or when performance, sleep and motivation all drop, lets fatigue clear so you can keep progressing.</source>
+        <target state="translated">Een deload is een geplande week met minder sets of lichtere gewichten. Neem er een om de 6 tot 8 weken, of als je prestaties, slaap en motivatie alle drie dalen. Dan kan de vermoeidheid wegtrekken en blijf je vooruitgaan.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8512394287948952300" datatype="html">
+        <source>Active recovery</source>
+        <target state="translated">Actief herstel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3265923437150107350" datatype="html">
+        <source>Light walking, mobility work and easy cycling get your blood flowing without making you tired. They&apos;re ideal for rest days.</source>
+        <target state="translated">Licht wandelen, mobiliteitsoefeningen en rustig fietsen brengen je bloed op gang zonder je moe te maken. Ideaal voor rustdagen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3834928210775529590" datatype="html">
+        <source>Learn more about nutrition and recovery</source>
+        <target state="translated">Lees meer over voeding en herstel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1511671746677102061" datatype="html">
+        <source>Creatine: What the Research Says</source>
+        <target state="translated">Creatine: wat het onderzoek zegt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="522296803644356208" datatype="html">
+        <source>Creatine Monohydrate: Benefits, Dosage and Evidence</source>
+        <target state="translated">Creatine monohydraat: effecten, dosering en onderzoek</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3274840320015833976" datatype="html">
+        <source>What research says about creatine monohydrate: what it does, the usual dose, who may benefit and what it won&apos;t do.</source>
+        <target state="translated">Wat onderzoek zegt over creatine monohydraat: wat het doet, de gebruikelijke dosis, wie er baat bij kan hebben en wat het niet doet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3429622349913465831" datatype="html">
+        <source>Creatine is one of the most researched sports supplements. Here is what it can and can&apos;t do, without the marketing.</source>
+        <target state="translated">Creatine is een van de best onderzochte sportsupplementen. Dit kan het wel en dit kan het niet, zonder marketingpraat.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">255</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3351024883081231625" datatype="html">
+        <source>Supplements are the smallest piece of the puzzle. Training, food and sleep come first. That said, creatine monohydrate is one of the most studied supplements in sports nutrition.</source>
+        <target state="translated">Supplementen zijn het kleinste stukje van de puzzel. Training, voeding en slaap gaan voor. Dat gezegd hebbende: creatine monohydraat is een van de best onderzochte supplementen in de sportvoeding.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7762867564275035714" datatype="html">
+        <source>What creatine does</source>
+        <target state="translated">Wat creatine doet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">267</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7839861250212657822" datatype="html">
+        <source>Creatine fills up your muscles&apos; stores of phosphocreatine, which helps them make energy for short, hard efforts like heavy sets. Over time this can help you train a little better, and so gain a little more muscle and strength.</source>
+        <target state="translated">Creatine vult de voorraad fosfocreatine in je spieren aan, waardoor ze energie kunnen maken voor korte, zware inspanningen zoals zware sets. Op den duur kan dat je helpen iets beter te trainen, en daardoor iets meer spiermassa en kracht op te bouwen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2915622022760219393" datatype="html">
+        <source>Typical dosage</source>
+        <target state="translated">Gebruikelijke dosis</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8618652465350256363" datatype="html">
+        <source>A common intake is 3 to 5 g of creatine monohydrate a day, at any time of day. A loading phase is optional; it only fills your muscles faster.</source>
+        <target state="translated">Een gangbare hoeveelheid is 3 tot 5 g creatine monohydraat per dag, op elk moment van de dag. Een oplaadfase is niet nodig; die vult je spieren alleen sneller.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6402760808925938466" datatype="html">
+        <source>What it will not do</source>
+        <target state="translated">Wat het niet doet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6471429454095669636" datatype="html">
+        <source>It won&apos;t replace consistent training or good food.</source>
+        <target state="translated">Het vervangt geen regelmatige training of goede voeding.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5716234501788727535" datatype="html">
+        <source>It does not burn fat.</source>
+        <target state="translated">Het verbrandt geen vet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5740313401435781285" datatype="html">
+        <source>The effects are small.</source>
+        <target state="translated">De effecten zijn klein.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3068596695756947534" datatype="html">
+        <source>Supplements are not medicines and are not meant to diagnose, treat, cure or prevent any disease. Talk to a healthcare professional before using supplements, especially if you have a medical condition or take medication.</source>
+        <target state="translated">Supplementen zijn geen medicijnen en zijn niet bedoeld om ziektes vast te stellen, te behandelen, te genezen of te voorkomen. Overleg met een zorgprofessional voordat je supplementen gebruikt, zeker als je een aandoening hebt of medicijnen gebruikt.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5991435777137237196" datatype="html">
+        <source>Read the nutrition guide</source>
+        <target state="translated">Lees de voedingsgids</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6968952497121843644" datatype="html">
+        <source>When Motivation Fades: How to Keep Training Anyway</source>
+        <target state="translated">Als je motivatie zakt: zo blijf je toch trainen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3008493628966045932" datatype="html">
+        <source>How to Stay Consistent With Training When Motivation Fades</source>
+        <target state="translated">Zo blijf je regelmatig trainen als je motivatie zakt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">291</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3708674647654408104" datatype="html">
+        <source>Practical ways to train consistently: a minimum session, planning ahead, making it easy and tracking your progress.</source>
+        <target state="translated">Praktische manieren om regelmatig te trainen: een minimale training, vooruit plannen, het jezelf makkelijk maken en je voortgang bijhouden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">292</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4661215128234157891" datatype="html">
+        <source>Motivation gets you started; habits keep you going. Practical ways to make training something you just do.</source>
+        <target state="translated">Motivatie helpt je beginnen; gewoontes houden je bezig. Praktische manieren om trainen iets te maken wat je gewoon doet.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">293</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8088652923113607694" datatype="html">
+        <source>Everyone who lifts has days when they don&apos;t feel like training. The people who progress most are usually the ones who keep showing up on those days.</source>
+        <target state="translated">Iedereen die traint, heeft weleens geen zin. De mensen die het meest vooruitgaan, zijn meestal degenen die op zulke dagen toch komen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="990974557478958313" datatype="html">
+        <source>Schedule sessions like appointments</source>
+        <target state="translated">Plan trainingen in als afspraken</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3542122042691888846" datatype="html">
+        <source>Decide in advance when you&apos;ll train each week. A fixed time and place means you don&apos;t have to decide every day.</source>
+        <target state="translated">Bepaal vooraf wanneer je elke week traint. Een vaste tijd en plek betekent dat je niet elke dag hoeft te beslissen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6320595425527656937" datatype="html">
+        <source>Define a minimum session</source>
+        <target state="translated">Bepaal een minimale training</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5773496290496055656" datatype="html">
+        <source>On hard days, promise yourself only the warm-up and the first exercise. Most of the time you&apos;ll finish the workout. When you don&apos;t, you&apos;ve still kept the habit going.</source>
+        <target state="translated">Beloof jezelf op zware dagen alleen de warming-up en de eerste oefening. Meestal maak je de training dan toch af. En als dat niet lukt, heb je de gewoonte in elk geval vastgehouden.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">311</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="425727995396762322" datatype="html">
+        <source>Make progress visible</source>
+        <target state="translated">Maak je vooruitgang zichtbaar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">313</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1527276742327180636" datatype="html">
+        <source>Logging your workouts shows you how far you&apos;ve come. Seeing your numbers go up keeps you going like little else does.</source>
+        <target state="translated">Je trainingen bijhouden laat zien hoe ver je al bent. Je getallen zien stijgen motiveert als weinig anders.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9187931704993825549" datatype="html">
+        <source>Get support</source>
+        <target state="translated">Zoek steun</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1074971890813237401" datatype="html">
+        <source>Someone to answer to, a training partner or a coach, makes it much easier to stick with it. Knowing someone will look at your week is a good reason to show up.</source>
+        <target state="translated">Iemand aan wie je verantwoording aflegt, een trainingsmaatje of een coach, maakt volhouden veel makkelijker. Weten dat iemand naar je week kijkt, is een goede reden om te komen.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8240934712013434427" datatype="html">
+        <source>Book a free intro</source>
+        <target state="translated">Plan een gratis kennismaking</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-hero.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/transformations/transformations-page.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2759546142816672386" datatype="html">
         <source>Barbell Bench Press</source>
         <target state="translated">Bankdrukken met halterstang</target>
@@ -9904,7 +11052,7 @@
       </trans-unit>
       <trans-unit id="8451746151848097698" datatype="html">
         <source>Upper / Lower / rest / Push / Pull / Legs / rest</source>
-        <target state="final">Upper / Lower / rest / Push / Pull / Legs / rest</target>
+        <target state="translated">Upper / Lower / rust / Push / Pull / Legs / rust</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
           <context context-type="linenumber">329</context>
@@ -10032,7 +11180,7 @@
       </trans-unit>
       <trans-unit id="115101142596484894" datatype="html">
         <source>Push A / Pull A / Legs A / Push B / Pull B / Legs B / rest</source>
-        <target state="final">Push A / Pull A / Legs A / Push B / Pull B / Legs B / rest</target>
+        <target state="translated">Push A / Pull A / Legs A / Push B / Pull B / Legs B / rust</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
           <context context-type="linenumber">367</context>
@@ -10508,7 +11656,7 @@
       </trans-unit>
       <trans-unit id="8070820361717347597" datatype="html">
         <source>Push / Pull / Legs / Push / Pull / Legs / rest</source>
-        <target state="final">Push / Pull / Legs / Push / Pull / Legs / rest</target>
+        <target state="translated">Push / Pull / Legs / Push / Pull / Legs / rust</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
           <context context-type="linenumber">532</context>
@@ -10616,7 +11764,7 @@
       </trans-unit>
       <trans-unit id="7173781455737295329" datatype="html">
         <source>Upper / Lower / rest / Upper / Lower / rest / rest</source>
-        <target state="final">Upper / Lower / rest / Upper / Lower / rest / rest</target>
+        <target state="translated">Upper / Lower / rust / Upper / Lower / rust / rust</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/programs.data.ts</context>
           <context context-type="linenumber">570</context>
@@ -11940,42 +13088,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
           <context context-type="linenumber">232</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8240934712013434427" datatype="html">
-        <source>Book a free intro</source>
-        <target state="translated">Plan een gratis kennismaking</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">235</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">264</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-hero.ts</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">60,61</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/transformations/transformations-page.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">121,122</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
-          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4865720697051190664" datatype="html">
@@ -14144,22 +15256,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
           <context context-type="linenumber">56,57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2890679222603308282" datatype="html">
-        <source>Common mistakes</source>
-        <target state="translated">Veelgemaakte fouten</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
-          <context context-type="linenumber">66,67</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
-          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2538643401892722912" datatype="html">
@@ -18489,6 +19585,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/breadcrumbs.ts</context>
           <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target state="final">Home</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/breadcrumbs.ts</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7910408219947091899" datatype="html">

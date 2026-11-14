@@ -402,6 +402,1016 @@
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8352656357741820956" datatype="html">
+        <source>Coach Hajaro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="599971471467452258" datatype="html">
+        <source>Progressive Overload: The Principle Behind Every Good Program</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8525396521242520027" datatype="html">
+        <source>Progressive Overload Explained: How to Keep Building Muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9086378040871395651" datatype="html">
+        <source>Learn what progressive overload is, the different ways to apply it, and a simple double-progression system to keep building muscle and strength.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3982624970178919360" datatype="html">
+        <source>Muscles adapt to what you ask of them. Progressive overload is how you keep asking a little more. Here is how to apply it without burning out.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8063088039473084583" datatype="html">
+        <source>progressive overload</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5990508354812311969" datatype="html">
+        <source>If one principle separates training from just exercising, it is progressive overload: slowly increasing what you ask of your muscles over time, so they have a reason to keep adapting.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8597908064843032733" datatype="html">
+        <source>What progressive overload actually means</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7469864807788610773" datatype="html">
+        <source>Your body adapts to the stress you put on it. Once a weight feels easy for the same number of reps, it is no longer a new challenge and progress slows. Overload means doing slightly more than before. Not every session, but steadily over weeks and months.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3941343753898683497" datatype="html">
+        <source>Ways to progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8273744513201969008" datatype="html">
+        <source>Weight: lifting more for the same number of reps.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="394862218226682603" datatype="html">
+        <source>Reps: doing more reps with the same weight.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="766644088391685244" datatype="html">
+        <source>Sets: adding sets, carefully and within what you can recover from.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7867524412190792767" datatype="html">
+        <source>Range and control: doing the same work through a fuller range, or lowering the weight more slowly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8301712048979022051" datatype="html">
+        <source>Adding weight while your technique gets worse is not progressive overload. It&apos;s a different, easier exercise done badly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2405607649515546787" datatype="html">
+        <source>A simple system: double progression</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2099285859731723197" datatype="html">
+        <source>Double progression is the simplest reliable method for most lifters. Pick a rep range, for example 8 to 12 reps.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8193589969936838495" datatype="html">
+        <source>Start with a weight you can lift for 8 reps with 1 to 3 reps to spare.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5745676901185752088" datatype="html">
+        <source>Each session, try to add a rep to one or more sets.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3668916593388224505" datatype="html">
+        <source>When every set reaches 12 reps with good form, add the smallest weight step available.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4094142417470301540" datatype="html">
+        <source>Drop back towards 8 reps with the new weight and repeat.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3785106452700704885" datatype="html">
+        <source>Track everything</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1043066735827672592" datatype="html">
+        <source>Progress you don&apos;t write down is progress you can&apos;t steer. Log your sets, reps and weights. The workout planner on this site is made for exactly that.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8594717526169821396" datatype="html">
+        <source>Open the workout planner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3430860657553376968" datatype="html">
+        <source>When progress stalls</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3852151410856198635" datatype="html">
+        <source>Getting stuck is normal. Before you change your program, check the basics: sleep, total calories, protein and stress. If those are fine and you&apos;ve been stuck for two or three weeks, try a deload week or a small change in exercises.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3790323420646845773" datatype="html">
+        <source>See the training programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7093290529205140288" datatype="html">
+        <source>How Much Protein Do You Need to Build Muscle?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8994242683849916700" datatype="html">
+        <source>Protein Intake for Muscle Growth: How Much Do You Need?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7362617335979413185" datatype="html">
+        <source>What research says about protein for building muscle, how to spread it over the day, and practical high-protein foods.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5849072845824156826" datatype="html">
+        <source>Protein is what muscle is made of. Here is how much you need, how to spread it over your day and how to reach your target with normal food.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8320240489500958576" datatype="html">
+        <source>muscle growth</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2253975042394288542" datatype="html">
+        <source>Training gives your muscles a reason to grow; protein is the material they grow from. Without enough of it, your work in the gym gives you less than it could.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3024165456285757201" datatype="html">
+        <source>How much protein per day?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6867825637477542721" datatype="html">
+        <source>For most people who lift and want to build muscle, research supports about 1.6 to 2.2 g of protein per kilogram of body weight per day. During a fat-loss phase, aiming for the higher end helps you keep your muscle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8148782412562096572" datatype="html">
+        <source>Example: someone who weighs 80 kg would aim for about 130 to 175 g of protein a day.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2395402495558036262" datatype="html">
+        <source>Spread it across the day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4378911992013874213" datatype="html">
+        <source>Eating protein over three to five meals, each with about 0.3 to 0.5 g per kg of body weight, is a practical way to reach your target and keep muscle building going through the day.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3782758248913078612" datatype="html">
+        <source>High-quality protein sources</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9080634966881483628" datatype="html">
+        <source>Lean meat and poultry: chicken, turkey, lean beef</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4611560703401272969" datatype="html">
+        <source>Fish and seafood: salmon, tuna, white fish, prawns</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1747891075142526067" datatype="html">
+        <source>Eggs and dairy: Greek yoghurt, skyr, cottage cheese, milk</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2852886974407004922" datatype="html">
+        <source>Plant-based: tofu, tempeh, lentils, beans, edamame and blended plant proteins</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8689266421793008961" datatype="html">
+        <source>Protein powder: handy when normal food falls short</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7508330107050037151" datatype="html">
+        <source>A note on health</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5719447816595011679" datatype="html">
+        <source>If you have kidney disease or another medical condition, talk to your doctor or a registered dietitian before eating more protein.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5553172362807503834" datatype="html">
+        <source>Calculate your daily protein target</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2903563231525282875" datatype="html">
+        <source>Squat Technique: Squatting Safely, Step by Step</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2996805147048432131" datatype="html">
+        <source>How to Squat Properly: Step-by-Step Barbell Squat Technique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2474341240721469570" datatype="html">
+        <source>Learn the barbell squat: step-by-step setup, cues for the movement, common mistakes and how to find the right depth for your body.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1920633669255740919" datatype="html">
+        <source>Done well, the squat builds more lower-body muscle and strength than almost any other exercise. Here is how to set up, perform and progress it.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1570735772359124215" datatype="html">
+        <source>The barbell back squat trains your quads, glutes and adductors, and asks a lot of your core and upper back. Good technique lets you load it heavily and safely for years.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6492831808763156510" datatype="html">
+        <source>Setup</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4668944870833616342" datatype="html">
+        <source>Set the bar at mid-chest height in a rack with safety bars just below your bottom position.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="808901380438134822" datatype="html">
+        <source>Step under the bar and place it on your upper back, resting on the muscle, not on your neck.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71456258426019675" datatype="html">
+        <source>Grip the bar just outside your shoulders and pull your elbows down to tighten your upper back.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3019445268244867148" datatype="html">
+        <source>Stand up to unrack, take two or three steps back and set your feet roughly shoulder-width apart with toes slightly turned out.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">137</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5648120485645865953" datatype="html">
+        <source>Execution</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7087635709003979608" datatype="html">
+        <source>Take a deep breath into your belly and sides, then brace as if preparing for a punch.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2898952362211064247" datatype="html">
+        <source>Sit down between your hips, allowing your knees to travel forward and track over your toes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5042223477086786221" datatype="html">
+        <source>Descend to the deepest position you can control with a neutral spine and heels on the floor.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3306366386993637641" datatype="html">
+        <source>Drive up through your whole foot, keeping your chest up and your brace tight.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8749641202792742918" datatype="html">
+        <source>How deep should you squat?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="280424826177908470" datatype="html">
+        <source>Squat as deep as you can while keeping a neutral lower back and your whole foot on the floor. For most people that is at or below parallel. Deeper squats train the quads and glutes through a longer range, which helps muscle growth.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2890679222603308282" datatype="html">
+        <source>Common mistakes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">66,67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2124416245428005411" datatype="html">
+        <source>Knees falling inwards: think about spreading the floor apart with your feet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4729395608903260693" datatype="html">
+        <source>Heels lifting: work on ankle mobility, or put something under your heels for now.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3104267151841827200" datatype="html">
+        <source>Losing tension at the bottom: use less weight and practise pausing at the bottom.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2720427144883958484" datatype="html">
+        <source>Hips shooting up first (a &apos;good-morning squat&apos;): slow down and lead with your chest.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7540022295990040750" datatype="html">
+        <source>See the barbell back squat in the exercise library</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3567158571357739571" datatype="html">
+        <source>See the leg muscles on the anatomy chart</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3641532732343078126" datatype="html">
+        <source>Losing Fat Without Losing Muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">167</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1860371880429295100" datatype="html">
+        <source>How to Lose Fat Without Losing Muscle: A Practical Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6179824085169318520" datatype="html">
+        <source>How to set a calorie deficit you can keep up, keep training heavy, eat enough protein and use cardio well, so you lose fat and keep your muscle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6422245172412646246" datatype="html">
+        <source>Fat loss is simple on paper and hard in practice. These are the things that matter, and how to use them without losing muscle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">170</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6981295601372037147" datatype="html">
+        <source>fat loss</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5424139420828534401" datatype="html">
+        <source>calorie deficit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5893854842728663773" datatype="html">
+        <source>Losing fat requires a calorie deficit: taking in less energy than you use. Keeping your muscle while you do it takes more: hard training, plenty of protein and a deficit that isn&apos;t too big.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5294985443807274010" datatype="html">
+        <source>Set a moderate deficit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4242506438862701904" datatype="html">
+        <source>Losing about 0.5 to 1% of your body weight per week is a sensible target for most people. Going faster raises the risk of muscle loss, hunger and tiredness, and is harder to keep up.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">185</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1750744721476258476" datatype="html">
+        <source>Keep training heavy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5697089214390399375" datatype="html">
+        <source>Strength training is the signal that tells your body to keep its muscle. Keep lifting the same weights, even if you do slightly fewer sets later in the diet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">189</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6827397545504647443" datatype="html">
+        <source>Eat enough protein</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8010109694316868556" datatype="html">
+        <source>You need more protein in a deficit. Aiming for about 1.8 to 2.2 g per kg of body weight helps you keep your muscle and keeps you fuller between meals.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8310084661049600718" datatype="html">
+        <source>Use cardio as a tool</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="442335007183686670" datatype="html">
+        <source>Daily steps are an underrated way to burn more energy without getting tired.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5439750190963381334" datatype="html">
+        <source>Easy cardio like uphill walking is easy to recover from.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">198</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3007744096979660719" datatype="html">
+        <source>Hard intervals work, but they make you tired, so use them sparingly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">199</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5320328076192571895" datatype="html">
+        <source>Watch the trend, not a single weigh-in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3756103774553057485" datatype="html">
+        <source>Your weight changes every day because of water, how much food is in you and salt. Weigh yourself under the same conditions and compare weekly averages, together with measurements and photos.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">203</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4341597483703786322" datatype="html">
+        <source>Only follow a very low-calorie diet under medical supervision.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8027962183763612472" datatype="html">
+        <source>Estimate your daily calorie needs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">206</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4596038673010197733" datatype="html">
+        <source>See the Fat Loss &amp; Definition program</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">207</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4566407560039841893" datatype="html">
+        <source>Sleep and Recovery: Where Muscle Is Built</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8952688857985724724" datatype="html">
+        <source>Sleep and Recovery for Muscle Growth: A Lifter’s Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7181050334783431222" datatype="html">
+        <source>Why sleep and recovery matter for muscle growth and strength, and practical habits to recover better between training sessions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="596644100387721358" datatype="html">
+        <source>Training tires your muscles out; recovery is when they come back stronger. These habits help you recover faster and train harder.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">216</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5612661594350436878" datatype="html">
+        <source>Training is the reason muscle grows, but the growing itself happens while you recover. Poor recovery limits how hard you can train and how well your body responds.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">226</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7864001661125632418" datatype="html">
+        <source>Sleep comes first</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3078141937493257530" datatype="html">
+        <source>Most adults do best with 7 to 9 hours of sleep a night. Too little sleep goes together with worse performance, more hunger and poorer recovery.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">230</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2999644940633277839" datatype="html">
+        <source>Go to bed and get up at the same time, weekends included.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3532589458251241981" datatype="html">
+        <source>Make your bedroom dark, quiet and cool.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3519620375882835984" datatype="html">
+        <source>Limit caffeine in the 8 hours before bed.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3576141038805467845" datatype="html">
+        <source>Wind down without bright screens in the last 30 to 60 minutes.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">236</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6289720315825775923" datatype="html">
+        <source>Plan deloads</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4824562445195619534" datatype="html">
+        <source>A deload is a planned week with fewer sets or lighter weights. Taking one every 6 to 8 weeks, or when performance, sleep and motivation all drop, lets fatigue clear so you can keep progressing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">240</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8512394287948952300" datatype="html">
+        <source>Active recovery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">242</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3265923437150107350" datatype="html">
+        <source>Light walking, mobility work and easy cycling get your blood flowing without making you tired. They&apos;re ideal for rest days.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3834928210775529590" datatype="html">
+        <source>Learn more about nutrition and recovery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1511671746677102061" datatype="html">
+        <source>Creatine: What the Research Says</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="522296803644356208" datatype="html">
+        <source>Creatine Monohydrate: Benefits, Dosage and Evidence</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3274840320015833976" datatype="html">
+        <source>What research says about creatine monohydrate: what it does, the usual dose, who may benefit and what it won&apos;t do.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">254</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3429622349913465831" datatype="html">
+        <source>Creatine is one of the most researched sports supplements. Here is what it can and can&apos;t do, without the marketing.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">255</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3351024883081231625" datatype="html">
+        <source>Supplements are the smallest piece of the puzzle. Training, food and sleep come first. That said, creatine monohydrate is one of the most studied supplements in sports nutrition.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">265</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7762867564275035714" datatype="html">
+        <source>What creatine does</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">267</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7839861250212657822" datatype="html">
+        <source>Creatine fills up your muscles&apos; stores of phosphocreatine, which helps them make energy for short, hard efforts like heavy sets. Over time this can help you train a little better, and so gain a little more muscle and strength.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">269</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2915622022760219393" datatype="html">
+        <source>Typical dosage</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">271</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8618652465350256363" datatype="html">
+        <source>A common intake is 3 to 5 g of creatine monohydrate a day, at any time of day. A loading phase is optional; it only fills your muscles faster.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">273</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6402760808925938466" datatype="html">
+        <source>What it will not do</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">275</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6471429454095669636" datatype="html">
+        <source>It won&apos;t replace consistent training or good food.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">277</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5716234501788727535" datatype="html">
+        <source>It does not burn fat.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">278</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5740313401435781285" datatype="html">
+        <source>The effects are small.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">279</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3068596695756947534" datatype="html">
+        <source>Supplements are not medicines and are not meant to diagnose, treat, cure or prevent any disease. Talk to a healthcare professional before using supplements, especially if you have a medical condition or take medication.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">282</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5991435777137237196" datatype="html">
+        <source>Read the nutrition guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">284</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6968952497121843644" datatype="html">
+        <source>When Motivation Fades: How to Keep Training Anyway</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">290</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3008493628966045932" datatype="html">
+        <source>How to Stay Consistent With Training When Motivation Fades</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">291</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3708674647654408104" datatype="html">
+        <source>Practical ways to train consistently: a minimum session, planning ahead, making it easy and tracking your progress.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">292</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4661215128234157891" datatype="html">
+        <source>Motivation gets you started; habits keep you going. Practical ways to make training something you just do.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">293</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8088652923113607694" datatype="html">
+        <source>Everyone who lifts has days when they don&apos;t feel like training. The people who progress most are usually the ones who keep showing up on those days.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="990974557478958313" datatype="html">
+        <source>Schedule sessions like appointments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">305</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3542122042691888846" datatype="html">
+        <source>Decide in advance when you&apos;ll train each week. A fixed time and place means you don&apos;t have to decide every day.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">307</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6320595425527656937" datatype="html">
+        <source>Define a minimum session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">309</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5773496290496055656" datatype="html">
+        <source>On hard days, promise yourself only the warm-up and the first exercise. Most of the time you&apos;ll finish the workout. When you don&apos;t, you&apos;ve still kept the habit going.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">311</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="425727995396762322" datatype="html">
+        <source>Make progress visible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">313</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1527276742327180636" datatype="html">
+        <source>Logging your workouts shows you how far you&apos;ve come. Seeing your numbers go up keeps you going like little else does.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">315</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9187931704993825549" datatype="html">
+        <source>Get support</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">317</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1074971890813237401" datatype="html">
+        <source>Someone to answer to, a training partner or a coach, makes it much easier to stick with it. Knowing someone will look at your week is a good reason to show up.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">319</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8240934712013434427" datatype="html">
+        <source>Book a free intro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
+          <context context-type="linenumber">321</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">235</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
+          <context context-type="linenumber">264</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-hero.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/transformations/transformations-page.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2759546142816672386" datatype="html">
         <source>Barbell Bench Press</source>
         <context-group purpose="location">
@@ -10570,41 +11580,6 @@
           <context context-type="linenumber">232</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8240934712013434427" datatype="html">
-        <source>Book a free intro</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">235</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/core/data/services.data.ts</context>
-          <context context-type="linenumber">264</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-hero.ts</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
-          <context context-type="linenumber">60,61</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/transformations/transformations-page.html</context>
-          <context context-type="linenumber">65,66</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">121,122</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="4865720697051190664" datatype="html">
         <source>Fill in the starting questionnaire</source>
         <context-group purpose="location">
@@ -12501,21 +13476,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
           <context context-type="linenumber">56,57</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2890679222603308282" datatype="html">
-        <source>Common mistakes</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
-          <context context-type="linenumber">66,67</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/muscle-chart/muscle-detail-panel.html</context>
-          <context context-type="linenumber">45,46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2538643401892722912" datatype="html">
@@ -16337,6 +17297,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/breadcrumbs.ts</context>
           <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/breadcrumbs.ts</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7910408219947091899" datatype="html">

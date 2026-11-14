@@ -65,7 +65,7 @@ export class Breadcrumbs {
   readonly items = input.required<readonly Crumb[]>();
 
   protected trail(): readonly Crumb[] {
-    return [{ label: 'Home', url: '/' }, ...this.items()];
+    return [{ label: $localize`Home`, url: '/' }, ...this.items()];
   }
 
   constructor() {

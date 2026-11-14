@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Hajaro Coaching — Bodybuilding Coach & Personal Trainer</title>
+    <!-- Defaults only: every page sets its own title and description per language (SeoService). -->
+    <title>Hajaro Coaching</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta
       name="description"
-      content="Online and in-person bodybuilding coaching with individual training programs, nutrition guidance and weekly check-ins."
+      content="Krachttraining en bodybuilding coaching, op locatie en online."
     />
     <meta name="theme-color" content="#0b0b0c" />
     <meta name="color-scheme" content="dark" />
@@ -38,9 +39,12 @@
   <body>
     <app-root></app-root>
     <noscript>
+      <!-- index.html is shared by both languages (not translated by Angular i18n): Dutch first. -->
       <p style="padding: 1rem; color: #f4f4f5; background: #0b0b0c">
-        Interactive tools on this site (the muscle chart, planner and calculators) require
-        JavaScript.
+        De interactieve tools (spierkaart, planner en calculators) hebben JavaScript nodig. ·
+        <span lang="en"
+          >The interactive tools (muscle chart, planner and calculators) need JavaScript.</span
+        >
       </p>
     </noscript>
   </body>
