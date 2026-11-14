@@ -330,6 +330,38 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="3027171400323884388" datatype="html">
+        <source>Some details could not be accepted. Check the fields and send the form again.</source>
+        <target state="translated">Niet alle gegevens konden worden verwerkt. Controleer de velden en verstuur het formulier opnieuw.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8362048149935466761" datatype="html">
+        <source>You sent several messages in a short time. Wait a few minutes, or email <x id="EMAIL" equiv-text="email"/> directly.</source>
+        <target state="translated">Je hebt in korte tijd meerdere berichten gestuurd. Wacht een paar minuten of mail direct naar <x id="EMAIL" equiv-text="email"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8629719262822109416" datatype="html">
+        <source>Your message was not sent because there is no connection. Check your internet connection and try again.</source>
+        <target state="translated">Je bericht is niet verstuurd, want er is geen verbinding. Controleer je internetverbinding en probeer het opnieuw.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5953344187634982005" datatype="html">
+        <source>Your message could not be sent right now. Try again later, or email <x id="EMAIL" equiv-text="email"/> directly.</source>
+        <target state="translated">Je bericht kon nu niet worden verstuurd. Probeer het later opnieuw of mail direct naar <x id="EMAIL" equiv-text="email"/>.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2699764639060274569" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ brand.tagline }}"/>. Individual training, nutrition and accountability for people serious about their physique. </source>
         <target state="translated"> <x id="INTERPOLATION" equiv-text="{{ brand.tagline }}"/>. Individuele training, voeding en begeleiding voor mensen die serieus werk maken van hun fysiek. </target>

@@ -11,18 +11,17 @@ import { NonNullableFormBuilder, ReactiveFormsModule, Validators } from '@angula
 import { RouterLink } from '@angular/router';
 import { finalize } from 'rxjs';
 import { ApiError } from '../../core/api/api-error';
-import { newId } from '../../core/api/entity-repository';
+import { ContactGateway, ContactRequest } from '../../core/contact/contact-gateway';
+import { CURRENT_LOCALE } from '../../core/i18n/current-locale';
 import { SITE_CONFIG } from '../../core/config/site.config';
 import { PackageStore } from '../../core/data-access/package.store';
 import { ProgramStore } from '../../core/data-access/program.store';
 import { ServiceCatalogStore } from '../../core/data-access/service-catalog.store';
-import { InquiryStore } from '../../core/data-access/portal.stores';
 import {
   COACHING_TYPE_LABELS,
   CoachingType,
   EXPERIENCE_LABELS,
   ExperienceLevel,
-  Inquiry,
 } from '../../core/models';
 import { FieldError } from '../../shared/forms/field-error';
 import { phoneValidator } from '../../shared/forms/validation-messages';
@@ -48,6 +47,21 @@ const PREFERRED_TIMES = [
   'Flexible',
 ];
 
+/** What went wrong, and what the visitor can do instead. Nothing they typed is lost. */
+function sendErrorMessage(status: number): string {
+  const email = SITE_CONFIG.contact.email;
+  switch (status) {
+    case 400:
+      return $localize`Some details could not be accepted. Check the fields and send the form again.`;
+    case 429:
+      return $localize`You sent several messages in a short time. Wait a few minutes, or email ${email}:EMAIL: directly.`;
+    case 0:
+      return $localize`Your message was not sent because there is no connection. Check your internet connection and try again.`;
+    default:
+      return $localize`Your message could not be sent right now. Try again later, or email ${email}:EMAIL: directly.`;
+  }
+}
+
 /** Removes control characters and trims user input before it leaves the browser. */
 const clean = (value: string) =>
   value.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, '').trim();
@@ -61,7 +75,7 @@ const clean = (value: string) =>
 })
 export class ContactForm implements OnInit {
   private readonly fb = inject(NonNullableFormBuilder);
-  private readonly inquiries = inject(InquiryStore);
+  private readonly gateway = inject(ContactGateway);
   private readonly packages = inject(PackageStore);
   private readonly services = inject(ServiceCatalogStore);
   private readonly programs = inject(ProgramStore);
@@ -160,37 +174,34 @@ export class ContactForm implements OnInit {
     }
 
     const context = this.contextLabel();
-    const inquiry: Inquiry = {
-      id: newId('inq'),
+    const request: ContactRequest = {
       name: clean(v.name),
       email: clean(v.email).toLowerCase(),
       ...(v.phone ? { phone: clean(v.phone) } : {}),
       goals: v.goals,
       coachingType: v.coachingType,
       experience: v.experience,
-      message: clean(context ? `[${context}]\n${v.message}` : v.message),
+      message: clean(v.message),
       wantsConsultation: v.wantsConsultation,
       ...(v.wantsConsultation ? { preferredTime: v.preferredTime } : {}),
-      status: 'new',
-      createdAt: new Date().toISOString(),
+      ...(context ? { context } : {}),
+      language: CURRENT_LOCALE.code,
+      website: v.website,
     };
 
     this.state.set('submitting');
-    this.inquiries
-      .save(inquiry, true)
+    this.gateway
+      .send(request)
       .pipe(finalize(() => this.state() === 'submitting' && this.state.set('idle')))
       .subscribe({
         next: () => {
-          this.submittedName.set(inquiry.name.split(' ')[0]);
+          this.submittedName.set(request.name.split(' ')[0]);
           this.state.set('success');
+          // The form stays filled in on errors, so nothing typed is lost; clear it only on success.
           this.form.reset();
         },
         error: (error: unknown) => {
-          this.errorMessage.set(
-            error instanceof ApiError
-              ? error.message
-              : 'Your message could not be sent. Please try again.',
-          );
+          this.errorMessage.set(sendErrorMessage(error instanceof ApiError ? error.status : 0));
           this.state.set('error');
         },
       });

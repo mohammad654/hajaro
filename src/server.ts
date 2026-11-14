@@ -6,9 +6,14 @@ import {
 } from '@angular/ssr/node';
 import compression from 'compression';
 import express from 'express';
+import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { legacyRedirect, rememberedLanguageRedirect } from './legacy-redirects';
 import { buildRobots, buildSitemap } from './seo-files';
+import { contactConfigFromEnv, contactRouter } from './server/contact';
+
+// Local settings (SMTP etc.). On a host, set real environment variables instead; see .env.example.
+if (existsSync('.env')) process.loadEnvFile('.env');
 
 const browserDistFolder = join(import.meta.dirname, '../browser');
 
@@ -16,6 +21,12 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 app.disable('x-powered-by');
+
+/**
+ * Behind a proxy/load balancer, set TRUST_PROXY to the number of proxies in front of this server so
+ * req.ip is the visitor's address (used for rate limiting). Default: trust nothing.
+ */
+app.set('trust proxy', Number(process.env['TRUST_PROXY'] ?? 0));
 
 /** Brotli/gzip for HTML, JS, CSS, JSON and SVG (text compresses ~80%; images are skipped). */
 app.use(compression());
@@ -73,6 +84,8 @@ app.get('/robots.txt', (_req, res) => {
  * proxy it here or point `apiBaseUrl` at its origin. Unknown /api routes must never fall through to the
  * Angular renderer.
  */
+app.use('/api/contact', contactRouter(contactConfigFromEnv()));
+
 app.use('/api', (_req, res) => {
   res.status(404).json({ message: 'API endpoint not found.' });
 });

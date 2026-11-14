@@ -14,6 +14,7 @@ import {
 import { routes } from './app.routes';
 import { apiErrorInterceptor, credentialsInterceptor } from './core/api/http.interceptors';
 import { GlobalErrorHandler } from './core/services/global-error-handler';
+import { ContactGateway, HttpContactGateway } from './core/contact/contact-gateway';
 
 const prefersReducedMotion = (): boolean =>
   typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
@@ -22,6 +23,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     { provide: ErrorHandler, useClass: GlobalErrorHandler },
+    { provide: ContactGateway, useClass: HttpContactGateway },
     provideRouter(
       routes,
       withComponentInputBinding(),

@@ -45,3 +45,8 @@ Thumbs.db
 
 # Source material (screenshots, PDFs; some carry third-party watermarks). Not used by the build.
 /Full body muscle workout chart/
+
+# Local environment (secrets)
+.env
+.env.*
+!.env.example

@@ -12,6 +12,7 @@ export const environment: AppEnvironment = {
   production: true,
   siteUrl: 'https://www.example.com',
   apiBaseUrl: '/api',
+  contactEndpoint: '/api/contact',
   useMockApi: true,
   /** Bump when seed data changes shape so stale browser copies are discarded. */
   dataVersion: 1,

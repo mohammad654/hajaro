@@ -3,6 +3,8 @@ export interface AppEnvironment {
   /** Absolute public origin, used for canonical URLs, Open Graph and the sitemap. */
   readonly siteUrl: string;
   readonly apiBaseUrl: string;
+  /** Where the contact form posts enquiries (the site's own server, see src/server/contact.ts). */
+  readonly contactEndpoint: string;
   /** When true, data is served by local in-browser adapters instead of the HTTP API. */
   readonly useMockApi: boolean;
   readonly dataVersion: number;

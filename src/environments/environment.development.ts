@@ -4,6 +4,7 @@ export const environment: AppEnvironment = {
   production: false,
   siteUrl: 'http://localhost:4200',
   apiBaseUrl: '/api',
+  contactEndpoint: '/api/contact',
   useMockApi: true,
   dataVersion: 1,
   /** `npm start` → Dutch on :4200, `npm run start:en` → English on :4201/en/ (`npm run start:all` runs both). */
