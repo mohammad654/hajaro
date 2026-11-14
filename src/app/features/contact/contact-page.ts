@@ -14,10 +14,13 @@ import { ContactForm } from './contact-form';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
-      eyebrow="Contact & consultation"
-      title="Start your transformation"
-      lead="Tell us where you are and where you want to be. Every enquiry is read personally, and the first consultation is free with no obligation."
-      [breadcrumbs]="[{ label: 'Contact', url: '/contact' }]"
+      i18n-eyebrow
+      eyebrow="Contact"
+      i18n-title
+      title="Let's talk"
+      i18n-lead
+      lead="Tell me your goal and a bit about your week. I read every message myself, and the first intro is free, with no strings attached."
+      [breadcrumbs]="breadcrumbs"
     />
 
     <section class="section">
@@ -32,20 +35,21 @@ import { ContactForm } from './contact-form';
           <app-contact-form />
         }
 
-        <aside class="stack sticky-aside" aria-label="Contact details">
+        <aside class="stack sticky-aside" i18n-aria-label aria-label="Contact details">
           <div class="card">
-            <h2 class="aside-title">What happens next</h2>
+            <h2 class="aside-title" i18n>What happens next</h2>
             <ol class="numbered-list text-small">
               @for (step of steps; track step.title) {
                 <li>
-                  <strong>{{ step.title }}</strong
-                  ><br /><span class="text-muted">{{ step.description }}</span>
+                  <strong>{{ step.title }}</strong><br /><span class="text-muted">{{
+                    step.description
+                  }}</span>
                 </li>
               }
             </ol>
           </div>
           <div class="card card--flat">
-            <h2 class="aside-title">Direct contact</h2>
+            <h2 class="aside-title" i18n>Direct contact</h2>
             <ul class="contact-list">
               <li>
                 <app-icon name="mail" [size]="18" />
@@ -59,10 +63,18 @@ import { ContactForm } from './contact-form';
               }
               @if (whatsapp; as whatsapp) {
                 <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="wa-icon" aria-hidden="true" focusable="false">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="wa-icon"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
                     <path [attr.d]="whatsappPath" />
                   </svg>
-                  <a [href]="whatsapp" target="_blank" rel="noopener noreferrer">
+                  <a [href]="whatsapp" target="_blank" rel="noopener noreferrer" i18n>
                     Chat on WhatsApp<span class="visually-hidden"> (opens in a new tab)</span>
                   </a>
                 </li>
@@ -72,8 +84,11 @@ import { ContactForm } from './contact-form';
             </ul>
           </div>
           <p class="disclaimer">
-            <app-icon name="shield" [size]="16" /> Your information is transmitted securely and used
-            only to respond to your enquiry.
+            <app-icon name="shield" [size]="16" />
+            <ng-container i18n
+              >Your details are sent over a secure connection and used only to answer your
+              message.</ng-container
+            >
           </p>
         </aside>
       </div>
@@ -116,12 +131,12 @@ export class ContactPage {
   protected readonly steps = COACHING_STEPS;
   protected readonly whatsapp = whatsappHref();
   protected readonly whatsappPath = WHATSAPP_PATH;
+  protected readonly breadcrumbs = [{ label: $localize`Contact`, url: '/contact' }];
 
   constructor() {
     applyPageSeo('contact', {
-      title: 'Contact & Book a Free Coaching Consultation',
-      description:
-        'Book a free consultation with a bodybuilding and personal training coach. Tell us your goals and get a personalised recommendation for online or in-person coaching.',
+      title: $localize`Contact & Book a Free Intro`,
+      description: $localize`Get in touch to plan a free intro. Tell me your goal and I'll reply within two working days.`,
     });
   }
 }

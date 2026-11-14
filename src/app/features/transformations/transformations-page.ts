@@ -19,30 +19,30 @@ export class TransformationsPage {
   protected readonly transformations = inject(TransformationStore);
   protected readonly testimonials = inject(TestimonialStore);
 
+  protected readonly breadcrumbs = [{ label: $localize`Results`, url: '/transformations' }];
   protected readonly principles = [
     {
-      title: 'Written consent, every time',
-      text: 'Photos and stories are published only with the client’s explicit, written permission — and removed promptly on request.',
+      title: $localize`Written permission, every time`,
+      text: $localize`Photos and stories only go online with the client's written permission, and come down quickly when they ask.`,
     },
     {
-      title: 'Unedited and honest',
-      text: 'Images are not retouched to exaggerate results. Lighting, pose and timing are kept as consistent as possible.',
+      title: $localize`Not edited`,
+      text: $localize`Photos are not retouched to make results look bigger. Light, pose and timing are kept as similar as possible.`,
     },
     {
-      title: 'Context included',
-      text: 'Each story shows the goal, the timeframe and what the client did — because results depend on individual circumstances.',
+      title: $localize`With context`,
+      text: $localize`Each story shows the goal, how long it took and what the client did, because results depend on the person.`,
     },
     {
-      title: 'Privacy by default',
-      text: 'Clients choose whether to show their face and how they are named. Progress photos stay private unless the client opts in.',
+      title: $localize`Private unless chosen otherwise`,
+      text: $localize`Clients decide whether their face is shown and which name is used. Progress photos stay private unless they say otherwise.`,
     },
   ];
 
   constructor() {
     applyPageSeo('transformations', {
-      title: 'Client Transformations & Testimonials',
-      description:
-        'Real client body transformations and testimonials, published with consent: goals, timeframes, training and the results achieved through coaching.',
+      title: $localize`Client Results & Progress`,
+      description: $localize`Real progress from real clients, shared with permission. Results vary per person, depending on training, food and consistency.`,
     });
   }
 }

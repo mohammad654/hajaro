@@ -26,7 +26,8 @@ export const SITE_CONFIG = {
     },
     /** City / area for in-person sessions. Leave empty for online-only businesses. */
     serviceArea: $localize`Online worldwide · In-person by appointment`,
-    responseTime: $localize`We reply to every enquiry within two working days.`,
+    /** CONFIRM: the reply time the coach can actually keep. */
+    responseTime: $localize`I reply to every message within two working days.`,
   },
   /**
    * LocalBusiness structured data is emitted only when a physical address is provided.

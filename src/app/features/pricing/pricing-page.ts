@@ -3,7 +3,7 @@ import { CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { PackageStore } from '../../core/data-access/package.store';
 import { GENERAL_FAQS } from '../../core/data/faqs.data';
-import { CoachingPackage } from '../../core/models';
+import { BILLING_PERIOD_LABELS, CoachingPackage } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { offerCatalogSchema } from '../../core/seo/schema.builders';
 import { SeoService } from '../../core/seo/seo.service';
@@ -24,13 +24,16 @@ type ComparisonKey = keyof Pick<
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
-      eyebrow="Coaching packages"
-      title="Transparent pricing. Serious results."
-      lead="Choose the level of support that fits your goals. Every package includes an individual plan, access to the client dashboard and a coach who is invested in your progress."
-      [breadcrumbs]="[{ label: 'Pricing', url: '/pricing' }]"
+      i18n-eyebrow
+      eyebrow="Pricing"
+      i18n-title
+      title="Coaching packages and prices"
+      i18n-lead
+      lead="Prices are clear from the start. Pick a package, or ask me which one fits. Every package includes a plan written for you and access to the client dashboard."
+      [breadcrumbs]="breadcrumbs"
     />
 
-    <section class="section" aria-label="Packages">
+    <section class="section" i18n-aria-label aria-label="Packages">
       <div class="container packages">
         @for (pkg of packages.active(); track pkg.id) {
           <app-package-card [pkg]="pkg" [detailed]="true" />
@@ -41,17 +44,17 @@ type ComparisonKey = keyof Pick<
     <section class="section section--alt" aria-labelledby="compare-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Compare</p>
-          <h2 id="compare-title">Package comparison</h2>
+          <p class="eyebrow" i18n>Compare</p>
+          <h2 id="compare-title" i18n>Compare packages</h2>
         </div>
         <div class="table-wrap">
           <table class="table compare">
-            <caption class="visually-hidden">
-              Coaching package comparison
+            <caption class="visually-hidden" i18n>
+              Coaching packages compared
             </caption>
             <thead>
               <tr>
-                <th scope="col">Feature</th>
+                <th scope="col" i18n>What's included</th>
                 @for (pkg of packages.active(); track pkg.id) {
                   <th scope="col" [class.is-highlight]="pkg.highlighted">{{ pkg.name }}</th>
                 }
@@ -59,11 +62,11 @@ type ComparisonKey = keyof Pick<
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Price</th>
+                <th scope="row" i18n>Price</th>
                 @for (pkg of packages.active(); track pkg.id) {
                   <td [class.is-highlight]="pkg.highlighted">
-                    <strong>{{ pkg.price | currency: pkg.currency : 'symbol' : '1.0-0' }}</strong> /
-                    {{ pkg.billingPeriod }}
+                    <strong>{{ pkg.price | currency: pkg.currency : 'symbol' : '1.0-0' }}</strong>
+                    {{ periodLabels[pkg.billingPeriod] }}
                   </td>
                 }
               </tr>
@@ -76,7 +79,7 @@ type ComparisonKey = keyof Pick<
                 </tr>
               }
               <tr>
-                <th scope="row"><span class="visually-hidden">Choose a package</span></th>
+                <th scope="row"><span class="visually-hidden" i18n>Choose a package</span></th>
                 @for (pkg of packages.active(); track pkg.id) {
                   <td [class.is-highlight]="pkg.highlighted">
                     <a
@@ -92,10 +95,10 @@ type ComparisonKey = keyof Pick<
             </tbody>
           </table>
         </div>
-        <p class="disclaimer note">
-          Prices include VAT where applicable. Programs can also be purchased individually from the
-          <a [routerLink]="'/programs' | localePath">program catalog</a>. Not sure which package
-          fits? <a [routerLink]="'/contact' | localePath">Book a free consultation</a>.
+        <p class="disclaimer note" i18n>
+          Prices include VAT where applicable. You can also buy single training programs in the
+          <a [routerLink]="'/programs' | localePath">program overview</a>. Not sure which package
+          fits? <a [routerLink]="'/contact' | localePath">Book a free intro</a>.
         </p>
       </div>
     </section>
@@ -103,7 +106,7 @@ type ComparisonKey = keyof Pick<
     <section class="section" aria-labelledby="pricing-faq">
       <div class="container container--narrow">
         <div class="section-head section-head--center">
-          <h2 id="pricing-faq">Pricing questions</h2>
+          <h2 id="pricing-faq" i18n>Questions about prices</h2>
         </div>
         <app-faq-list [items]="faqs" />
       </div>
@@ -138,21 +141,22 @@ export class PricingPage {
   protected readonly faqs = GENERAL_FAQS.filter((f) =>
     ['faq-cancel', 'faq-online', 'faq-nutrition', 'faq-results'].includes(f.id),
   );
+  protected readonly periodLabels = BILLING_PERIOD_LABELS;
+  protected readonly breadcrumbs = [{ label: $localize`Pricing`, url: '/pricing' }];
   protected readonly rows: readonly { key: ComparisonKey; label: string }[] = [
-    { key: 'duration', label: 'Duration' },
-    { key: 'trainingPlan', label: 'Training plan' },
-    { key: 'nutrition', label: 'Nutrition guidance' },
-    { key: 'checkIns', label: 'Check-ins' },
-    { key: 'communication', label: 'Coach communication' },
-    { key: 'support', label: 'Support level' },
+    { key: 'duration', label: $localize`Duration` },
+    { key: 'trainingPlan', label: $localize`Training plan` },
+    { key: 'nutrition', label: $localize`Nutrition guidance` },
+    { key: 'checkIns', label: $localize`Check-ins` },
+    { key: 'communication', label: $localize`Contact with me` },
+    { key: 'support', label: $localize`Support level` },
   ];
 
   constructor() {
     const seo = inject(SeoService);
     applyPageSeo('pricing', {
-      title: 'Coaching Packages & Pricing',
-      description:
-        'Transparent pricing for starter coaching, online personal coaching, premium transformation coaching, advanced bodybuilding coaching and competition preparation.',
+      title: $localize`Pricing & Packages`,
+      description: $localize`Clear prices for personal training and online coaching. See the packages, what is included and how to book.`,
     });
     effect(() =>
       seo.setPageSchema(

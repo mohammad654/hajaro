@@ -1,13 +1,21 @@
 @if (state() === 'success') {
   <div class="success card" role="status" aria-live="polite">
     <span class="success__icon"><app-icon name="check" [size]="32" /></span>
-    <h2>Thank you{{ submittedName() ? ', ' + submittedName() : '' }}!</h2>
-    <p class="text-muted">Your enquiry has been received. {{ responseTime }}</p>
-    <p class="text-muted">In the meantime, explore the free training tools:</p>
+    @if (submittedName(); as name) {
+      <h2 i18n>Thanks, {{ name }}!</h2>
+    } @else {
+      <h2 i18n>Thanks!</h2>
+    }
+    <p class="text-muted">
+      <ng-container i18n>Your message is in.</ng-container> {{ responseTime }}
+    </p>
+    <p class="text-muted" i18n>In the meantime, have a look at the free training tools:</p>
     <div class="cluster success__links">
-      <a class="btn" [routerLink]="'/muscle-chart' | localePath">Muscle chart</a>
-      <a class="btn" [routerLink]="'/programs' | localePath">Programs</a>
-      <button type="button" class="btn btn--ghost" (click)="reset()">Send another message</button>
+      <a class="btn" [routerLink]="'/muscle-chart' | localePath" i18n>Muscle chart</a>
+      <a class="btn" [routerLink]="'/programs' | localePath" i18n>Training programs</a>
+      <button type="button" class="btn btn--ghost" (click)="reset()" i18n>
+        Send another message
+      </button>
     </div>
   </div>
 } @else {
@@ -18,7 +26,7 @@
     novalidate
     aria-labelledby="form-title"
   >
-    <h2 id="form-title">Tell us about your goals</h2>
+    <h2 id="form-title" i18n>Tell me about your goal</h2>
     @if (contextLabel()) {
       <p class="badge badge--accent">{{ contextLabel() }}</p>
     }
@@ -32,7 +40,7 @@
 
     <div class="form-grid">
       <div class="field">
-        <label for="name">Full name *</label>
+        <label for="name" i18n>Name *</label>
         <input
           id="name"
           class="input"
@@ -41,10 +49,10 @@
           aria-describedby="name-err"
           aria-required="true"
         />
-        <app-field-error [control]="form.controls.name" id="name-err" label="Name" />
+        <app-field-error [control]="form.controls.name" id="name-err" i18n-label label="Name" />
       </div>
       <div class="field">
-        <label for="email">Email *</label>
+        <label for="email" i18n>Email *</label>
         <input
           id="email"
           class="input"
@@ -54,10 +62,10 @@
           aria-describedby="email-err"
           aria-required="true"
         />
-        <app-field-error [control]="form.controls.email" id="email-err" label="Email" />
+        <app-field-error [control]="form.controls.email" id="email-err" i18n-label label="Email" />
       </div>
       <div class="field">
-        <label for="phone">Phone <span class="text-muted">(optional)</span></label>
+        <label for="phone" i18n>Phone <span class="text-muted">(optional)</span></label>
         <input
           id="phone"
           class="input"
@@ -66,10 +74,10 @@
           autocomplete="tel"
           aria-describedby="phone-err"
         />
-        <app-field-error [control]="form.controls.phone" id="phone-err" label="Phone" />
+        <app-field-error [control]="form.controls.phone" id="phone-err" i18n-label label="Phone" />
       </div>
       <div class="field">
-        <label for="experience">Training experience</label>
+        <label for="experience" i18n>Training experience</label>
         <select id="experience" class="select" formControlName="experience">
           @for (o of experienceLevels; track o[0]) {
             <option [value]="o[0]">{{ o[1] }}</option>
@@ -78,24 +86,29 @@
       </div>
 
       <fieldset class="field span-2" aria-describedby="goals-err">
-        <legend class="field__label">Training goals *</legend>
+        <legend class="field__label" i18n>What are you aiming for? *</legend>
         <div class="goals">
-          @for (goal of goalOptions; track goal) {
+          @for (goal of goalOptions; track goal.value) {
             <label class="goal">
               <input
                 type="checkbox"
-                [checked]="form.controls.goals.value.includes(goal)"
-                (change)="toggleGoal(goal, isChecked($event))"
+                [checked]="form.controls.goals.value.includes(goal.value)"
+                (change)="toggleGoal(goal.value, isChecked($event))"
               />
-              <span>{{ goal }}</span>
+              <span>{{ goal.label }}</span>
             </label>
           }
         </div>
-        <app-field-error [control]="form.controls.goals" id="goals-err" label="At least one goal" />
+        <app-field-error
+          [control]="form.controls.goals"
+          id="goals-err"
+          i18n-label
+          label="At least one goal"
+        />
       </fieldset>
 
       <div class="field span-2">
-        <label for="coachingType">Preferred coaching type</label>
+        <label for="coachingType" i18n>How would you like to train?</label>
         <select id="coachingType" class="select" formControlName="coachingType">
           @for (o of coachingTypes; track o[0]) {
             <option [value]="o[0]">{{ o[1] }}</option>
@@ -104,36 +117,41 @@
       </div>
 
       <div class="field span-2">
-        <label for="message">Message *</label>
+        <label for="message" i18n>Message *</label>
         <textarea
           id="message"
           class="textarea"
           formControlName="message"
           maxlength="2000"
-          placeholder="Your current training, what you want to achieve and anything we should know (injuries, schedule, equipment)…"
+          i18n-placeholder
+          placeholder="How you train now, what you want to achieve, and anything I should know (injuries, schedule, equipment)"
           aria-describedby="message-hint message-err"
           aria-required="true"
         ></textarea>
-        <span class="field__hint" id="message-hint"
-          >{{ form.controls.message.value.length }}/2000 characters · minimum 20</span
+        <span class="field__hint" id="message-hint" i18n
+          >{{ form.controls.message.value.length }}/2000 characters, at least 20</span
         >
-        <app-field-error [control]="form.controls.message" id="message-err" label="Message" />
+        <app-field-error
+          [control]="form.controls.message"
+          id="message-err"
+          i18n-label
+          label="Message"
+        />
       </div>
 
       <div class="consult span-2">
         <label class="checkbox">
           <input type="checkbox" formControlName="wantsConsultation" />
-          <span
-            ><strong>Book my free consultation</strong> — a 20-minute call to discuss your
-            goals.</span
+          <span i18n
+            ><strong>Yes, book my free intro:</strong> a 20-minute call about your goal.</span
           >
         </label>
         @if (form.controls.wantsConsultation.value) {
           <div class="field">
-            <label for="preferredTime">Preferred time for the call</label>
+            <label for="preferredTime" i18n>Best time for the call</label>
             <select id="preferredTime" class="select" formControlName="preferredTime">
-              @for (t of preferredTimes; track t) {
-                <option [value]="t">{{ t }}</option>
+              @for (t of preferredTimes; track t.value) {
+                <option [value]="t.value">{{ t.label }}</option>
               }
             </select>
           </div>
@@ -148,16 +166,23 @@
             aria-describedby="consent-err"
             aria-required="true"
           />
-          <span>
-            I agree that my details are processed to respond to this enquiry, as described in the
-            <a [routerLink]="'/privacy' | localePath" target="_blank">privacy policy</a>. *
+          <span i18n>
+            I agree that my details are used to answer this message, as described in the
+            <a [routerLink]="'/privacy' | localePath" target="_blank" rel="noopener"
+              >privacy policy<span class="visually-hidden"> (opens in a new tab)</span></a
+            >. *
           </span>
         </label>
-        <app-field-error [control]="form.controls.consent" id="consent-err" label="Consent" />
+        <app-field-error
+          [control]="form.controls.consent"
+          id="consent-err"
+          i18n-label
+          label="Consent"
+        />
       </div>
 
       <div class="honeypot" aria-hidden="true">
-        <label for="website">Leave this field empty</label>
+        <label for="website" i18n>Leave this field empty</label>
         <input id="website" formControlName="website" tabindex="-1" autocomplete="off" />
       </div>
     </div>
@@ -165,14 +190,15 @@
     <div class="form-actions">
       <button type="submit" class="btn btn--primary btn--lg" [disabled]="state() === 'submitting'">
         @if (state() === 'submitting') {
-          <span class="spinner" aria-hidden="true"></span> Sending…
+          <span class="spinner" aria-hidden="true"></span>
+          <ng-container i18n>Sending…</ng-container>
         } @else {
-          Send enquiry <app-icon name="arrow-right" [size]="18" />
+          <ng-container i18n>Send message</ng-container> <app-icon name="arrow-right" [size]="18" />
         }
       </button>
     </div>
-    <p class="text-small text-muted">
-      * Required fields. We never share your details with third parties.
+    <p class="text-small text-muted" i18n>
+      * Required. Your details are only used to answer your message.
     </p>
   </form>
 }

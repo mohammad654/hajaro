@@ -30,21 +30,22 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error';
 
-export const GOAL_OPTIONS = [
-  'Build muscle',
-  'Lose fat',
-  'Body recomposition',
-  'Get stronger',
-  'Compete on stage',
-  'Improve fitness & health',
-] as const;
+/** Values are stable keys (sent to the server); labels are translated. */
+export const GOAL_OPTIONS: readonly { value: string; label: string }[] = [
+  { value: 'build-muscle', label: $localize`Build muscle` },
+  { value: 'lose-fat', label: $localize`Lose fat` },
+  { value: 'recomposition', label: $localize`Build muscle and lose fat` },
+  { value: 'get-stronger', label: $localize`Get stronger` },
+  { value: 'compete', label: $localize`Compete on stage` },
+  { value: 'fitness-health', label: $localize`Fitter and healthier` },
+];
 
-const PREFERRED_TIMES = [
-  'Weekday mornings',
-  'Weekday afternoons',
-  'Weekday evenings',
-  'Weekends',
-  'Flexible',
+const PREFERRED_TIMES: readonly { value: string; label: string }[] = [
+  { value: 'weekday-mornings', label: $localize`Weekday mornings` },
+  { value: 'weekday-afternoons', label: $localize`Weekday afternoons` },
+  { value: 'weekday-evenings', label: $localize`Weekday evenings` },
+  { value: 'weekends', label: $localize`Weekends` },
+  { value: 'flexible', label: $localize`Any time` },
 ];
 
 /** What went wrong, and what the visitor can do instead. Nothing they typed is lost. */
@@ -118,7 +119,7 @@ export class ContactForm implements OnInit {
       Validators.maxLength(2000),
     ]),
     wantsConsultation: this.fb.control(true),
-    preferredTime: this.fb.control('Flexible'),
+    preferredTime: this.fb.control('flexible'),
     consent: this.fb.control(false, [Validators.requiredTrue]),
     /** Honeypot: hidden from people, often filled by bots. */
     website: this.fb.control(''),
@@ -126,11 +127,11 @@ export class ContactForm implements OnInit {
 
   protected readonly contextLabel = computed(() => {
     const pkg = this.packages.get(this.packageId());
-    if (pkg) return `Package: ${pkg.name}`;
+    if (pkg) return $localize`Package: ${pkg.name}:NAME:`;
     const service = this.services.bySlug(this.serviceSlug() ?? '');
-    if (service) return `Service: ${service.name}`;
+    if (service) return $localize`Service: ${service.name}:NAME:`;
     const program = this.programs.bySlug(this.programSlug() ?? '');
-    if (program) return `Program: ${program.name}`;
+    if (program) return $localize`Program: ${program.name}:NAME:`;
     return '';
   });
 
