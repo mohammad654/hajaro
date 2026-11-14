@@ -75,3 +75,10 @@ done
 echo
 echo "Done. Live URL: $LIVE_URL"
 echo "If you still see a 404 in the browser, hard-refresh (Ctrl+Shift+R) or use an incognito window."
+
+
+
+# 
+
+chmod +x deploy-hajaro.sh
+./deploy-hajaro.sh
