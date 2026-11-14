@@ -2,6 +2,66 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="3126765159171742707" datatype="html">
+        <source>We could not reach the server. Please check your connection and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="349089990665289424" datatype="html">
+        <source>Some of the information provided is invalid. Please review the form.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3239589020047044075" datatype="html">
+        <source>Your session has expired. Please sign in again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7189048380135498679" datatype="html">
+        <source>You do not have permission to perform this action.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3940986027068442794" datatype="html">
+        <source>The requested information could not be found.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="388520037309046418" datatype="html">
+        <source>This record was changed elsewhere. Please refresh and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5355184053482774605" datatype="html">
+        <source>Too many requests. Please wait a moment and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2479048129415691935" datatype="html">
+        <source>Something went wrong on our side. Please try again shortly.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/api/api-error.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1726363342938046830" datatype="html">
         <source>About</source>
         <context-group purpose="location">
@@ -331,7 +391,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">115,116</context>
+          <context context-type="linenumber">119,120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8439955599488894226" datatype="html">
@@ -1405,7 +1465,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">121,122</context>
+          <context context-type="linenumber">125,126</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
@@ -12498,6 +12558,13 @@
           <context context-type="linenumber">23</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="976639269183661492" datatype="html">
+        <source>An unexpected error occurred. Please try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/services/global-error-handler.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3562199946446423606" datatype="html">
         <source>About me</source>
         <context-group purpose="location">
@@ -13939,7 +14006,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">70,71</context>
+          <context context-type="linenumber">74,75</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
@@ -17125,7 +17192,7 @@
         <source><x id="INTERPOLATION" equiv-text="{{ brand.brandName }}"/> <x id="INTERPOLATION_1" equiv-text="{{ brand.brandSuffix }}"/> — home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">7,9</context>
+          <context context-type="linenumber">11,13</context>
         </context-group>
         <note priority="1" from="description">Logo link to the home page</note>
       </trans-unit>
@@ -17133,7 +17200,7 @@
         <source>Main</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">16,17</context>
+          <context context-type="linenumber">20,21</context>
         </context-group>
         <note priority="1" from="description">Main navigation landmark</note>
       </trans-unit>
@@ -17141,35 +17208,35 @@
         <source>Dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1556270137829928334" datatype="html">
         <source>Close menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">82,83</context>
+          <context context-type="linenumber">86,87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2005818722469409502" datatype="html">
         <source>Open menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">84,85</context>
+          <context context-type="linenumber">88,89</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4653540968485750756" datatype="html">
         <source>Site menu</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">98,100</context>
+          <context context-type="linenumber">102,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1002165214775409029" datatype="html">
         <source>Mobile</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">101,102</context>
+          <context context-type="linenumber">105,106</context>
         </context-group>
         <note priority="1" from="description">Mobile navigation landmark</note>
       </trans-unit>
@@ -17177,7 +17244,7 @@
         <source>My dashboard</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
-          <context context-type="linenumber">125,126</context>
+          <context context-type="linenumber">129,130</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4937031229274399474" datatype="html">

@@ -13,17 +13,17 @@ export class ApiError extends Error {
 }
 
 const STATUS_MESSAGES: Readonly<Record<number, string>> = {
-  0: 'We could not reach the server. Please check your connection and try again.',
-  400: 'Some of the information provided is invalid. Please review the form.',
-  401: 'Your session has expired. Please sign in again.',
-  403: 'You do not have permission to perform this action.',
-  404: 'The requested information could not be found.',
-  409: 'This record was changed elsewhere. Please refresh and try again.',
-  422: 'Some of the information provided is invalid. Please review the form.',
-  429: 'Too many requests. Please wait a moment and try again.',
+  0: $localize`We could not reach the server. Please check your connection and try again.`,
+  400: $localize`Some of the information provided is invalid. Please review the form.`,
+  401: $localize`Your session has expired. Please sign in again.`,
+  403: $localize`You do not have permission to perform this action.`,
+  404: $localize`The requested information could not be found.`,
+  409: $localize`This record was changed elsewhere. Please refresh and try again.`,
+  422: $localize`Some of the information provided is invalid. Please review the form.`,
+  429: $localize`Too many requests. Please wait a moment and try again.`,
 };
 
-const FALLBACK_MESSAGE = 'Something went wrong on our side. Please try again shortly.';
+const FALLBACK_MESSAGE = $localize`Something went wrong on our side. Please try again shortly.`;
 
 export function toApiError(error: unknown): ApiError {
   if (error instanceof ApiError) return error;

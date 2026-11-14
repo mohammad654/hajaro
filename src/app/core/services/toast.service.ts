@@ -16,6 +16,7 @@ export class ToastService {
   private nextId = 0;
   private readonly state = signal<readonly Toast[]>([]);
   readonly toasts = this.state.asReadonly();
+  private readonly timers = new Map<number, ReturnType<typeof setTimeout>>();
 
   success(message: string): void {
     this.show('success', message);
@@ -30,14 +31,30 @@ export class ToastService {
   }
 
   dismiss(id: number): void {
+    clearTimeout(this.timers.get(id));
+    this.timers.delete(id);
     this.state.update((toasts) => toasts.filter((toast) => toast.id !== id));
   }
 
   private show(kind: ToastKind, message: string): void {
-    const toast: Toast = { id: ++this.nextId, kind, message };
-    this.state.update((toasts) => [...toasts, toast].slice(-MAX_VISIBLE_TOASTS));
+    // The same message again (e.g. a repeated error) keeps the one toast on screen a bit longer
+    // instead of stacking identical copies.
+    const existing = this.state().find((t) => t.kind === kind && t.message === message);
+    const toast = existing ?? { id: ++this.nextId, kind, message };
+    if (!existing) {
+      const next = [...this.state(), toast];
+      for (const dropped of next.slice(0, -MAX_VISIBLE_TOASTS)) {
+        clearTimeout(this.timers.get(dropped.id));
+        this.timers.delete(dropped.id);
+      }
+      this.state.set(next.slice(-MAX_VISIBLE_TOASTS));
+    }
     if (typeof window !== 'undefined') {
-      setTimeout(() => this.dismiss(toast.id), TOAST_DURATION_MS);
+      clearTimeout(this.timers.get(toast.id));
+      this.timers.set(
+        toast.id,
+        setTimeout(() => this.dismiss(toast.id), TOAST_DURATION_MS),
+      );
     }
   }
 }
