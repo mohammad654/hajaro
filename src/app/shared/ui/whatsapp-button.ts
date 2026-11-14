@@ -27,7 +27,7 @@ export const WHATSAPP_PATH =
         target="_blank"
         rel="noopener noreferrer"
         i18n-aria-label
-        aria-label="Chat with us on WhatsApp (opens in a new tab)"
+        aria-label="Chat on WhatsApp (opens in a new tab)"
       >
         <svg
           width="26"
@@ -58,7 +58,8 @@ export const WHATSAPP_PATH =
       height: 56px;
       border-radius: var(--radius-pill);
       background: #25d366;
-      color: #fff;
+      /* Dark text on WhatsApp green: 10:1 contrast (white is only 2:1). */
+      color: #08140c;
       box-shadow: var(--shadow);
       text-decoration: none;
       font-weight: 600;
@@ -70,7 +71,7 @@ export const WHATSAPP_PATH =
     .wa:hover {
       background: #1ebe5b;
       transform: translateY(-2px);
-      color: #fff;
+      color: #08140c;
     }
     .wa:focus-visible {
       outline: none;
