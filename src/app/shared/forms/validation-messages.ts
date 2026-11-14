@@ -3,20 +3,24 @@ import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 /** Human-readable messages for validation errors, in priority order. */
 export function validationMessage(errors: ValidationErrors | null, label: string): string | null {
   if (!errors) return null;
-  if (errors['required'] || errors['requiredTrue']) return `${label} is required.`;
-  if (errors['email']) return 'Please enter a valid email address.';
-  if (errors['minlength'])
-    return `${label} must be at least ${errors['minlength'].requiredLength} characters.`;
-  if (errors['maxlength'])
-    return `${label} must be at most ${errors['maxlength'].requiredLength} characters.`;
-  if (errors['min']) return `${label} must be at least ${errors['min'].min}.`;
-  if (errors['max']) return `${label} must be at most ${errors['max'].max}.`;
-  if (errors['pattern']) return `${label} has an invalid format.`;
-  if (errors['phone']) return 'Please enter a valid phone number.';
-  if (errors['url']) return 'Please enter a valid https:// URL.';
-  if (errors['slug']) return 'Use lowercase letters, numbers and hyphens only.';
+  if (errors['required'] || errors['requiredTrue']) return $localize`${label}:FIELD: is required.`;
+  if (errors['email']) return $localize`Enter a valid email address, like name@example.com.`;
+  if (errors['minlength']) {
+    const min = errors['minlength'].requiredLength;
+    return $localize`${label}:FIELD: needs at least ${min}:MIN: characters.`;
+  }
+  if (errors['maxlength']) {
+    const max = errors['maxlength'].requiredLength;
+    return $localize`${label}:FIELD: can have at most ${max}:MAX: characters.`;
+  }
+  if (errors['min']) return $localize`${label}:FIELD: must be at least ${errors['min'].min}:MIN:.`;
+  if (errors['max']) return $localize`${label}:FIELD: can be at most ${errors['max'].max}:MAX:.`;
+  if (errors['pattern']) return $localize`${label}:FIELD: is not in the right format.`;
+  if (errors['phone']) return $localize`Enter a valid phone number, for example +31 6 12345678.`;
+  if (errors['url']) return $localize`Enter a valid link that starts with https://.`;
+  if (errors['slug']) return $localize`Use lowercase letters, numbers and hyphens only.`;
   if (errors['server']) return String(errors['server']);
-  return `${label} is invalid.`;
+  return $localize`${label}:FIELD: is not valid.`;
 }
 
 /** Optional international phone number: digits, spaces, +, -, parentheses. */

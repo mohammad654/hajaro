@@ -199,5 +199,11 @@
 
   <app-cta-section />
 } @else {
-  <app-not-found-content what="program" backLink="/programs" backLabel="Browse programs" />
+  <app-not-found-content
+    i18n-heading
+    heading="This program doesn't exist"
+    backLink="/programs"
+    i18n-backLabel
+    backLabel="See all programs"
+  />
 }

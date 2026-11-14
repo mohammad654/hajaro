@@ -15,7 +15,7 @@ import { NgOptimizedImage } from '@angular/common';
       @if (src(); as source) {
         <img [ngSrc]="source" [alt]="alt()" fill [priority]="priority()" [sizes]="sizes()" />
       } @else {
-        <div class="frame__placeholder" role="img" [attr.aria-label]="alt() || 'Image coming soon'">
+        <div class="frame__placeholder" role="img" [attr.aria-label]="alt() || imageComingSoon">
           <span class="frame__mark" aria-hidden="true">{{ monogram() }}</span>
           @if (caption()) {
             <span class="frame__caption">{{ caption() }}</span>
@@ -66,6 +66,7 @@ import { NgOptimizedImage } from '@angular/common';
   `,
 })
 export class MediaFrame {
+  protected readonly imageComingSoon = $localize`Image coming soon`;
   readonly src = input<string | null | undefined>(null);
   readonly alt = input('');
   readonly ratio = input('4 / 5');

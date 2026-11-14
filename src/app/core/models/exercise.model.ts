@@ -14,16 +14,16 @@ export type ExerciseCategory =
   | 'cardio';
 
 export const EXERCISE_CATEGORY_LABELS: Readonly<Record<ExerciseCategory, string>> = {
-  chest: 'Chest',
-  back: 'Back',
-  shoulders: 'Shoulders',
-  biceps: 'Biceps',
-  triceps: 'Triceps',
-  legs: 'Legs',
-  glutes: 'Glutes',
-  abs: 'Abs',
-  'full-body': 'Full Body',
-  cardio: 'Cardio',
+  chest: $localize`Chest`,
+  back: $localize`Back`,
+  shoulders: $localize`Shoulders`,
+  biceps: $localize`Biceps`,
+  triceps: $localize`Triceps`,
+  legs: $localize`Legs`,
+  glutes: $localize`Glutes`,
+  abs: $localize`Abs`,
+  'full-body': $localize`Full Body`,
+  cardio: $localize`Cardio`,
 };
 
 export type Equipment =
@@ -40,17 +40,17 @@ export type Equipment =
   | 'cardio-machine';
 
 export const EQUIPMENT_LABELS: Readonly<Record<Equipment, string>> = {
-  barbell: 'Barbell',
-  dumbbell: 'Dumbbells',
-  cable: 'Cable station',
-  machine: 'Machine',
-  bodyweight: 'Bodyweight',
-  bench: 'Bench',
-  'pull-up-bar': 'Pull-up bar',
-  kettlebell: 'Kettlebell',
-  'resistance-band': 'Resistance band',
-  'smith-machine': 'Smith machine',
-  'cardio-machine': 'Cardio machine',
+  barbell: $localize`Barbell`,
+  dumbbell: $localize`Dumbbells`,
+  cable: $localize`Cable station`,
+  machine: $localize`Machine`,
+  bodyweight: $localize`Bodyweight`,
+  bench: $localize`Bench`,
+  'pull-up-bar': $localize`Pull-up bar`,
+  kettlebell: $localize`Kettlebell`,
+  'resistance-band': $localize`Resistance band`,
+  'smith-machine': $localize`Smith machine`,
+  'cardio-machine': $localize`Cardio machine`,
 };
 
 export interface ExerciseMedia {

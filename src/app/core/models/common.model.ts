@@ -11,9 +11,9 @@ export interface Sluggable extends Entity {
 export type DifficultyLevel = 'beginner' | 'intermediate' | 'advanced';
 
 export const DIFFICULTY_LABELS: Readonly<Record<DifficultyLevel, string>> = {
-  beginner: 'Beginner',
-  intermediate: 'Intermediate',
-  advanced: 'Advanced',
+  beginner: $localize`Beginner`,
+  intermediate: $localize`Intermediate`,
+  advanced: $localize`Advanced`,
 };
 
 export interface FaqItem {

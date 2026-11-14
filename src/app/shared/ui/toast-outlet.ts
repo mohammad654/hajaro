@@ -22,7 +22,8 @@ import { Icon } from './icon/icon';
             type="button"
             class="toast__close"
             (click)="toasts.dismiss(toast.id)"
-            aria-label="Dismiss notification"
+            i18n-aria-label
+            aria-label="Close notification"
           >
             <app-icon name="close" [size]="16" />
           </button>

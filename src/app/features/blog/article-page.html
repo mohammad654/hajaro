@@ -147,5 +147,11 @@
 
   <app-cta-section />
 } @else {
-  <app-not-found-content what="article" backLink="/blog" backLabel="Browse the blog" />
+  <app-not-found-content
+    i18n-heading
+    heading="This article doesn't exist"
+    backLink="/blog"
+    i18n-backLabel
+    backLabel="Browse the blog"
+  />
 }

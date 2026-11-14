@@ -102,6 +102,14 @@
           <context context-type="sourcefile">src/app/core/config/navigation.config.ts</context>
           <context context-type="linenumber">73</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="3157243748974494193" datatype="html">
         <source>Nutrition education for performance</source>
@@ -480,6 +488,426 @@
           <context context-type="linenumber">10</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4691801561706976402" datatype="html">
+        <source>Bodybuilding</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7680093678521309806" datatype="html">
+        <source>Muscle Growth</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2697668372135179197" datatype="html">
+        <source>Strength Training</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8256479337243551411" datatype="html">
+        <source>Fat Loss</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1032749018788904628" datatype="html">
+        <source>Exercise Techniques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7027522094664238229" datatype="html">
+        <source>Recovery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5604945915313341947" datatype="html">
+        <source>Supplements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6125031343798443633" datatype="html">
+        <source>Fitness Motivation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/article.model.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6647021160108407768" datatype="html">
+        <source>Online coaching</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3068826830348744170" datatype="html">
+        <source>In-person training</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1875068094153048452" datatype="html">
+        <source>Hybrid (online + in person)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3082049137479640005" datatype="html">
+        <source>Competition preparation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7021407152609542799" datatype="html">
+        <source>Not sure yet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1333124570252766400" datatype="html">
+        <source>Beginner (under 1 year)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3842109046764494658" datatype="html">
+        <source>Intermediate (1–3 years)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3558476978290409488" datatype="html">
+        <source>Advanced (3+ years)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8763234091266501754" datatype="html">
+        <source>Competitor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4373378109268959647" datatype="html">
+        <source>Consultation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3539790555295918830" datatype="html">
+        <source>Training session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5478975071319760034" datatype="html">
+        <source>Check-in call</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6216806024329766329" datatype="html">
+        <source>Posing session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/business.model.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5754117841832798663" datatype="html">
+        <source>Beginner</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/common.model.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1311606986429558406" datatype="html">
+        <source>Intermediate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/common.model.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6201638315245239510" datatype="html">
+        <source>Advanced</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/common.model.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3425114984623914347" datatype="html">
+        <source>Chest</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8890553633144307762" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7453226469593512253" datatype="html">
+        <source>Shoulders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1842992709083142984" datatype="html">
+        <source>Biceps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8669065722227062719" datatype="html">
+        <source>Triceps</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7430664322933223267" datatype="html">
+        <source>Legs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3936897577035380966" datatype="html">
+        <source>Glutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="250327392495482133" datatype="html">
+        <source>Abs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3335643747238180126" datatype="html">
+        <source>Full Body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="278123924817311191" datatype="html">
+        <source>Cardio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5510028998203574189" datatype="html">
+        <source>Barbell</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="468729180048306627" datatype="html">
+        <source>Dumbbells</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4941635157197374797" datatype="html">
+        <source>Cable station</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1088161574006703857" datatype="html">
+        <source>Machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4312755055518124921" datatype="html">
+        <source>Bodyweight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6769980059031875657" datatype="html">
+        <source>Bench</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9215122895140030741" datatype="html">
+        <source>Pull-up bar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1889218836340081764" datatype="html">
+        <source>Kettlebell</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="722478718413131177" datatype="html">
+        <source>Resistance band</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4494882366479853702" datatype="html">
+        <source>Smith machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="365581272849625013" datatype="html">
+        <source>Cardio machine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/exercise.model.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3854399794125623613" datatype="html">
+        <source>Upper body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/muscle.model.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7027401708987643293" datatype="html">
+        <source>Core</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/muscle.model.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3115760282312520936" datatype="html">
+        <source>Lower body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/muscle.model.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3487356361857716963" datatype="html">
+        <source>Muscle gain</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6632040223751981101" datatype="html">
+        <source>Strength</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="871992453941900344" datatype="html">
+        <source>Fat loss</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3332676298492662789" datatype="html">
+        <source>Recomposition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2068589218663474" datatype="html">
+        <source>General fitness</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7900994439446159994" datatype="html">
+        <source>Full body</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6029690384302638694" datatype="html">
+        <source>Body-part split</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7781823666369160686" datatype="html">
+        <source>Upper / lower</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1122670989645648507" datatype="html">
+        <source>Push / pull / legs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1571535056084355562" datatype="html">
+        <source>Home training</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/models/program.model.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6588902603208831548" datatype="html">
+        <source>This article doesn&apos;t exist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">152,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3283630359497712931" datatype="html">
+        <source>Browse the blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/article-page.html</context>
+          <context context-type="linenumber">155,158</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3027171400323884388" datatype="html">
         <source>Some details could not be accepted. Check the fields and send the form again.</source>
         <context-group purpose="location">
@@ -506,6 +934,20 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
           <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4053625362588593651" datatype="html">
+        <source>This exercise isn&apos;t in the library</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">182,183</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6004976675944044849" datatype="html">
+        <source>Browse the exercise library</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.html</context>
+          <context context-type="linenumber">185,188</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3418371731972377429" datatype="html">
@@ -587,6 +1029,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
           <context context-type="linenumber">70,71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7732954247640555462" datatype="html">
@@ -717,6 +1163,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/layout/site-header/site-header.html</context>
           <context context-type="linenumber">121,122</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5796639839055510108" datatype="html">
@@ -992,6 +1442,90 @@
           <context context-type="linenumber">36,37</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="795794497006112709" datatype="html">
+        <source> The page you&apos;re looking for doesn&apos;t exist or has moved. Try one of these instead, or contact me if something is missing. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-content.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6801535761978393212" datatype="html">
+        <source>Back to home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-content.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1153721192129533394" datatype="html">
+        <source>Contact me</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-content.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5661740468948852158" datatype="html">
+        <source>This page took a rest day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-content.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="734934965373819800" datatype="html">
+        <source>Go back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-content.ts</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6478251209855619496" datatype="html">
+        <source>See training programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-page.ts</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2275328567992347600" datatype="html">
+        <source>Page not found</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-page.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8491089626216891955" datatype="html">
+        <source>The page you&apos;re looking for doesn&apos;t exist or has moved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/not-found/not-found-page.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1864108194119513052" datatype="html">
+        <source>This program doesn&apos;t exist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">204,205</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9174362465597248969" datatype="html">
+        <source>See all programs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/program-detail-page.html</context>
+          <context context-type="linenumber">207,210</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7115531580742418336" datatype="html">
+        <source>This service doesn&apos;t exist</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1990221823082808501" datatype="html">
+        <source>See all services</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/services/service-detail-page.html</context>
+          <context context-type="linenumber">118,121</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2699764639060274569" datatype="html">
         <source> <x id="INTERPOLATION" equiv-text="{{ brand.tagline }}"/>. Individual training, nutrition and accountability for people serious about their physique. </source>
         <context-group purpose="location">
@@ -1093,11 +1627,354 @@
           <context context-type="linenumber">125,126</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5837279635151065614" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ article().readingMinutes }}"/> min read</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/article-card.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4937031229274399474" datatype="html">
+        <source>Muscles worked: <x id="INTERPOLATION" equiv-text="{{ musclesLabel() }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/exercise-card.ts</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1491706434347211337" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ exercise().recommendedSets }}"/> sets · <x id="INTERPOLATION_1" equiv-text="{{ exercise().recommendedReps }}"/> reps </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/exercise-card.ts</context>
+          <context context-type="linenumber">37,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4457724258529415204" datatype="html">
+        <source>/ month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2005902201619389848" datatype="html">
+        <source>/ week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2015786846335408604" datatype="html">
+        <source>one-off</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8275267475261521455" datatype="html">
+        <source>/ session</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4567885301549754909" datatype="html">
+        <source>Most popular</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2257107643559840204" datatype="html">
+        <source>Training plan</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7733471178412142306" datatype="html">
+        <source>Check-ins</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6915429060840718325" datatype="html">
+        <source>Communication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">52,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2101838604051950670" datatype="html">
+        <source>Support level</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6122030973291308530" datatype="html">
+        <source>Frequency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="176974182388688468" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ program().daysPerWeek }}"/> days / week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7410432243549869948" datatype="html">
+        <source>Duration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4605273802885589405" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ program().durationWeeks }}"/> weeks</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4862012612155363469" datatype="html">
+        <source>View program</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/cards/program-card.ts</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4444641709244711661" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> is required.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8602770221577176353" datatype="html">
+        <source>Enter a valid email address, like name@example.com.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2245965002738165315" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> needs at least <x id="MIN" equiv-text="min"/> characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5165760872390215673" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> can have at most <x id="MAX" equiv-text="max"/> characters.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="364304747063072086" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> must be at least <x id="MIN" equiv-text="errors[&apos;min&apos;].min"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="534067309847747442" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> can be at most <x id="MAX" equiv-text="errors[&apos;max&apos;].max"/>.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4180038051555240732" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> is not in the right format.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="480555470147907604" datatype="html">
+        <source>Enter a valid phone number, for example +31 6 12345678.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3487619257289001545" datatype="html">
+        <source>Enter a valid link that starts with https://.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4210750489287700896" datatype="html">
+        <source>Use lowercase letters, numbers and hyphens only.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4954101044912864925" datatype="html">
+        <source><x id="FIELD" equiv-text="label"/> is not valid.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/forms/validation-messages.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7172610509240246759" datatype="html">
+        <source>Breadcrumb</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/breadcrumbs.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7910408219947091899" datatype="html">
+        <source>Cookie consent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/consent-banner.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4920925368078622243" datatype="html">
+        <source>I use optional analytics cookies to see how the site is used. Nothing is collected unless you accept.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/consent-banner.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6090931838305354672" datatype="html">
+        <source>Privacy policy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/consent-banner.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8618224804651366925" datatype="html">
+        <source> Decline </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/consent-banner.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2292976985274107813" datatype="html">
+        <source> Accept analytics </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/consent-banner.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="145409354947261238" datatype="html">
+        <source>Tell me what you want to achieve</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1716511252607196133" datatype="html">
+        <source>We&apos;ll talk about your goal, your training history and your week. I&apos;ll tell you honestly if I can help.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5326251564166997315" datatype="html">
+        <source>See packages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/cta-section.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2826581353496868063" datatype="html">
         <source>Language</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/language-switcher.ts</context>
           <context context-type="linenumber">31,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8748332462763754359" datatype="html">
+        <source>Image coming soon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/media-frame.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1147413164438278837" datatype="html">
+        <source>Pagination</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/paginator.ts</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6575164270960732036" datatype="html">
+        <source> Previous </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/paginator.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6453098595803131790" datatype="html">
+        <source>Page <x id="INTERPOLATION" equiv-text="{{ page() }}"/> of <x id="INTERPOLATION_1" equiv-text="{{ pageCount() }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/paginator.ts</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3971100408152984961" datatype="html">
+        <source> Next </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/paginator.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1914592173926880968" datatype="html">
+        <source>Skip to main content</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/skip-link.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7281838124122799115" datatype="html">
+        <source>Close notification</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/toast-outlet.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1920266705343100377" datatype="html">
+        <source>Add at least two entries to see your trend.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/trend-chart.ts</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2192886254434154935" datatype="html">
+        <source><x id="FIRST" equiv-text="first"/> → <x id="LAST" equiv-text="last"/> <x id="UNIT" equiv-text="unit"/> (<x id="CHANGE" equiv-text="change"/>) from <x id="FROM" equiv-text="from"/> to <x id="TO" equiv-text="to"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/trend-chart.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4595341884081996803" datatype="html">
+        <source>Play demonstration video</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/video-embed.ts</context>
+          <context context-type="linenumber">59,60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="679964040178637695" datatype="html">
+        <source>Loads the video from an external provider (YouTube or Vimeo)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/video-embed.ts</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1725313845803062971" datatype="html">
+        <source>Exercise demonstration</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/ui/video-embed.ts</context>
+          <context context-type="linenumber">115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2026872660338003795" datatype="html">

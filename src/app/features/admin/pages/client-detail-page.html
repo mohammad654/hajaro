@@ -180,5 +180,9 @@
     <app-session-history [sessions]="sessions()" [allowDelete]="false" />
   </section>
 } @else {
-  <app-not-found-content what="client" backLink="/admin/clients" backLabel="Back to clients" />
+  <app-not-found-content
+    heading="This client doesn't exist"
+    backLink="/admin/clients"
+    backLabel="Back to clients"
+  />
 }

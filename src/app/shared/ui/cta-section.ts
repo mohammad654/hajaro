@@ -65,13 +65,13 @@ export class CtaSection {
   private static count = 0;
   protected readonly headingId = `cta-heading-${++CtaSection.count}`;
 
-  readonly eyebrow = input('Ready when you are');
-  readonly title = input('Start your transformation');
+  readonly eyebrow = input($localize`Free intro`);
+  readonly title = input($localize`Tell me what you want to achieve`);
   readonly text = input(
-    'Book a free, no-obligation consultation. We will talk about your goals, your training history and the right way to work together.',
+    $localize`We'll talk about your goal, your training history and your week. I'll tell you honestly if I can help.`,
   );
-  readonly primaryLabel = input('Book a free consultation');
+  readonly primaryLabel = input($localize`Book a free intro`);
   readonly primaryLink = input('/contact');
-  readonly secondaryLabel = input('View coaching packages');
+  readonly secondaryLabel = input($localize`See packages`);
   readonly secondaryLink = input('/pricing');
 }

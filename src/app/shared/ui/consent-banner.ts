@@ -9,20 +9,23 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (analytics.needsConsent()) {
-      <section class="consent" role="region" aria-label="Cookie consent">
+      <section class="consent" role="region" i18n-aria-label aria-label="Cookie consent">
         <p>
-          We use optional analytics cookies to understand how the site is used and improve it. No
-          data is collected unless you accept.
-          <a [routerLink]="'/privacy' | localePath">Privacy policy</a>
+          <ng-container i18n
+            >I use optional analytics cookies to see how the site is used. Nothing is collected
+            unless you accept.</ng-container
+          >
+          <a [routerLink]="'/privacy' | localePath" i18n>Privacy policy</a>
         </p>
         <div class="cluster">
-          <button type="button" class="btn btn--sm" (click)="analytics.setConsent('denied')">
+          <button type="button" class="btn btn--sm" (click)="analytics.setConsent('denied')" i18n>
             Decline
           </button>
           <button
             type="button"
             class="btn btn--sm btn--primary"
             (click)="analytics.setConsent('granted')"
+            i18n
           >
             Accept analytics
           </button>

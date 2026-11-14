@@ -5,11 +5,17 @@ import { ChangeDetectionStrategy, Component, computed, input, output } from '@an
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (pageCount() > 1) {
-      <nav class="paginator" aria-label="Pagination">
-        <button type="button" class="btn btn--sm" [disabled]="page() <= 1" (click)="go(page() - 1)">
+      <nav class="paginator" i18n-aria-label aria-label="Pagination">
+        <button
+          type="button"
+          class="btn btn--sm"
+          [disabled]="page() <= 1"
+          (click)="go(page() - 1)"
+          i18n
+        >
           Previous
         </button>
-        <span class="paginator__status" aria-live="polite"
+        <span class="paginator__status" aria-live="polite" i18n
           >Page {{ page() }} of {{ pageCount() }}</span
         >
         <button
@@ -17,6 +23,7 @@ import { ChangeDetectionStrategy, Component, computed, input, output } from '@an
           class="btn btn--sm"
           [disabled]="page() >= pageCount()"
           (click)="go(page() + 1)"
+          i18n
         >
           Next
         </button>

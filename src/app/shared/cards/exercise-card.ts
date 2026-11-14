@@ -18,7 +18,8 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
           [view]="view()"
           [primary]="exercise().primaryMuscles"
           [secondary]="exercise().secondaryMuscles"
-          [label]="'Muscles worked: ' + musclesLabel()"
+          i18n-label
+          label="Muscles worked: {{ musclesLabel() }}"
         />
       </div>
       <div class="ex-card__body">
@@ -32,7 +33,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
           }}</a>
         </h3>
         <p class="text-small text-muted">{{ musclesLabel() }}</p>
-        <p class="ex-card__prescription">
+        <p class="ex-card__prescription" i18n>
           {{ exercise().recommendedSets }} sets · {{ exercise().recommendedReps }} reps
         </p>
       </div>

@@ -10,12 +10,15 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     <section class="section not-found">
       <div class="container container--narrow">
         <p class="not-found__code" aria-hidden="true">404</p>
-        <h1>We couldn’t find that {{ what() }}</h1>
-        <p class="lead">It may have been moved or renamed. Try one of these instead:</p>
+        <h1>{{ heading() }}</h1>
+        <p class="lead" i18n>
+          The page you're looking for doesn't exist or has moved. Try one of these instead, or
+          contact me if something is missing.
+        </p>
         <div class="cluster">
           <a class="btn btn--primary" [routerLink]="backLink() | localePath">{{ backLabel() }}</a>
-          <a class="btn" [routerLink]="'/' | localePath">Back to home</a>
-          <a class="btn btn--ghost" [routerLink]="'/contact' | localePath">Contact us</a>
+          <a class="btn" [routerLink]="'/' | localePath" i18n>Back to home</a>
+          <a class="btn btn--ghost" [routerLink]="'/contact' | localePath" i18n>Contact me</a>
         </div>
       </div>
     </section>
@@ -46,7 +49,8 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   `,
 })
 export class NotFoundContent {
-  readonly what = input('page');
+  /** Full sentence, e.g. "This program doesn't exist", so it can be translated as a whole. */
+  readonly heading = input($localize`This page took a rest day`);
   readonly backLink = input('/');
-  readonly backLabel = input('Go back');
+  readonly backLabel = input($localize`Go back`);
 }

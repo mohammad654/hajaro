@@ -5,10 +5,10 @@ import { CoachingPackage } from '../../core/models';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> = {
-  month: '/ month',
-  week: '/ week',
-  program: 'one-off',
-  session: '/ session',
+  month: $localize`/ month`,
+  week: $localize`/ week`,
+  program: $localize`one-off`,
+  session: $localize`/ session`,
 };
 
 @Component({
@@ -22,7 +22,7 @@ const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> 
       [attr.aria-labelledby]="'pkg-' + pkg().id"
     >
       @if (pkg().highlighted) {
-        <span class="package__flag">Most popular</span>
+        <span class="package__flag" i18n>Most popular</span>
       }
       <h3 class="package__name" [id]="'pkg-' + pkg().id">{{ pkg().name }}</h3>
       <p class="text-muted text-small">{{ pkg().tagline }}</p>
@@ -37,23 +37,23 @@ const PERIOD_LABELS: Readonly<Record<CoachingPackage['billingPeriod'], string>> 
       @if (detailed()) {
         <dl class="package__details">
           <div>
-            <dt>Training plan</dt>
+            <dt i18n>Training plan</dt>
             <dd>{{ pkg().trainingPlan }}</dd>
           </div>
           <div>
-            <dt>Nutrition</dt>
+            <dt i18n>Nutrition</dt>
             <dd>{{ pkg().nutrition }}</dd>
           </div>
           <div>
-            <dt>Check-ins</dt>
+            <dt i18n>Check-ins</dt>
             <dd>{{ pkg().checkIns }}</dd>
           </div>
           <div>
-            <dt>Communication</dt>
+            <dt i18n>Communication</dt>
             <dd>{{ pkg().communication }}</dd>
           </div>
           <div>
-            <dt>Support level</dt>
+            <dt i18n>Support level</dt>
             <dd>{{ pkg().support }}</dd>
           </div>
         </dl>

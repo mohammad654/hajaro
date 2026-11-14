@@ -147,7 +147,7 @@ const DEFAULT_WEEK = [
       </form>
     } @else {
       <app-not-found-content
-        what="program"
+        heading="This program doesn't exist"
         backLink="/admin/programs"
         backLabel="Back to programs"
       />

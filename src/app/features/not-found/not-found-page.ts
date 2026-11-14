@@ -8,17 +8,17 @@ import { NotFoundContent } from './not-found-content';
   imports: [NotFoundContent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `<app-not-found-content
-    what="page"
     backLink="/programs"
-    backLabel="Explore programs"
+    i18n-backLabel
+    backLabel="See training programs"
   />`,
 })
 export class NotFoundPage {
   constructor() {
     injectNotFoundStatus()();
     inject(SeoService).update({
-      title: 'Page not found',
-      description: 'The page you are looking for could not be found.',
+      title: $localize`Page not found`,
+      description: $localize`The page you're looking for doesn't exist or has moved.`,
       noindex: true,
     });
   }

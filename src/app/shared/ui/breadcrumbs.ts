@@ -15,7 +15,7 @@ export interface Crumb {
   imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <nav aria-label="Breadcrumb">
+    <nav i18n-aria-label aria-label="Breadcrumb">
       <ol>
         @for (crumb of trail(); track crumb.url; let last = $last) {
           <li>

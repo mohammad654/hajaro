@@ -23,15 +23,17 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       <p class="text-muted">{{ program().tagline }}</p>
       <dl class="program-card__meta">
         <div>
-          <dt><app-icon name="calendar" [size]="16" /> Frequency</dt>
-          <dd>{{ program().daysPerWeek }} days / week</dd>
+          <dt>
+            <app-icon name="calendar" [size]="16" /> <ng-container i18n>Frequency</ng-container>
+          </dt>
+          <dd i18n>{{ program().daysPerWeek }} days / week</dd>
         </div>
         <div>
-          <dt><app-icon name="clock" [size]="16" /> Duration</dt>
-          <dd>{{ program().durationWeeks }} weeks</dd>
+          <dt><app-icon name="clock" [size]="16" /> <ng-container i18n>Duration</ng-container></dt>
+          <dd i18n>{{ program().durationWeeks }} weeks</dd>
         </div>
       </dl>
-      <span class="link-arrow" aria-hidden="true">View program</span>
+      <span class="link-arrow" aria-hidden="true" i18n>View program</span>
     </article>
   `,
   styles: `

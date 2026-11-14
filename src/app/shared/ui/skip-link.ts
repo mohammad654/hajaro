@@ -12,7 +12,7 @@ import { ChangeDetectionStrategy, Component, DOCUMENT, inject, input } from '@an
 export class SkipLink {
   private readonly document = inject(DOCUMENT);
   readonly target = input.required<string>();
-  readonly label = input('Skip to main content');
+  readonly label = input($localize`Skip to main content`);
 
   protected skip(event: Event): void {
     event.preventDefault();

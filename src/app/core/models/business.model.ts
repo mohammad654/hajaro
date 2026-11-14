@@ -68,18 +68,18 @@ export type ExperienceLevel = 'beginner' | 'intermediate' | 'advanced' | 'compet
 export type CoachingType = 'online' | 'in-person' | 'hybrid' | 'competition-prep' | 'not-sure';
 
 export const COACHING_TYPE_LABELS: Readonly<Record<CoachingType, string>> = {
-  online: 'Online coaching',
-  'in-person': 'In-person training',
-  hybrid: 'Hybrid (online + in person)',
-  'competition-prep': 'Competition preparation',
-  'not-sure': 'Not sure yet',
+  online: $localize`Online coaching`,
+  'in-person': $localize`In-person training`,
+  hybrid: $localize`Hybrid (online + in person)`,
+  'competition-prep': $localize`Competition preparation`,
+  'not-sure': $localize`Not sure yet`,
 };
 
 export const EXPERIENCE_LABELS: Readonly<Record<ExperienceLevel, string>> = {
-  beginner: 'Beginner (under 1 year)',
-  intermediate: 'Intermediate (1–3 years)',
-  advanced: 'Advanced (3+ years)',
-  competitor: 'Competitor',
+  beginner: $localize`Beginner (under 1 year)`,
+  intermediate: $localize`Intermediate (1–3 years)`,
+  advanced: $localize`Advanced (3+ years)`,
+  competitor: $localize`Competitor`,
 };
 
 export interface Inquiry extends Entity {
@@ -99,10 +99,10 @@ export interface Inquiry extends Entity {
 export type BookingStatus = 'requested' | 'confirmed' | 'completed' | 'cancelled';
 
 export const BOOKING_TYPE_LABELS: Readonly<Record<Booking['type'], string>> = {
-  consultation: 'Consultation',
-  session: 'Training session',
-  'check-in-call': 'Check-in call',
-  posing: 'Posing session',
+  consultation: $localize`Consultation`,
+  session: $localize`Training session`,
+  'check-in-call': $localize`Check-in call`,
+  posing: $localize`Posing session`,
 };
 
 export interface Booking extends Entity {

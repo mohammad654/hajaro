@@ -56,8 +56,8 @@ export function toSafeEmbedUrl(url: string | null | undefined): string | null {
         } @else {
           <button type="button" class="video__poster" (click)="loaded.set(true)">
             <span class="video__play"><app-icon name="play" [size]="28" /></span>
-            <span>Play demonstration video</span>
-            <small>Loads content from a third-party video provider</small>
+            <span i18n>Play demonstration video</span>
+            <small i18n>Loads the video from an external provider (YouTube or Vimeo)</small>
           </button>
         }
       </div>
@@ -112,7 +112,7 @@ export function toSafeEmbedUrl(url: string | null | undefined): string | null {
 export class VideoEmbed {
   private readonly sanitizer = inject(DomSanitizer);
   readonly url = input<string | null | undefined>(null);
-  readonly title = input('Exercise demonstration');
+  readonly title = input($localize`Exercise demonstration`);
 
   protected readonly loaded = signal(false);
   protected readonly embedUrl = computed(() => toSafeEmbedUrl(this.url()));

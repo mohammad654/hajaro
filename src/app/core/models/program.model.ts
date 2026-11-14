@@ -6,21 +6,21 @@ export type ProgramGoal =
   'muscle-gain' | 'strength' | 'fat-loss' | 'recomposition' | 'general-fitness';
 
 export const PROGRAM_GOAL_LABELS: Readonly<Record<ProgramGoal, string>> = {
-  'muscle-gain': 'Muscle gain',
-  strength: 'Strength',
-  'fat-loss': 'Fat loss',
-  recomposition: 'Recomposition',
-  'general-fitness': 'General fitness',
+  'muscle-gain': $localize`Muscle gain`,
+  strength: $localize`Strength`,
+  'fat-loss': $localize`Fat loss`,
+  recomposition: $localize`Recomposition`,
+  'general-fitness': $localize`General fitness`,
 };
 
 export type TrainingType = 'full-body' | 'split' | 'upper-lower' | 'push-pull-legs' | 'home';
 
 export const TRAINING_TYPE_LABELS: Readonly<Record<TrainingType, string>> = {
-  'full-body': 'Full body',
-  split: 'Body-part split',
-  'upper-lower': 'Upper / lower',
-  'push-pull-legs': 'Push / pull / legs',
-  home: 'Home training',
+  'full-body': $localize`Full body`,
+  split: $localize`Body-part split`,
+  'upper-lower': $localize`Upper / lower`,
+  'push-pull-legs': $localize`Push / pull / legs`,
+  home: $localize`Home training`,
 };
 
 /** A single prescribed exercise inside a workout day. */

@@ -26,7 +26,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
           <time [attr.datetime]="article().publishedAt">{{
             article().publishedAt | date: 'mediumDate'
           }}</time>
-          <span>· {{ article().readingMinutes }} min read</span>
+          <span
+            >· <ng-container i18n>{{ article().readingMinutes }} min read</ng-container></span
+          >
         </p>
         <h3 class="card__title">
           <a class="card__link" [routerLink]="['/blog', article().slug] | localePath">{{

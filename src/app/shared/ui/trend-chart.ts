@@ -41,7 +41,7 @@ const PADDING = 24;
         <figcaption class="text-small text-muted">{{ summary() }}</figcaption>
       </figure>
     } @else {
-      <p class="text-small text-muted">Add at least two entries to see your trend.</p>
+      <p class="text-small text-muted" i18n>Add at least two entries to see your trend.</p>
     }
   `,
   styles: `
@@ -88,7 +88,11 @@ export class TrendChart {
     const first = pts[0].value;
     const last = pts[pts.length - 1].value;
     const diff = Math.round((last - first) * 10) / 10;
-    return `${first} → ${last} ${this.unit()} (${diff >= 0 ? '+' : ''}${diff} ${this.unit()}) from ${pts[0].label} to ${pts[pts.length - 1].label}`;
+    const unit = this.unit();
+    const change = `${diff >= 0 ? '+' : ''}${diff} ${unit}`;
+    const from = pts[0].label;
+    const to = pts[pts.length - 1].label;
+    return $localize`${first}:FIRST: → ${last}:LAST: ${unit}:UNIT: (${change}:CHANGE:) from ${from}:FROM: to ${to}:TO:`;
   });
 
   protected readonly geometry = computed(() => {

@@ -29,9 +29,9 @@ export type MuscleRegion = 'upper-body' | 'core' | 'lower-body';
 export type AnatomyView = 'front' | 'back';
 
 export const MUSCLE_REGION_LABELS: Readonly<Record<MuscleRegion, string>> = {
-  'upper-body': 'Upper body',
-  core: 'Core',
-  'lower-body': 'Lower body',
+  'upper-body': $localize`Upper body`,
+  core: $localize`Core`,
+  'lower-body': $localize`Lower body`,
 };
 
 export interface MuscleGroup extends Entity {

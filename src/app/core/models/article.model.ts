@@ -12,15 +12,15 @@ export type ArticleCategory =
   | 'motivation';
 
 export const ARTICLE_CATEGORY_LABELS: Readonly<Record<ArticleCategory, string>> = {
-  bodybuilding: 'Bodybuilding',
-  'muscle-growth': 'Muscle Growth',
-  'strength-training': 'Strength Training',
-  nutrition: 'Nutrition',
-  'fat-loss': 'Fat Loss',
-  'exercise-technique': 'Exercise Techniques',
-  recovery: 'Recovery',
-  supplements: 'Supplements',
-  motivation: 'Fitness Motivation',
+  bodybuilding: $localize`Bodybuilding`,
+  'muscle-growth': $localize`Muscle Growth`,
+  'strength-training': $localize`Strength Training`,
+  nutrition: $localize`Nutrition`,
+  'fat-loss': $localize`Fat Loss`,
+  'exercise-technique': $localize`Exercise Techniques`,
+  recovery: $localize`Recovery`,
+  supplements: $localize`Supplements`,
+  motivation: $localize`Fitness Motivation`,
 };
 
 /**

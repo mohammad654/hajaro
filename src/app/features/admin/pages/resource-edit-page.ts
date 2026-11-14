@@ -53,13 +53,17 @@ import { findResource } from '../resources/resource.registry';
         </form>
       } @else {
         <app-not-found-content
-          [what]="cfg.singular.toLowerCase()"
+          [heading]="'This ' + cfg.singular.toLowerCase() + ' does not exist'"
           [backLink]="'/admin/' + cfg.key"
           backLabel="Back to list"
         />
       }
     } @else {
-      <app-not-found-content what="admin section" backLink="/admin" backLabel="Admin overview" />
+      <app-not-found-content
+        heading="This admin section doesn't exist"
+        backLink="/admin"
+        backLabel="Admin overview"
+      />
     }
   `,
   styleUrl: '../../dashboard/pages/dashboard-pages.scss',

@@ -148,7 +148,11 @@ import { findResource } from '../resources/resource.registry';
         }
       }
     } @else {
-      <app-not-found-content what="admin section" backLink="/admin" backLabel="Admin overview" />
+      <app-not-found-content
+        heading="This admin section doesn't exist"
+        backLink="/admin"
+        backLabel="Admin overview"
+      />
     }
   `,
   styleUrl: '../../dashboard/pages/dashboard-pages.scss',
