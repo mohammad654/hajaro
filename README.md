@@ -12,10 +12,22 @@ programs, a workout planner, nutrition calculators, a blog, a client dashboard a
 
 ```bash
 npm install
-npm start              # dev server → http://localhost:4200
-npm run build          # production build + prerendering (dist/hajaro)
+npm start              # Dutch dev server   → http://localhost:4200/
+npm run start:en       # English dev server → http://localhost:4201/en/   (start:all runs both)
+npm run build          # production build of both languages + prerendering (dist/hajaro)
 npm run serve:ssr:hajaro   # serve the production build → http://localhost:4000
+npm run verify         # typecheck + format check + EN/NL translation parity
 ```
+
+### Languages (EN + NL)
+
+Dutch is served at `/`, English at `/en/`; both are compiled at build time with `@angular/localize`.
+
+- Mark text with `i18n` (templates) or `$localize` (TypeScript), then run `npm run i18n` and add the
+  Dutch in `src/locale/messages.nl.xlf`. `npm run i18n:check` fails on anything missing.
+- Translated URL segments (`/diensten`, `/over-mij`, …) live in `src/app/core/i18n/paths.ts`.
+- Server settings (SMTP for the contact form, allowed hosts, proxy) are documented in `.env.example`.
+  The site needs a Node host; a static host cannot send enquiries or answer redirects.
 
 ### Demo mode (no backend)
 
@@ -31,18 +43,18 @@ No passwords are stored anywhere in the frontend.
 
 ## Before launch — replace placeholder content
 
-| What | Where |
-| --- | --- |
-| Domain (canonical URLs, sitemap, Open Graph) | `src/environments/environment.ts` → `siteUrl` |
-| Brand name, email, phone, service area, social links, address | `src/app/core/config/site.config.ts` |
-| Trainer name, bio, journey, photo, methodology | Admin → *Site content & SEO* (seed: `core/data/site-content.data.ts`) |
-| Qualifications, competitions, awards | Admin → *Site content*. Only items marked **verified** are shown publicly. |
-| Package prices (currently **examples**) | Admin → *Packages & pricing* (seed: `core/data/packages.data.ts`) |
-| Program prices (optional self-guided purchase) | Admin → *Programs & workout charts* |
-| Client transformations & testimonials | Admin → *Transformations / Testimonials*. Shown only when published **and** consent is confirmed. Starts empty on purpose. |
-| Exercise demo images / videos | Admin → *Exercises* (YouTube/Vimeo URLs are validated and loaded click-to-play) |
-| Legal pages | `src/app/features/legal/legal-content.ts` — have them reviewed for your jurisdiction |
-| Google Analytics 4 / Search Console | `environment.analytics` (GA loads only after cookie consent) |
+| What                                                          | Where                                                                                                                      |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Domain (canonical URLs, sitemap, Open Graph)                  | `src/environments/environment.ts` → `siteUrl`                                                                              |
+| Brand name, email, phone, service area, social links, address | `src/app/core/config/site.config.ts`                                                                                       |
+| Trainer name, bio, journey, photo, methodology                | Admin → _Site content & SEO_ (seed: `core/data/site-content.data.ts`)                                                      |
+| Qualifications, competitions, awards                          | Admin → _Site content_. Only items marked **verified** are shown publicly.                                                 |
+| Package prices (currently **examples**)                       | Admin → _Packages & pricing_ (seed: `core/data/packages.data.ts`)                                                          |
+| Program prices (optional self-guided purchase)                | Admin → _Programs & workout charts_                                                                                        |
+| Client transformations & testimonials                         | Admin → _Transformations / Testimonials_. Shown only when published **and** consent is confirmed. Starts empty on purpose. |
+| Exercise demo images / videos                                 | Admin → _Exercises_ (YouTube/Vimeo URLs are validated and loaded click-to-play)                                            |
+| Legal pages                                                   | `src/app/features/legal/legal-content.ts` — have them reviewed for your jurisdiction                                       |
+| Google Analytics 4 / Search Console                           | `environment.analytics` (GA loads only after cookie consent)                                                               |
 
 Bracketed text such as `[Describe how you started training…]` marks copy the trainer still needs to write;
 placeholder paragraphs are hidden from the public About page automatically.
@@ -107,15 +119,15 @@ src/
 Base URL: `environment.apiBaseUrl` (default `/api`). JSON everywhere. Authentication uses an **httpOnly session
 cookie**; the frontend never reads or stores tokens.
 
-| Endpoint | Purpose |
-| --- | --- |
+| Endpoint                                              | Purpose                           |
+| ----------------------------------------------------- | --------------------------------- |
 | `POST /auth/login` `{ email, password }` → `AuthUser` | Sign in (sets the session cookie) |
-| `GET /auth/me` → `AuthUser` | Restore session |
-| `POST /auth/logout` | Sign out |
-| `GET /{resource}` → `T[]` | List |
-| `POST /{resource}` → `T` | Create |
-| `PATCH /{resource}/{id}` → `T` | Update |
-| `DELETE /{resource}/{id}` | Delete |
+| `GET /auth/me` → `AuthUser`                           | Restore session                   |
+| `POST /auth/logout`                                   | Sign out                          |
+| `GET /{resource}` → `T[]`                             | List                              |
+| `POST /{resource}` → `T`                              | Create                            |
+| `PATCH /{resource}/{id}` → `T`                        | Update                            |
+| `DELETE /{resource}/{id}`                             | Delete                            |
 
 Resources: `exercises`, `programs`, `services`, `packages`, `articles`, `site-content`, `transformations`,
 `testimonials`, `inquiries`, `bookings`, `clients`, `measurements`, `progress-photos`, `check-ins`,
