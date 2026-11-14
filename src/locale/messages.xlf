@@ -119,6 +119,18 @@
           <context context-type="linenumber">18</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/cards/package-card.ts</context>
           <context context-type="linenumber">37,38</context>
         </context-group>
@@ -143,6 +155,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/legal/legal-content.ts</context>
           <context context-type="linenumber">158</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3864029730667347532" datatype="html">
@@ -510,6 +526,430 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/faqs.data.ts</context>
           <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4793228547576325421" datatype="html">
+        <source>Eating to build muscle</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8521822420333998162" datatype="html">
+        <source>Muscle builds most easily with a small calorie surplus, plenty of protein and consistent training.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7245970339538086340" datatype="html">
+        <source>A small surplus of about 5 to 10% above maintenance limits unnecessary fat gain</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7528270888875507550" datatype="html">
+        <source>If you&apos;ve trained for a while, aim to gain about 0.25 to 0.5% of your body weight per month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1266396825070235263" datatype="html">
+        <source>Eat protein and carbohydrates around your training to fuel it</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7417001280670174624" datatype="html">
+        <source>Eating to lose fat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1605409384534545406" datatype="html">
+        <source>Fat loss needs a calorie deficit you keep up over time, while protein and training protect your muscle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4131848926474939486" datatype="html">
+        <source>Aim to lose about 0.5 to 1% of your body weight per week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4417883377148511361" datatype="html">
+        <source>Keep protein high, and fill your meals with vegetables for volume and fibre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3214719954654981534" datatype="html">
+        <source>On a long diet, plan diet breaks or maintenance phases</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2415158253945151941" datatype="html">
+        <source>Macronutrients explained</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="144057315185087353" datatype="html">
+        <source>Protein, carbohydrates and fat each do a different job. Total calories decide whether your weight changes; macros shape your body composition and performance.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3020658179051119867" datatype="html">
+        <source>Protein: 4 kcal per gram. Builds and repairs muscle.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5402991879322151609" datatype="html">
+        <source>Carbohydrates: 4 kcal per gram. The main fuel for hard training.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6619908525797039190" datatype="html">
+        <source>Fat: 9 kcal per gram. Needed for hormones and for absorbing fat-soluble vitamins.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3488683882555681558" datatype="html">
+        <source>Protein</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">135,136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4411295214232893124" datatype="html">
+        <source>The most important macronutrient for people who lift. Most people do well with 1.6 to 2.2 g per kg of body weight.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1573458521964086491" datatype="html">
+        <source>Spread it over 3 to 5 meals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2683952829111640537" datatype="html">
+        <source>Include a good protein source in every meal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2076884384792054600" datatype="html">
+        <source>Eating more protein helps keep muscle while in a deficit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2634533071327650544" datatype="html">
+        <source>Carbohydrates</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5494320664182807816" datatype="html">
+        <source>Carbohydrates fuel hard training and help you recover between sessions.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5944175546012447828" datatype="html">
+        <source>Choose minimally processed sources: oats, rice, potatoes, fruit, wholegrains</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3893276686891750983" datatype="html">
+        <source>Eat a bigger share of your carbohydrates around your training</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5051162516247585650" datatype="html">
+        <source>Fibre helps digestion and keeps you full</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8936746239272851343" datatype="html">
+        <source>Fat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="657988416342534446" datatype="html">
+        <source>Fat in your diet supports your hormones. A common range is 20 to 35% of your total calories.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4512701930839213523" datatype="html">
+        <source>Eat oily fish, nuts, seeds, olive oil and avocado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6639834355060849521" datatype="html">
+        <source>Don&apos;t keep your fat intake extremely low for long periods</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5415229083225113867" datatype="html">
+        <source>Fat is calorie-dense, so watch portions while dieting</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7445820091575190577" datatype="html">
+        <source>Planning meals</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7617554874080575484" datatype="html">
+        <source>A simple meal structure you repeat makes consistency much easier than relying on willpower.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="996937213592151035" datatype="html">
+        <source>Build each meal around protein, then add vegetables, carbohydrates and fat</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6910843690468018648" datatype="html">
+        <source>Batch-cook basics two or three times a week</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2773956562212616470" datatype="html">
+        <source>Keep easy high-protein options at hand for busy days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2483198227001099033" datatype="html">
+        <source>Healthy food choices</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2235384742876103827" datatype="html">
+        <source>Most of what you eat should be whole, minimally processed food, with room for food you enjoy.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="890101754973399917" datatype="html">
+        <source>Eat a variety of colourful fruit and vegetables every day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3790315042412430" datatype="html">
+        <source>Choose lean protein and wholegrains most of the time</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7661608853996120229" datatype="html">
+        <source>Some flexibility makes it easier to keep going for years</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="137500577796490182" datatype="html">
+        <source>Drinking enough</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8333220606177629240" datatype="html">
+        <source>Even mild dehydration can make your training worse. You need more when you&apos;re bigger, it&apos;s hot or you sweat a lot.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="72694105628948272" datatype="html">
+        <source>Drink regularly throughout the day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3603068817986197022" datatype="html">
+        <source>Pale yellow urine is a simple, practical sign</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8510094353921662528" datatype="html">
+        <source>Replace fluids and salts after long or hot sessions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2299297652568786145" datatype="html">
+        <source>About supplements</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3933157536008133042" datatype="html">
+        <source>Supplements are optional. They can support a good diet, never replace it, and they are not medicine.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7010612523370336864" datatype="html">
+        <source>Well-researched options include creatine monohydrate, protein powder, caffeine and vitamin D (if you&apos;re low)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6815128059021028104" datatype="html">
+        <source>Look for products tested by an independent lab</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4581888667552859692" datatype="html">
+        <source>Talk to a healthcare professional first if you have a medical condition or take medication</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="251404247974579036" datatype="html">
+        <source>Recovery and sleep</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7436007393290031914" datatype="html">
+        <source>Your body repairs and adapts while you sleep. Poor sleep makes appetite, training and recovery harder.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8359752217007878949" datatype="html">
+        <source>Aim for 7 to 9 hours a night</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7588228376890608151" datatype="html">
+        <source>Go to bed and get up at similar times</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7177891523726454255" datatype="html">
+        <source>Manage stress: it affects recovery as much as training does</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6505240380433559046" datatype="html">
+        <source>This is general information, not personal medical or dietary advice. Talk to a doctor or registered dietitian before making big changes to what you eat, especially if you&apos;re pregnant, have a medical condition or take medication.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/data/nutrition.data.ts</context>
+          <context context-type="linenumber">134</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9159921138027843765" datatype="html">
@@ -2946,6 +3386,131 @@
           <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1514883753398311097" datatype="html">
+        <source>Client area</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5207635742003539443" datatype="html">
+        <source>Sign in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5710837163937973849" datatype="html">
+        <source> See your training plan, log workouts, send check-ins and follow your progress. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5191659067052351056" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Demo mode.<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/> No backend is connected, so data is only stored in this browser. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">15,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6097116006629522251" datatype="html">
+        <source> Explore as client </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2683553739725418275" datatype="html">
+        <source> Explore as coach (admin) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1431416938026210429" datatype="html">
+        <source>Password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">96,97</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1446670643492611810" datatype="html">
+        <source>Hide password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">86,87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5554528553553249088" datatype="html">
+        <source>Show password</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">88,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1041104936823929398" datatype="html">
+        <source>Signing in…</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1242578279407067787" datatype="html">
+        <source> Not a client yet? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;&apos;/contact&apos; | localePath&quot;&gt;"/>Book a free intro<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>. Forgot your password? Contact me and I&apos;ll reset your access. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.html</context>
+          <context context-type="linenumber">110,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3874957328762649827" datatype="html">
+        <source>Client Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2720397898897622857" datatype="html">
+        <source>Sign in to your coaching dashboard.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6850748969803007950" datatype="html">
+        <source>Sign-in failed. Check your email and password and try again.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/auth/login-page.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2592614811575507939" datatype="html">
         <source>By <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;&apos;/about&apos; | localePath&quot; rel=&quot;author&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{
               article.author
@@ -3157,17 +3722,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
           <context context-type="linenumber">23</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4768749765465246664" datatype="html">
-        <source>Email</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/blog/share-links.ts</context>
-          <context context-type="linenumber">60</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/contact/contact-form.html</context>
-          <context context-type="linenumber">65,66</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7574993740889368937" datatype="html">
@@ -3407,12 +3961,20 @@
           <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
           <context context-type="linenumber">35</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="1914874012451256612" datatype="html">
         <source>Lose fat</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/contact/contact-form.ts</context>
           <context context-type="linenumber">36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">103,104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6080364320332000544" datatype="html">
@@ -3719,6 +4281,10 @@
           <context context-type="linenumber">22,23</context>
         </context-group>
         <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">47,48</context>
+        </context-group>
+        <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
           <context context-type="linenumber">28,29</context>
         </context-group>
@@ -3736,6 +4302,14 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
           <context context-type="linenumber">23,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">58,59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">48,49</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/programs/workout-day-table.ts</context>
@@ -3966,6 +4540,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-library-page.html</context>
           <context context-type="linenumber">102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">52,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6634790566400449864" datatype="html">
@@ -4299,27 +4877,6 @@
           <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3488683882555681558" datatype="html">
-        <source>Protein</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
-          <context context-type="linenumber">134</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2634533071327650544" datatype="html">
-        <source>Carbohydrates</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
-          <context context-type="linenumber">135</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8936746239272851343" datatype="html">
-        <source>Fat</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/home/sections/home-process.ts</context>
-          <context context-type="linenumber">136</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="380470455617899031" datatype="html">
         <source>Training programs for every level</source>
         <context-group purpose="location">
@@ -4374,6 +4931,18 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/sections/home-programs.ts</context>
           <context context-type="linenumber">51,52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">2,3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6646039483329228023" datatype="html">
@@ -5039,6 +5608,10 @@
           <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.html</context>
           <context context-type="linenumber">59,60</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.ts</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="5965579114732781324" datatype="html">
         <source> One proven exercise for every major muscle group. Select a muscle group to highlight it on the anatomy chart. </source>
@@ -5361,6 +5934,10 @@
           <context context-type="sourcefile">src/app/features/muscle-chart/workout-chart-table.ts</context>
           <context context-type="linenumber">20,21</context>
         </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">141,142</context>
+        </context-group>
       </trans-unit>
       <trans-unit id="9056543421332015840" datatype="html">
         <source>Exercise</source>
@@ -5434,6 +6011,989 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/not-found/not-found-page.ts</context>
           <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3143631518085951212" datatype="html">
+        <source>Free tools</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3901486386730431144" datatype="html">
+        <source>Nutrition calculators</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2308106038864626847" datatype="html">
+        <source>Estimate your BMI, daily calories, protein, macros and water. Fill in your details once and every calculator updates straight away.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5137164267483335451" datatype="html">
+        <source>Jump to calculator</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7951766998557177322" datatype="html">
+        <source>Calories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">27,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8863137574262049523" datatype="html">
+        <source>Macros</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">145,146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6399303218734406494" datatype="html">
+        <source>Water</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">30,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1299295444410597472" datatype="html">
+        <source>Learn how to use these numbers in the nutrition guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2971771159009738038" datatype="html">
+        <source>More than an estimate</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">42,43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4522267945880637579" datatype="html">
+        <source>Targets set for you</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2690099055992897411" datatype="html">
+        <source>A calculator gives you a starting point. With coaching, I use your real data (weight trend, performance and recovery) to set your targets and adjust them every week.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">46,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6071774551159099922" datatype="html">
+        <source>Calorie, Protein, Macro, BMI &amp; Water Calculators</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3495873852067568146" datatype="html">
+        <source>Free calculators: estimate your daily calories, protein, macros, BMI and water for building muscle or losing fat.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/calculators-page.ts</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="155149522433359630" datatype="html">
+        <source>Sitting most of the day (little or no exercise)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1150683509043387567" datatype="html">
+        <source>Lightly active (1 to 3 sessions a week)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3863100317811632252" datatype="html">
+        <source>Moderately active (3 to 5 sessions a week)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6509364730493457515" datatype="html">
+        <source>Very active (6 to 7 sessions a week)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1707231091945538385" datatype="html">
+        <source>Extremely active (physical job plus training)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2218512680651544007" datatype="html">
+        <source>Underweight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4514828989327461222" datatype="html">
+        <source>Healthy weight range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8219024468994853710" datatype="html">
+        <source>Overweight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4542355122339494719" datatype="html">
+        <source>Obesity range</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculations.ts</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4858012274384654218" datatype="html">
+        <source>Your details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3217127493569755040" datatype="html">
+        <source>Sex (used in the energy formula)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8012344910054029733" datatype="html">
+        <source>Male</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5667840900782067941" datatype="html">
+        <source>Female</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1130652265542107236" datatype="html">
+        <source>Age</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6390426569284839080" datatype="html">
+        <source>Height (cm)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3033623772164647792" datatype="html">
+        <source>Height</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8733077706173054468" datatype="html">
+        <source>Weight (kg)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5848348023107769657" datatype="html">
+        <source>Weight</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3405744281526429421" datatype="html">
+        <source>Training hours per day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">75,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7651879600233861457" datatype="html">
+        <source>Training hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7209096358198946554" datatype="html">
+        <source>Activity level</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="502130212127803987" datatype="html">
+        <source>Goal</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8384796058717660553" datatype="html">
+        <source>Maintain or recomposition</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">104,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3533192450530603027" datatype="html">
+        <source>BMI calculator</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">114,115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4887101621209310602" datatype="html">
+        <source> BMI can&apos;t tell muscle from fat, so it often overestimates the risk for muscular people. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">118,119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1614922647233111265" datatype="html">
+        <source>Daily calories</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">123,124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7959865064488492534" datatype="html">
+        <source>kcal / day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6764910671848269823" datatype="html">
+        <source> Maintenance ≈ <x id="INTERPOLATION" equiv-text="{{ r.calories.maintenance | number }}"/> kcal · At rest ≈ <x id="INTERPOLATION_1" equiv-text="{{ r.calories.bmr | number }}"/> kcal </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">126,129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4384010077805487728" datatype="html">
+        <source> Mifflin-St Jeor formula × activity factor, adjusted for your goal. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">130,131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7788944940488899644" datatype="html">
+        <source>g / day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9035362579650068548" datatype="html">
+        <source> Based on 1.6 to 2.2 g per kg of body weight for people who do strength training. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">140,141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7757102319174970419" datatype="html">
+        <source>Water per day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">168,169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6894454414832168556" datatype="html">
+        <source>litres / day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1025403104484217888" datatype="html">
+        <source> About 35 ml per kg, plus roughly half a litre per hour of training. You need more when it&apos;s hot. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">173,174</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2320794406529601107" datatype="html">
+        <source>Fill in your details to see your estimates.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">178,179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2633948811668643612" datatype="html">
+        <source>Estimates only.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-calculator.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8718110939947299054" datatype="html">
+        <source>Food for muscle and performance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="494854300595463763" datatype="html">
+        <source>Clear information about eating to build muscle, lose fat and recover well. No extremes, no gimmicks.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2555988625789230635" datatype="html">
+        <source>Open the calculators</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1084162774190378460" datatype="html">
+        <source>Nutrition coaching</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">31,32</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">80,81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8753622184786508249" datatype="html">
+        <source>Nutrition topics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">38,39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3387866352562298153" datatype="html">
+        <source>Articles about food</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">68,69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5268427367511285246" datatype="html">
+        <source>Food that fits your life</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1180374548704311064" datatype="html">
+        <source>Calorie and macro targets set for you, a practical meal structure, and weekly adjustments based on your progress.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6295208779327662128" datatype="html">
+        <source>Nutrition Guide: Muscle Gain, Fat Loss &amp; Macros</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1007476902488403129" datatype="html">
+        <source>Eating to build muscle or lose fat: protein, carbohydrates and fat, planning meals, drinking enough, supplements and recovery.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/nutrition/nutrition-page.ts</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8497514474291854602" datatype="html">
+        <source>Routine name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">5,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">18,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8915742501791829087" datatype="html">
+        <source>For example: Upper body A</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7386303229223377554" datatype="html">
+        <source>Start from a template</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">22,23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4811229066893369130" datatype="html">
+        <source>Choose a program day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1106817532461214326" datatype="html">
+        <source>Replaces the current exercise list.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="136805608710888318" datatype="html">
+        <source> No exercises yet. Choose a template, or add exercises from the list. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">36,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6533549140456875494" datatype="html">
+        <source>Rest (s)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6417034329362296831" datatype="html">
+        <source>Target kg</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8502065112576581103" datatype="html">
+        <source>Move up</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2207764482815871800" datatype="html">
+        <source>Move down</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">103,104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9002064830012463963" datatype="html">
+        <source>Remove <x id="INTERPOLATION" equiv-text="{{ exerciseName(row.controls.exerciseId.value) }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">112,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8971648221519500957" datatype="html">
+        <source> Check the values: sets from 1 to 12, rest from 0 to 600 seconds, and fill in the reps. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2159130950882492111" datatype="html">
+        <source>Cancel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1314562873676673298" datatype="html">
+        <source>Saving…</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3608989159694370196" datatype="html">
+        <source>Save routine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="627435371878957763" datatype="html">
+        <source>Exercise picker</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2599014752816428760" datatype="html">
+        <source>Add exercises</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">139,140</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6073921148392940676" datatype="html">
+        <source>All muscle groups</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">148,149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4580988005648117665" datatype="html">
+        <source>Search</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">155,156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="433221228329933132" datatype="html">
+        <source>Exercise name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">163,165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1260099573097287890" datatype="html">
+        <source>Add <x id="INTERPOLATION" equiv-text="{{ e.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">175,177</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1869920744013070408" datatype="html">
+        <source>Again</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249513483374643425" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="917257149408724254" datatype="html">
+        <source>No exercises match.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.html</context>
+          <context context-type="linenumber">186,187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7780709468705584263" datatype="html">
+        <source>Full body workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/routine-builder.ts</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">234</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2522330948601283298" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ row.stats.completedSets }}"/>/<x id="INTERPOLATION_1" equiv-text="{{ row.stats.totalSets }}"/> sets</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-history.ts</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3889664927373372551" datatype="html">
+        <source>Delete workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-history.ts</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3163447980269141104" datatype="html">
+        <source> No finished workouts yet. Finish a workout and it shows up here. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-history.ts</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4188536769710989263" datatype="html">
+        <source>Workout in progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">4,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6916926361541675169" datatype="html">
+        <source>Workout completion</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8683965293846703825" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{ stats().completedSets }}"/> / <x id="INTERPOLATION_1" equiv-text="{{ stats().totalSets }}"/> sets · <x id="INTERPOLATION_2" equiv-text="{{ stats().volumeKg }}"/> kg volume </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">18,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8744855070460345992" datatype="html">
+        <source> Target <x id="INTERPOLATION" equiv-text="{{ exercise.targetReps }}"/> reps · Rest <x id="INTERPOLATION_1" equiv-text="{{ exercise.restSeconds | rest }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">40,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4359847060009771702" datatype="html">
+        <source>Set</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1161299114153631702" datatype="html">
+        <source>Completed</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8480006592018500544" datatype="html">
+        <source>Set <x id="INTERPOLATION" equiv-text="{{ si + 1 }}"/>: weight in kilograms</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5721278980667826905" datatype="html">
+        <source>Set <x id="INTERPOLATION" equiv-text="{{ si + 1 }}"/>: reps done</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">82,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7722949258706836455" datatype="html">
+        <source>Mark set <x id="INTERPOLATION" equiv-text="{{ si + 1 }}"/> as done</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">91,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="343776482576055439" datatype="html">
+        <source>Add set</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8104421162933956065" datatype="html">
+        <source>Notes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">108,109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5480673509572590420" datatype="html">
+        <source>How did it feel? Anything I should know?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6433646752038671931" datatype="html">
+        <source> Discard workout </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">122,123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7353829023928903140" datatype="html">
+        <source>Finish and save workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/session-tracker.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7251986387911444849" datatype="html">
+        <source>Free training tool</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8838808539311231700" datatype="html">
+        <source>Build routines from any program or muscle group, set your own sets, reps and rest, then log weights and reps as you train and look back at every workout.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6475998381387719163" datatype="html">
+        <source>Free Workout Planner &amp; Training Log</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9082559514469635691" datatype="html">
+        <source>Plan and track your training: build routines, set sets, reps and rest, log weights and reps and look back at your workout history.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner-page.ts</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3247153808694041723" datatype="html">
+        <source>in progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3428112657891920094" datatype="html">
+        <source>Your routines and workouts are saved on this device. <x id="START_LINK" ctype="x-a" equiv-text="&lt;a [routerLink]=&quot;&apos;/login&apos; | localePath&quot;&gt;"/>Clients can sign in<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> to train from the plan I wrote for them.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3150710543402928189" datatype="html">
+        <source>My routines</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6119865520762151925" datatype="html">
+        <source>New routine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5730837199751032716" datatype="html">
+        <source> <x id="ICU" equiv-text="{routine.exercises.length, plural,
+                    =1 {1 exercise}
+                    other {{{ routine.exercises.length }} exercises}
+                  }" xid="2077360991502522751"/> · <x id="ICU_1" equiv-text="{setCount(routine), plural, =1 {1 set} other {{{ setCount(routine) }} sets}}" xid="1350286920924652583"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">52,59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5879897743507375506" datatype="html">
+        <source>{VAR_PLURAL, plural, =1 {1 set} other {<x id="INTERPOLATION"/> sets}}</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6548484069794950851" datatype="html">
+        <source> Updated <x id="INTERPOLATION" equiv-text="{{ routine.updatedAt | date: &apos;mediumDate&apos; }}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5162686434580248853" datatype="html">
+        <source>Start</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5377078063439833222" datatype="html">
+        <source> Edit </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2502514662075565663" datatype="html">
+        <source>Duplicate <x id="INTERPOLATION" equiv-text="{{ routine.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">74,75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4168485708389700387" datatype="html">
+        <source>Delete <x id="INTERPOLATION" equiv-text="{{ routine.name }}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">83,84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2619384758471013800" datatype="html">
+        <source>Create your first routine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="71175784546597783" datatype="html">
+        <source> Start from any program day or the full body workout chart, or pick exercises muscle by muscle. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">95,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="663906513187301510" datatype="html">
+        <source> Build a routine </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3393211838305376318" datatype="html">
+        <source>Edit routine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4522171017531771233" datatype="html">
+        <source>Build a routine</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8594082424209636991" datatype="html">
+        <source>No workout in progress</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">134,135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5653940553584065192" datatype="html">
+        <source> Choose a routine and press start to log your sets, weights and reps. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">136</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9200403545765010617" datatype="html">
+        <source> Choose a routine </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1250457021600453082" datatype="html">
+        <source>Previous workouts</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.html</context>
+          <context context-type="linenumber">146,147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6924245241744002654" datatype="html">
+        <source>Build</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3257070501753557673" datatype="html">
+        <source>Log workout</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="186236568870281953" datatype="html">
+        <source>History</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2695437826595057915" datatype="html">
+        <source>“<x id="NAME" equiv-text="routine.name"/>” saved.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1536009079665097423" datatype="html">
+        <source><x id="NAME" equiv-text="routine.name"/> (copy)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="403196458838378884" datatype="html">
+        <source>Routine duplicated.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7408009658408113267" datatype="html">
+        <source>“<x id="NAME" equiv-text="routine.name"/>” deleted.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5561425111422257850" datatype="html">
+        <source>Workout saved. Nice work.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">187</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2080386253093857552" datatype="html">
+        <source>Workout discarded.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">196</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1612619698459066308" datatype="html">
+        <source>Workout deleted.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3698601683212425081" datatype="html">
+        <source>Finish or discard your current workout before starting another one.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/planner/workout-planner.ts</context>
+          <context context-type="linenumber">214</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1729772230889522252" datatype="html">
@@ -5814,13 +7374,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
           <context context-type="linenumber">17,18</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="502130212127803987" datatype="html">
-        <source>Goal</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/features/programs/programs-page.html</context>
-          <context context-type="linenumber">35,36</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6074084738172802418" datatype="html">

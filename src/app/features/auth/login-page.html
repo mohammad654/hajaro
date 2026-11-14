@@ -1,18 +1,18 @@
 <section class="login section">
   <div class="container login__inner">
     <div class="login__card card">
-      <p class="eyebrow">Client area</p>
-      <h1>Sign in</h1>
-      <p class="text-muted">
-        Access your training plan, log workouts, submit check-ins and track your progress.
+      <p class="eyebrow" i18n>Client area</p>
+      <h1 i18n>Sign in</h1>
+      <p class="text-muted" i18n>
+        See your training plan, log workouts, send check-ins and follow your progress.
       </p>
 
       @if (auth.isDemoMode) {
         <div class="alert alert--info demo">
           <app-icon name="info" />
           <div>
-            <p>
-              <strong>Demo mode.</strong> No backend is connected, so data is stored only in this
+            <p i18n>
+              <strong>Demo mode.</strong> No backend is connected, so data is only stored in this
               browser.
             </p>
             <div class="cluster">
@@ -21,6 +21,7 @@
                 class="btn btn--sm"
                 (click)="demo('client')"
                 [disabled]="loading()"
+                i18n
               >
                 Explore as client
               </button>
@@ -29,6 +30,7 @@
                 class="btn btn--sm"
                 (click)="demo('admin')"
                 [disabled]="loading()"
+                i18n
               >
                 Explore as coach (admin)
               </button>
@@ -46,7 +48,7 @@
 
       <form [formGroup]="form" (ngSubmit)="submit()" novalidate class="stack">
         <div class="field">
-          <label for="login-email">Email</label>
+          <label for="login-email" i18n>Email</label>
           <input
             id="login-email"
             class="input"
@@ -55,10 +57,15 @@
             autocomplete="username"
             aria-describedby="login-email-err"
           />
-          <app-field-error [control]="form.controls.email" id="login-email-err" label="Email" />
+          <app-field-error
+            [control]="form.controls.email"
+            id="login-email-err"
+            i18n-label
+            label="Email"
+          />
         </div>
         <div class="field">
-          <label for="login-password">Password</label>
+          <label for="login-password" i18n>Password</label>
           <div class="password">
             <input
               id="login-password"
@@ -75,29 +82,33 @@
               [attr.aria-pressed]="showPassword()"
             >
               <app-icon name="eye" [size]="18" />
-              <span class="visually-hidden">{{
-                showPassword() ? 'Hide password' : 'Show password'
-              }}</span>
+              @if (showPassword()) {
+                <span class="visually-hidden" i18n>Hide password</span>
+              } @else {
+                <span class="visually-hidden" i18n>Show password</span>
+              }
             </button>
           </div>
           <app-field-error
             [control]="form.controls.password"
             id="login-password-err"
+            i18n-label
             label="Password"
           />
         </div>
         <button type="submit" class="btn btn--primary btn--lg btn--block" [disabled]="loading()">
           @if (loading()) {
-            <span class="spinner" aria-hidden="true"></span> Signing in…
+            <span class="spinner" aria-hidden="true"></span>
+            <ng-container i18n>Signing in…</ng-container>
           } @else {
-            <app-icon name="log-in" [size]="18" /> Sign in
+            <app-icon name="log-in" [size]="18" /> <ng-container i18n>Sign in</ng-container>
           }
         </button>
       </form>
 
-      <p class="text-small text-muted login__foot">
-        Not a client yet? <a [routerLink]="'/contact' | localePath">Book a free consultation</a>.
-        Forgot your password? Contact your coach to reset access.
+      <p class="text-small text-muted login__foot" i18n>
+        Not a client yet? <a [routerLink]="'/contact' | localePath">Book a free intro</a>. Forgot
+        your password? Contact me and I'll reset your access.
       </p>
     </div>
   </div>

@@ -15,16 +15,19 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
-      eyebrow="Nutrition & diet"
-      title="Nutrition for muscle and performance"
-      lead="Clear, evidence-based nutrition education for building muscle, losing fat and recovering well — without extremes or gimmicks."
-      [breadcrumbs]="[{ label: 'Nutrition', url: '/nutrition' }]"
+      i18n-eyebrow
+      eyebrow="Nutrition"
+      i18n-title
+      title="Food for muscle and performance"
+      i18n-lead
+      lead="Clear information about eating to build muscle, lose fat and recover well. No extremes, no gimmicks."
+      [breadcrumbs]="breadcrumbs"
     >
       <div class="cluster hero-ctas">
-        <a class="btn btn--primary" [routerLink]="'/nutrition/calculators' | localePath"
+        <a class="btn btn--primary" [routerLink]="'/nutrition/calculators' | localePath" i18n
           >Open the calculators</a
         >
-        <a class="btn" [routerLink]="'/services/fat-loss-coaching' | localePath"
+        <a class="btn" [routerLink]="'/services/fat-loss-coaching' | localePath" i18n
           >Nutrition coaching</a
         >
       </div>
@@ -32,7 +35,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
 
     <section class="section">
       <div class="container">
-        <nav class="toc cluster" aria-label="Nutrition topics">
+        <nav class="toc cluster" i18n-aria-label aria-label="Nutrition topics">
           @for (topic of topics; track topic.id) {
             <a class="chip" [routerLink]="[]" [fragment]="topic.id">{{ topic.title }}</a>
           }
@@ -62,7 +65,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     @if (articles().length) {
       <section class="section section--alt" aria-labelledby="nutrition-articles">
         <div class="container">
-          <h2 id="nutrition-articles">Nutrition articles</h2>
+          <h2 id="nutrition-articles" i18n>Articles about food</h2>
           <div class="grid grid--3">
             @for (article of articles(); track article.id) {
               <app-article-card [article]="article" />
@@ -73,9 +76,12 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     }
 
     <app-cta-section
-      eyebrow="Personal nutrition coaching"
-      title="Nutrition that fits your life"
-      text="Individual calorie and macro targets, practical meal structures and weekly adjustments based on your progress."
+      i18n-eyebrow
+      eyebrow="Nutrition coaching"
+      i18n-title
+      title="Food that fits your life"
+      i18n-text
+      text="Calorie and macro targets set for you, a practical meal structure, and weekly adjustments based on your progress."
     />
   `,
   styles: `
@@ -112,6 +118,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
 export class NutritionPage {
   protected readonly topics = NUTRITION_TOPICS;
   protected readonly disclaimer = NUTRITION_DISCLAIMER;
+  protected readonly breadcrumbs = [{ label: $localize`Nutrition`, url: '/nutrition' }];
   private readonly articleStore = inject(ArticleStore);
   protected readonly articles = computed(() =>
     this.articleStore
@@ -122,9 +129,8 @@ export class NutritionPage {
 
   constructor() {
     applyPageSeo('nutrition', {
-      title: 'Bodybuilding Nutrition Guide: Muscle Gain, Fat Loss & Macros',
-      description:
-        'Evidence-based bodybuilding nutrition: muscle-building and fat-loss nutrition, protein, carbohydrates and fats, meal planning, hydration, supplements and recovery.',
+      title: $localize`Nutrition Guide: Muscle Gain, Fat Loss & Macros`,
+      description: $localize`Eating to build muscle or lose fat: protein, carbohydrates and fat, planning meals, drinking enough, supplements and recovery.`,
     });
   }
 }

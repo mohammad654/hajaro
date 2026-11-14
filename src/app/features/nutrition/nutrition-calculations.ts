@@ -9,11 +9,11 @@ export type NutritionGoal = 'lose' | 'maintain' | 'gain';
 /** Standard activity multipliers applied to resting energy expenditure. */
 export const ACTIVITY_FACTORS: Readonly<Record<ActivityLevel, { factor: number; label: string }>> =
   {
-    sedentary: { factor: 1.2, label: 'Sedentary (little or no exercise)' },
-    light: { factor: 1.375, label: 'Lightly active (1–3 sessions / week)' },
-    moderate: { factor: 1.55, label: 'Moderately active (3–5 sessions / week)' },
-    very: { factor: 1.725, label: 'Very active (6–7 sessions / week)' },
-    extreme: { factor: 1.9, label: 'Extremely active (physical job + training)' },
+    sedentary: { factor: 1.2, label: $localize`Sitting most of the day (little or no exercise)` },
+    light: { factor: 1.375, label: $localize`Lightly active (1 to 3 sessions a week)` },
+    moderate: { factor: 1.55, label: $localize`Moderately active (3 to 5 sessions a week)` },
+    very: { factor: 1.725, label: $localize`Very active (6 to 7 sessions a week)` },
+    extreme: { factor: 1.9, label: $localize`Extremely active (physical job plus training)` },
   };
 
 /** Calorie adjustment relative to maintenance for each goal. */
@@ -46,12 +46,12 @@ export function calculateBmi(weightKg: number, heightCm: number): BmiResult {
   const bmi = weightKg / (heightM * heightM);
   const category =
     bmi < 18.5
-      ? 'Underweight'
+      ? $localize`Underweight`
       : bmi < 25
-        ? 'Healthy weight range'
+        ? $localize`Healthy weight range`
         : bmi < 30
-          ? 'Overweight'
-          : 'Obesity range';
+          ? $localize`Overweight`
+          : $localize`Obesity range`;
   return { bmi: round(bmi, 1), category };
 }
 

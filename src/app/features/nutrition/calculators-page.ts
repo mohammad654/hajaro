@@ -12,35 +12,38 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
+      i18n-eyebrow
       eyebrow="Free tools"
+      i18n-title
       title="Nutrition calculators"
-      lead="Estimate your BMI, daily calories, protein needs, macronutrients and water intake. Enter your details once — every calculator updates instantly."
-      [breadcrumbs]="[
-        { label: 'Nutrition', url: '/nutrition' },
-        { label: 'Calculators', url: '/nutrition/calculators' },
-      ]"
+      i18n-lead
+      lead="Estimate your BMI, daily calories, protein, macros and water. Fill in your details once and every calculator updates straight away."
+      [breadcrumbs]="breadcrumbs"
     />
     <section class="section section--tight">
       <div class="container">
-        <nav class="jump cluster" aria-label="Jump to calculator">
+        <nav class="jump cluster" i18n-aria-label aria-label="Jump to calculator">
           <a [routerLink]="[]" fragment="bmi" class="chip">BMI</a>
-          <a [routerLink]="[]" fragment="calories" class="chip">Calories</a>
-          <a [routerLink]="[]" fragment="protein" class="chip">Protein</a>
-          <a [routerLink]="[]" fragment="macros" class="chip">Macros</a>
-          <a [routerLink]="[]" fragment="water" class="chip">Water</a>
+          <a [routerLink]="[]" fragment="calories" class="chip" i18n>Calories</a>
+          <a [routerLink]="[]" fragment="protein" class="chip" i18n>Protein</a>
+          <a [routerLink]="[]" fragment="macros" class="chip" i18n>Macros</a>
+          <a [routerLink]="[]" fragment="water" class="chip" i18n>Water</a>
         </nav>
         <app-nutrition-calculator />
         <p class="more">
-          <a [routerLink]="'/nutrition' | localePath" class="link-arrow"
+          <a [routerLink]="'/nutrition' | localePath" class="link-arrow" i18n
             >Learn how to use these numbers in the nutrition guide</a
           >
         </p>
       </div>
     </section>
     <app-cta-section
-      eyebrow="Beyond the estimate"
-      title="Get targets built for you"
-      text="Calculators give a starting point. Coaching turns your real-world data — weight trends, performance and recovery — into precise, weekly-adjusted targets."
+      i18n-eyebrow
+      eyebrow="More than an estimate"
+      i18n-title
+      title="Targets set for you"
+      i18n-text
+      text="A calculator gives you a starting point. With coaching, I use your real data (weight trend, performance and recovery) to set your targets and adjust them every week."
     />
   `,
   styles: `
@@ -56,11 +59,15 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   `,
 })
 export class CalculatorsPage {
+  protected readonly breadcrumbs = [
+    { label: $localize`Nutrition`, url: '/nutrition' },
+    { label: $localize`Calculators`, url: '/nutrition/calculators' },
+  ];
+
   constructor() {
     applyPageSeo('calculators', {
-      title: 'Calorie, Protein, Macro, BMI & Water Calculators',
-      description:
-        'Free fitness nutrition calculators: estimate daily calories, protein intake, macronutrients, BMI and daily water intake for muscle gain or fat loss.',
+      title: $localize`Calorie, Protein, Macro, BMI & Water Calculators`,
+      description: $localize`Free calculators: estimate your daily calories, protein, macros, BMI and water for building muscle or losing fat.`,
     });
   }
 }

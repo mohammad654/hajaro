@@ -35,8 +35,8 @@ export class LoginPage {
 
   constructor() {
     inject(SeoService).update({
-      title: 'Client Login',
-      description: 'Sign in to your coaching dashboard.',
+      title: $localize`Client Login`,
+      description: $localize`Sign in to your coaching dashboard.`,
       noindex: true,
     });
     if (this.auth.isDemoMode) {
@@ -69,7 +69,7 @@ export class LoginPage {
         this.error.set(
           e instanceof ApiError
             ? e.message
-            : 'Sign-in failed. Please check your details and try again.',
+            : $localize`Sign-in failed. Check your email and password and try again.`,
         ),
     });
   }

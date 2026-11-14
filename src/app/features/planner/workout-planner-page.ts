@@ -9,10 +9,13 @@ import { WorkoutPlanner } from './workout-planner';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
+      i18n-eyebrow
       eyebrow="Free training tool"
+      i18n-title
       title="Workout planner"
-      lead="Build routines from any program or muscle group, customise sets, reps and rest, then log weights and reps as you train and review every previous session."
-      [breadcrumbs]="[{ label: 'Workout planner', url: '/workout-planner' }]"
+      i18n-lead
+      lead="Build routines from any program or muscle group, set your own sets, reps and rest, then log weights and reps as you train and look back at every workout."
+      [breadcrumbs]="breadcrumbs"
     />
     <section class="section section--tight">
       <div class="container">
@@ -27,6 +30,7 @@ import { WorkoutPlanner } from './workout-planner';
   `,
 })
 export class WorkoutPlannerPage {
+  protected readonly breadcrumbs = [{ label: $localize`Workout planner`, url: '/workout-planner' }];
   /** Query parameters bound by the router. */
   readonly program = input<string | undefined>(undefined);
   readonly add = input<string | undefined>(undefined);
@@ -35,9 +39,8 @@ export class WorkoutPlannerPage {
 
   constructor() {
     applyPageSeo('workout-planner', {
-      title: 'Free Workout Planner & Training Log',
-      description:
-        'Plan your workouts and track your training: build routines, customise sets, reps and rest periods, log weights and reps and review your workout history.',
+      title: $localize`Free Workout Planner & Training Log`,
+      description: $localize`Plan and track your training: build routines, set sets, reps and rest, log weights and reps and look back at your workout history.`,
     });
   }
 }

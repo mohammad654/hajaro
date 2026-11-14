@@ -1,5 +1,5 @@
 <div class="planner">
-  <div class="tabs" role="tablist" aria-label="Workout planner">
+  <div class="tabs" role="tablist" i18n-aria-label aria-label="Workout planner">
     @for (t of tabs; track t.id) {
       <button
         type="button"
@@ -12,7 +12,7 @@
       >
         {{ t.label }}
         @if (t.id === 'session' && activeSession()) {
-          <span class="live-dot" aria-label="in progress"></span>
+          <span class="live-dot" i18n-aria-label aria-label="in progress"></span>
         }
       </button>
     }
@@ -21,10 +21,10 @@
   @if (isGuest()) {
     <p class="alert alert--info guest-note">
       <app-icon name="info" [size]="18" />
-      <span
+      <span i18n
         >Your routines and workouts are saved on this device.
-        <a [routerLink]="'/login' | localePath">Clients can sign in</a> to train from their coach's
-        plan.</span
+        <a [routerLink]="'/login' | localePath">Clients can sign in</a> to train from the plan I
+        wrote for them.</span
       >
     </p>
   }
@@ -38,9 +38,9 @@
     @switch (tab()) {
       @case ('routines') {
         <div class="panel__head">
-          <h2>My routines</h2>
+          <h2 i18n>My routines</h2>
           <button type="button" class="btn btn--primary" (click)="newRoutine()">
-            <app-icon name="plus" [size]="18" /> New routine
+            <app-icon name="plus" [size]="18" /> <ng-container i18n>New routine</ng-container>
           </button>
         </div>
         @if (myRoutines().length) {
@@ -48,20 +48,30 @@
             @for (routine of myRoutines(); track routine.id) {
               <li class="card routine">
                 <h3>{{ routine.name }}</h3>
-                <p class="text-small text-muted">{{ exerciseCount(routine) }}</p>
-                <p class="text-small text-muted">
+                <p class="text-small text-muted" i18n>
+                  {routine.exercises.length, plural,
+                    =1 {1 exercise}
+                    other {{{ routine.exercises.length }} exercises}
+                  }
+                  ·
+                  {setCount(routine), plural, =1 {1 set} other {{{ setCount(routine) }} sets}}
+                </p>
+                <p class="text-small text-muted" i18n>
                   Updated {{ routine.updatedAt | date: 'mediumDate' }}
                 </p>
                 <div class="routine__actions">
                   <button type="button" class="btn btn--primary btn--sm" (click)="start(routine)">
-                    <app-icon name="play" [size]="16" /> Start
+                    <app-icon name="play" [size]="16" /> <ng-container i18n>Start</ng-container>
                   </button>
-                  <button type="button" class="btn btn--sm" (click)="edit(routine)">Edit</button>
+                  <button type="button" class="btn btn--sm" (click)="edit(routine)" i18n>
+                    Edit
+                  </button>
                   <button
                     type="button"
                     class="btn btn--ghost btn--sm"
                     (click)="duplicate(routine)"
-                    [attr.aria-label]="'Duplicate ' + routine.name"
+                    i18n-aria-label
+                    aria-label="Duplicate {{ routine.name }}"
                   >
                     <app-icon name="copy" [size]="16" />
                   </button>
@@ -69,7 +79,8 @@
                     type="button"
                     class="btn btn--ghost btn--sm"
                     (click)="deleteRoutine(routine)"
-                    [attr.aria-label]="'Delete ' + routine.name"
+                    i18n-aria-label
+                    aria-label="Delete {{ routine.name }}"
                   >
                     <app-icon name="trash" [size]="16" />
                   </button>
@@ -79,12 +90,12 @@
           </ul>
         } @else {
           <div class="card empty">
-            <h3>Create your first routine</h3>
-            <p class="text-muted">
+            <h3 i18n>Create your first routine</h3>
+            <p class="text-muted" i18n>
               Start from any program day or the full body workout chart, or pick exercises muscle by
               muscle.
             </p>
-            <button type="button" class="btn btn--primary" (click)="newRoutine()">
+            <button type="button" class="btn btn--primary" (click)="newRoutine()" i18n>
               Build a routine
             </button>
           </div>
@@ -92,7 +103,11 @@
       }
       @case ('builder') {
         <div class="panel__head">
-          <h2>{{ editing() ? 'Edit routine' : 'Build a routine' }}</h2>
+          @if (editing()) {
+            <h2 i18n>Edit routine</h2>
+          } @else {
+            <h2 i18n>Build a routine</h2>
+          }
         </div>
         @for (key of [builderKey()]; track key) {
           <app-routine-builder
@@ -116,11 +131,11 @@
           />
         } @else {
           <div class="card empty">
-            <h3>No workout in progress</h3>
-            <p class="text-muted">
+            <h3 i18n>No workout in progress</h3>
+            <p class="text-muted" i18n>
               Choose a routine and press start to log your sets, weights and reps.
             </p>
-            <button type="button" class="btn btn--primary" (click)="tab.set('routines')">
+            <button type="button" class="btn btn--primary" (click)="tab.set('routines')" i18n>
               Choose a routine
             </button>
           </div>
@@ -128,7 +143,7 @@
       }
       @case ('history') {
         <div class="panel__head">
-          <h2>Previous sessions</h2>
+          <h2 i18n>Previous workouts</h2>
         </div>
         <app-session-history [sessions]="mySessions()" (deleted)="deleteSession($event)" />
       }

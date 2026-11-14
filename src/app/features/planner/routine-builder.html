@@ -2,36 +2,38 @@
   <div class="builder__main stack">
     <div class="form-grid">
       <div class="field">
-        <label for="routine-name">Routine name</label>
+        <label for="routine-name" i18n>Routine name</label>
         <input
           id="routine-name"
           class="input"
           formControlName="name"
-          placeholder="e.g. Upper body A"
+          i18n-placeholder
+          placeholder="For example: Upper body A"
           aria-describedby="routine-name-error"
         />
         <app-field-error
           [control]="form.controls.name"
           id="routine-name-error"
+          i18n-label
           label="Routine name"
         />
       </div>
       <div class="field">
-        <label for="routine-template">Start from a template</label>
+        <label for="routine-template" i18n>Start from a template</label>
         <select id="routine-template" class="select" (change)="applyTemplate(readValue($event))">
-          <option value="">Choose a program day…</option>
+          <option value="" i18n>Choose a program day</option>
           @for (t of templates(); track t.id) {
             <option [value]="t.id">{{ t.label }}</option>
           }
         </select>
-        <span class="field__hint">Replaces the current exercise list.</span>
+        <span class="field__hint" i18n>Replaces the current exercise list.</span>
       </div>
     </div>
 
     <div formArrayName="exercises" class="rows">
       @if (rows.length === 0) {
-        <p class="placeholder-note">
-          No exercises yet. Choose a template or add exercises from the picker.
+        <p class="placeholder-note" i18n>
+          No exercises yet. Choose a template, or add exercises from the list.
         </p>
       }
       @for (row of rows.controls; track row; let i = $index; let first = $first; let last = $last) {
@@ -42,7 +44,7 @@
           </legend>
           <div class="row__fields">
             <div class="field">
-              <label [for]="'sets-' + i">Sets</label>
+              <label [for]="'sets-' + i" i18n>Sets</label>
               <input
                 [id]="'sets-' + i"
                 class="input input--sm"
@@ -53,11 +55,11 @@
               />
             </div>
             <div class="field">
-              <label [for]="'reps-' + i">Reps</label>
+              <label [for]="'reps-' + i" i18n>Reps</label>
               <input [id]="'reps-' + i" class="input input--sm" formControlName="reps" />
             </div>
             <div class="field">
-              <label [for]="'rest-' + i">Rest (s)</label>
+              <label [for]="'rest-' + i" i18n>Rest (s)</label>
               <input
                 [id]="'rest-' + i"
                 class="input input--sm"
@@ -69,7 +71,7 @@
               />
             </div>
             <div class="field">
-              <label [for]="'kg-' + i">Target kg</label>
+              <label [for]="'kg-' + i" i18n>Target kg</label>
               <input
                 [id]="'kg-' + i"
                 class="input input--sm"
@@ -87,6 +89,7 @@
               class="btn btn--ghost btn--sm"
               (click)="move(i, -1)"
               [disabled]="first"
+              i18n-aria-label
               aria-label="Move up"
             >
               <app-icon name="arrow-up" [size]="16" />
@@ -96,6 +99,7 @@
               class="btn btn--ghost btn--sm"
               (click)="move(i, 1)"
               [disabled]="last"
+              i18n-aria-label
               aria-label="Move down"
             >
               <app-icon name="arrow-down" [size]="16" />
@@ -104,54 +108,58 @@
               type="button"
               class="btn btn--ghost btn--sm"
               (click)="removeRow(i)"
-              [attr.aria-label]="'Remove ' + exerciseName(row.controls.exerciseId.value)"
+              i18n-aria-label
+              aria-label="Remove {{ exerciseName(row.controls.exerciseId.value) }}"
             >
               <app-icon name="trash" [size]="16" />
             </button>
           </div>
           @if (row.invalid && row.touched) {
-            <p class="field__error">Check the values: sets 1–12, rest 0–600 s, reps required.</p>
+            <p class="field__error" i18n>
+              Check the values: sets from 1 to 12, rest from 0 to 600 seconds, and fill in the reps.
+            </p>
           }
         </fieldset>
       }
     </div>
 
     <div class="form-actions">
-      <button type="button" class="btn btn--ghost" (click)="cancelled.emit()">Cancel</button>
+      <button type="button" class="btn btn--ghost" (click)="cancelled.emit()" i18n>Cancel</button>
       <button type="submit" class="btn btn--primary" [disabled]="saving()">
         @if (saving()) {
-          <span class="spinner" aria-hidden="true"></span> Saving…
+          <span class="spinner" aria-hidden="true"></span> <ng-container i18n>Saving…</ng-container>
         } @else {
-          <app-icon name="save" [size]="18" /> Save routine
+          <app-icon name="save" [size]="18" /> <ng-container i18n>Save routine</ng-container>
         }
       </button>
     </div>
   </div>
 
-  <aside class="picker card" aria-label="Exercise picker">
-    <h3>Add exercises</h3>
+  <aside class="picker card" i18n-aria-label aria-label="Exercise picker">
+    <h3 i18n>Add exercises</h3>
     <div class="field">
-      <label for="picker-muscle">Muscle group</label>
+      <label for="picker-muscle" i18n>Muscle group</label>
       <select
         id="picker-muscle"
         class="select"
         [value]="muscleFilter()"
         (change)="muscleFilter.set($any(readValue($event)))"
       >
-        <option value="">All muscle groups</option>
+        <option value="" i18n>All muscle groups</option>
         @for (m of muscles.all; track m.id) {
           <option [value]="m.id">{{ m.name }}</option>
         }
       </select>
     </div>
     <div class="field">
-      <label for="picker-search">Search</label>
+      <label for="picker-search" i18n>Search</label>
       <input
         id="picker-search"
         class="input"
         type="search"
         [value]="search()"
         (input)="search.set(readValue($event))"
+        i18n-placeholder
         placeholder="Exercise name"
       />
     </div>
@@ -163,18 +171,19 @@
             type="button"
             class="btn btn--sm"
             (click)="addExercise(e.id)"
-            [attr.aria-label]="'Add ' + e.name"
+            i18n-aria-label
+            aria-label="Add {{ e.name }}"
           >
             <app-icon name="plus" [size]="16" />
             @if (selectedIds().includes(e.id)) {
-              Again
+              <ng-container i18n>Again</ng-container>
             } @else {
-              Add
+              <ng-container i18n>Add</ng-container>
             }
           </button>
         </li>
       } @empty {
-        <li class="text-muted">No exercises match.</li>
+        <li class="text-muted" i18n>No exercises match.</li>
       }
     </ul>
   </aside>

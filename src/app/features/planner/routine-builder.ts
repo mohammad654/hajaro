@@ -79,13 +79,13 @@ export class RoutineBuilder implements OnInit {
   private sourceProgramId: string | undefined;
 
   protected readonly templates = computed(() => [
-    { id: CHART_TEMPLATE_ID, label: 'Full body workout chart' },
+    { id: CHART_TEMPLATE_ID, label: $localize`Full body workout chart` },
     ...this.programs
       .all()
       .flatMap((p) =>
         p.schedule
           .filter((d) => !d.isRestDay)
-          .map((d) => ({ id: `${p.id}::${d.id}`, label: `${p.name} — ${d.label}: ${d.focus}` })),
+          .map((d) => ({ id: `${p.id}::${d.id}`, label: `${p.name}, ${d.label}: ${d.focus}` })),
       ),
   ]);
 
@@ -123,7 +123,7 @@ export class RoutineBuilder implements OnInit {
   protected applyTemplate(templateId: string): void {
     if (!templateId) return;
     if (templateId === CHART_TEMPLATE_ID) {
-      this.replaceRows(exercisesFromChart(FULL_BODY_WORKOUT_CHART), 'Full body workout');
+      this.replaceRows(exercisesFromChart(FULL_BODY_WORKOUT_CHART), $localize`Full body workout`);
       return;
     }
     const [programId, dayId] = templateId.split('::');
@@ -131,7 +131,7 @@ export class RoutineBuilder implements OnInit {
     const day = program?.schedule.find((d) => d.id === dayId);
     if (program && day) {
       this.sourceProgramId = program.id;
-      this.replaceRows(exercisesFromDay(day), `${program.name} — ${day.focus}`);
+      this.replaceRows(exercisesFromDay(day), `${program.name}: ${day.focus}`);
     }
   }
 

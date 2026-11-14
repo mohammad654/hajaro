@@ -74,10 +74,10 @@ export class WorkoutPlanner {
   readonly template = input<string | undefined>(undefined);
 
   protected readonly tabs: readonly { id: PlannerTab; label: string }[] = [
-    { id: 'routines', label: 'My routines' },
-    { id: 'builder', label: 'Build' },
-    { id: 'session', label: 'Log workout' },
-    { id: 'history', label: 'History' },
+    { id: 'routines', label: $localize`My routines` },
+    { id: 'builder', label: $localize`Build` },
+    { id: 'session', label: $localize`Log workout` },
+    { id: 'history', label: $localize`History` },
   ];
 
   protected readonly tab = signal<PlannerTab>('routines');
@@ -139,7 +139,7 @@ export class WorkoutPlanner {
       .pipe(finalize(() => this.saving.set(false)))
       .subscribe({
         next: () => {
-          this.toast.success(`“${routine.name}” saved.`);
+          this.toast.success($localize`“${routine.name}:NAME:” saved.`);
           this.tab.set('routines');
         },
         error: (e: Error) => this.toast.error(e.message),
@@ -149,15 +149,19 @@ export class WorkoutPlanner {
   protected duplicate(routine: WorkoutRoutine): void {
     const copy = createRoutine(
       this.ownerId(),
-      `${routine.name} (copy)`,
+      $localize`${routine.name}:NAME: (copy)`,
       routine.exercises,
       routine.sourceProgramId,
     );
-    this.routines.save(copy, true).subscribe(() => this.toast.success('Routine duplicated.'));
+    this.routines
+      .save(copy, true)
+      .subscribe(() => this.toast.success($localize`Routine duplicated.`));
   }
 
   protected deleteRoutine(routine: WorkoutRoutine): void {
-    this.routines.remove(routine.id).subscribe(() => this.toast.info(`“${routine.name}” deleted.`));
+    this.routines
+      .remove(routine.id)
+      .subscribe(() => this.toast.info($localize`“${routine.name}:NAME:” deleted.`));
   }
 
   protected start(routine: WorkoutRoutine): void {
@@ -180,7 +184,7 @@ export class WorkoutPlanner {
       .subscribe({
         next: () => {
           this.updateSession(null);
-          this.toast.success('Workout saved. Great work!');
+          this.toast.success($localize`Workout saved. Nice work.`);
           this.tab.set('history');
         },
         error: (e: Error) => this.toast.error(e.message),
@@ -189,17 +193,16 @@ export class WorkoutPlanner {
 
   protected discard(): void {
     this.updateSession(null);
-    this.toast.info('Workout discarded.');
+    this.toast.info($localize`Workout discarded.`);
     this.tab.set('routines');
   }
 
   protected deleteSession(id: string): void {
-    this.sessions.remove(id).subscribe(() => this.toast.info('Session deleted.'));
+    this.sessions.remove(id).subscribe(() => this.toast.info($localize`Workout deleted.`));
   }
 
-  protected exerciseCount(routine: WorkoutRoutine): string {
-    const sets = routine.exercises.reduce((sum, e) => sum + e.sets, 0);
-    return `${routine.exercises.length} exercises · ${sets} sets`;
+  protected setCount(routine: WorkoutRoutine): number {
+    return routine.exercises.reduce((sum, e) => sum + e.sets, 0);
   }
 
   private openBuilder(): void {
@@ -208,7 +211,7 @@ export class WorkoutPlanner {
   }
 
   private confirmReplace(): boolean {
-    this.toast.info('Finish or discard your current workout before starting another.');
+    this.toast.info($localize`Finish or discard your current workout before starting another one.`);
     this.tab.set('session');
     return false;
   }
@@ -219,7 +222,7 @@ export class WorkoutPlanner {
       const day = program.schedule.find((d) => !d.isRestDay);
       if (day) {
         this.newRoutine({
-          name: `${program.name} — ${day.focus}`,
+          name: `${program.name}: ${day.focus}`,
           exercises: exercisesFromDay(day),
           sourceProgramId: program.id,
         });
@@ -228,7 +231,7 @@ export class WorkoutPlanner {
     }
     if (this.template() === CHART_TEMPLATE_ID) {
       this.newRoutine({
-        name: 'Full body workout',
+        name: $localize`Full body workout`,
         exercises: exercisesFromChart(FULL_BODY_WORKOUT_CHART),
       });
       return;

@@ -29,7 +29,7 @@ import { sessionStats } from './planner.utils';
                   <span class="badge" [class.badge--success]="row.stats.percent === 100"
                     >{{ row.stats.percent }}%</span
                   >
-                  <span class="text-small"
+                  <span class="text-small" i18n
                     >{{ row.stats.completedSets }}/{{ row.stats.totalSets }} sets</span
                   >
                   <span class="text-small">{{ row.stats.volumeKg }} kg</span>
@@ -60,7 +60,8 @@ import { sessionStats } from './planner.utils';
                     class="btn btn--danger btn--sm"
                     (click)="deleted.emit(row.session.id)"
                   >
-                    <app-icon name="trash" [size]="16" /> Delete session
+                    <app-icon name="trash" [size]="16" />
+                    <ng-container i18n>Delete workout</ng-container>
                   </button>
                 }
               </div>
@@ -69,8 +70,8 @@ import { sessionStats } from './planner.utils';
         }
       </ul>
     } @else {
-      <p class="placeholder-note">
-        No completed workouts yet. Finish a session and it will appear here.
+      <p class="placeholder-note" i18n>
+        No finished workouts yet. Finish a workout and it shows up here.
       </p>
     }
   `,

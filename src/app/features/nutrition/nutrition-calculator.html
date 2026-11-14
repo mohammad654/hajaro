@@ -5,23 +5,25 @@
     aria-labelledby="calc-form-title"
     (submit)="$event.preventDefault()"
   >
-    <h2 id="calc-form-title">Your details</h2>
+    <h2 id="calc-form-title" i18n>Your details</h2>
 
     <fieldset class="field">
-      <legend class="field__label">Sex (used for the energy equation)</legend>
+      <legend class="field__label" i18n>Sex (used in the energy formula)</legend>
       <div class="cluster">
         <label class="checkbox"
-          ><input type="radio" formControlName="sex" value="male" /> Male</label
+          ><input type="radio" formControlName="sex" value="male" />
+          <ng-container i18n>Male</ng-container></label
         >
         <label class="checkbox"
-          ><input type="radio" formControlName="sex" value="female" /> Female</label
+          ><input type="radio" formControlName="sex" value="female" />
+          <ng-container i18n>Female</ng-container></label
         >
       </div>
     </fieldset>
 
     <div class="form-grid">
       <div class="field">
-        <label for="c-age">Age</label>
+        <label for="c-age" i18n>Age</label>
         <input
           id="c-age"
           class="input"
@@ -32,10 +34,10 @@
           [max]="limits.age[1]"
           aria-describedby="c-age-err"
         />
-        <app-field-error [control]="form.controls.age" id="c-age-err" label="Age" />
+        <app-field-error [control]="form.controls.age" id="c-age-err" i18n-label label="Age" />
       </div>
       <div class="field">
-        <label for="c-height">Height (cm)</label>
+        <label for="c-height" i18n>Height (cm)</label>
         <input
           id="c-height"
           class="input"
@@ -44,10 +46,15 @@
           formControlName="heightCm"
           aria-describedby="c-height-err"
         />
-        <app-field-error [control]="form.controls.heightCm" id="c-height-err" label="Height" />
+        <app-field-error
+          [control]="form.controls.heightCm"
+          id="c-height-err"
+          i18n-label
+          label="Height"
+        />
       </div>
       <div class="field">
-        <label for="c-weight">Weight (kg)</label>
+        <label for="c-weight" i18n>Weight (kg)</label>
         <input
           id="c-weight"
           class="input"
@@ -57,10 +64,15 @@
           formControlName="weightKg"
           aria-describedby="c-weight-err"
         />
-        <app-field-error [control]="form.controls.weightKg" id="c-weight-err" label="Weight" />
+        <app-field-error
+          [control]="form.controls.weightKg"
+          id="c-weight-err"
+          i18n-label
+          label="Weight"
+        />
       </div>
       <div class="field">
-        <label for="c-training">Training hours / day</label>
+        <label for="c-training" i18n>Training hours per day</label>
         <input
           id="c-training"
           class="input"
@@ -73,11 +85,12 @@
         <app-field-error
           [control]="form.controls.trainingHours"
           id="c-training-err"
+          i18n-label
           label="Training hours"
         />
       </div>
       <div class="field span-2">
-        <label for="c-activity">Activity level</label>
+        <label for="c-activity" i18n>Activity level</label>
         <select id="c-activity" class="select" formControlName="activity">
           @for (o of activityOptions; track o[0]) {
             <option [value]="o[0]">{{ o[1].label }}</option>
@@ -85,11 +98,11 @@
         </select>
       </div>
       <div class="field span-2">
-        <label for="c-goal">Goal</label>
+        <label for="c-goal" i18n>Goal</label>
         <select id="c-goal" class="select" formControlName="goal">
-          <option value="lose">Lose fat</option>
-          <option value="maintain">Maintain / recomposition</option>
-          <option value="gain">Build muscle</option>
+          <option value="lose" i18n>Lose fat</option>
+          <option value="maintain" i18n>Maintain or recomposition</option>
+          <option value="gain" i18n>Build muscle</option>
         </select>
       </div>
     </div>
@@ -98,48 +111,50 @@
   <div class="calc__results" aria-live="polite">
     @if (results(); as r) {
       <section class="card result" id="bmi" aria-labelledby="bmi-title">
-        <h3 id="bmi-title">BMI calculator</h3>
-        <p class="result__value">{{ r.bmi.bmi }}</p>
+        <h3 id="bmi-title" i18n>BMI calculator</h3>
+        <p class="result__value">{{ r.bmi.bmi | number: '1.1-1' }}</p>
         <p class="result__label">{{ r.bmi.category }}</p>
-        <p class="result__note">
-          BMI does not distinguish muscle from fat, so it often overestimates risk for muscular
-          people.
+        <p class="result__note" i18n>
+          BMI can't tell muscle from fat, so it often overestimates the risk for muscular people.
         </p>
       </section>
 
       <section class="card result" id="calories" aria-labelledby="cal-title">
-        <h3 id="cal-title">Daily calorie estimator</h3>
-        <p class="result__value">{{ r.calories.target | number }} <small>kcal / day</small></p>
-        <p class="result__label">
-          Maintenance ≈ {{ r.calories.maintenance | number }} kcal · Resting ≈
+        <h3 id="cal-title" i18n>Daily calories</h3>
+        <p class="result__value">{{ r.calories.target | number }} <small i18n>kcal / day</small></p>
+        <p class="result__label" i18n>
+          Maintenance ≈ {{ r.calories.maintenance | number }} kcal · At rest ≈
           {{ r.calories.bmr | number }} kcal
         </p>
-        <p class="result__note">
-          Mifflin–St Jeor equation × activity factor, adjusted for your goal.
+        <p class="result__note" i18n>
+          Mifflin-St Jeor formula × activity factor, adjusted for your goal.
         </p>
       </section>
 
       <section class="card result" id="protein" aria-labelledby="protein-title">
-        <h3 id="protein-title">Protein calculator</h3>
-        <p class="result__value">{{ r.protein.min }}–{{ r.protein.max }} <small>g / day</small></p>
-        <p class="result__note">
-          Based on 1.6–2.2 g per kg of body weight for people who strength train.
+        <h3 id="protein-title" i18n>Protein</h3>
+        <p class="result__value">
+          {{ r.protein.min }}–{{ r.protein.max }} <small i18n>g / day</small>
+        </p>
+        <p class="result__note" i18n>
+          Based on 1.6 to 2.2 g per kg of body weight for people who do strength training.
         </p>
       </section>
 
       <section class="card result" id="macros" aria-labelledby="macro-title">
-        <h3 id="macro-title">Macronutrient calculator</h3>
+        <h3 id="macro-title" i18n>Macros</h3>
         <ul class="macros">
           <li>
-            <span>Protein</span><strong>{{ r.macros.proteinG }} g</strong
+            <span i18n>Protein</span><strong>{{ r.macros.proteinG }} g</strong
             ><em>{{ r.macros.proteinPct }}%</em>
           </li>
           <li>
-            <span>Carbohydrates</span><strong>{{ r.macros.carbsG }} g</strong
+            <span i18n>Carbohydrates</span><strong>{{ r.macros.carbsG }} g</strong
             ><em>{{ r.macros.carbsPct }}%</em>
           </li>
           <li>
-            <span>Fats</span><strong>{{ r.macros.fatG }} g</strong><em>{{ r.macros.fatPct }}%</em>
+            <span i18n>Fat</span><strong>{{ r.macros.fatG }} g</strong
+            ><em>{{ r.macros.fatPct }}%</em>
           </li>
         </ul>
         <div class="macro-bar" aria-hidden="true">
@@ -150,18 +165,20 @@
       </section>
 
       <section class="card result" id="water" aria-labelledby="water-title">
-        <h3 id="water-title">Daily water intake estimator</h3>
-        <p class="result__value">{{ r.waterL }} <small>litres / day</small></p>
-        <p class="result__note">
-          Around 35 ml per kg plus roughly 0.5 L per hour of training. Needs increase in hot
-          conditions.
+        <h3 id="water-title" i18n>Water per day</h3>
+        <p class="result__value">
+          {{ r.waterL | number: '1.1-1' }} <small i18n>litres / day</small>
+        </p>
+        <p class="result__note" i18n>
+          About 35 ml per kg, plus roughly half a litre per hour of training. You need more when
+          it's hot.
         </p>
       </section>
     } @else {
-      <div class="card placeholder-note">Enter valid details to see your estimates.</div>
+      <div class="card placeholder-note" i18n>Fill in your details to see your estimates.</div>
     }
     <p class="alert alert--info" role="note">
-      <strong>Estimates only.</strong>&nbsp;{{ disclaimer }}
+      <strong i18n>Estimates only.</strong>&nbsp;{{ disclaimer }}
     </p>
   </div>
 </div>
