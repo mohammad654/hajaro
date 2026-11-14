@@ -456,7 +456,7 @@
       </trans-unit>
       <trans-unit id="8525396521242520027" datatype="html">
         <source>Progressive Overload Explained: How to Keep Building Muscle</source>
-        <target state="translated">Progressieve overload uitgelegd: zo blijf je spieren opbouwen</target>
+        <target state="translated">Progressieve overload uitgelegd: zo blijf je groeien</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
           <context context-type="linenumber">18</context>
@@ -1036,7 +1036,7 @@
       </trans-unit>
       <trans-unit id="6179824085169318520" datatype="html">
         <source>How to set a calorie deficit you can keep up, keep training heavy, eat enough protein and use cardio well, so you lose fat and keep your muscle.</source>
-        <target state="translated">Zo stel je een calorietekort in dat je volhoudt, blijf je zwaar trainen, eet je genoeg eiwit en gebruik je cardio slim, zodat je vet verliest en je spieren behoudt.</target>
+        <target state="translated">Zo stel je een calorietekort in dat je volhoudt, blijf je zwaar trainen en gebruik je eiwit en cardio slim om vet te verliezen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
           <context context-type="linenumber">169</context>
@@ -1204,7 +1204,7 @@
       </trans-unit>
       <trans-unit id="8952688857985724724" datatype="html">
         <source>Sleep and Recovery for Muscle Growth: A Lifter’s Guide</source>
-        <target state="translated">Slaap en herstel voor spiergroei: een gids voor krachtsporters</target>
+        <target state="translated">Slaap en herstel voor spiergroei: gids voor krachtsporters</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/articles.data.ts</context>
           <context context-type="linenumber">214</context>
@@ -2696,7 +2696,7 @@
       </trans-unit>
       <trans-unit id="8727571458785915203" datatype="html">
         <source>A supported unilateral row that allows a long range of motion and fixes side-to-side imbalances.</source>
-        <target state="translated">Een ondersteunde roeioefening met één arm, met een grote bewegingsuitslag, die verschillen tussen links en rechts helpt wegwerken.</target>
+        <target state="translated">Roeien met één arm, met steun en een grote beweging. Helpt verschillen tussen links en rechts weg te werken.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/exercises.data.ts</context>
           <context context-type="linenumber">313</context>
@@ -3320,7 +3320,7 @@
       </trans-unit>
       <trans-unit id="912644615914789955" datatype="html">
         <source>Dumbbell Lateral Raise</source>
-        <target state="translated">Zijwaarts heffen met dumbbells (lateral raise)</target>
+        <target state="translated">Lateral raise met dumbbells</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/exercises.data.ts</context>
           <context context-type="linenumber">481</context>
@@ -4192,7 +4192,7 @@
       </trans-unit>
       <trans-unit id="1942412579553693323" datatype="html">
         <source>Overhead Cable Triceps Extension</source>
-        <target state="translated">Triceps extension boven het hoofd aan de kabel</target>
+        <target state="translated">Overhead triceps extension (kabel)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/core/data/exercises.data.ts</context>
           <context context-type="linenumber">706</context>
@@ -15484,7 +15484,7 @@
       </trans-unit>
       <trans-unit id="1031659815868146515" datatype="html">
         <source><x id="SUMMARY" equiv-text="exercise.summary"/> Technique, muscles worked, sets and reps.</source>
-        <target state="translated"><x id="SUMMARY" equiv-text="exercise.summary"/> Techniek, getrainde spieren, sets en herhalingen.</target>
+        <target state="translated"><x id="SUMMARY" equiv-text="exercise.summary"/> Techniek, spieren, sets en herhalingen.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/exercises/exercise-detail-page.ts</context>
           <context context-type="linenumber">105</context>
@@ -16674,7 +16674,7 @@
       </trans-unit>
       <trans-unit id="5661397096913715080" datatype="html">
         <source> Back </source>
-        <target state="translated"> Rug </target>
+        <target state="translated"> Achterkant </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/anatomy-explorer.ts</context>
           <context context-type="linenumber">51,54</context>
@@ -16988,7 +16988,7 @@
       </trans-unit>
       <trans-unit id="6859144841442505085" datatype="html">
         <source>Tap any muscle to see what it does, the best exercises, sets and reps and common mistakes. With a full body workout chart and training splits.</source>
-        <target state="translated">Tik op een spier om te zien wat die doet, de beste oefeningen, sets en herhalingen en veelgemaakte fouten. Met een full-body trainingskaart en trainingssplits.</target>
+        <target state="translated">Tik op een spier en zie wat die doet, de beste oefeningen, sets, herhalingen en fouten. Met een full-body trainingskaart en splits.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/muscle-chart/muscle-chart-page.ts</context>
           <context context-type="linenumber">72</context>
@@ -18806,7 +18806,7 @@
       </trans-unit>
       <trans-unit id="8419464428674552180" datatype="html">
         <source><x id="TAGLINE" equiv-text="program.tagline"/> A <x id="WEEKS" equiv-text="program.durationWeeks"/>-week program with a weekly schedule, sets, reps and progression rules.</source>
-        <target state="translated"><x id="TAGLINE" equiv-text="program.tagline"/> Een schema van <x id="WEEKS" equiv-text="program.durationWeeks"/> weken met weekrooster, sets, herhalingen en progressieregels.</target>
+        <target state="translated"><x id="TAGLINE" equiv-text="program.tagline"/> Een schema van <x id="WEEKS" equiv-text="program.durationWeeks"/> weken met weekrooster, sets en progressie.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/programs/program-detail-page.ts</context>
           <context context-type="linenumber">115</context>

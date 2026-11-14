@@ -21,6 +21,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  /* Long Dutch compound words ("wedstrijdvoorbereiding") must wrap instead of widening the page. */
+  overflow-wrap: break-word;
   background: var(--c-bg);
   color: var(--c-text);
   font-family: var(--font-body);

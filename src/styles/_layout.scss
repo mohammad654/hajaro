@@ -46,6 +46,8 @@
 
 .grid {
   display: grid;
+  /* One column that may shrink below its content's min width (long words wrap, no page overflow). */
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-5);
 
   &--2 {
@@ -79,6 +81,7 @@
 
 .split {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--sp-7);
   align-items: center;
 
