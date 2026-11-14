@@ -5,16 +5,35 @@
   top: 0;
   z-index: 100;
   height: var(--header-h);
-  background: rgb(11 11 12 / 72%);
-  backdrop-filter: blur(14px) saturate(140%);
   border-bottom: 1px solid transparent;
-  transition:
-    background var(--dur) var(--ease),
-    border-color var(--dur) var(--ease);
+  transition: border-color var(--dur) var(--ease);
+
+  /*
+   * Background + blur live on a pseudo-element: `backdrop-filter` on the header itself makes it the
+   * containing block for the `position: fixed` mobile panel, which then gets clipped to the header's
+   * height instead of filling the viewport.
+   */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgb(11 11 12 / 72%);
+    backdrop-filter: blur(14px) saturate(140%);
+    transition: background var(--dur) var(--ease);
+  }
 
   &.is-scrolled {
-    background: rgb(11 11 12 / 92%);
     border-bottom-color: var(--c-border);
+
+    &::before {
+      background: rgb(11 11 12 / 92%);
+    }
+  }
+
+  /* While the menu is open, sit above floating UI (consent banner: 900); toasts (1000) stay on top. */
+  &.is-menu-open {
+    z-index: 950;
   }
 }
 
@@ -230,6 +249,7 @@
   gap: var(--sp-6);
   padding: var(--sp-5) var(--gutter) var(--sp-7);
   overflow-y: auto;
+  overscroll-behavior: contain;
   background: var(--c-bg);
   animation: reveal var(--dur) var(--ease) both;
 

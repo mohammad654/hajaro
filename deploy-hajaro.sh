@@ -78,7 +78,5 @@ echo "If you still see a 404 in the browser, hard-refresh (Ctrl+Shift+R) or use 
 
 
 
-# 
 
-chmod +x deploy-hajaro.sh
-./deploy-hajaro.sh
+# chmod +x deploy-hajaro.sh & ./deploy-hajaro.sh

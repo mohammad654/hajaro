@@ -1,4 +1,8 @@
-<header class="header" [class.is-scrolled]="scrolled() || mobileOpen()">
+<header
+  class="header"
+  [class.is-scrolled]="scrolled() || mobileOpen()"
+  [class.is-menu-open]="mobileOpen()"
+>
   <div class="container header__inner">
     <a
       [routerLink]="'/' | localePath"
