@@ -10,7 +10,9 @@
     "serve:ssr:hajaro": "node dist/hajaro/server/server.mjs",
     "start:nl": "ng serve --configuration nl",
     "extract-i18n": "ng extract-i18n",
-    "start:all": "ng serve --configuration nl & ng serve"
+    "start:all": "ng serve --configuration nl & ng serve",
+    "i18n": "ng extract-i18n && node scripts/i18n.mjs sync",
+    "i18n:check": "node scripts/i18n.mjs check"
   },
   "private": true,
   "packageManager": "npm@11.17.0",
@@ -23,6 +25,7 @@
     "@angular/platform-server": "^22.0.0",
     "@angular/router": "^22.0.0",
     "@angular/ssr": "^22.0.5",
+    "compression": "^1.8.2",
     "express": "^5.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
@@ -32,6 +35,7 @@
     "@angular/cli": "^22.0.5",
     "@angular/compiler-cli": "^22.0.0",
     "@angular/localize": "^22.2.6",
+    "@types/compression": "^1.8.1",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
     "prettier": "^3.8.1",

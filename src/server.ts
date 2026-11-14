@@ -4,6 +4,7 @@ import {
   isMainModule,
   writeResponseToNodeResponse,
 } from '@angular/ssr/node';
+import compression from 'compression';
 import express from 'express';
 import { join } from 'node:path';
 import { buildRobots, buildSitemap } from './seo-files';
@@ -14,6 +15,9 @@ const app = express();
 const angularApp = new AngularNodeAppEngine();
 
 app.disable('x-powered-by');
+
+/** Brotli/gzip for HTML, JS, CSS, JSON and SVG (text compresses ~80%; images are skipped). */
+app.use(compression());
 
 /**
  * Baseline security headers. A Content-Security-Policy should be added at the hosting/CDN layer
@@ -49,26 +53,22 @@ app.use('/api', (_req, res) => {
   res.status(404).json({ message: 'API endpoint not found.' });
 });
 
-/**
- * Serve static files from /browser. Hashed bundles are cached for a year; everything else revalidates.
- */
+/** Hashed bundles never change, so they are cached for a year; other assets for a week. */
+function staticCacheControl(path: string): string {
+  // Build output names, e.g. main-5SEXLYJV.js, chunk-BAi-Ibvi.js (localized builds use [\w-] hashes).
+  if (/[/\\](?:chunk|main|polyfills|styles)-[\w-]{8,}\.(?:js|css|mjs)$/.test(path)) {
+    return 'public, max-age=31536000, immutable';
+  }
+  if (/\.(?:webp|avif|png|jpe?g|svg|ico|woff2?)$/i.test(path)) return 'public, max-age=604800';
+  return 'public, max-age=0, must-revalidate';
+}
+
+/** Serve static files from /browser. */
 app.use(
   express.static(browserDistFolder, {
     index: false,
     redirect: false,
-    setHeaders: (res, path) => {
-      // Build output names, e.g. main-5SEXLYJV.js, chunk-BAi-Ibvi.js (localized builds use [\w-] hashes).
-      const isHashed = /[/\\](?:chunk|main|polyfills|styles)-[\w-]{8,}\.(?:js|css|mjs)$/.test(path);
-      const isAsset = /\.(webp|avif|png|jpg|jpeg|svg|ico|woff2?)$/i.test(path);
-      res.setHeader(
-        'Cache-Control',
-        isHashed
-          ? 'public, max-age=31536000, immutable'
-          : isAsset
-            ? 'public, max-age=604800'
-            : 'public, max-age=0, must-revalidate',
-      );
-    },
+    setHeaders: (res, path) => res.setHeader('Cache-Control', staticCacheControl(path)),
   }),
 );
 
@@ -78,7 +78,12 @@ app.use(
 app.use((req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) => (response ? writeResponseToNodeResponse(response, res) : next()))
+    .then((response) => {
+      if (!response) return next();
+      // HTML must always be revalidated so visitors get new content (and new bundle names) after a deploy.
+      if (!response.headers.has('cache-control')) res.setHeader('Cache-Control', 'no-cache');
+      return writeResponseToNodeResponse(response, res);
+    })
     .catch(next);
 });
 
