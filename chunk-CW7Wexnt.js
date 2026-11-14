@@ -1,0 +1,1 @@
+var t={production:!0,siteUrl:`https://www.example.com`,apiBaseUrl:`/api`,contactEndpoint:`/api/contact`,useMockApi:!0,dataVersion:1,analytics:{gaMeasurementId:``,searchConsoleVerification:``}};export{t};

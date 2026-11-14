@@ -1,0 +1,1 @@
+import{n as E,p as n}from"./main-KC4WFOR2.js";import{Bt as Z,_ as E$1}from"./chunk-ZrBeCv_i.js";function s(n$1,p){let t=E$1(n).content().seo[n$1];E$1(E).update(Z(Z(Z({},p),t?.title?{title:t.title}:{}),t?.description?{description:t.description}:{}))}export{s as t};
