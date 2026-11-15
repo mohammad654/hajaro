@@ -23,10 +23,3 @@ export const HERO_PILLARS = [
   { icon: 'calendar', label: $localize`Weekly check-ins` },
   { icon: 'medal', label: $localize`Contest prep` },
 ] as const;
-
-export const NUTRITION_PILLARS = [
-  $localize`Calorie and macro targets that match your goal`,
-  $localize`Simple meal structures you can keep up`,
-  $localize`Habits for water, sleep and recovery`,
-  $localize`What supplements do, and what they don't`,
-] as const;

@@ -1,11 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { COACHING_STEPS, NUTRITION_PILLARS } from '../home.content';
-import { LocalePathPipe } from '../../../core/i18n/current-locale';
+import { COACHING_STEPS } from '../home.content';
 
 @Component({
   selector: 'app-home-process',
-  imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="section" aria-labelledby="process-title">
@@ -25,44 +22,6 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
             </li>
           }
         </ol>
-      </div>
-    </section>
-
-    <section class="section section--alt" aria-labelledby="nutrition-title">
-      <div class="container split">
-        <div>
-          <p class="eyebrow" i18n>Food and recovery</p>
-          <h2 id="nutrition-title" i18n>You can't out-train your kitchen</h2>
-          <p class="lead" i18n>
-            Training gives your body a reason to change. Food, sleep and recovery decide how much it
-            actually changes. Coaching covers all of it, in a way that fits your week.
-          </p>
-          <ul class="check-list">
-            @for (item of nutrition; track item) {
-              <li>{{ item }}</li>
-            }
-          </ul>
-          <div class="cluster nutrition__ctas">
-            <a [routerLink]="'/nutrition' | localePath" class="btn" i18n>Nutrition guide</a>
-            <a [routerLink]="'/nutrition/calculators' | localePath" class="btn btn--ghost" i18n
-              >Free calculators</a
-            >
-          </div>
-        </div>
-        <div class="macro card" i18n-aria-label aria-label="Example macronutrient split">
-          <p class="eyebrow" i18n>Example daily targets</p>
-          @for (macro of macros; track macro.label) {
-            <div class="macro__row">
-              <div class="macro__label">
-                <span>{{ macro.label }}</span><strong>{{ macro.value }}</strong>
-              </div>
-              <div class="macro__bar"><span [style.width.%]="macro.pct"></span></div>
-            </div>
-          }
-          <p class="disclaimer" i18n>
-            Example only. Your own targets depend on your goal, size and activity.
-          </p>
-        </div>
       </div>
     </section>
   `,
@@ -100,39 +59,8 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     .step p {
       margin: 0;
     }
-    .check-list {
-      margin: var(--sp-5) 0 var(--sp-6);
-    }
-    .macro {
-      display: grid;
-      gap: var(--sp-4);
-    }
-    .macro__label {
-      display: flex;
-      justify-content: space-between;
-      font-size: var(--fs-sm);
-      margin-bottom: var(--sp-2);
-    }
-    .macro__bar {
-      height: 8px;
-      border-radius: var(--radius-pill);
-      background: var(--c-surface-3);
-      overflow: hidden;
-    }
-    .macro__bar span {
-      display: block;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, var(--c-accent), var(--c-accent-strong));
-    }
   `,
 })
 export class HomeProcess {
   protected readonly steps = COACHING_STEPS;
-  protected readonly nutrition = NUTRITION_PILLARS;
-  protected readonly macros = [
-    { label: $localize`Protein`, value: '170 g', pct: 30 },
-    { label: $localize`Carbohydrates`, value: '300 g', pct: 50 },
-    { label: $localize`Fat`, value: '75 g', pct: 20 },
-  ];
 }

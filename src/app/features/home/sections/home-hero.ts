@@ -26,7 +26,6 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
             <a class="btn btn--primary btn--lg" [routerLink]="'/contact' | localePath">
               <span i18n>Book a free intro</span> <app-icon name="arrow-right" [size]="18" />
             </a>
-            <a class="btn btn--lg" [routerLink]="'/services' | localePath" i18n>See services</a>
           </div>
           <ul class="hero__pillars">
             @for (pillar of pillars; track pillar.label) {
