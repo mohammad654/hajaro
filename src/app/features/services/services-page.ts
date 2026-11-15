@@ -1,16 +1,18 @@
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ServiceCatalogStore } from '../../core/data-access/service-catalog.store';
+import { GENERAL_FAQS } from '../../core/data/faqs.data';
 import { CoachingService, SERVICE_DELIVERY_LABELS } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
+import { FaqList } from '../../shared/ui/faq-list';
 import { Icon } from '../../shared/ui/icon/icon';
 import { PageHero } from '../../shared/ui/page-hero';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 @Component({
   selector: 'app-services-page',
-  imports: [LocalePathPipe, RouterLink, PageHero, Icon, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, Icon, FaqList, CtaSection],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-page-hero
@@ -79,6 +81,16 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       </div>
     </section>
 
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <p class="eyebrow" i18n>FAQ</p>
+          <h2 id="faq-title" i18n>Frequently asked questions</h2>
+        </div>
+        <app-faq-list [items]="faqs" />
+      </div>
+    </section>
+
     <app-cta-section />
   `,
   styles: `
@@ -117,6 +129,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
 export class ServicesPage {
   protected readonly services = inject(ServiceCatalogStore);
   protected readonly deliveryLabels = SERVICE_DELIVERY_LABELS;
+  protected readonly faqs = GENERAL_FAQS;
   protected readonly breadcrumbs = [{ label: $localize`Services`, url: '/services' }];
 
   private static readonly GUIDE: readonly { situation: string; slug: string }[] = [
