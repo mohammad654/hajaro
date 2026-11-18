@@ -42,7 +42,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   styles: `
     .ex-card {
       display: grid;
-      grid-template-columns: 88px 1fr;
+      grid-template-columns: 88px minmax(0, 1fr);
       gap: var(--sp-4);
       padding: var(--sp-5);
       height: 100%;

@@ -4,13 +4,25 @@
   display: grid;
   gap: var(--sp-3);
 
-  @include up($bp-md) {
+  @include up($bp-sm) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @include up($bp-lg) {
     grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
 
 .search {
   position: relative;
+
+  @include up($bp-sm) {
+    grid-column: 1 / -1;
+  }
+
+  @include up($bp-lg) {
+    grid-column: auto;
+  }
 
   .input {
     padding-left: 2.75rem;

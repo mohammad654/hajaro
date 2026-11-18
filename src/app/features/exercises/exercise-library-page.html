@@ -110,7 +110,7 @@
     </div>
 
     @if (visible().length) {
-      <div class="grid grid--3">
+      <div class="grid grid--3 reveal-group">
         @for (exercise of visible(); track exercise.id) {
           <app-exercise-card [exercise]="exercise" />
         }
