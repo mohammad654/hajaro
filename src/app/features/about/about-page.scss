@@ -1,5 +1,19 @@
+@use 'mixins' as *;
+
 .split--top {
   align-items: start;
+
+  @include up($bp-lg) {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+}
+
+.about-photo {
+  max-width: 440px;
+
+  @include up($bp-lg) {
+    max-width: none;
+  }
 }
 
 .method {

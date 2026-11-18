@@ -8,7 +8,7 @@
 <section class="section" aria-labelledby="bio-title">
   <div class="container split split--top">
     <app-media-frame
-      class="sticky-aside"
+      class="about-photo sticky-aside"
       [src]="content().trainerPhotoUrl"
       [alt]="content().trainerPhotoAlt ?? ''"
       ratio="4 / 5"
@@ -47,7 +47,7 @@
         Everyone goes through the same process. What happens inside each step depends on you.
       </p>
     </div>
-    <ol class="method grid grid--4">
+    <ol class="method grid grid--4 reveal-group">
       @for (pillar of content().methodology; track pillar.title; let i = $index) {
         <li class="card">
           <span class="method__num" aria-hidden="true">{{ i + 1 }}</span>
@@ -66,7 +66,7 @@
         <p class="eyebrow" i18n>Experience</p>
         <h2 id="credentials-title" i18n>Qualifications and achievements</h2>
       </div>
-      <div class="grid grid--3">
+      <div class="grid grid--3 reveal-group">
         @for (group of credentialGroups(); track group.title) {
           <div class="card">
             <h3>{{ group.title }}</h3>
@@ -95,7 +95,7 @@
       <p class="eyebrow" i18n>Why train with me</p>
       <h2 id="why-title" i18n>What you can expect</h2>
     </div>
-    <div class="grid grid--4">
+    <div class="grid grid--4 reveal-group">
       @for (reason of reasons; track reason.title) {
         <div class="card card--flat">
           <h3 class="card__title">{{ reason.title }}</h3>

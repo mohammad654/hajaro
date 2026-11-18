@@ -219,6 +219,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Images on inner pages: optional page hero photo, Programs and Exercises heroes, four blog photos, image tracker | `src/app/shared/ui/page-hero.ts`, `src/app/shared/cards/article-card.ts`, `src/app/features/programs/programs-page.html`, `src/app/features/exercises/exercise-library-page.html`, `src/app/features/blog/article-page.{ts,html}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Shared motion and page hero: scroll reveal for grids, hero text reveal, hero image placeholder, Pages table | `src/styles/_components.scss`, `src/app/shared/ui/page-hero.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Home: scroll reveal on the service cards | `src/app/features/home/sections/home-services.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | About: narrower photo column, capped photo size on phones and tablets, scroll reveal; trainer photo stays a placeholder | `src/app/features/about/about-page.{html,scss}`, `PROJECT_STRUCTURE.md`
 
 ---
 
