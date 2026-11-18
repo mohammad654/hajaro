@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 .login {
   min-height: calc(100vh - var(--header-h));
   display: grid;
@@ -9,6 +11,21 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   place-items: center;
+
+  @include up($bp-lg) {
+    grid-template-columns: minmax(0, 480px) minmax(0, 400px);
+    justify-content: center;
+    gap: var(--sp-8);
+  }
+}
+
+.login__art {
+  display: none;
+
+  @include up($bp-lg) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .login__card {

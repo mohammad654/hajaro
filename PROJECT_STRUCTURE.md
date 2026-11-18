@@ -119,10 +119,10 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Exercise detail | Other exercises | none | missing, see Deferred list |
 | Muscle chart | Intro card | `images (1).jpeg` | placed, small size only (678 px wide) |
 | Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | path fixed for sub-path hosting |
-| Service detail, program detail, planner, calculators, pricing, contact, login, legal, 404 | none | none | no image needed |
+| Login | Beside the form, desktop only | `marijakes-athlete-8806355_1920.jpg` | placed |
+| Service detail, program detail, planner, calculators, pricing, contact, legal, 404 | none | none | no image needed |
 
 Viewed, not placed:
-- `marijakes-athlete-8806355_1920.jpg`: faceted athlete illustration, no matching spot.
 - `u_40rcbxqe6b-fitness-8783745_1920.png`: abs anatomy drawing with uneven transparent edges.
 - `jensenartofficial-heart-7834314_1920.jpg`: heart and barbell logo, not a photo.
 - `b0red-barbell-3573104_1920.png`, `davector-fitness-10306707_1920.png`, `mcvec-sports-1975689_1920.png`: black silhouettes, vanish on the dark theme.
@@ -200,6 +200,7 @@ Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 - Phase 3: run `npm run i18n` and add Dutch targets for the new page hero and blog image alt texts.
 - Phase 4: blog display photos live in `article-card.ts`, not in `featuredImageUrl`, because `SeoService.absoluteUrl` breaks base-relative paths; fix that, then use them in article schema and social images.
 - Review before launch: confirm the licence of `images.jpeg` and `images (1).jpeg` (no source in the file name) and replace them with larger versions.
+- Phase 3: run `npm run i18n` and add Dutch targets for the new exercise, muscle chart and login image alt texts.
 
 ---
 
@@ -235,6 +236,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Pricing: comparison labels stay visible while scrolling sideways, scroll reveal on packages | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Blog: scroll reveal on cards, gentle image zoom on hover and focus | `src/app/features/blog/blog-page.ts`, `src/app/shared/cards/article-card.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Article: standard spacing and scroll reveal for related articles | `src/app/features/blog/article-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Login: athlete illustration beside the form on desktop | `src/app/features/auth/login-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 
 ---
 
