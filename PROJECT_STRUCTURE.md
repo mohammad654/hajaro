@@ -234,6 +234,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Transformations: larger before and after photos on desktop, scroll reveal; no stock photos used | `src/app/features/transformations/transformations-page.{html,scss}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Pricing: comparison labels stay visible while scrolling sideways, scroll reveal on packages | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Blog: scroll reveal on cards, gentle image zoom on hover and focus | `src/app/features/blog/blog-page.ts`, `src/app/shared/cards/article-card.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Article: standard spacing and scroll reveal for related articles | `src/app/features/blog/article-page.html`, `PROJECT_STRUCTURE.md`
 
 ---
 
