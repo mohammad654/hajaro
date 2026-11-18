@@ -221,6 +221,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Home: scroll reveal on the service cards | `src/app/features/home/sections/home-services.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | About: narrower photo column, capped photo size on phones and tablets, scroll reveal; trainer photo stays a placeholder | `src/app/features/about/about-page.{html,scss}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Services: hero image placeholder, scroll reveal, icon hover | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Service detail: audience and benefits side by side, scroll reveal on related programs | `src/app/features/services/service-detail-page.html`, `PROJECT_STRUCTURE.md`
 
 ---
 

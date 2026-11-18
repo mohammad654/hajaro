@@ -22,23 +22,25 @@
       <div class="stack detail">
         <p class="lead">{{ service.intro }}</p>
 
-        <section aria-labelledby="who-title">
-          <h2 id="who-title" i18n>Who it's for</h2>
-          <ul class="check-list">
-            @for (item of service.whoItsFor; track item) {
-              <li>{{ item }}</li>
-            }
-          </ul>
-        </section>
+        <div class="grid grid--2">
+          <section aria-labelledby="who-title">
+            <h2 id="who-title" i18n>Who it's for</h2>
+            <ul class="check-list">
+              @for (item of service.whoItsFor; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </section>
 
-        <section aria-labelledby="included-title">
-          <h2 id="included-title" i18n>What you get</h2>
-          <ul class="check-list">
-            @for (item of service.included; track item) {
-              <li>{{ item }}</li>
-            }
-          </ul>
-        </section>
+          <section aria-labelledby="included-title">
+            <h2 id="included-title" i18n>What you get</h2>
+            <ul class="check-list">
+              @for (item of service.included; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          </section>
+        </div>
 
         <section aria-labelledby="how-title">
           <h2 id="how-title" i18n>How it works</h2>
@@ -98,7 +100,7 @@
           <p class="eyebrow" i18n>Related programs</p>
           <h2 id="related-programs" i18n>Training programs that go well with this</h2>
         </div>
-        <div class="grid grid--3">
+        <div class="grid grid--3 reveal-group">
           @for (program of relatedPrograms(); track program!.id) {
             <app-program-card [program]="program!" />
           }
