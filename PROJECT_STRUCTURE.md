@@ -73,8 +73,25 @@ PASTE THE TREE HERE
 | Page | Route | Component path | Sections on the page |
 |---|---|---|---|
 | Home | `/` | `src/app/features/home/home-page.ts` | Hero, coach, services, process, muscles, CTA (`sections/`) |
-| [Page] | | | |
-| [Page] | | | |
+| About | `/about` | `src/app/features/about/about-page.ts` | Bio and photo, method, credentials, reasons, CTA |
+| Services | `/services` | `src/app/features/services/services-page.ts` | Service cards, fit table, FAQ, CTA |
+| Service detail | `/services/:slug` | `src/app/features/services/service-detail-page.ts` | Details, summary sidebar, related programs, CTA |
+| Programs | `/programs` | `src/app/features/programs/programs-page.ts` | Filters, program cards, CTA |
+| Program detail | `/programs/:slug` | `src/app/features/programs/program-detail-page.ts` | Overview, schedule, sidebar, related, CTA |
+| Exercises | `/exercises` | `src/app/features/exercises/exercise-library-page.ts` | Search, filters, exercise cards |
+| Exercise detail | `/exercises/:slug` | `src/app/features/exercises/exercise-detail-page.ts` | Technique, muscles sidebar, related |
+| Muscle chart | `/muscle-chart` | `src/app/features/muscle-chart/muscle-chart-page.ts` | Explorer, workout chart, splits, overview, CTA |
+| Workout planner | `/workout-planner` | `src/app/features/planner/workout-planner-page.ts` | Planner tool |
+| Nutrition | `/nutrition` | `src/app/features/nutrition/nutrition-page.ts` | Topics, articles, CTA |
+| Calculators | `/nutrition/calculators` | `src/app/features/nutrition/calculators-page.ts` | Calculator tool, CTA |
+| Transformations | `/transformations` | `src/app/features/transformations/transformations-page.ts` | Client stories, quotes, consent, CTA |
+| Pricing | `/pricing` | `src/app/features/pricing/pricing-page.ts` | Packages, comparison, FAQ, CTA |
+| Blog | `/blog`, `/blog/category/:category` | `src/app/features/blog/blog-page.ts` | Categories, article cards, CTA |
+| Article | `/blog/:slug` | `src/app/features/blog/article-page.ts` | Article, related, CTA |
+| Contact | `/contact` | `src/app/features/contact/contact-page.ts` | Form, details sidebar |
+| Login | `/login` | `src/app/features/auth/login-page.ts` | Sign-in card, illustration |
+| Legal | `/privacy`, `/terms`, `/disclaimer` | `src/app/features/legal/legal-page.ts` | Legal text |
+| 404 | `**` | `src/app/features/not-found/not-found-page.ts` | Message and links |
 
 ### Image tracker
 
@@ -200,6 +217,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Hero carousel keeps moving with the pointer on the hero; only the controls and button pause it | `src/app/features/home/sections/home-hero.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Background photo in the homepage "How coaching works" section | `src/app/features/home/sections/home-process.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Images on inner pages: optional page hero photo, Programs and Exercises heroes, four blog photos, image tracker | `src/app/shared/ui/page-hero.ts`, `src/app/shared/cards/article-card.ts`, `src/app/features/programs/programs-page.html`, `src/app/features/exercises/exercise-library-page.html`, `src/app/features/blog/article-page.{ts,html}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Shared motion and page hero: scroll reveal for grids, hero text reveal, hero image placeholder, Pages table | `src/styles/_components.scss`, `src/app/shared/ui/page-hero.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

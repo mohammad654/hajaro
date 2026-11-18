@@ -500,3 +500,14 @@
     transform: translateY(12px);
   }
 }
+
+// Scroll reveal for the direct children of a grid. Without browser support they simply show.
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal-group > * {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 40%;
+    }
+  }
+}

@@ -4,16 +4,16 @@ import { MediaFrame } from './media-frame';
 
 /**
  * Standard header for inner pages: breadcrumbs, eyebrow, the page's single H1 and a lead paragraph,
- * with an optional photo beside the text.
+ * with an optional photo, or a placeholder for a missing photo, beside the text.
  */
 @Component({
   selector: 'app-page-hero',
   imports: [Breadcrumbs, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <header class="page-hero" [class.page-hero--media]="imageSrc()">
+    <header class="page-hero" [class.page-hero--media]="imageSrc() || imagePlaceholder()">
       <div class="container page-hero__inner">
-        <div>
+        <div class="reveal">
           @if (breadcrumbs().length) {
             <app-breadcrumbs [items]="breadcrumbs()" />
           }
@@ -26,9 +26,9 @@ import { MediaFrame } from './media-frame';
           }
           <ng-content />
         </div>
-        @if (imageSrc(); as src) {
+        @if (imageSrc() || imagePlaceholder()) {
           <app-media-frame
-            [src]="src"
+            [src]="imageSrc()"
             [alt]="imageAlt()"
             ratio="3 / 2"
             [position]="imagePosition()"
@@ -67,11 +67,17 @@ import { MediaFrame } from './media-frame';
       grid-template-columns: minmax(0, 1fr);
       gap: var(--sp-6);
     }
+    app-media-frame {
+      max-width: 640px;
+    }
     @media (min-width: 1080px) {
       .page-hero--media .page-hero__inner {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: var(--sp-7);
         align-items: center;
+      }
+      app-media-frame {
+        max-width: none;
       }
     }
   `,
@@ -84,4 +90,5 @@ export class PageHero {
   readonly imageSrc = input('');
   readonly imageAlt = input('');
   readonly imagePosition = input('center');
+  readonly imagePlaceholder = input(false);
 }
