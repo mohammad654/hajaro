@@ -113,7 +113,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Blog + article | Protein, sleep, creatine | none | placeholder, see Deferred list |
 | About | Trainer photo | none | placeholder, see Deferred list |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
-| Services | Top | none | missing, see Deferred list |
+| Services | Top | none | placeholder, see Deferred list |
 | Nutrition | Top | none | missing, see Deferred list |
 | Exercise detail | Demonstration | none | missing, see Deferred list |
 | Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | unchanged |
@@ -220,6 +220,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Shared motion and page hero: scroll reveal for grids, hero text reveal, hero image placeholder, Pages table | `src/styles/_components.scss`, `src/app/shared/ui/page-hero.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Home: scroll reveal on the service cards | `src/app/features/home/sections/home-services.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | About: narrower photo column, capped photo size on phones and tablets, scroll reveal; trainer photo stays a placeholder | `src/app/features/about/about-page.{html,scss}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Services: hero image placeholder, scroll reveal, icon hover | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

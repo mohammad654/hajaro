@@ -23,10 +23,11 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       i18n-lead
       lead="In-person training, online coaching, contest prep and food guidance. Pick what fits your goal, or ask me and we'll work it out together."
       [breadcrumbs]="breadcrumbs"
+      [imagePlaceholder]="true"
     />
 
     <section class="section" i18n-aria-label aria-label="All services">
-      <div class="container grid grid--3">
+      <div class="container grid grid--3 reveal-group">
         @for (service of services.all(); track service.id) {
           <article class="card card--interactive service">
             <div class="service__top">
@@ -112,6 +113,15 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       border-radius: var(--radius);
       background: var(--c-accent-soft);
       color: var(--c-accent);
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .service__icon {
+        transition: transform var(--dur) var(--ease);
+      }
+      .service:hover .service__icon,
+      .service:focus-within .service__icon {
+        transform: scale(1.08);
+      }
     }
     .card__title {
       font-size: var(--fs-xl);
