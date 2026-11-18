@@ -45,7 +45,7 @@ const SERVICE_IMAGES: Readonly<Record<string, ServiceImage | undefined>> = {
             and someone who checks in every week.
           </p>
         </div>
-        <div class="grid grid--4">
+        <div class="grid grid--4 reveal-group">
           @for (service of services.featured(); track service.id) {
             <article class="card card--interactive service">
               @let image = images[service.slug];
