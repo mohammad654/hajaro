@@ -94,6 +94,15 @@ export function articleImage(article: Article): ArticleImage | null {
       border-radius: 0;
       border: 0;
     }
+    @media (prefers-reduced-motion: no-preference) {
+      app-media-frame ::ng-deep img {
+        transition: transform var(--dur-slow) var(--ease);
+      }
+      .article-card:hover app-media-frame ::ng-deep img,
+      .article-card:focus-within app-media-frame ::ng-deep img {
+        transform: scale(1.04);
+      }
+    }
     .article-card__body {
       padding: var(--sp-5);
     }

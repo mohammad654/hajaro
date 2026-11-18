@@ -58,7 +58,7 @@ const PAGE_SIZE = 9;
         </nav>
 
         @if (visible().length) {
-          <div class="grid grid--3">
+          <div class="grid grid--3 reveal-group">
             @for (article of visible(); track article.id) {
               <app-article-card [article]="article" />
             }
