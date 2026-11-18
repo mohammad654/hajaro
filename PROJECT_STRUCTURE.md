@@ -117,7 +117,8 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Nutrition | Top | none | missing, see Deferred list |
 | Exercise detail | Dumbbell Curl sidebar | `images.jpeg` | placed, small size only (662 px wide) |
 | Exercise detail | Other exercises | none | missing, see Deferred list |
-| Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | unchanged |
+| Muscle chart | Intro card | `images (1).jpeg` | placed, small size only (678 px wide) |
+| Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | path fixed for sub-path hosting |
 | Service detail, program detail, planner, calculators, pricing, contact, login, legal, 404 | none | none | no image needed |
 
 Viewed, not placed:
@@ -126,7 +127,7 @@ Viewed, not placed:
 - `jensenartofficial-heart-7834314_1920.jpg`: heart and barbell logo, not a photo.
 - `b0red-barbell-3573104_1920.png`, `davector-fitness-10306707_1920.png`, `mcvec-sports-1975689_1920.png`: black silhouettes, vanish on the dark theme.
 - `mohamed_hassan-body-builder-7320519_1920.png`: brick-pattern flexing logo.
-- `images (1).jpeg`, `images (2).jpeg`: torso, sit-up; good subjects, but 678 px wide at most.
+- `images (2).jpeg`: floor sit-up; 678 px wide, and no exercise in the library matches it.
 - `images (3).jpeg`, `images (4).jpeg`: chalk and barbell, waist measure; too small.
 
 Skipped by name and size: `jensenartofficial-heart-7834275_1920.jpg`, `jensenartofficial-heart-7834298_1920.jpg`, `clker-free-vector-images-strong-310874_1920.png`, `mohamed_hassan-silhouette-3378966_1920.png`, `handsome-strong-athletic-men-…-photo.jpg` (625×350).
@@ -228,6 +229,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Program detail: standard spacing and scroll reveal for related programs | `src/app/features/programs/program-detail-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Exercises: full-width search on tablets, safer card columns, scroll reveal | `src/app/features/exercises/exercise-library-page.{html,scss}`, `src/app/shared/cards/exercise-card.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Exercise detail: dumbbell curl photo in the sidebar, standard related section, scroll reveal | `src/app/features/exercises/exercise-detail-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Muscle chart: torso photo in the intro card, overview image path works under a sub-path | `src/app/features/muscle-chart/muscle-chart-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 
 ---
 

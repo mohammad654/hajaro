@@ -17,6 +17,7 @@ import { FULL_BODY_WORKOUT_CHART } from '../../core/data/programs.data';
 import { AnatomyView, MuscleId } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
+import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
 import { AnatomyExplorer } from './anatomy-explorer';
 import { MuscleDetailPanel } from './muscle-detail-panel';
@@ -30,6 +31,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     LocalePathPipe,
     RouterLink,
     NgOptimizedImage,
+    MediaFrame,
     PageHero,
     AnatomyExplorer,
     MuscleDetailPanel,

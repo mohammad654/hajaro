@@ -27,25 +27,37 @@
         <app-muscle-detail-panel [muscle]="muscle" />
       } @else {
         <div class="intro card">
-          <p class="eyebrow" i18n>How to use the chart</p>
-          <h2 i18n>Explore your muscles</h2>
-          <ol class="numbered-list">
-            <li i18n>Tap a muscle on the body, or pick one from the list.</li>
-            <li i18n>
-              Switch between the <strong>front</strong> and <strong>back</strong> view to reach
-              every muscle group.
-            </li>
-            <li i18n>Read what the muscle does, how to train it and technique tips.</li>
-            <li i18n>
-              Open any exercise for step-by-step instructions, or add it to your workout planner.
-            </li>
-          </ol>
-          <div class="cluster">
-            <button type="button" class="btn btn--primary" (click)="select('chest')" i18n>
-              Start with the chest
-            </button>
-            <button type="button" class="btn" (click)="select('lats')" i18n>Show the back</button>
+          <div>
+            <p class="eyebrow" i18n>How to use the chart</p>
+            <h2 i18n>Explore your muscles</h2>
+            <ol class="numbered-list">
+              <li i18n>Tap a muscle on the body, or pick one from the list.</li>
+              <li i18n>
+                Switch between the <strong>front</strong> and <strong>back</strong> view to reach
+                every muscle group.
+              </li>
+              <li i18n>Read what the muscle does, how to train it and technique tips.</li>
+              <li i18n>
+                Open any exercise for step-by-step instructions, or add it to your workout planner.
+              </li>
+            </ol>
+            <div class="cluster">
+              <button type="button" class="btn btn--primary" (click)="select('chest')" i18n>
+                Start with the chest
+              </button>
+              <button type="button" class="btn" (click)="select('lats')" i18n>Show the back</button>
+            </div>
           </div>
+          <app-media-frame
+            class="intro__photo"
+            src="images/home/images%20(1).jpeg"
+            i18n-alt
+            alt="Muscular chest, abs and arm in black and white"
+            ratio="4 / 5"
+            position="45% center"
+            [priority]="true"
+            sizes="240px"
+          />
         </div>
       }
     </div>
@@ -103,7 +115,7 @@
   <div class="container split">
     <figure class="overview">
       <img
-        ngSrc="/images/anatomy/muscle-groups-overview.webp"
+        ngSrc="images/anatomy/muscle-groups-overview.webp"
         width="1200"
         height="1200"
         i18n-alt

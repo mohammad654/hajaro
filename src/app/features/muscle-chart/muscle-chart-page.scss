@@ -25,6 +25,14 @@
 }
 
 .intro {
+  display: grid;
+  gap: var(--sp-6);
+
+  @include up($bp-sm) {
+    grid-template-columns: minmax(0, 1fr) clamp(170px, 28%, 240px);
+    align-items: start;
+  }
+
   h2 {
     font-size: var(--fs-2xl);
   }
@@ -33,6 +41,10 @@
     margin: var(--sp-5) 0 var(--sp-6);
     color: var(--c-text-muted);
   }
+}
+
+.intro__photo {
+  max-width: 240px;
 }
 
 .chart-actions {
