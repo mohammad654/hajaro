@@ -114,7 +114,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | About | Trainer photo | none | placeholder, see Deferred list |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
 | Services | Top | none | placeholder, see Deferred list |
-| Nutrition | Top | none | missing, see Deferred list |
+| Nutrition | Top | none | placeholder, see Deferred list |
 | Exercise detail | Dumbbell Curl sidebar | `images.jpeg` | placed, small size only (662 px wide) |
 | Exercise detail | Other exercises | none | missing, see Deferred list |
 | Muscle chart | Intro card | `images (1).jpeg` | placed, small size only (678 px wide) |
@@ -230,6 +230,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Exercises: full-width search on tablets, safer card columns, scroll reveal | `src/app/features/exercises/exercise-library-page.{html,scss}`, `src/app/shared/cards/exercise-card.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Exercise detail: dumbbell curl photo in the sidebar, standard related section, scroll reveal | `src/app/features/exercises/exercise-detail-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Muscle chart: torso photo in the intro card, overview image path works under a sub-path | `src/app/features/muscle-chart/muscle-chart-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Nutrition: hero image placeholder, standard article heading, scroll reveal | `src/app/features/nutrition/nutrition-page.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

@@ -22,6 +22,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       i18n-lead
       lead="Clear information about eating to build muscle, lose fat and recover well. No extremes, no gimmicks."
       [breadcrumbs]="breadcrumbs"
+      [imagePlaceholder]="true"
     >
       <div class="cluster hero-ctas">
         <a class="btn btn--primary" [routerLink]="'/nutrition/calculators' | localePath" i18n
@@ -40,7 +41,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
             <a class="chip" [routerLink]="[]" [fragment]="topic.id">{{ topic.title }}</a>
           }
         </nav>
-        <div class="grid grid--2 topics">
+        <div class="grid grid--2 topics reveal-group">
           @for (topic of topics; track topic.id) {
             <section
               class="card topic"
@@ -65,8 +66,10 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     @if (articles().length) {
       <section class="section section--alt" aria-labelledby="nutrition-articles">
         <div class="container">
-          <h2 id="nutrition-articles" i18n>Articles about food</h2>
-          <div class="grid grid--3">
+          <div class="section-head">
+            <h2 id="nutrition-articles" i18n>Articles about food</h2>
+          </div>
+          <div class="grid grid--3 reveal-group">
             @for (article of articles(); track article.id) {
               <app-article-card [article]="article" />
             }
