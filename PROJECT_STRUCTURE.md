@@ -115,7 +115,8 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
 | Services | Top | none | placeholder, see Deferred list |
 | Nutrition | Top | none | missing, see Deferred list |
-| Exercise detail | Demonstration | none | missing, see Deferred list |
+| Exercise detail | Dumbbell Curl sidebar | `images.jpeg` | placed, small size only (662 px wide) |
+| Exercise detail | Other exercises | none | missing, see Deferred list |
 | Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | unchanged |
 | Service detail, program detail, planner, calculators, pricing, contact, login, legal, 404 | none | none | no image needed |
 
@@ -125,7 +126,7 @@ Viewed, not placed:
 - `jensenartofficial-heart-7834314_1920.jpg`: heart and barbell logo, not a photo.
 - `b0red-barbell-3573104_1920.png`, `davector-fitness-10306707_1920.png`, `mcvec-sports-1975689_1920.png`: black silhouettes, vanish on the dark theme.
 - `mohamed_hassan-body-builder-7320519_1920.png`: brick-pattern flexing logo.
-- `images.jpeg`, `images (1).jpeg`, `images (2).jpeg`: dumbbell curl, torso, sit-up; good subjects, but 678 px wide at most.
+- `images (1).jpeg`, `images (2).jpeg`: torso, sit-up; good subjects, but 678 px wide at most.
 - `images (3).jpeg`, `images (4).jpeg`: chalk and barbell, waist measure; too small.
 
 Skipped by name and size: `jensenartofficial-heart-7834275_1920.jpg`, `jensenartofficial-heart-7834298_1920.jpg`, `clker-free-vector-images-strong-310874_1920.png`, `mohamed_hassan-silhouette-3378966_1920.png`, `handsome-strong-athletic-men-…-photo.jpg` (625×350).
@@ -192,11 +193,12 @@ Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 - Missing image: blog, sleep and recovery article needs a rest or sleep scene (16:9).
 - Missing image: blog, creatine article needs a supplement scoop or shaker (16:9).
 - Missing image: Transformations, cards need real client before and after photos, published with consent (3:4).
-- Missing image: exercise detail pages need a demonstration photo per exercise (16:9).
+- Missing image: exercise detail pages need a demonstration photo per exercise (3:2); only Dumbbell Curl has one.
 - Review before launch: blog photos `hansuan_fabregas-ai-generated-8706772_1920.jpg` (AI-generated) and `u_pcjeppoe5t-bodybuilder-8017875_1920.jpg` (looks AI-generated).
 - Review before launch: confirm the licence of the fat-loss photo (`front-view-…_140725-85472.avif`, stock-site name) and replace it with a larger version; it is 626 px wide.
 - Phase 3: run `npm run i18n` and add Dutch targets for the new page hero and blog image alt texts.
 - Phase 4: blog display photos live in `article-card.ts`, not in `featuredImageUrl`, because `SeoService.absoluteUrl` breaks base-relative paths; fix that, then use them in article schema and social images.
+- Review before launch: confirm the licence of `images.jpeg` and `images (1).jpeg` (no source in the file name) and replace them with larger versions.
 
 ---
 
@@ -225,6 +227,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Programs: filter columns can shrink, scroll reveal on cards | `src/app/features/programs/programs-page.{html,scss}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Program detail: standard spacing and scroll reveal for related programs | `src/app/features/programs/program-detail-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Exercises: full-width search on tablets, safer card columns, scroll reveal | `src/app/features/exercises/exercise-library-page.{html,scss}`, `src/app/shared/cards/exercise-card.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Exercise detail: dumbbell curl photo in the sidebar, standard related section, scroll reveal | `src/app/features/exercises/exercise-detail-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 
 ---
 

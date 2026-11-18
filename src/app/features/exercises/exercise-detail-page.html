@@ -82,6 +82,16 @@
       </div>
 
       <aside class="sticky-aside stack" i18n-aria-label aria-label="Exercise summary">
+        @if (photo(); as photo) {
+          <app-media-frame
+            class="exercise-photo"
+            [src]="photo.src"
+            [alt]="photo.alt"
+            ratio="3 / 2"
+            [priority]="true"
+            sizes="(min-width: 1080px) 340px, 420px"
+          />
+        }
         <div class="card">
           <p class="eyebrow" i18n>Muscles worked</p>
           <div class="figures">
@@ -168,8 +178,10 @@
   @if (related().length) {
     <section class="section section--alt" aria-labelledby="related-title">
       <div class="container">
-        <h2 id="related-title" i18n>Related exercises</h2>
-        <div class="grid grid--3">
+        <div class="section-head">
+          <h2 id="related-title" i18n>Related exercises</h2>
+        </div>
+        <div class="grid grid--3 reveal-group">
           @for (r of related(); track r.id) {
             <app-exercise-card [exercise]="r" />
           }

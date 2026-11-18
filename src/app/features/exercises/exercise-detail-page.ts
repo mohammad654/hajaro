@@ -15,6 +15,7 @@ import { SeoService } from '../../core/seo/seo.service';
 import { AnatomyFigure } from '../../shared/anatomy/anatomy-figure';
 import { ExerciseCard } from '../../shared/cards/exercise-card';
 import { LabelPipe, RestPipe } from '../../shared/pipes/format.pipes';
+import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
 import { VideoEmbed } from '../../shared/ui/video-embed';
 import { NotFoundContent } from '../not-found/not-found-content';
@@ -23,12 +24,21 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const RELATED_LIMIT = 3;
 
+/** Display photos by exercise slug. Kept out of the seed data so structured data stays unchanged. */
+const EXERCISE_PHOTOS: Readonly<Record<string, { readonly src: string; readonly alt: string }>> = {
+  'dumbbell-curl': {
+    src: 'images/home/images.jpeg',
+    alt: $localize`Muscular man curling a heavy dumbbell`,
+  },
+};
+
 @Component({
   selector: 'app-exercise-detail-page',
   imports: [
     LocalePathPipe,
     RouterLink,
     NgOptimizedImage,
+    MediaFrame,
     PageHero,
     AnatomyFigure,
     ExerciseCard,
@@ -56,6 +66,11 @@ export class ExerciseDetailPage {
   protected readonly exercise = computed(() =>
     this.exercises.all().find((e) => e.slug === canonicalSlug(this.slug())),
   );
+
+  protected readonly photo = computed(() => {
+    const slug = this.exercise()?.slug;
+    return slug ? (EXERCISE_PHOTOS[slug] ?? null) : null;
+  });
 
   protected readonly primaryNames = computed(() =>
     this.names(this.exercise()?.primaryMuscles ?? []),
