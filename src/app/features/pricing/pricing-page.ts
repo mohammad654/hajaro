@@ -34,7 +34,7 @@ type ComparisonKey = keyof Pick<
     />
 
     <section class="section" i18n-aria-label aria-label="Packages">
-      <div class="container packages">
+      <div class="container packages reveal-group">
         @for (pkg of packages.active(); track pkg.id) {
           <app-package-card [pkg]="pkg" [detailed]="true" />
         }
@@ -120,13 +120,28 @@ type ComparisonKey = keyof Pick<
       gap: var(--sp-5);
       grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     }
-    .compare th[scope='row'] {
-      background: none;
-      white-space: nowrap;
-    }
     .compare td,
     .compare th {
       min-width: 170px;
+    }
+    /* Keep the row labels in view while the packages scroll sideways. */
+    .compare th[scope='row'],
+    .compare thead th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+    }
+    .compare th[scope='row'] {
+      background: var(--c-surface);
+      white-space: nowrap;
+    }
+    @media (max-width: 639.98px) {
+      .compare th[scope='row'],
+      .compare thead th:first-child {
+        min-width: 116px;
+        max-width: 116px;
+        white-space: normal;
+      }
     }
     .compare .is-highlight {
       background: var(--c-accent-soft);
