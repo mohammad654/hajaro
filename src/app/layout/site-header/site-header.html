@@ -61,7 +61,9 @@
     </nav>
 
     <div class="header__actions">
-      <app-language-switcher class="header__lang" />
+      @if (showLanguageSwitcher) {
+        <app-language-switcher class="header__lang" />
+      }
       @if (sessionUser(); as user) {
         <a
           class="btn btn--ghost btn--sm header__account"
@@ -120,7 +122,9 @@
         </ul>
       </nav>
       <div class="mobile__actions">
-        <app-language-switcher [block]="true" />
+        @if (showLanguageSwitcher) {
+          <app-language-switcher [block]="true" />
+        }
         <a class="btn btn--primary btn--block btn--lg" [routerLink]="'/contact' | localePath" i18n
           >Book a free intro</a
         >

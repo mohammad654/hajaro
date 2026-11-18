@@ -1,5 +1,17 @@
 import { LANGUAGE_COOKIE, SITE_LOCALES, localeByCode } from './app/core/i18n/locales';
-import { localeUrl, localizePath } from './app/core/i18n/paths';
+import { canonicalPath, localeUrl, localizePath } from './app/core/i18n/paths';
+
+/**
+ * While Dutch is disabled: Dutch URLs and language-prefixed URLs → the same page in English.
+ * Served as a temporary redirect so browsers do not keep it after Dutch is enabled again.
+ */
+export function disabledLanguageRedirect(path: string): string | null {
+  if (SITE_LOCALES.some((l) => l.code === 'nl') || /\.[a-z0-9]{2,5}$/i.test(path)) return null;
+
+  const prefixed = path.match(/^\/(?:nl|en)(\/.*)?$/);
+  const target = localizePath(canonicalPath(prefixed ? prefixed[1] || '/' : path, 'nl'), 'en');
+  return target === path ? null : target;
+}
 
 /**
  * Permanent redirects for URLs of the earlier site structure:
@@ -10,8 +22,9 @@ import { localeUrl, localizePath } from './app/core/i18n/paths';
 export function legacyRedirect(path: string): string | null {
   if (/\.[a-z0-9]{2,5}$/i.test(path)) return null;
 
-  const dutch = SITE_LOCALES.find((l) => l.code === 'nl')!;
-  const english = SITE_LOCALES.find((l) => l.code === 'en')!;
+  const dutch = SITE_LOCALES.find((l) => l.code === 'nl');
+  const english = SITE_LOCALES.find((l) => l.code === 'en');
+  if (!dutch || !english) return null;
 
   if (path === '/nl' || path.startsWith('/nl/')) {
     return localeUrl(path.slice(3) || '/', dutch);

@@ -10,7 +10,11 @@ import compression from 'compression';
 import express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { legacyRedirect, rememberedLanguageRedirect } from './legacy-redirects';
+import {
+  disabledLanguageRedirect,
+  legacyRedirect,
+  rememberedLanguageRedirect,
+} from './legacy-redirects';
 import { buildRobots, buildSitemap } from './seo-files';
 import { contactConfigFromEnv, contactRouter } from './server/contact';
 
@@ -54,6 +58,9 @@ app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next();
   // originalUrl is the URL as requested (the dev server strips the /en base from req.path).
   const [path, query = ''] = req.originalUrl.split(/(?=\?)/, 2);
+
+  const enabled = disabledLanguageRedirect(path);
+  if (enabled) return res.redirect(302, enabled + query);
 
   const moved = legacyRedirect(path);
   if (moved) return res.redirect(301, moved + query);

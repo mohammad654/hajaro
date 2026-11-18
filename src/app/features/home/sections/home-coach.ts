@@ -4,6 +4,13 @@ import { SiteContentStore } from '../../../core/data-access/site-content.store';
 import { MediaFrame } from '../../../shared/ui/media-frame';
 import { LocalePathPipe } from '../../../core/i18n/current-locale';
 
+/** Temporary stock photo, shown only until a real trainer photo is set in the site content. */
+const DEMO_TRAINER_PHOTO = {
+  src: 'images/home/luissantos2020-fitness-5991125_1920.jpg',
+  alt: $localize`Muscular man leaning forward and gripping a bar, in black and white`,
+  position: '55% center',
+};
+
 @Component({
   selector: 'app-home-coach',
   imports: [LocalePathPipe, RouterLink, MediaFrame],
@@ -12,8 +19,9 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
     <section class="section" aria-labelledby="coach-title">
       <div class="container split">
         <app-media-frame
-          [src]="content().trainerPhotoUrl"
-          [alt]="content().trainerPhotoAlt ?? ''"
+          [src]="photo().src"
+          [alt]="photo().alt"
+          [position]="photo().position"
           ratio="4 / 5"
           [caption]="content().trainerName"
         />
@@ -74,6 +82,10 @@ import { LocalePathPipe } from '../../../core/i18n/current-locale';
 })
 export class HomeCoach {
   protected readonly content = inject(SiteContentStore).content;
+  protected readonly photo = computed(() => {
+    const { trainerPhotoUrl: src, trainerPhotoAlt: alt } = this.content();
+    return src ? { src, alt: alt ?? '', position: 'center' } : DEMO_TRAINER_PHOTO;
+  });
   /** Only verified credentials are ever displayed. */
   protected readonly credentials = computed(() =>
     [...this.content().qualifications, ...this.content().achievements]

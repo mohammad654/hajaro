@@ -13,7 +13,14 @@ import { NgOptimizedImage } from '@angular/common';
   template: `
     <div class="frame" [style.aspect-ratio]="ratio()">
       @if (src(); as source) {
-        <img [ngSrc]="source" [alt]="alt()" fill [priority]="priority()" [sizes]="sizes()" />
+        <img
+          [ngSrc]="source"
+          [alt]="alt()"
+          fill
+          [priority]="priority()"
+          [sizes]="sizes()"
+          [style.object-position]="position()"
+        />
       } @else {
         <div class="frame__placeholder" role="img" [attr.aria-label]="alt() || imageComingSoon">
           <span class="frame__mark" aria-hidden="true">{{ monogram() }}</span>
@@ -70,6 +77,7 @@ export class MediaFrame {
   readonly src = input<string | null | undefined>(null);
   readonly alt = input('');
   readonly ratio = input('4 / 5');
+  readonly position = input('center');
   readonly priority = input(false);
   readonly sizes = input('(min-width: 1080px) 50vw, 100vw');
   readonly monogram = input('H');

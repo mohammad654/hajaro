@@ -23,3 +23,29 @@ export const HERO_PILLARS = [
   { icon: 'calendar', label: $localize`Weekly check-ins` },
   { icon: 'medal', label: $localize`Contest prep` },
 ] as const;
+
+/** Photo for the first hero slide; its text comes from the site content. */
+export const HERO_FIRST_PHOTO = {
+  src: 'images/home/hireink-fitness-3679464_1920.jpg',
+  alt: $localize`Muscular man seen from behind, raising a dumbbell in each hand`,
+  position: 'center 20%',
+} as const;
+
+export const HERO_MORE_SLIDES = [
+  {
+    src: 'images/home/johan_benitez99co-ai-generated-9372728_1920.png',
+    alt: $localize`Muscular man flexing both arms in a dim gym`,
+    position: 'center 15%',
+    headline: $localize`Build muscle`,
+    highlight: $localize`with a clear plan`,
+    text: $localize`Every session has a purpose, and your plan changes when your progress asks for it.`,
+  },
+  {
+    src: 'images/home/zuzyusa-dumbbell-3167417_1920.jpg',
+    alt: $localize`Chrome dumbbell and weight plates on a black background`,
+    position: 'left center',
+    headline: $localize`Honest feedback`,
+    highlight: $localize`every week`,
+    text: $localize`Weekly check-ins on your lifts, weight and recovery, so we can change what isn't working.`,
+  },
+] as const;

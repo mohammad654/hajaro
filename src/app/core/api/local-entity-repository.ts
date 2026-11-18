@@ -1,5 +1,7 @@
 import { ApplicationRef, signal } from '@angular/core';
 import { Observable, delay, of, throwError } from 'rxjs';
+import { CURRENT_LOCALE } from '../i18n/current-locale';
+import { SITE_LOCALES } from '../i18n/locales';
 import { Entity } from '../models';
 import { BrowserStorage } from '../services/browser-storage.service';
 import type { EntityRepository, RepositoryStatus } from './entity-repository';
@@ -76,7 +78,9 @@ export class LocalEntityRepository<T extends Entity> implements EntityRepository
     }
   }
 
+  /** Single-language mode gets its own key, so data saved in a disabled language never shows. */
   private get storageKey(): string {
-    return `db:${this.resource}`;
+    const scope = SITE_LOCALES.length === 1 ? `${CURRENT_LOCALE.code}:` : '';
+    return `db:${scope}${this.resource}`;
   }
 }

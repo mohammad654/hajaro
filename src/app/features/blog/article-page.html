@@ -41,8 +41,9 @@
     <div class="container container--narrow">
       <app-media-frame
         class="article__image"
-        [src]="article.featuredImageUrl"
-        [alt]="article.featuredImageAlt ?? ''"
+        [src]="articleImage(article)?.src"
+        [alt]="articleImage(article)?.alt ?? ''"
+        [position]="articleImage(article)?.position ?? 'center'"
         ratio="16 / 9"
         [priority]="true"
         [monogram]="(article.category | label: categories).slice(0, 1)"

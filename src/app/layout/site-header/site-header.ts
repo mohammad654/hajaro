@@ -21,6 +21,7 @@ import { ClientReady } from '../../core/services/client-ready';
 import { Icon } from '../../shared/ui/icon/icon';
 import { LanguageSwitcher } from '../../shared/ui/language-switcher';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
+import { SITE_LOCALES } from '../../core/i18n/locales';
 
 @Component({
   selector: 'app-site-header',
@@ -34,6 +35,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   },
 })
 export class SiteHeader {
+  protected readonly showLanguageSwitcher = SITE_LOCALES.length > 1;
   private readonly document = inject(DOCUMENT);
   private readonly renderer = inject(Renderer2);
   private readonly host = inject(ElementRef<HTMLElement>);

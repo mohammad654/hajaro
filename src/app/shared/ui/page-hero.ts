@@ -1,25 +1,41 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { Breadcrumbs, Crumb } from './breadcrumbs';
+import { MediaFrame } from './media-frame';
 
-/** Standard header for inner pages: breadcrumbs, eyebrow, the page's single H1 and a lead paragraph. */
+/**
+ * Standard header for inner pages: breadcrumbs, eyebrow, the page's single H1 and a lead paragraph,
+ * with an optional photo beside the text.
+ */
 @Component({
   selector: 'app-page-hero',
-  imports: [Breadcrumbs],
+  imports: [Breadcrumbs, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <header class="page-hero">
-      <div class="container">
-        @if (breadcrumbs().length) {
-          <app-breadcrumbs [items]="breadcrumbs()" />
+    <header class="page-hero" [class.page-hero--media]="imageSrc()">
+      <div class="container page-hero__inner">
+        <div>
+          @if (breadcrumbs().length) {
+            <app-breadcrumbs [items]="breadcrumbs()" />
+          }
+          @if (eyebrow()) {
+            <p class="eyebrow">{{ eyebrow() }}</p>
+          }
+          <h1>{{ title() }}</h1>
+          @if (lead()) {
+            <p class="lead">{{ lead() }}</p>
+          }
+          <ng-content />
+        </div>
+        @if (imageSrc(); as src) {
+          <app-media-frame
+            [src]="src"
+            [alt]="imageAlt()"
+            ratio="3 / 2"
+            [position]="imagePosition()"
+            [priority]="true"
+            sizes="(min-width: 1080px) 45vw, 100vw"
+          />
         }
-        @if (eyebrow()) {
-          <p class="eyebrow">{{ eyebrow() }}</p>
-        }
-        <h1>{{ title() }}</h1>
-        @if (lead()) {
-          <p class="lead">{{ lead() }}</p>
-        }
-        <ng-content />
       </div>
     </header>
   `,
@@ -46,6 +62,18 @@ import { Breadcrumbs, Crumb } from './breadcrumbs';
     .lead {
       margin-bottom: 0;
     }
+    .page-hero--media .page-hero__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--sp-6);
+    }
+    @media (min-width: 1080px) {
+      .page-hero--media .page-hero__inner {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: var(--sp-7);
+        align-items: center;
+      }
+    }
   `,
 })
 export class PageHero {
@@ -53,4 +81,7 @@ export class PageHero {
   readonly eyebrow = input('');
   readonly lead = input('');
   readonly breadcrumbs = input<readonly Crumb[]>([]);
+  readonly imageSrc = input('');
+  readonly imageAlt = input('');
+  readonly imagePosition = input('center');
 }

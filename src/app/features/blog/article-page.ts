@@ -6,7 +6,7 @@ import { ARTICLE_CATEGORY_LABELS, ArticleBlock } from '../../core/models';
 import { injectNotFoundStatus } from '../../core/seo/http-status';
 import { articleSchema } from '../../core/seo/schema.builders';
 import { SeoService } from '../../core/seo/seo.service';
-import { ArticleCard } from '../../shared/cards/article-card';
+import { ArticleCard, articleImage } from '../../shared/cards/article-card';
 import { LabelPipe } from '../../shared/pipes/format.pipes';
 import { Breadcrumbs } from '../../shared/ui/breadcrumbs';
 import { CtaSection } from '../../shared/ui/cta-section';
@@ -46,6 +46,7 @@ interface ViewBlock {
   styleUrl: './article-page.scss',
 })
 export class ArticlePage {
+  protected readonly articleImage = articleImage;
   private readonly articles = inject(ArticleStore);
   private readonly seo = inject(SeoService);
   private readonly markNotFound = injectNotFoundStatus();

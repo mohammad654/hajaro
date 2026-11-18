@@ -51,6 +51,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "*",
+                "input": "images",
+                "output": "images/home"
               }
             ],
             "styles": ["src/styles.scss"],
@@ -83,7 +88,7 @@
                 }
               ],
               "outputHashing": "all",
-              "localize": true
+              "localize": false
             },
             "development": {
               "optimization": false,
@@ -113,10 +118,10 @@
               "buildTarget": "hajaro:build:production"
             },
             "development": {
-              "buildTarget": "hajaro:build:development,nl"
+              "buildTarget": "hajaro:build:development"
             },
             "en": {
-              "buildTarget": "hajaro:build:development,serve-en",
+              "buildTarget": "hajaro:build:development",
               "port": 4201
             }
           },

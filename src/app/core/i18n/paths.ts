@@ -1,4 +1,4 @@
-import { LocaleCode, SITE_LOCALES, SiteLocale } from './locales';
+import { ALL_LOCALES, LocaleCode, SiteLocale } from './locales';
 
 /**
  * Public URL segments per language.
@@ -51,7 +51,7 @@ const SEGMENTS: Readonly<Record<string, Partial<Record<LocaleCode, string>>>> = 
 /** public segment → canonical segment, per language. Throws on ambiguous tables (fails the build). */
 const REVERSE: Readonly<Record<LocaleCode, ReadonlyMap<string, string>>> = (() => {
   const result = {} as Record<LocaleCode, Map<string, string>>;
-  for (const { code } of SITE_LOCALES) {
+  for (const { code } of ALL_LOCALES) {
     const map = new Map<string, string>();
     for (const canonical of Object.keys(SEGMENTS)) {
       const local = localizeSegment(canonical, code);
