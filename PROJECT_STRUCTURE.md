@@ -223,6 +223,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Services: hero image placeholder, scroll reveal, icon hover | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Service detail: audience and benefits side by side, scroll reveal on related programs | `src/app/features/services/service-detail-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Programs: filter columns can shrink, scroll reveal on cards | `src/app/features/programs/programs-page.{html,scss}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Program detail: standard spacing and scroll reveal for related programs | `src/app/features/programs/program-detail-page.html`, `PROJECT_STRUCTURE.md`
 
 ---
 

@@ -187,8 +187,10 @@
   @if (related().length) {
     <section class="section section--alt" aria-labelledby="related-title">
       <div class="container">
-        <h2 id="related-title" i18n>Related programs</h2>
-        <div class="grid grid--3">
+        <div class="section-head">
+          <h2 id="related-title" i18n>Related programs</h2>
+        </div>
+        <div class="grid grid--3 reveal-group">
           @for (p of related(); track p.id) {
             <app-program-card [program]="p" />
           }
