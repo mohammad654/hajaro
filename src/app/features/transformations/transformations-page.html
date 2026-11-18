@@ -12,7 +12,7 @@
   <div class="container">
     <h2 id="gallery-title" class="visually-hidden" i18n>Client stories</h2>
     @if (transformations.public().length) {
-      <div class="gallery">
+      <div class="gallery reveal-group">
         @for (story of transformations.public(); track story.id) {
           <article class="card story">
             <div class="story__pair">
@@ -70,7 +70,7 @@
     @if (testimonials.public().length) {
       <div class="quotes">
         <h2 i18n>What clients say</h2>
-        <div class="grid grid--3">
+        <div class="grid grid--3 reveal-group">
           @for (t of testimonials.public(); track t.id) {
             <figure class="card card--flat quote">
               <blockquote>“{{ t.quote }}”</blockquote>
@@ -92,7 +92,7 @@
       <p class="eyebrow" i18n>Privacy and consent</p>
       <h2 id="principles-title" i18n>How I share client results</h2>
     </div>
-    <div class="grid grid--4">
+    <div class="grid grid--4 reveal-group">
       @for (p of principles; track p.title) {
         <div class="card">
           <h3 class="card__title">{{ p.title }}</h3>

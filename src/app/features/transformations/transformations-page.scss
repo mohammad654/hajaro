@@ -14,7 +14,12 @@
   gap: var(--sp-5);
 
   @include up($bp-sm) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  // The gallery has two columns here, so the photos need the full card width.
+  @include up($bp-lg) {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

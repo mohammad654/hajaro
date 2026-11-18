@@ -231,6 +231,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Exercise detail: dumbbell curl photo in the sidebar, standard related section, scroll reveal | `src/app/features/exercises/exercise-detail-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Muscle chart: torso photo in the intro card, overview image path works under a sub-path | `src/app/features/muscle-chart/muscle-chart-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Nutrition: hero image placeholder, standard article heading, scroll reveal | `src/app/features/nutrition/nutrition-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Transformations: larger before and after photos on desktop, scroll reveal; no stock photos used | `src/app/features/transformations/transformations-page.{html,scss}`, `PROJECT_STRUCTURE.md`
 
 ---
 
