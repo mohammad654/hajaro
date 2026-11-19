@@ -174,6 +174,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Workout planner | Top (background) | `markusspiske-fitness-594143_1920.jpg` (darkened) | placed |
 | Calculators | Top (background) | `kitchen-scale-weighing-bowl.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Pricing | Top (background) | `barbell-plate-rubber-floor.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| All pages with a closing CTA | CTA panel (background) | `dumbbells-overhead-dark-floor.webp` (Pexels, see `IMAGE_CREDITS.md`), darkened, equipment only | stock |
 | Service detail, program detail, contact, legal, 404 | none | none | no image needed |
 
 Viewed, not placed:
@@ -328,6 +329,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | About: downloaded Pexels empty-gym photo as a darkened hero background (no people, so it does not pose as the trainer); bio photo no longer marked priority | `images/empty-gym-rig-rings.webp`, `IMAGE_CREDITS.md`, `src/app/features/about/about-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Nutrition: meal-prep hero photo moved behind the text as a darkened background (alt text dropped, the photo is now decorative) | `src/app/features/nutrition/nutrition-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Pricing: shows the first 4 active packages by order (one row on desktop); cards, comparison table and offer schema use the same list; Contest Prep (order 5) stays in the data, contact form and service page | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Shared CTA panel: downloaded Pexels overhead dumbbell photo as a darkened background, darkest behind the centred text | `images/dumbbells-overhead-dark-floor.webp`, `IMAGE_CREDITS.md`, `src/app/shared/ui/cta-section.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

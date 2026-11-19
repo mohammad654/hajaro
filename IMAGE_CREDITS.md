@@ -11,3 +11,4 @@ Downloaded stock images in `images/`. One line each: file, photographer, source,
 - `dumbbells-apples-clipboard-flat-lay.webp` | Alesia Kozik | https://www.pexels.com/photo/overhead-shot-of-dumbbells-apples-and-a-clipboard-8155103/ | Pexels License (https://www.pexels.com/license/)
 - `chicken-salad-soft-boiled-eggs.webp` | Sergei Starostin | https://www.pexels.com/photo/delicious-caesar-salad-with-grilled-chicken-28618643/ | Pexels License (https://www.pexels.com/license/); cropped to 16:10 around the bowl
 - `empty-gym-rig-rings.webp` | Irandelson Salgueiro (TUBARONES PHOTOGRAPHY) | https://www.pexels.com/photo/an-empty-gym-9545907/ | Pexels License (https://www.pexels.com/license/)
+- `dumbbells-overhead-dark-floor.webp` | Anete Lusina | https://www.pexels.com/photo/view-of-dumbbells-lying-on-the-floor-16513597/ | Pexels License (https://www.pexels.com/license/)

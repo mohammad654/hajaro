@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
@@ -8,12 +9,20 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
  */
 @Component({
   selector: 'app-cta-section',
-  imports: [LocalePathPipe, RouterLink],
+  imports: [NgOptimizedImage, LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="cta" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta__panel">
+          <div class="cta__bg" aria-hidden="true">
+            <img
+              ngSrc="images/home/dumbbells-overhead-dark-floor.webp"
+              alt=""
+              fill
+              sizes="(min-width: 1440px) 1240px, 100vw"
+            />
+          </div>
           <p class="eyebrow">{{ eyebrow() }}</p>
           <h2 id="cta-title">{{ title() }}</h2>
           <p class="cta__text">{{ text() }}</p>
@@ -45,6 +54,26 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
         radial-gradient(70% 140% at 100% 0%, var(--c-accent-soft), transparent 60%),
         linear-gradient(135deg, var(--c-surface-2), var(--c-bg-elevated));
       text-align: center;
+    }
+    /* Photo behind the text, darkest in the middle where the copy sits. */
+    .cta__bg {
+      position: absolute;
+      inset: 0;
+    }
+    .cta__bg img {
+      object-fit: cover;
+      object-position: center 40%;
+    }
+    .cta__bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(70% 140% at 100% 0%, var(--c-accent-soft), transparent 60%),
+        radial-gradient(60% 80% at 50% 50%, var(--c-scrim-strong), var(--c-scrim));
+    }
+    .cta__panel > :not(.cta__bg) {
+      position: relative;
     }
     .eyebrow {
       justify-content: center;
