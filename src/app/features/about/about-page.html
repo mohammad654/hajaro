@@ -3,6 +3,9 @@
   [title]="content().trainerName"
   [lead]="content().trainerShortBio"
   [breadcrumbs]="breadcrumbs"
+  imageSrc="images/home/empty-gym-rig-rings.webp"
+  [imageBackground]="true"
+  imagePosition="right 60%"
 />
 
 <section class="section" aria-labelledby="bio-title">
@@ -13,7 +16,6 @@
       [alt]="photo().alt"
       [position]="photo().position"
       ratio="4 / 5"
-      [priority]="true"
       [caption]="content().trainerName"
       sizes="(min-width: 1024px) 40vw, 100vw"
     />

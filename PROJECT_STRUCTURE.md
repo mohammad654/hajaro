@@ -160,6 +160,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Blog + article | Sleep and recovery | `man-sleeping-dark-bedroom.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Blog + article | Creatine | `supplement-powder-scoop.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Blog + article | Protein | `chicken-salad-soft-boiled-eggs.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| About | Top (background) | `empty-gym-rig-rings.webp` (Pexels, see `IMAGE_CREDITS.md`), empty gym, no people | stock |
 | About | Trainer photo | `luissantos2020-fitness-5991125_1920.jpg` (reused from the homepage teaser, crop shifted left) | taken (demo) |
 | Transformations | Top (background) | `barbell-dark-gym-floor.webp` (Pexels, see `IMAGE_CREDITS.md`), equipment only, no people | stock |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
@@ -324,6 +325,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Senior pass step 6, dead code: removed unused global classes (`.display`, `.text-accent`, `.grid--auto`), the unused Barlow 600 font file and `muscle-groups-overview-640.webp`; unused files in `images/` (PDFs, infographics, silhouettes, logos) are excluded from the build in `angular.json` but kept on disk; no unused components, services or packages found | `src/styles/{_typography,_layout,_fonts}.scss`, `public/fonts/barlow-condensed-latin-600.woff2` (deleted), `public/images/anatomy/muscle-groups-overview-640.webp` (deleted), `angular.json`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 7, performance: deferred hydration (`@defer (hydrate on viewport)`) for every closing CTA, both FAQ lists, the muscle-chart split table and the homepage coach teaser; routes already lazy, fonts self-hosted with two preloads, Barlow 600 dropped | `src/app/features/{home,about,blog,muscle-chart,nutrition,pricing,programs,services,transformations}/*`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 8, review by reading: TypeScript and template diffs, inline Sass `@use`, selector order and translation markers checked; pricing label widths in rem; project map and key locations filled in | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | About: downloaded Pexels empty-gym photo as a darkened hero background (no people, so it does not pose as the trainer); bio photo no longer marked priority | `images/empty-gym-rig-rings.webp`, `IMAGE_CREDITS.md`, `src/app/features/about/about-page.html`, `PROJECT_STRUCTURE.md`
 
 ---
 
