@@ -1,1 +1,0 @@
-import{dr as rH,v as E}from"./chunk-ndNoG5v4.js";function e(){let t=E(rH,{optional:!0});return()=>{t&&(t.status=404)}}export{e as t};

@@ -1,0 +1,1 @@
+import{i as E,t as n}from"./main-F4USLEF7.js";import{y as E$1}from"./chunk-xPHJV04V.js";import{t as k}from"./chunk-DJVAsKa_.js";function s(n$1,p){let t=E$1(n).content().seo[n$1];E$1(E).update(k(k(k({},p),t?.title?{title:t.title}:{}),t?.description?{description:t.description}:{}))}export{s as t};

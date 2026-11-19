@@ -1,1 +1,0 @@
-import{t as e}from"./chunk-Cl7UVSWx.js";import{Ar as te}from"./chunk-ndNoG5v4.js";var i=class n{all=e;index=new Map(e.map(e=>[e.id,e]));get(e){return e?this.index.get(e):void 0}isMuscleId(e){return!!e&&this.index.has(e)}static ɵfac=function(o){return new(o||n)};static ɵprov=te({token:n,factory:n.ɵfac,providedIn:`root`})};export{i as t};

@@ -1,0 +1,1 @@
+import{Ht as YV,y as E}from"./chunk-xPHJV04V.js";function e(){let t=E(YV,{optional:!0});return()=>{t&&(t.status=404)}}export{e as t};
