@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject } from '@angular/core';
 import { CurrencyPipe } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { PackageStore } from '../../core/data-access/package.store';
@@ -12,6 +12,9 @@ import { CtaSection } from '../../shared/ui/cta-section';
 import { FaqList } from '../../shared/ui/faq-list';
 import { PageHero } from '../../shared/ui/page-hero';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
+
+/** One row of cards on desktop. The first packages by their `order` are shown. */
+const MAX_PACKAGES = 4;
 
 type ComparisonKey = keyof Pick<
   CoachingPackage,
@@ -38,7 +41,7 @@ type ComparisonKey = keyof Pick<
 
     <section class="section" i18n-aria-label aria-label="Packages">
       <div class="container packages reveal-group">
-        @for (pkg of packages.active(); track pkg.id) {
+        @for (pkg of shown(); track pkg.id) {
           <app-package-card [pkg]="pkg" [detailed]="true" />
         }
       </div>
@@ -58,7 +61,7 @@ type ComparisonKey = keyof Pick<
             <thead>
               <tr>
                 <th scope="col" i18n>What's included</th>
-                @for (pkg of packages.active(); track pkg.id) {
+                @for (pkg of shown(); track pkg.id) {
                   <th scope="col" [class.is-highlight]="pkg.highlighted">{{ pkg.name }}</th>
                 }
               </tr>
@@ -66,7 +69,7 @@ type ComparisonKey = keyof Pick<
             <tbody>
               <tr>
                 <th scope="row" i18n>Price</th>
-                @for (pkg of packages.active(); track pkg.id) {
+                @for (pkg of shown(); track pkg.id) {
                   <td [class.is-highlight]="pkg.highlighted">
                     <strong>{{ pkg.price | currency: pkg.currency : 'symbol' : '1.0-0' }}</strong>
                     {{ periodLabels[pkg.billingPeriod] }}
@@ -76,14 +79,14 @@ type ComparisonKey = keyof Pick<
               @for (row of rows; track row.key) {
                 <tr>
                   <th scope="row">{{ row.label }}</th>
-                  @for (pkg of packages.active(); track pkg.id) {
+                  @for (pkg of shown(); track pkg.id) {
                     <td [class.is-highlight]="pkg.highlighted">{{ pkg[row.key] }}</td>
                   }
                 </tr>
               }
               <tr>
                 <th scope="row"><span class="visually-hidden" i18n>Choose a package</span></th>
-                @for (pkg of packages.active(); track pkg.id) {
+                @for (pkg of shown(); track pkg.id) {
                   <td [class.is-highlight]="pkg.highlighted">
                     <a
                       class="btn btn--sm"
@@ -162,7 +165,8 @@ type ComparisonKey = keyof Pick<
   `,
 })
 export class PricingPage {
-  protected readonly packages = inject(PackageStore);
+  private readonly packages = inject(PackageStore);
+  protected readonly shown = computed(() => this.packages.active().slice(0, MAX_PACKAGES));
   protected readonly faqs = GENERAL_FAQS.filter((f) =>
     ['faq-cancel', 'faq-online', 'faq-nutrition', 'faq-results'].includes(f.id),
   );
@@ -186,7 +190,7 @@ export class PricingPage {
     effect(() =>
       seo.setPageSchema(
         'offers',
-        offerCatalogSchema((p) => seo.absoluteUrl(p), this.packages.active()),
+        offerCatalogSchema((p) => seo.absoluteUrl(p), this.shown()),
       ),
     );
   }
