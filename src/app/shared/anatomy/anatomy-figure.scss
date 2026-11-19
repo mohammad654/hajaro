@@ -34,7 +34,7 @@
 }
 
 .muscle.is-primary {
-  filter: drop-shadow(0 0 4px rgb(232 176 74 / 55%));
+  filter: drop-shadow(0 0 4px rgb(var(--c-accent-rgb) / 55%));
 }
 
 :host(.is-interactive) .muscle {
@@ -63,7 +63,7 @@
 
 .deep.is-active path {
   stroke: var(--c-accent);
-  fill: rgb(232 176 74 / 22%);
+  fill: rgb(var(--c-accent-rgb) / 22%);
   opacity: 1;
 }
 
@@ -82,6 +82,6 @@
 
 @keyframes muscle-glow {
   50% {
-    filter: drop-shadow(0 0 9px rgb(232 176 74 / 75%));
+    filter: drop-shadow(0 0 9px rgb(var(--c-accent-rgb) / 75%));
   }
 }

@@ -50,18 +50,20 @@ import { MediaFrame } from './media-frame';
             ratio="3 / 2"
             [position]="imagePosition()"
             [priority]="true"
-            sizes="(min-width: 1080px) 45vw, 100vw"
+            sizes="(min-width: 1024px) 45vw, 100vw"
           />
         }
       </div>
     </header>
   `,
   styles: `
+    @use 'mixins' as *;
+
     .page-hero {
       position: relative;
       padding: calc(var(--sp-8) + var(--sp-4)) 0 var(--sp-8);
       background:
-        radial-gradient(60% 120% at 85% 0%, rgb(232 176 74 / 10%), transparent 60%),
+        radial-gradient(60% 120% at 85% 0%, var(--c-accent-glow), transparent 60%),
         linear-gradient(180deg, var(--c-bg-elevated), var(--c-bg));
       border-bottom: 1px solid var(--c-border);
       overflow: hidden;
@@ -94,7 +96,7 @@ import { MediaFrame } from './media-frame';
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgb(11 11 12 / 72%), rgb(11 11 12 / 90%));
+      background: linear-gradient(180deg, var(--c-scrim), var(--c-scrim-strong));
     }
     .page-hero--bg .page-hero__inner {
       position: relative;
@@ -113,7 +115,7 @@ import { MediaFrame } from './media-frame';
     app-media-frame {
       max-width: 640px;
     }
-    @media (min-width: 1080px) {
+    @include up($bp-lg) {
       .page-hero--media .page-hero__inner {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: var(--sp-7);
@@ -124,7 +126,12 @@ import { MediaFrame } from './media-frame';
       }
       .page-hero__bg::after {
         background:
-          linear-gradient(90deg, var(--c-bg) 0%, rgb(11 11 12 / 88%) 38%, rgb(11 11 12 / 35%) 100%),
+          linear-gradient(
+            90deg,
+            var(--c-bg) 0%,
+            var(--c-scrim-strong) 38%,
+            var(--c-scrim-soft) 100%
+          ),
           linear-gradient(0deg, var(--c-bg), transparent 35%);
       }
     }

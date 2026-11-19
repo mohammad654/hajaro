@@ -173,7 +173,7 @@ const CONSULTATION_MINUTES = 20;
     dt {
       font-size: var(--fs-xs);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
       color: var(--c-text-subtle);
     }
     dd {

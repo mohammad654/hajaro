@@ -11,7 +11,7 @@
   display: grid;
   gap: var(--sp-7);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -21,7 +21,7 @@
 }
 
 .footer__brand {
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-column: 1 / -1;
   }
 
@@ -42,7 +42,7 @@
   font-size: var(--fs-xl);
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--tracking);
   color: var(--c-text);
   text-decoration: none;
 
@@ -88,10 +88,10 @@ ul {
   a {
     display: grid;
     place-items: center;
-    width: 40px;
-    height: 40px;
+    width: var(--tap);
+    height: var(--tap);
     border: 1px solid var(--c-border-strong);
-    border-radius: 50%;
+    border-radius: var(--radius-round);
     color: var(--c-text-muted);
 
     &:hover {
@@ -105,7 +105,7 @@ ul {
   font-family: var(--font-body);
   font-size: var(--fs-xs);
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: var(--tracking-wider);
   color: var(--c-text);
   margin-bottom: var(--sp-4);
 }
@@ -167,7 +167,7 @@ ul {
   color: var(--c-text-subtle);
   font-size: var(--fs-xs);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;

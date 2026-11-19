@@ -30,7 +30,7 @@ import { Icon } from '../../shared/ui/icon/icon';
     .share__title {
       font-size: var(--fs-xs);
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: var(--tracking-wide);
       text-transform: uppercase;
       color: var(--c-text-subtle);
     }

@@ -8,7 +8,7 @@
 
   dt {
     font-size: var(--fs-xs);
-    letter-spacing: 0.1em;
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--c-text-subtle);
   }
@@ -76,7 +76,7 @@
 
 .week__label {
   font-size: var(--fs-xs);
-  letter-spacing: 0.08em;
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   color: var(--c-text-subtle);
 }

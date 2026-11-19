@@ -73,7 +73,7 @@ import { localeUrl } from '../../core/i18n/paths';
       color: var(--c-text-muted);
       font-size: var(--fs-xs);
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: var(--tracking);
       text-decoration: none;
       transition:
         background-color var(--dur) var(--ease),
@@ -90,9 +90,9 @@ import { localeUrl } from '../../core/i18n/paths';
       flex-shrink: 0;
       width: 20px;
       height: 14px;
-      border-radius: 2px;
+      border-radius: var(--radius-xs);
       background: center / cover no-repeat;
-      box-shadow: 0 0 0 1px rgb(255 255 255 / 18%);
+      box-shadow: 0 0 0 1px var(--c-border-strong);
       opacity: 0.75;
       transition: opacity var(--dur) var(--ease);
     }

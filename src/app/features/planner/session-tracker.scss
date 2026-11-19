@@ -64,7 +64,7 @@
     font-size: var(--fs-xs);
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: var(--tracking-wide);
     color: var(--c-text-subtle);
     text-align: left;
     padding: var(--sp-1) var(--sp-2);
@@ -91,8 +91,8 @@
 .done {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: var(--tap);
+  height: var(--tap);
   border: 1px solid var(--c-border-strong);
   border-radius: var(--radius-sm);
   background: transparent;

@@ -118,6 +118,8 @@ type ComparisonKey = keyof Pick<
     <app-cta-section />
   `,
   styles: `
+    @use 'mixins' as *;
+
     .packages {
       display: grid;
       gap: var(--sp-5);
@@ -138,7 +140,7 @@ type ComparisonKey = keyof Pick<
       background: var(--c-surface);
       white-space: nowrap;
     }
-    @media (max-width: 639.98px) {
+    @include down($bp-md) {
       .compare th[scope='row'],
       .compare thead th:first-child {
         min-width: 116px;

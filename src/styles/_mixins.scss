@@ -1,8 +1,10 @@
 // Shared Sass helpers. Import in component styles with `@use 'mixins' as *;`
-$bp-sm: 640px;
-$bp-md: 820px;
-$bp-lg: 1080px;
-$bp-xl: 1280px;
+// The one set of breakpoints (mobile first): small phone, tablet, laptop, desktop.
+// $bp-lg is the desktop navigation switch, mirrored in site-header.ts and muscle-chart-page.ts.
+$bp-sm: 360px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1440px;
 
 @mixin up($bp) {
   @media (min-width: $bp) {
@@ -13,6 +15,13 @@ $bp-xl: 1280px;
 @mixin down($bp) {
   @media (max-width: ($bp - 0.02px)) {
     @content;
+  }
+}
+
+// Raise a compact control to the 44px tap size on touch screens; mouse users keep the compact look.
+@mixin touch-target {
+  @media (pointer: coarse) {
+    min-height: var(--tap);
   }
 }
 
@@ -37,7 +46,7 @@ $bp-xl: 1280px;
   font-family: var(--font-body);
   font-size: var(--fs-xs);
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: var(--tracking-wider);
   text-transform: uppercase;
   color: var(--c-accent);
 }

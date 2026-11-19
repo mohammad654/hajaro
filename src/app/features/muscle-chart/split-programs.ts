@@ -88,10 +88,10 @@ const SPLIT_SLUGS = [
     }
     .mini-week li {
       padding: 4px 6px;
-      border-radius: 6px;
+      border-radius: var(--radius-sm);
       background: var(--c-accent-soft);
       color: var(--c-accent);
-      font-size: 0.7rem;
+      font-size: var(--fs-2xs);
       font-weight: 600;
       text-align: center;
       white-space: nowrap;

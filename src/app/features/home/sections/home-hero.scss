@@ -4,8 +4,8 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(50% 70% at 78% 40%, rgb(232 176 74 / 16%), transparent 70%),
-    radial-gradient(40% 50% at 10% 100%, rgb(232 176 74 / 6%), transparent 70%), var(--c-bg);
+    radial-gradient(50% 70% at 78% 40%, var(--c-accent-soft), transparent 70%),
+    radial-gradient(40% 50% at 10% 100%, var(--c-accent-glow), transparent 70%), var(--c-bg);
   border-bottom: 1px solid var(--c-border);
 }
 
@@ -58,6 +58,7 @@
       visibility 0s linear 0.6s;
   }
 
+  // !important: the global reduced-motion rule shortens durations but not the visibility delay.
   @media (prefers-reduced-motion: reduce) {
     transition: none !important;
   }
@@ -92,8 +93,8 @@
       background: linear-gradient(
         90deg,
         var(--c-bg),
-        rgb(11 11 12 / 62%) 32%,
-        rgb(11 11 12 / 12%) 68%
+        var(--c-scrim-mid) 32%,
+        rgb(var(--c-bg-rgb) / 12%) 68%
       );
     }
   }
@@ -103,8 +104,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgb(255 255 255 / 3%) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(255 255 255 / 3%) 1px, transparent 1px);
+    linear-gradient(var(--c-hover-tint) 1px, transparent 1px),
+    linear-gradient(90deg, var(--c-hover-tint) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(70% 70% at 60% 40%, #000 30%, transparent 75%);
 }
@@ -243,11 +244,11 @@
 }
 
 .hero__arrow {
-  width: 44px;
-  height: 44px;
+  width: var(--tap);
+  height: var(--tap);
   border: 1px solid var(--c-border);
-  border-radius: 50%;
-  background: rgb(11 11 12 / 70%);
+  border-radius: var(--radius-round);
+  background: var(--c-scrim);
   color: var(--c-text);
   transition:
     border-color 0.2s ease,
@@ -273,7 +274,7 @@
       content: '';
       width: 8px;
       height: 8px;
-      border-radius: 50%;
+      border-radius: var(--radius-round);
       background: var(--c-text-subtle);
       transition:
         transform 0.2s ease,

@@ -97,7 +97,7 @@ export class MuscleChartPage {
   private scrollToDetail(): void {
     if (!this.isBrowser) return;
     // On desktop the detail panel sits beside the chart; only scroll when it is stacked below.
-    if (!window.matchMedia('(max-width: 1079px)').matches) return;
+    if (!window.matchMedia('(max-width: 1023.98px)').matches) return;
     setTimeout(() => this.detailAnchor()?.nativeElement.scrollIntoView({ block: 'start' }));
   }
 }

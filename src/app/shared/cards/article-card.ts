@@ -71,7 +71,7 @@ export function articleImage(article: Article): ArticleImage | null {
         ratio="16 / 9"
         [monogram]="(article().category | label: categories).slice(0, 1)"
         [caption]="article().category | label: categories"
-        sizes="(min-width: 1080px) 33vw, (min-width: 640px) 50vw, 100vw"
+        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
       />
       <div class="article-card__body">
         <p class="article-card__meta">
@@ -100,17 +100,14 @@ export function articleImage(article: Article): ArticleImage | null {
       display: flex;
       flex-direction: column;
     }
-    app-media-frame ::ng-deep .frame {
-      border-radius: 0;
-      border: 0;
+    .article-card {
+      --frame-radius: 0;
+      --frame-border: 0;
     }
     @media (prefers-reduced-motion: no-preference) {
-      app-media-frame ::ng-deep img {
-        transition: transform var(--dur-slow) var(--ease);
-      }
-      .article-card:hover app-media-frame ::ng-deep img,
-      .article-card:focus-within app-media-frame ::ng-deep img {
-        transform: scale(1.04);
+      .article-card:hover,
+      .article-card:focus-within {
+        --frame-zoom: scale(1.04);
       }
     }
     .article-card__body {

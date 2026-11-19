@@ -109,6 +109,8 @@ type CredentialKey = 'qualifications' | 'competitionHistory' | 'achievements';
   templateUrl: './site-content-page.html',
   styleUrl: '../../dashboard/pages/dashboard-pages.scss',
   styles: `
+    @use 'mixins' as *;
+
     .block {
       margin-bottom: var(--sp-5);
     }
@@ -118,7 +120,7 @@ type CredentialKey = 'qualifications' | 'competitionHistory' | 'achievements';
       padding: var(--sp-3) 0;
       border-bottom: 1px solid var(--c-border);
     }
-    @media (min-width: 820px) {
+    @include up($bp-md) {
       .item--credential {
         grid-template-columns: 1.4fr 1fr 90px auto auto;
         align-items: center;

@@ -8,7 +8,7 @@ h4,
   font-family: var(--font-display);
   font-weight: 700;
   line-height: var(--lh-tight);
-  letter-spacing: 0.005em;
+  letter-spacing: var(--tracking-tight);
   text-transform: uppercase;
   margin: 0 0 var(--sp-4);
   text-wrap: balance;
@@ -80,8 +80,8 @@ p {
 // Long-form article content
 .prose {
   font-size: var(--fs-md);
-  line-height: 1.75;
-  color: #d9d9de;
+  line-height: var(--lh-prose);
+  color: var(--c-text-prose);
   max-width: 70ch;
 
   h2 {

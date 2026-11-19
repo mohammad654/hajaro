@@ -44,6 +44,8 @@ export const WHATSAPP_PATH =
     }
   `,
   styles: `
+    @use 'mixins' as *;
+
     .wa {
       position: fixed;
       right: calc(var(--sp-4) + env(safe-area-inset-right, 0px));
@@ -57,9 +59,9 @@ export const WHATSAPP_PATH =
       width: 56px;
       height: 56px;
       border-radius: var(--radius-pill);
-      background: #25d366;
+      background: var(--c-whatsapp);
       /* Dark text on WhatsApp green: 10:1 contrast (white is only 2:1). */
-      color: #08140c;
+      color: var(--c-on-whatsapp);
       box-shadow: var(--shadow);
       text-decoration: none;
       font-weight: 600;
@@ -69,9 +71,9 @@ export const WHATSAPP_PATH =
         background-color var(--dur) var(--ease);
     }
     .wa:hover {
-      background: #1ebe5b;
+      background: var(--c-whatsapp-strong);
       transform: translateY(-2px);
-      color: #08140c;
+      color: var(--c-on-whatsapp);
     }
     .wa:focus-visible {
       outline: none;
@@ -80,7 +82,7 @@ export const WHATSAPP_PATH =
     .wa__label {
       display: none;
     }
-    @media (min-width: 768px) {
+    @include up($bp-md) {
       .wa {
         width: auto;
         padding: 0 var(--sp-5) 0 var(--sp-4);

@@ -13,7 +13,7 @@
   display: grid;
   gap: var(--sp-5);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 

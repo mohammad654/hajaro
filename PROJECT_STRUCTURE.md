@@ -146,11 +146,11 @@ Skipped by name and size: `jensenartofficial-heart-7834275_1920.jpg`, `jensenart
 
 ## 4. Stack (fill in once)
 
-- Angular version: [VERSION]
-- Styling: [SCSS / CSS / Tailwind]
-- i18n approach: [ngx-translate / Transloco / @angular/localize]
-- Components: [standalone or NgModules]
-- Package manager: [npm / pnpm]
+- Angular version: 22 (zoneless, SSR and prerendering)
+- Styling: SCSS; tokens in `src/styles/_tokens.scss`, breakpoints and mixins in `src/styles/_mixins.scss`
+- i18n approach: `@angular/localize`
+- Components: standalone, OnPush, signals
+- Package manager: npm
 
 ---
 
@@ -208,6 +208,7 @@ Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 - Phase 4: blog display photos live in `article-card.ts`, not in `featuredImageUrl`, because `SeoService.absoluteUrl` breaks base-relative paths; fix that, then use them in article schema and social images.
 - Review before launch: confirm the licence of `images.jpeg` and `images (1).jpeg` (no source in the file name) and replace them with larger versions.
 - Phase 3: run `npm run i18n` and add Dutch targets for the new exercise, muscle chart and login image alt texts.
+- Phase 3: check that the desktop nav still fits at 1024 px with the longer Dutch labels (link padding is tighter below 1440 px).
 
 ---
 
@@ -267,6 +268,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | About: method step icons in the corner opposite the number (styles were stale in the dev server); Services: hero photo moved behind the text as a darkened background | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Programs: hero photo moved behind the text as a darkened background | `src/app/features/programs/programs-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | CLAUDE.md review: added the server's `$localize` passthrough import order and the admin article markup | `CLAUDE.md`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Senior pass step 1, design system: breakpoints 360/768/1024/1440, scrim, glow, chart, tracking, tap and icon-box tokens; literal colours, radii, font sizes and letter-spacing replaced; shared `.icon-tile`; 44 px touch targets; no `!important`, `::ng-deep` or inline styles left without reason | `src/styles/*`, header, footer, portal shell, about, services, nutrition, home sections, media frame, article card, planner, muscle chart, dashboard progress, admin list, `CLAUDE.md`, `PROJECT_STRUCTURE.md`
 
 ---
 
@@ -275,7 +277,7 @@ Format: `YYYY-MM-DD | task | files`
 | Phase | Focus | Status |
 |---|---|---|
 | 1 | English layout and visual style | **Current** |
-| 2 | Clean code, SOLID, remove duplication and dead code | Later |
+| 2 | Clean code, SOLID, remove duplication and dead code | **Current** (runs together with the senior layout pass) |
 | 3 | Dutch version (sync with the Deferred list) | Later |
 | 4 | SEO: titles, meta, hreflang, schema, sitemap, humanized text (files 01 and 02) | Later |
 | 5 | Performance and accessibility pass | Later |

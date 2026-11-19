@@ -34,9 +34,9 @@
 .live-dot {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   background: var(--c-success);
-  box-shadow: 0 0 0 3px rgb(74 222 128 / 25%);
+  box-shadow: 0 0 0 3px var(--c-success-line);
 }
 
 .guest-note {

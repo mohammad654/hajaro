@@ -60,7 +60,7 @@ const PADDING = 24;
       stroke-linejoin: round;
     }
     .area {
-      fill: rgb(232 176 74 / 12%);
+      fill: var(--c-accent-glow);
     }
     .dot {
       fill: var(--c-bg);

@@ -76,12 +76,13 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     .swatch {
       width: 10px;
       height: 10px;
-      border-radius: 3px;
+      border-radius: var(--radius-xs);
       background: var(--muscle-base);
       border: 1px solid var(--c-border-strong);
     }
-    tr.is-selected {
-      background: var(--c-accent-soft) !important;
+    tr.is-selected,
+    tr.is-selected:hover {
+      background: var(--c-accent-soft);
     }
     tr.is-selected .swatch {
       background: var(--c-accent);

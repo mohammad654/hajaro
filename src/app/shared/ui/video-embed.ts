@@ -90,7 +90,7 @@ export function toSafeEmbedUrl(url: string | null | undefined): string | null {
       width: 100%;
       border: 0;
       background:
-        radial-gradient(circle at center, rgb(232 176 74 / 12%), transparent 60%), var(--c-surface);
+        radial-gradient(circle at center, var(--c-accent-glow), transparent 60%), var(--c-surface);
       color: var(--c-text);
       font-weight: 600;
     }
@@ -101,9 +101,9 @@ export function toSafeEmbedUrl(url: string | null | undefined): string | null {
     .video__play {
       display: grid;
       place-items: center;
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      border-radius: var(--radius-round);
       background: var(--c-accent);
       color: var(--c-on-accent);
     }

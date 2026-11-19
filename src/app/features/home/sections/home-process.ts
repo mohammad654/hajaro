@@ -31,6 +31,8 @@ import { COACHING_STEPS } from '../home.content';
     </section>
   `,
   styles: `
+    @use 'mixins' as *;
+
     .process__bg {
       position: absolute;
       inset: 0;
@@ -48,8 +50,8 @@ import { COACHING_STEPS } from '../home.content';
       background: linear-gradient(
         180deg,
         var(--c-bg),
-        rgb(11 11 12 / 60%) 35%,
-        rgb(11 11 12 / 60%) 70%,
+        var(--c-scrim-mid) 35%,
+        var(--c-scrim-mid) 70%,
         var(--c-bg)
       );
     }
@@ -66,12 +68,12 @@ import { COACHING_STEPS } from '../home.content';
       display: grid;
       gap: var(--sp-5);
     }
-    @media (min-width: 640px) {
+    @include up($bp-md) {
       .steps {
         grid-template-columns: repeat(2, 1fr);
       }
     }
-    @media (min-width: 1080px) {
+    @include up($bp-lg) {
       .steps {
         grid-template-columns: repeat(4, 1fr);
       }

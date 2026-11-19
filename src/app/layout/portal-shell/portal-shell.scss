@@ -20,7 +20,7 @@ $sidebar: 260px;
   gap: var(--sp-3);
   height: 60px;
   padding: 0 var(--gutter);
-  background: rgb(11 11 12 / 92%);
+  background: var(--c-scrim-strong);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--c-border);
 
@@ -32,8 +32,8 @@ $sidebar: 260px;
 .portal__menu-btn {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
+  width: var(--tap);
+  height: var(--tap);
   border: 1px solid var(--c-border-strong);
   border-radius: var(--radius-sm);
   background: none;
@@ -48,15 +48,15 @@ $sidebar: 260px;
   font-weight: 800;
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: var(--tracking);
   color: var(--c-text);
   text-decoration: none;
 
   span {
     font-family: var(--font-body);
-    font-size: 0.65rem;
+    font-size: var(--fs-2xs);
     font-weight: 600;
-    letter-spacing: 0.2em;
+    letter-spacing: var(--tracking-wider);
     color: var(--c-accent);
     margin-top: 2px;
   }

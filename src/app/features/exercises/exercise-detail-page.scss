@@ -39,7 +39,7 @@
   margin-bottom: var(--sp-3);
   font-size: var(--fs-xs);
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   color: var(--c-accent);
 }
@@ -83,7 +83,7 @@
 .dot {
   width: 10px;
   height: 10px;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
 
   &--primary {
     background: var(--muscle-selected);
@@ -107,7 +107,7 @@
 
   dt {
     font-size: var(--fs-xs);
-    letter-spacing: 0.08em;
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--c-text-subtle);
   }

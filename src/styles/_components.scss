@@ -1,6 +1,8 @@
 @use 'mixins' as *;
 
 // ---------- Buttons ----------
+// .btn on its own is the secondary (outlined) button; modifiers: --primary, --ghost, --danger,
+// sizes --sm and --lg, --block. States: hover, focus-visible (global ring), active, disabled.
 .btn {
   --btn-bg: transparent;
   --btn-fg: var(--c-text);
@@ -9,7 +11,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--sp-2);
-  min-height: 48px;
+  min-height: 3rem;
   padding: 0 var(--sp-5);
   border: 1px solid var(--btn-border);
   border-radius: var(--radius-pill);
@@ -18,7 +20,7 @@
   font-family: var(--font-body);
   font-size: var(--fs-sm);
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: var(--tracking);
   text-transform: uppercase;
   text-decoration: none;
   /* Wrap long labels (Dutch) instead of overflowing narrow screens. */
@@ -70,7 +72,7 @@
 
   &--danger {
     --btn-fg: var(--c-danger);
-    --btn-border: rgb(248 113 113 / 40%);
+    --btn-border: var(--c-danger-line);
 
     &:hover {
       --btn-bg: var(--c-danger-soft);
@@ -79,13 +81,15 @@
   }
 
   &--sm {
-    min-height: 36px;
+    min-height: 2.25rem;
     padding: 0 var(--sp-4);
     font-size: var(--fs-xs);
+
+    @include touch-target;
   }
 
   &--lg {
-    min-height: 56px;
+    min-height: 3.5rem;
     padding: 0 var(--sp-6);
   }
 
@@ -100,7 +104,7 @@
   gap: var(--sp-2);
   font-weight: 600;
   font-size: var(--fs-sm);
-  letter-spacing: 0.06em;
+  letter-spacing: var(--tracking);
   text-transform: uppercase;
   text-decoration: none;
 
@@ -170,16 +174,37 @@
   }
 }
 
+// ---------- Icon tile ----------
+// Accent square that holds a card's icon (services, nutrition topics, method steps).
+.icon-tile {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: var(--icon-box);
+  height: var(--icon-box);
+  border-radius: var(--radius);
+  background: var(--c-accent-soft);
+  color: var(--c-accent);
+  transition: transform var(--dur) var(--ease);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card:hover .icon-tile,
+  .card:focus-within .icon-tile {
+    transform: scale(1.08);
+  }
+}
+
 // ---------- Badges / chips ----------
 .badge {
   display: inline-flex;
   align-items: center;
   gap: var(--sp-1);
-  padding: 0.2rem 0.6rem;
+  padding: var(--sp-1) var(--sp-2);
   border-radius: var(--radius-pill);
   font-size: var(--fs-xs);
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: var(--tracking);
   background: var(--c-surface-3);
   color: var(--c-text-muted);
   white-space: nowrap;
@@ -204,7 +229,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--sp-2);
-  min-height: 38px;
+  min-height: 2.375rem;
   padding: 0 var(--sp-4);
   border: 1px solid var(--c-border-strong);
   border-radius: var(--radius-pill);
@@ -212,11 +237,26 @@
   color: var(--c-text-muted);
   font-size: var(--fs-sm);
   font-weight: 500;
-  transition: all var(--dur-fast) var(--ease);
+  transition:
+    background var(--dur-fast) var(--ease),
+    border-color var(--dur-fast) var(--ease),
+    color var(--dur-fast) var(--ease),
+    transform var(--dur-fast) var(--ease);
+
+  @include touch-target;
 
   &:hover {
     color: var(--c-text);
     border-color: var(--c-text-subtle);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   &[aria-pressed='true'],
@@ -255,7 +295,7 @@
 .select,
 .textarea {
   width: 100%;
-  min-height: 48px;
+  min-height: 3rem;
   padding: var(--sp-3) var(--sp-4);
   background: var(--c-bg-elevated);
   border: 1px solid var(--c-border-strong);
@@ -275,15 +315,22 @@
     border-color: var(--c-accent);
   }
 
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
   &.ng-invalid.ng-touched {
     border-color: var(--c-danger);
   }
 }
 
 .input--sm {
-  min-height: 38px;
+  min-height: 2.375rem;
   padding: var(--sp-2) var(--sp-3);
   border-radius: var(--radius-sm);
+
+  @include touch-target;
 }
 
 .textarea {
@@ -314,9 +361,9 @@
 
   input {
     flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    margin-top: 2px;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.125rem;
     accent-color: var(--c-accent);
   }
 }
@@ -325,7 +372,7 @@
   display: grid;
   gap: var(--sp-5);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -358,13 +405,13 @@
   color: var(--c-text-muted);
 
   &--success {
-    border-color: rgb(74 222 128 / 35%);
+    border-color: var(--c-success-line);
     background: var(--c-success-soft);
     color: var(--c-text);
   }
 
   &--danger {
-    border-color: rgb(248 113 113 / 35%);
+    border-color: var(--c-danger-line);
     background: var(--c-danger-soft);
     color: var(--c-text);
   }
@@ -402,7 +449,7 @@
   th {
     font-size: var(--fs-xs);
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--c-text-subtle);
     background: var(--c-surface-2);
@@ -414,7 +461,7 @@
   }
 
   tbody tr:hover {
-    background: rgb(255 255 255 / 2%);
+    background: var(--c-hover-tint);
   }
 
   .num {
@@ -431,6 +478,10 @@
   border-radius: var(--radius-sm);
 }
 
+.skeleton--panel {
+  height: 15rem;
+}
+
 @keyframes skeleton {
   to {
     background-position: -200% 0;
@@ -442,7 +493,7 @@
   height: 18px;
   border: 2px solid currentColor;
   border-right-color: transparent;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   animation: spin 0.7s linear infinite;
 }
 
@@ -467,7 +518,7 @@
 
   &__label {
     font-size: var(--fs-xs);
-    letter-spacing: 0.08em;
+    letter-spacing: var(--tracking-wide);
     text-transform: uppercase;
     color: var(--c-text-subtle);
   }

@@ -109,7 +109,7 @@ import { Icon } from '../../shared/ui/icon/icon';
       position: relative;
       padding: var(--sp-4);
       background:
-        radial-gradient(60% 50% at 50% 40%, rgb(232 176 74 / 8%), transparent 70%), var(--c-surface);
+        radial-gradient(60% 50% at 50% 40%, var(--c-accent-glow), transparent 70%), var(--c-surface);
     }
     .explorer__toolbar {
       display: flex;
@@ -150,7 +150,7 @@ import { Icon } from '../../shared/ui/icon/icon';
       font-family: var(--font-body);
       font-size: var(--fs-xs);
       font-weight: 600;
-      letter-spacing: 0.14em;
+      letter-spacing: var(--tracking-wider);
       color: var(--c-text-subtle);
       margin-bottom: var(--sp-2);
     }
@@ -168,10 +168,10 @@ import { Icon } from '../../shared/ui/icon/icon';
       font-size: var(--fs-xs);
     }
     .deep-tag {
-      font-size: 0.65rem;
+      font-size: var(--fs-2xs);
       opacity: 0.75;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
     }
   `,
 })

@@ -64,7 +64,7 @@ import { findResource } from '../resources/resource.registry';
         </div>
 
         @if (store()?.status() === 'loading') {
-          <div class="skeleton" style="height: 240px"></div>
+          <div class="skeleton skeleton--panel"></div>
         } @else if (store()?.error(); as error) {
           <div class="alert alert--danger" role="alert">
             <p>{{ error }}</p>

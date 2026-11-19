@@ -116,7 +116,7 @@ import { ContactForm } from './contact-form';
     }
     .contact-list .wa-icon {
       flex-shrink: 0;
-      color: #25d366;
+      color: var(--c-whatsapp);
     }
   `,
 })

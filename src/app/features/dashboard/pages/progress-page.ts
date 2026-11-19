@@ -27,6 +27,9 @@ const optionalMeasure = (max: number) =>
   templateUrl: './progress-page.html',
   styleUrl: './dashboard-pages.scss',
   styles: `
+    .measure-card {
+      margin-top: var(--sp-5);
+    }
     .photos {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -54,7 +57,7 @@ const optionalMeasure = (max: number) =>
       position: absolute;
       top: 6px;
       right: 6px;
-      background: rgb(0 0 0 / 60%);
+      background: var(--c-scrim-mid);
     }
     .upload {
       display: flex;

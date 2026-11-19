@@ -69,7 +69,8 @@
           class="btn btn--ghost btn--sm header__account"
           [routerLink]="auth.homeFor(user.role) | localePath"
         >
-          <app-icon name="user" [size]="18" /> <ng-container i18n>Dashboard</ng-container>
+          <app-icon name="user" [size]="18" />
+          <span class="header__account-label" i18n>Dashboard</span>
         </a>
       }
       <a class="btn btn--primary btn--sm header__cta" [routerLink]="'/contact' | localePath" i18n

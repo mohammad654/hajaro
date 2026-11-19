@@ -25,9 +25,9 @@
 .method__num {
   display: grid;
   place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-round);
   border: 1px solid var(--c-accent-line);
   color: var(--c-accent);
   font-family: var(--font-display);
@@ -42,25 +42,8 @@
   margin-bottom: var(--sp-5);
 }
 
-.method__icon {
-  display: grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: var(--radius);
-  background: var(--c-accent-soft);
-  color: var(--c-accent);
-  transition: transform var(--dur) var(--ease);
-}
-
 .method__step:hover {
   border-color: var(--c-accent-line);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .method__step:hover .method__icon {
-    transform: scale(1.08) rotate(-4deg);
-  }
 }
 
 .method h3 {

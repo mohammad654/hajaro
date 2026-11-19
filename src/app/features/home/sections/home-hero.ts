@@ -71,7 +71,7 @@ const HOLD_AREAS = '.hero__controls, .hero__cta';
                   [alt]="slide.alt"
                   fill
                   [priority]="first"
-                  sizes="(min-width: 1080px) 62vw, 100vw"
+                  sizes="(min-width: 1024px) 62vw, 100vw"
                   [style.object-position]="slide.position"
                 />
               </div>

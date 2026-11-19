@@ -52,7 +52,7 @@
     font-family: var(--font-body);
     font-size: var(--fs-xs);
     font-weight: 600;
-    letter-spacing: 0.12em;
+    letter-spacing: var(--tracking-wide);
     color: var(--c-accent);
   }
 }
@@ -116,10 +116,10 @@
   }
 
   .c {
-    background: #c7883a;
+    background: var(--c-chart-2);
   }
 
   .f {
-    background: #8a6a3a;
+    background: var(--c-chart-3);
   }
 }

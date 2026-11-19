@@ -4,7 +4,7 @@
   display: grid;
   gap: var(--sp-3);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
@@ -16,7 +16,7 @@
 .search {
   position: relative;
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-column: 1 / -1;
   }
 

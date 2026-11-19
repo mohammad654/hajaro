@@ -65,7 +65,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       font-size: var(--fs-xs);
       color: var(--c-text-subtle);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
     }
     dd {
       margin: 0;

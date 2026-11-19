@@ -13,17 +13,37 @@
   --c-text: #f4f4f5;
   --c-text-muted: #a8a8b3;
   --c-text-subtle: #8a8a95;
+  --c-text-prose: #d9d9de;
   --c-accent: #e8b04a;
   --c-accent-strong: #f5c56a;
   --c-accent-soft: rgb(232 176 74 / 14%);
   --c-accent-line: rgb(232 176 74 / 40%);
   --c-on-accent: #0b0b0c;
+  --c-accent-glow: rgb(232 176 74 / 10%);
+  // RGB channels for one-off alpha values: rgb(var(--c-bg-rgb) / 40%).
+  --c-bg-rgb: 11 11 12;
+  --c-accent-rgb: 232 176 74;
+  // Dark overlays over photos and behind the sticky header.
+  --c-scrim-soft: rgb(11 11 12 / 35%);
+  --c-scrim-mid: rgb(11 11 12 / 60%);
+  --c-scrim: rgb(11 11 12 / 72%);
+  --c-scrim-strong: rgb(11 11 12 / 90%);
+  --c-hover-tint: rgb(255 255 255 / 3%);
   --c-success: #4ade80;
   --c-success-soft: rgb(74 222 128 / 12%);
+  --c-success-line: rgb(74 222 128 / 35%);
   --c-danger: #f87171;
   --c-danger-soft: rgb(248 113 113 / 12%);
+  --c-danger-line: rgb(248 113 113 / 40%);
   --c-warning: #fbbf24;
   --c-info: #7dd3fc;
+  // Secondary data colours (macro split bars).
+  --c-chart-2: #c7883a;
+  --c-chart-3: #8a6a3a;
+  // Third-party brand colour (WhatsApp button), kept for recognition.
+  --c-whatsapp: #25d366;
+  --c-whatsapp-strong: #1ebe5b;
+  --c-on-whatsapp: #08140c;
 
   // Anatomy chart
   --muscle-base: #34343a;
@@ -36,6 +56,7 @@
   // Typography
   --font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --fs-2xs: 0.65rem;
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
   --fs-base: 1rem;
@@ -45,9 +66,16 @@
   --fs-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
   --fs-3xl: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
   --fs-hero: clamp(3rem, 1.8rem + 5.2vw, 6.25rem);
+  --fs-logo: 1.375rem;
   --lh-tight: 1.02;
   --lh-snug: 1.25;
   --lh-body: 1.65;
+  --lh-prose: 1.75;
+  --tracking-tight: 0.005em;
+  --tracking: 0.06em;
+  --tracking-wide: 0.1em;
+  --tracking-wider: 0.18em;
+  --tracking-widest: 0.32em;
 
   // Spacing (4px scale)
   --sp-1: 0.25rem;
@@ -66,15 +94,26 @@
   --container: 1240px;
   --container-narrow: 760px;
   --header-h: 72px;
+  --measure: 70ch;
+  --measure-narrow: 56ch;
+  --sidebar-w: 340px;
+  // Breakpoints live in styles/_mixins.scss: 360, 768, 1024, 1440 (CSS variables cannot be used
+  // in media queries). Mirror them in `sizes` attributes and matchMedia calls.
+
+  // Sizes
+  --tap: 44px;
+  --icon-box: 52px;
 
   // Shape & depth
+  --radius-xs: 3px;
   --radius-sm: 6px;
   --radius: 12px;
   --radius-lg: 20px;
   --radius-pill: 999px;
+  --radius-round: 50%;
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 40%);
   --shadow: 0 10px 30px -12px rgb(0 0 0 / 70%);
-  --shadow-glow: 0 0 0 1px var(--c-accent-line), 0 18px 40px -18px rgb(232 176 74 / 35%);
+  --shadow-glow: 0 0 0 1px var(--c-accent-line), 0 18px 40px -18px rgb(var(--c-accent-rgb) / 35%);
 
   // Motion
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);

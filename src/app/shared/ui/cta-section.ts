@@ -39,7 +39,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       border-radius: var(--radius-lg);
       border: 1px solid var(--c-accent-line);
       background:
-        radial-gradient(70% 140% at 100% 0%, rgb(232 176 74 / 18%), transparent 60%),
+        radial-gradient(70% 140% at 100% 0%, var(--c-accent-soft), transparent 60%),
         linear-gradient(135deg, var(--c-surface-2), var(--c-bg-elevated));
       text-align: center;
     }

@@ -146,7 +146,7 @@ import { ClientPortal } from '../client-portal.service';
     .week__label {
       font-size: var(--fs-xs);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
       color: var(--c-text-subtle);
     }
     .week__focus {

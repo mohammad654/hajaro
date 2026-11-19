@@ -4,7 +4,7 @@
   min-height: calc(100vh - var(--header-h));
   display: grid;
   align-items: center;
-  background: radial-gradient(50% 60% at 50% 30%, rgb(232 176 74 / 10%), transparent 70%);
+  background: radial-gradient(50% 60% at 50% 30%, var(--c-accent-glow), transparent 70%);
 }
 
 .login__inner {
@@ -51,7 +51,7 @@
   position: relative;
 
   .input {
-    padding-right: 3rem;
+    padding-right: 3.5rem;
   }
 }
 
@@ -62,8 +62,8 @@
   transform: translateY(-50%);
   display: grid;
   place-items: center;
-  width: 36px;
-  height: 36px;
+  width: var(--tap);
+  height: var(--tap);
   border: 0;
   background: none;
   color: var(--c-text-muted);

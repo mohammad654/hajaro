@@ -69,9 +69,9 @@ export class SiteHeader {
       window.addEventListener('scroll', onScroll, { passive: true });
       destroyRef.onDestroy(() => window.removeEventListener('scroll', onScroll));
 
-      // The toggle is hidden from the desktop breakpoint up (keep in sync with $bp-lg), so an open
+      // The toggle is hidden from the desktop breakpoint up (keep in sync with $bp-lg in styles/_mixins.scss), so an open
       // mobile menu would be stuck open with the page scroll-locked; close it when we get there.
-      const desktop = window.matchMedia('(min-width: 1080px)');
+      const desktop = window.matchMedia('(min-width: 1024px)');
       const onBreakpoint = (e: MediaQueryListEvent) => e.matches && this.closeAll(false);
       desktop.addEventListener('change', onBreakpoint);
       destroyRef.onDestroy(() => desktop.removeEventListener('change', onBreakpoint));

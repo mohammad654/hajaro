@@ -85,7 +85,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       color: var(--c-on-accent);
       font-size: var(--fs-xs);
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
       text-transform: uppercase;
     }
     .package__name {
@@ -122,7 +122,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     dt {
       font-size: var(--fs-xs);
       text-transform: uppercase;
-      letter-spacing: 0.08em;
+      letter-spacing: var(--tracking-wide);
       color: var(--c-text-subtle);
     }
     dd {

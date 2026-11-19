@@ -28,7 +28,7 @@
   display: grid;
   gap: var(--sp-6);
 
-  @include up($bp-sm) {
+  @include up($bp-md) {
     grid-template-columns: minmax(0, 1fr) clamp(170px, 28%, 240px);
     align-items: start;
   }

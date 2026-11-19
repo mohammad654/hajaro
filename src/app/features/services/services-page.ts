@@ -33,7 +33,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
         @for (service of services.all(); track service.id) {
           <article class="card card--interactive service">
             <div class="service__top">
-              <span class="service__icon"><app-icon [name]="service.icon" [size]="26" /></span>
+              <span class="icon-tile"><app-icon [name]="service.icon" [size]="24" /></span>
               <span class="badge">{{ deliveryLabels[service.delivery] }}</span>
             </div>
             <h2 class="card__title">
@@ -106,24 +106,6 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-    .service__icon {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
-      border-radius: var(--radius);
-      background: var(--c-accent-soft);
-      color: var(--c-accent);
-    }
-    @media (prefers-reduced-motion: no-preference) {
-      .service__icon {
-        transition: transform var(--dur) var(--ease);
-      }
-      .service:hover .service__icon,
-      .service:focus-within .service__icon {
-        transform: scale(1.08);
-      }
     }
     .card__title {
       font-size: var(--fs-xl);

@@ -85,7 +85,7 @@ are still required now.
   errors — browser noise (ResizeObserver loop, cross-origin `Script error.`, `AbortError`, extension errors) is
   filtered. `ToastService` dedupes identical messages.
 - Styles: design tokens and global system in `src/styles/` (CSS custom properties such as `--c-*`, `--sp-*`);
-  components use those tokens. Desktop breakpoint is 1080px (`$bp-lg`, mirrored in `site-header.ts`).
+  components use those tokens. Breakpoints are 360, 768, 1024 and 1440px (`$bp-sm`…`$bp-xl` in `_mixins.scss`); the desktop nav switches at 1024px (`$bp-lg`, mirrored in `site-header.ts` and `muscle-chart-page.ts`).
 - **Homepage images**: the root `images/` folder is published at `images/home/` through `angular.json` assets.
   The trainer teaser shows a temporary stock photo until `trainerPhotoUrl` is set; see the Deferred list.
 - **Hero carousel**: uses only Bootstrap's carousel script (`bootstrap/js/src/carousel.js`), loaded after render,

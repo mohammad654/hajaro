@@ -38,7 +38,7 @@ export interface Crumb {
       margin: 0 0 var(--sp-5);
       padding: 0;
       font-size: var(--fs-xs);
-      letter-spacing: 0.06em;
+      letter-spacing: var(--tracking);
       text-transform: uppercase;
       color: var(--c-text-subtle);
     }

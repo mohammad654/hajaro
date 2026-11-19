@@ -61,9 +61,11 @@ const SERVICE_IMAGES: Readonly<Record<string, ServiceImage | undefined>> = {
                 [alt]="image?.alt ?? ''"
                 [position]="image?.position ?? 'center'"
                 ratio="4 / 3"
-                sizes="(min-width: 1080px) 25vw, (min-width: 640px) 50vw, 100vw"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
-              <span class="service__icon"><app-icon [name]="service.icon" [size]="26" /></span>
+              <span class="icon-tile service__icon"
+                ><app-icon [name]="service.icon" [size]="24"
+              /></span>
               <h3 class="card__title">
                 <a class="card__link" [routerLink]="['/services', service.slug] | localePath">{{
                   service.name
@@ -94,14 +96,7 @@ const SERVICE_IMAGES: Readonly<Record<string, ServiceImage | undefined>> = {
       filter: grayscale(1) contrast(1.05);
     }
     .service__icon {
-      display: grid;
-      place-items: center;
-      width: 52px;
-      height: 52px;
       margin-bottom: var(--sp-3);
-      border-radius: var(--radius);
-      background: var(--c-accent-soft);
-      color: var(--c-accent);
     }
     p {
       margin: 0;

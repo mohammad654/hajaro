@@ -51,7 +51,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
               [id]="topic.id"
               [attr.aria-labelledby]="topic.id + '-title'"
             >
-              <span class="topic__icon"><app-icon [name]="topic.icon" [size]="24" /></span>
+              <span class="icon-tile topic__icon"
+                ><app-icon [name]="topic.icon" [size]="24"
+              /></span>
               <h2 [id]="topic.id + '-title'">{{ topic.title }}</h2>
               <p class="text-muted">{{ topic.summary }}</p>
               <ul class="check-list text-small">
@@ -107,14 +109,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       font-size: var(--fs-xl);
     }
     .topic__icon {
-      display: grid;
-      place-items: center;
-      width: 48px;
-      height: 48px;
       margin-bottom: var(--sp-4);
-      border-radius: var(--radius);
-      background: var(--c-accent-soft);
-      color: var(--c-accent);
     }
     .disclaimer-box {
       margin-top: var(--sp-6);

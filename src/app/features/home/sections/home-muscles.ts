@@ -45,7 +45,7 @@ const MUSCLE_PHOTOS = [
                 [src]="photo.src"
                 [alt]="photo.alt"
                 ratio="1 / 1"
-                sizes="(min-width: 1080px) 16vw, 33vw"
+                sizes="(min-width: 1024px) 16vw, 33vw"
               />
             }
           </div>
