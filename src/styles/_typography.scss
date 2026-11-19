@@ -3,8 +3,7 @@
 h1,
 h2,
 h3,
-h4,
-.display {
+h4 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: var(--lh-tight);
@@ -63,10 +62,6 @@ p {
 
 .text-muted {
   color: var(--c-text-muted);
-}
-
-.text-accent {
-  color: var(--c-accent);
 }
 
 .text-small {

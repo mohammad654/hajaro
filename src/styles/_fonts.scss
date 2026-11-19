@@ -18,7 +18,7 @@ $latin-range:
   unicode-range: $latin-range;
 }
 
-@each $weight in (600, 700, 800) {
+@each $weight in (700, 800) {
   @font-face {
     font-family: 'Barlow Condensed';
     font-style: normal;

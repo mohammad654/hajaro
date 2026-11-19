@@ -73,10 +73,6 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
-
-  &--auto {
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
-  }
 }
 
 .split {

@@ -55,7 +55,22 @@
               {
                 "glob": "*",
                 "input": "images",
-                "output": "images/home"
+                "output": "images/home",
+                "ignore": [
+                  "*.pdf",
+                  "Pasted*",
+                  "Complete muscle group*",
+                  "images (3).jpeg",
+                  "images (4).jpeg",
+                  "b0red-*",
+                  "clker-*",
+                  "davector-*",
+                  "handsome-*",
+                  "jensenartofficial-*",
+                  "mcvec-*",
+                  "mohamed_hassan-*",
+                  "u_40rcbxqe6b-*"
+                ]
               }
             ],
             "styles": ["src/styles.scss"],
