@@ -10,10 +10,7 @@
       i18n-aria-label="Logo link to the home page"
       aria-label="{{ brand.brandName }} {{ brand.brandSuffix }} — home"
     >
-      <span class="logo__mark" aria-hidden="true">{{ brand.brandName.slice(0, 1) }}</span>
-      <span class="logo__text"
-        >{{ brand.brandName }}<span>{{ brand.brandSuffix }}</span></span
-      >
+      <app-logo />
     </a>
 
     <nav class="nav" i18n-aria-label="Main navigation landmark" aria-label="Main">

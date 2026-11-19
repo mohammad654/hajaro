@@ -47,7 +47,7 @@
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: var(--sp-3);
+  min-height: var(--tap);
   color: var(--c-text);
   text-decoration: none;
   flex-shrink: 0;
@@ -61,38 +61,6 @@
     &:hover {
       transform: scale(1.05);
     }
-  }
-}
-
-.logo__mark {
-  display: grid;
-  place-items: center;
-  width: 2.375rem;
-  height: 2.375rem;
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--c-accent-strong), var(--c-accent));
-  color: var(--c-on-accent);
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: var(--fs-logo);
-}
-
-.logo__text {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: var(--fs-logo);
-  line-height: 0.95;
-  letter-spacing: var(--tracking);
-  text-transform: uppercase;
-
-  span {
-    font-family: var(--font-body);
-    font-weight: 500;
-    font-size: var(--fs-2xs);
-    letter-spacing: var(--tracking-widest);
-    color: var(--c-accent);
   }
 }
 

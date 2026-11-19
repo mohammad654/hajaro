@@ -2,9 +2,14 @@
   <div class="container">
     <div class="footer__top">
       <div class="footer__brand">
-        <a [routerLink]="'/' | localePath" class="footer__logo"
-          >{{ brand.brandName }} <span>{{ brand.brandSuffix }}</span></a
+        <a
+          [routerLink]="'/' | localePath"
+          class="footer__logo"
+          i18n-aria-label="Logo link to the home page"
+          aria-label="{{ brand.brandName }} {{ brand.brandSuffix }} — home"
         >
+          <app-logo />
+        </a>
         <p i18n>
           {{ brand.tagline }}. Individual training, nutrition and accountability for people serious
           about their physique.

@@ -332,6 +332,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Shared CTA panel: downloaded Pexels overhead dumbbell photo as a darkened background, darkest behind the centred text | `images/dumbbells-overhead-dark-floor.webp`, `IMAGE_CREDITS.md`, `src/app/shared/ui/cta-section.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Fixed CTA photo `sizes` in pixels, which made NgOptimizedImage throw (NG02952) | `src/app/shared/ui/cta-section.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Floating back-to-top button: appears after 300 px of scrolling, stacked above the WhatsApp button, hidden while the mobile menu is open; removed the button from the footer; more footer bottom space on phones | `src/app/shared/ui/scroll-top-button.ts` (new), `src/app/layout/public-layout.ts`, `src/app/layout/site-footer/site-footer.{html,ts,scss}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Logo: Hajaro wordmark (HAJAR plus a 21-ray gold sun for the final O) as an inline `Logo` component, rebuilt from `hajaro_wordmark_gold_sun_replacing_circle.svg` with site font and accent tokens; replaces the H tile and text in the header and the text logo in the footer | `src/app/shared/ui/logo.ts` (new), `src/app/layout/site-header/site-header.{html,ts,scss}`, `src/app/layout/site-footer/site-footer.{html,ts,scss}`, `PROJECT_STRUCTURE.md`
 
 ---
 

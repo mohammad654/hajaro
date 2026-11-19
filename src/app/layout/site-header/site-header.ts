@@ -20,12 +20,13 @@ import { AuthService } from '../../core/auth/auth.service';
 import { ClientReady } from '../../core/services/client-ready';
 import { Icon } from '../../shared/ui/icon/icon';
 import { LanguageSwitcher } from '../../shared/ui/language-switcher';
+import { Logo } from '../../shared/ui/logo';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 import { SITE_LOCALES } from '../../core/i18n/locales';
 
 @Component({
   selector: 'app-site-header',
-  imports: [LocalePathPipe, RouterLink, RouterLinkActive, Icon, LanguageSwitcher],
+  imports: [LocalePathPipe, RouterLink, RouterLinkActive, Icon, LanguageSwitcher, Logo],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './site-header.html',
   styleUrl: './site-header.scss',
