@@ -72,7 +72,7 @@ PASTE THE TREE HERE
 ### Pages
 | Page | Route | Component path | Sections on the page |
 |---|---|---|---|
-| Home | `/` | `src/app/features/home/home-page.ts` | Hero, coach, services, process, muscles, CTA (`sections/`) |
+| Home | `/` | `src/app/features/home/home-page.ts` | Hero, services, process, coach, muscles, CTA (`sections/`) |
 | About | `/about` | `src/app/features/about/about-page.ts` | Bio and photo, method, credentials, reasons, CTA |
 | Services | `/services` | `src/app/features/services/services-page.ts` | Service cards, fit table, FAQ, CTA |
 | Service detail | `/services/:slug` | `src/app/features/services/service-detail-page.ts` | Details, summary sidebar, related programs, CTA |
@@ -269,6 +269,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Programs: hero photo moved behind the text as a darkened background | `src/app/features/programs/programs-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | CLAUDE.md review: added the server's `$localize` passthrough import order and the admin article markup | `CLAUDE.md`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 1, design system: breakpoints 360/768/1024/1440, scrim, glow, chart, tracking, tap and icon-box tokens; literal colours, radii, font sizes and letter-spacing replaced; shared `.icon-tile`; 44 px touch targets; no `!important`, `::ng-deep` or inline styles left without reason | `src/styles/*`, header, footer, portal shell, about, services, nutrition, home sections, media frame, article card, planner, muscle chart, dashboard progress, admin list, `CLAUDE.md`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Senior pass step 2, layout: homepage order matches the spec (services, process, trainer, muscles), muscles intro line, step numbers from a CSS counter; fluid columns instead of fixed pixels (article, calculator, muscle chart, sidebar, footer, filters, cards); hover cue only on clickable cards; fixed CTA heading id (a counter broke SSR ids); pricing FAQ eyebrow | `src/app/features/{home,about,blog,nutrition,muscle-chart,exercises,pricing,transformations}`, `src/app/layout/site-footer`, `src/app/shared/{cards/program-card,ui/cta-section,ui/page-hero}.ts`, `src/styles/{_layout,_components}.scss`, `PROJECT_STRUCTURE.md`
 
 ---
 
