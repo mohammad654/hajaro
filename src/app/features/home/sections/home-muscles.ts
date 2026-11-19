@@ -39,6 +39,9 @@ const MUSCLE_PHOTOS = [
         <div>
           <p class="eyebrow" i18n>Muscle Chart</p>
           <h2 id="muscles-title" i18n>Explore every muscle and how to train it</h2>
+          <p class="lead" i18n>
+            Pick a muscle on the chart to see what it does and which exercises train it.
+          </p>
           <div class="muscles__photos">
             @for (photo of photos; track photo.src) {
               <app-media-frame
@@ -59,9 +62,9 @@ const MUSCLE_PHOTOS = [
   styles: `
     .muscles__figures {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: var(--sp-2);
-      max-width: 520px;
+      max-width: 32.5rem;
       width: 100%;
       margin-inline: auto;
       padding-bottom: var(--sp-6);

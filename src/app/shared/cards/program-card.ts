@@ -52,7 +52,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     }
     .program-card__meta {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: var(--sp-3);
       margin: var(--sp-2) 0;
       padding-top: var(--sp-4);

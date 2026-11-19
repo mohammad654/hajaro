@@ -33,7 +33,7 @@
   padding-bottom: var(--sp-8);
 
   @include up($bp-lg) {
-    grid-template-columns: 240px minmax(0, 760px);
+    grid-template-columns: minmax(0, 15rem) minmax(0, var(--container-narrow));
     justify-content: center;
     gap: var(--sp-8);
   }

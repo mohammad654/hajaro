@@ -2,17 +2,20 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
-/** Closing conversion block used at the end of most pages. */
+/**
+ * Closing conversion block used at the end of most pages (at most once per page, hence the fixed
+ * heading id: a counter would differ between the prerendered HTML and the browser).
+ */
 @Component({
   selector: 'app-cta-section',
   imports: [LocalePathPipe, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <section class="cta" [attr.aria-labelledby]="headingId">
+    <section class="cta" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta__panel">
           <p class="eyebrow">{{ eyebrow() }}</p>
-          <h2 [id]="headingId">{{ title() }}</h2>
+          <h2 id="cta-title">{{ title() }}</h2>
           <p class="cta__text">{{ text() }}</p>
           <div class="cluster cta__actions">
             <a class="btn btn--primary btn--lg" [routerLink]="primaryLink() | localePath">{{
@@ -35,7 +38,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
     .cta__panel {
       position: relative;
       overflow: hidden;
-      padding: clamp(2rem, 1rem + 5vw, 5rem);
+      padding: clamp(var(--sp-6), 1rem + 5vw, 5rem);
       border-radius: var(--radius-lg);
       border: 1px solid var(--c-accent-line);
       background:
@@ -62,9 +65,6 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
   `,
 })
 export class CtaSection {
-  private static count = 0;
-  protected readonly headingId = `cta-heading-${++CtaSection.count}`;
-
   readonly eyebrow = input($localize`Free intro`);
   readonly title = input($localize`Tell me what you want to achieve`);
   readonly text = input(

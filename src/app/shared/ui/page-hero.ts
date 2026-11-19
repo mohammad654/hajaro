@@ -113,7 +113,7 @@ import { MediaFrame } from './media-frame';
       gap: var(--sp-6);
     }
     app-media-frame {
-      max-width: 640px;
+      max-width: 40rem;
     }
     @include up($bp-lg) {
       .page-hero--media .page-hero__inner {

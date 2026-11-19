@@ -189,8 +189,8 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .card:hover .icon-tile,
-  .card:focus-within .icon-tile {
+  .card--interactive:hover .icon-tile,
+  .card--interactive:focus-within .icon-tile {
     transform: scale(1.08);
   }
 }

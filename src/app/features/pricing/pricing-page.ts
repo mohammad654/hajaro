@@ -109,6 +109,7 @@ type ComparisonKey = keyof Pick<
     <section class="section" aria-labelledby="pricing-faq">
       <div class="container container--narrow">
         <div class="section-head section-head--center">
+          <p class="eyebrow" i18n>FAQ</p>
           <h2 id="pricing-faq" i18n>Questions about prices</h2>
         </div>
         <app-faq-list [items]="faqs" />

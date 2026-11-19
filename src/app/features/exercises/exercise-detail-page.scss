@@ -59,7 +59,7 @@
 
 .figures {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--sp-3);
   padding: var(--sp-3);
   border-radius: var(--radius);
@@ -101,7 +101,7 @@
 
   div {
     display: grid;
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: minmax(0, 5.625rem) minmax(0, 1fr);
     gap: var(--sp-3);
   }
 

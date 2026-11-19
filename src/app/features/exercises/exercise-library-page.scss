@@ -9,7 +9,7 @@
   }
 
   @include up($bp-lg) {
-    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr));
   }
 }
 

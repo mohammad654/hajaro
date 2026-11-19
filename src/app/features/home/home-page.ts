@@ -8,7 +8,7 @@ import { HomeProcess } from './sections/home-process';
 import { HomeServices } from './sections/home-services';
 
 /**
- * Short first-visit page: hero, trainer teaser, services overview, how coaching works, muscle
+ * Short first-visit page: hero, services overview, how coaching works, trainer teaser, muscle
  * chart preview and one closing call to action. Everything else lives on its own page (programs,
  * results, pricing, blog, FAQ on the services page) and is reachable from the navigation.
  */
@@ -18,12 +18,13 @@ import { HomeServices } from './sections/home-services';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <app-home-hero />
-    <app-home-coach />
     <app-home-services />
 
     @defer (hydrate on viewport) {
       <app-home-process />
     }
+
+    <app-home-coach />
 
     @defer (hydrate on viewport) {
       <app-home-muscles />

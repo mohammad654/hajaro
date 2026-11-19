@@ -17,11 +17,8 @@ import { COACHING_STEPS } from '../home.content';
           <h2 id="process-title" i18n>From intro to your first check-in</h2>
         </div>
         <ol class="steps">
-          @for (step of steps; track step.title; let i = $index) {
+          @for (step of steps; track step.title) {
             <li class="card step">
-              <span class="step__num" aria-hidden="true">{{
-                (i + 1).toString().padStart(2, '0')
-              }}</span>
               <h3>{{ step.title }}</h3>
               <p class="text-muted text-small">{{ step.description }}</p>
             </li>
@@ -67,18 +64,24 @@ import { COACHING_STEPS } from '../home.content';
       margin: 0;
       display: grid;
       gap: var(--sp-5);
+      counter-reset: step;
     }
     @include up($bp-md) {
       .steps {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
     @include up($bp-lg) {
       .steps {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, minmax(0, 1fr));
       }
     }
-    .step__num {
+    /* The steps are a real sequence, so they carry numbers (01–04), drawn by a CSS counter. */
+    .step {
+      counter-increment: step;
+    }
+    .step::before {
+      content: counter(step, decimal-leading-zero);
       display: block;
       font-family: var(--font-display);
       font-size: var(--fs-3xl);
