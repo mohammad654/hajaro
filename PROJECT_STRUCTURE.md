@@ -165,7 +165,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Transformations | Top (background) | `barbell-dark-gym-floor.webp` (Pexels, see `IMAGE_CREDITS.md`), equipment only, no people | stock |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
 | Services | Top (background) | `louisbauer-sports-1882719_1920.jpg` (reused from the homepage process background) | placed (reuse) |
-| Nutrition | Top | `meal-prep-chicken-rice-broccoli.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| Nutrition | Top (background) | `meal-prep-chicken-rice-broccoli.webp` (Pexels, see `IMAGE_CREDITS.md`), darkened | stock |
 | Exercise detail | Dumbbell Curl sidebar | `images.jpeg` | placed, small size only (662 px wide) |
 | Exercise detail | Other exercises | none | missing, see Deferred list |
 | Muscle chart | Intro card | `images (1).jpeg` | placed, small size only (678 px wide) |
@@ -326,6 +326,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Senior pass step 7, performance: deferred hydration (`@defer (hydrate on viewport)`) for every closing CTA, both FAQ lists, the muscle-chart split table and the homepage coach teaser; routes already lazy, fonts self-hosted with two preloads, Barlow 600 dropped | `src/app/features/{home,about,blog,muscle-chart,nutrition,pricing,programs,services,transformations}/*`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 8, review by reading: TypeScript and template diffs, inline Sass `@use`, selector order and translation markers checked; pricing label widths in rem; project map and key locations filled in | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | About: downloaded Pexels empty-gym photo as a darkened hero background (no people, so it does not pose as the trainer); bio photo no longer marked priority | `images/empty-gym-rig-rings.webp`, `IMAGE_CREDITS.md`, `src/app/features/about/about-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Nutrition: meal-prep hero photo moved behind the text as a darkened background (alt text dropped, the photo is now decorative) | `src/app/features/nutrition/nutrition-page.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

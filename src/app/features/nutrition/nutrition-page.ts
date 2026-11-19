@@ -23,8 +23,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       lead="Clear information about eating to build muscle, lose fat and recover well. No extremes, no gimmicks."
       [breadcrumbs]="breadcrumbs"
       imageSrc="images/home/meal-prep-chicken-rice-broccoli.webp"
-      i18n-imageAlt
-      imageAlt="Meal prep box with rice, shredded chicken, broccoli and courgette"
+      [imageBackground]="true"
       imagePosition="center 60%"
     >
       <div class="cluster hero-ctas">
