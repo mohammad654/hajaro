@@ -41,9 +41,9 @@
     <div class="container container--narrow">
       <app-media-frame
         class="article__image"
-        [src]="articleImage(article)?.src"
-        [alt]="articleImage(article)?.alt ?? ''"
-        [position]="articleImage(article)?.position ?? 'center'"
+        [src]="image()?.src"
+        [alt]="image()?.alt ?? ''"
+        [position]="image()?.position ?? 'center'"
         ratio="16 / 9"
         [priority]="true"
         [monogram]="(article.category | label: categories).slice(0, 1)"
@@ -97,11 +97,11 @@
             }
             @case ('link') {
               <p class="internal-link">
-                @if (isInternal(block.href!)) {
+                @if (block.route; as route) {
                   <a
                     class="link-arrow"
-                    [routerLink]="splitPath(block.href!).path | localePath"
-                    [queryParams]="splitPath(block.href!).query"
+                    [routerLink]="route.path | localePath"
+                    [queryParams]="route.query"
                     >{{ block.text }}</a
                   >
                 } @else {
