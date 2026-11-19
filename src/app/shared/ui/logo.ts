@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 const RAY_COUNT = 21;
 
 /**
- * Hajaro wordmark: "HAJAR" followed by a gold sun in place of the final O.
+ * Hajaro wordmark: "HAJAR" followed by a gold sun with the final O as a white ring in its centre.
  * Inline SVG so the letters use the site font and the colours follow the design tokens. Decorative:
  * the surrounding link carries the accessible name. Height comes from `--logo-h` (default 2rem).
  */
@@ -20,7 +20,7 @@ const RAY_COUNT = 21;
           <polygon points="0,-18 2,-11.5 -2,-11.5" [attr.transform]="'rotate(' + angle + ')'" />
         }
         <circle r="11.5" />
-        <circle class="logo__ring" r="5.5" />
+        <circle class="logo__ring" r="5.8" />
       </g>
     </svg>
   `,
@@ -44,10 +44,11 @@ const RAY_COUNT = 21;
     .logo__sun {
       fill: var(--c-accent);
     }
+    /* The letter O, drawn as a ring in the middle of the sun. */
     .logo__ring {
       fill: none;
-      stroke: rgb(var(--c-bg-rgb) / 28%);
-      stroke-width: 1.5;
+      stroke: var(--c-text);
+      stroke-width: 2.6;
     }
   `,
 })
