@@ -20,7 +20,7 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
               ngSrc="images/home/dumbbells-overhead-dark-floor.webp"
               alt=""
               fill
-              sizes="(min-width: 1440px) 1240px, 100vw"
+              sizes="(min-width: 1440px) 86vw, 100vw"
             />
           </div>
           <p class="eyebrow">{{ eyebrow() }}</p>
