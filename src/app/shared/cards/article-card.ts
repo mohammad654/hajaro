@@ -44,6 +44,11 @@ const ARTICLE_IMAGES: Readonly<Record<string, ArticleImage>> = {
     alt: $localize`White supplement powder spilling from a scoop`,
     position: 'center',
   },
+  'protein-intake-for-muscle-growth': {
+    src: 'images/home/chicken-salad-soft-boiled-eggs.webp',
+    alt: $localize`Bowl of grilled chicken, lettuce and soft-boiled eggs`,
+    position: 'center 45%',
+  },
 };
 
 /** The article's own image when it has one, otherwise its display photo, if any. */

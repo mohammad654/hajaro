@@ -9,3 +9,4 @@ Downloaded stock images in `images/`. One line each: file, photographer, source,
 - `barbell-dark-gym-floor.webp` | Leon Mart | https://www.pexels.com/photo/barbell-on-the-floor-1552252/ | Pexels License (https://www.pexels.com/license/)
 - `barbell-plate-rubber-floor.webp` | Victor Freitas | https://www.pexels.com/photo/black-barbel-2261481/ | Pexels License (https://www.pexels.com/license/)
 - `dumbbells-apples-clipboard-flat-lay.webp` | Alesia Kozik | https://www.pexels.com/photo/overhead-shot-of-dumbbells-apples-and-a-clipboard-8155103/ | Pexels License (https://www.pexels.com/license/)
+- `chicken-salad-soft-boiled-eggs.webp` | Sergei Starostin | https://www.pexels.com/photo/delicious-caesar-salad-with-grilled-chicken-28618643/ | Pexels License (https://www.pexels.com/license/); cropped to 16:10 around the bowl

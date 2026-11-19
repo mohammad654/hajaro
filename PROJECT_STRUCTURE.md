@@ -113,7 +113,7 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Blog + article | Training consistency | `hansuan_fabregas-ai-generated-8706772_1920.jpg` | placed |
 | Blog + article | Sleep and recovery | `man-sleeping-dark-bedroom.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Blog + article | Creatine | `supplement-powder-scoop.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
-| Blog + article | Protein | none | placeholder, see Deferred list |
+| Blog + article | Protein | `chicken-salad-soft-boiled-eggs.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | About | Trainer photo | `luissantos2020-fitness-5991125_1920.jpg` (reused from the homepage teaser, crop shifted left) | taken (demo) |
 | Transformations | Top (background) | `barbell-dark-gym-floor.webp` (Pexels, see `IMAGE_CREDITS.md`), equipment only, no people | stock |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
@@ -139,6 +139,8 @@ Viewed, not placed:
 - `Pasted image (8).png`, `(9)`, `(10)`: full-body workout infographics, not photos.
 - `Pasted image (4).png`, `(16)`, `(24)`: workout infographics with other accounts' watermarks.
 - `Pasted image (14).png`, `(22)`, `(26)`: muscle-group and machine-exercise infographics; no food photo for Nutrition.
+
+- `Pasted image.png`, `(2)`, `(3)`, `(5)`, `(11)`–`(13)`, `(15)`, `(17)`–`(19)`, `(21)`, `(23)`, `(25)`, `(27)`–`(32)`, both `-removebg-preview` files, `Complete muscle group anatomy diagram.png`: workout plans, muscle-group charts and exercise sheets, several with other accounts' watermarks; all under 750 px except the anatomy diagram, which repeats the existing muscle chart overview.
 
 Skipped by name and size: `jensenartofficial-heart-7834275_1920.jpg`, `jensenartofficial-heart-7834298_1920.jpg`, `clker-free-vector-images-strong-310874_1920.png`, `mohamed_hassan-silhouette-3378966_1920.png`, `handsome-strong-athletic-men-…-photo.jpg` (625×350).
 
@@ -199,7 +201,6 @@ Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 - Re-enable Dutch: add 'nl' to the language config, restore the switcher, sync NL file.
 - Missing image: About, trainer photo shows the same stock demo photo as the homepage teaser; set `trainerPhotoUrl` to a real portrait of the trainer (4:5) before launch.
 - Missing image: Services, top area shows a reused dumbbell photo; the coach working with a client (3:2) would fit better.
-- Missing image: blog, protein article needs protein-rich food (16:9).
 - Missing image: Transformations, cards need real client before and after photos, published with consent (3:4).
 - Missing image: exercise detail pages need a demonstration photo per exercise (3:2); only Dumbbell Curl has one.
 - Review before launch: blog photos `hansuan_fabregas-ai-generated-8706772_1920.jpg` (AI-generated) and `u_pcjeppoe5t-bodybuilder-8017875_1920.jpg` (looks AI-generated).
@@ -270,6 +271,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | CLAUDE.md review: added the server's `$localize` passthrough import order and the admin article markup | `CLAUDE.md`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 1, design system: breakpoints 360/768/1024/1440, scrim, glow, chart, tracking, tap and icon-box tokens; literal colours, radii, font sizes and letter-spacing replaced; shared `.icon-tile`; 44 px touch targets; no `!important`, `::ng-deep` or inline styles left without reason | `src/styles/*`, header, footer, portal shell, about, services, nutrition, home sections, media frame, article card, planner, muscle chart, dashboard progress, admin list, `CLAUDE.md`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 2, layout: homepage order matches the spec (services, process, trainer, muscles), muscles intro line, step numbers from a CSS counter; fluid columns instead of fixed pixels (article, calculator, muscle chart, sidebar, footer, filters, cards); hover cue only on clickable cards; fixed CTA heading id (a counter broke SSR ids); pricing FAQ eyebrow | `src/app/features/{home,about,blog,nutrition,muscle-chart,exercises,pricing,transformations}`, `src/app/layout/site-footer`, `src/app/shared/{cards/program-card,ui/cta-section,ui/page-hero}.ts`, `src/styles/{_layout,_components}.scss`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Senior pass step 3, images: remaining local images reviewed (all infographics, none usable); downloaded Pexels chicken-and-egg bowl for the protein article; other images already fit their sections | `images/chicken-salad-soft-boiled-eggs.webp`, `IMAGE_CREDITS.md`, `src/app/shared/cards/article-card.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 
