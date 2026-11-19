@@ -52,22 +52,68 @@ tree -a -I 'node_modules|dist|.angular|.git|*.png|*.jpg|*.jpeg|*.webp|*.avif|*.s
 (If `tree` is not installed: `find . -type f -not -path './node_modules/*' -not -path './dist/*' -not -path './.angular/*' -not -path './.git/*' | head -200`)
 
 ```text
-PASTE THE TREE HERE
+src
+├── app
+│   ├── core
+│   │   ├── api
+│   │   ├── auth
+│   │   ├── config
+│   │   ├── contact
+│   │   ├── data
+│   │   ├── data-access
+│   │   ├── i18n
+│   │   ├── models
+│   │   ├── seo
+│   │   └── services
+│   ├── features
+│   │   ├── about
+│   │   ├── admin
+│   │   ├── auth
+│   │   ├── blog
+│   │   ├── contact
+│   │   ├── dashboard
+│   │   ├── exercises
+│   │   ├── home
+│   │   ├── legal
+│   │   ├── muscle-chart
+│   │   ├── not-found
+│   │   ├── nutrition
+│   │   ├── planner
+│   │   ├── pricing
+│   │   ├── programs
+│   │   ├── services
+│   │   └── transformations
+│   ├── layout
+│   │   ├── portal-shell
+│   │   ├── site-footer
+│   │   └── site-header
+│   └── shared
+│       ├── anatomy
+│       ├── cards
+│       ├── forms
+│       ├── pipes
+│       └── ui
+├── environments
+├── locale
+├── server
+└── styles
+images/   source photos, published at images/home/ (unused files excluded in angular.json)
+public/   fonts/, icons/, images/anatomy/, images/og/, manifest.webmanifest
 ```
 
 ### Key locations (fill in)
 | What | Path |
 |---|---|
 | Routes | `src/app/app.routes.ts` |
-| Global styles and tokens | `src/styles.scss` (or similar) |
-| EN translations | `[PATH to EN file]` |
-| NL translations (do not touch in Phase 1) | `[PATH to NL file]` |
-| Header / nav | `[PATH]` |
-| Footer | `[PATH]` |
-| Home page | `[PATH]` |
-| Other pages | `[PATH per page]` |
-| Shared components | `[PATH]` |
-| Images and assets | `[PATH]` |
+| Global styles and tokens | `src/styles/` (`_tokens`, `_mixins` with breakpoints, `_components`, `_layout`, `_typography`) |
+| EN translations | source text in templates (`i18n`) and `$localize`; extracted to `src/locale/messages.xlf` |
+| NL translations (do not touch in Phase 1) | `src/locale/messages.nl.xlf` |
+| Header / nav | `src/app/layout/site-header/`, links in `src/app/core/config/navigation.config.ts` |
+| Footer | `src/app/layout/site-footer/` |
+| Home page | `src/app/features/home/` (`sections/`, `home.content.ts`) |
+| Other pages | see the Pages table |
+| Shared components | `src/app/shared/` (`ui/`, `cards/`, `forms/`, `anatomy/`, `pipes/`) |
+| Images and assets | `images/` (published at `images/home/`), `public/`; stock credits in `IMAGE_CREDITS.md` |
 
 ### Pages
 | Page | Route | Component path | Sections on the page |
@@ -209,6 +255,7 @@ Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 - Phase 4: blog display photos live in `article-card.ts`, not in `featuredImageUrl`, because `SeoService.absoluteUrl` breaks base-relative paths; fix that, then use them in article schema and social images.
 - Review before launch: confirm the licence of `images.jpeg` and `images (1).jpeg` (no source in the file name) and replace them with larger versions.
 - Phase 3: run `npm run i18n` and add Dutch targets for the new exercise, muscle chart and login image alt texts.
+- Phase 3: run `npm run i18n` and add Dutch targets for the senior-pass strings: muscles preview sentence, About reason icons (no text), protein photo alt text, field error default label "This field".
 - Phase 3: check that the desktop nav still fits at 1024 px with the longer Dutch labels (link padding is tighter below 1440 px).
 
 ---
@@ -276,6 +323,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Senior pass step 5, code quality: article page computes its image and internal link routes once (no parsing in the template); reviewed OnPush, signals, control flow, typing and subscriptions with no other change needed | `src/app/features/blog/article-page.{ts,html}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 6, dead code: removed unused global classes (`.display`, `.text-accent`, `.grid--auto`), the unused Barlow 600 font file and `muscle-groups-overview-640.webp`; unused files in `images/` (PDFs, infographics, silhouettes, logos) are excluded from the build in `angular.json` but kept on disk; no unused components, services or packages found | `src/styles/{_typography,_layout,_fonts}.scss`, `public/fonts/barlow-condensed-latin-600.woff2` (deleted), `public/images/anatomy/muscle-groups-overview-640.webp` (deleted), `angular.json`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Senior pass step 7, performance: deferred hydration (`@defer (hydrate on viewport)`) for every closing CTA, both FAQ lists, the muscle-chart split table and the homepage coach teaser; routes already lazy, fonts self-hosted with two preloads, Barlow 600 dropped | `src/app/features/{home,about,blog,muscle-chart,nutrition,pricing,programs,services,transformations}/*`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Senior pass step 8, review by reading: TypeScript and template diffs, inline Sass `@use`, selector order and translation markers checked; pricing label widths in rem; project map and key locations filled in | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
 
 ---
 

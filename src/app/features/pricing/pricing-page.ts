@@ -148,8 +148,8 @@ type ComparisonKey = keyof Pick<
     @include down($bp-md) {
       .compare th[scope='row'],
       .compare thead th:first-child {
-        min-width: 116px;
-        max-width: 116px;
+        min-width: 7.25rem;
+        max-width: 7.25rem;
         white-space: normal;
       }
     }
