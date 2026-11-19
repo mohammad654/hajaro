@@ -28,6 +28,11 @@ const SERVICE_IMAGES: Readonly<Record<string, ServiceImage | undefined>> = {
     alt: $localize`Smiling woman in sportswear with a lean, defined midsection`,
     position: 'center 16%',
   },
+  'online-personal-training': {
+    src: 'images/home/images%20(2).jpeg',
+    alt: $localize`Woman doing sit-ups on her own on a gym floor`,
+    position: 'center',
+  },
 };
 
 @Component({

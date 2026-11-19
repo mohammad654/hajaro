@@ -22,7 +22,10 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       i18n-lead
       lead="Clear information about eating to build muscle, lose fat and recover well. No extremes, no gimmicks."
       [breadcrumbs]="breadcrumbs"
-      [imagePlaceholder]="true"
+      imageSrc="images/home/meal-prep-chicken-rice-broccoli.webp"
+      i18n-imageAlt
+      imageAlt="Meal prep box with rice, shredded chicken, broccoli and courgette"
+      imagePosition="center 60%"
     >
       <div class="cluster hero-ctas">
         <a class="btn btn--primary" [routerLink]="'/nutrition/calculators' | localePath" i18n

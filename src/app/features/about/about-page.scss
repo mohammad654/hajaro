@@ -27,13 +27,40 @@
   place-items: center;
   width: 44px;
   height: 44px;
-  margin-bottom: var(--sp-4);
   border-radius: 50%;
   border: 1px solid var(--c-accent-line);
   color: var(--c-accent);
   font-family: var(--font-display);
   font-weight: 700;
   font-size: var(--fs-lg);
+}
+
+.method__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-5);
+}
+
+.method__icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+  background: var(--c-accent-soft);
+  color: var(--c-accent);
+  transition: transform var(--dur) var(--ease);
+}
+
+.method__step:hover {
+  border-color: var(--c-accent-line);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .method__step:hover .method__icon {
+    transform: scale(1.08) rotate(-4deg);
+  }
 }
 
 .method h3 {

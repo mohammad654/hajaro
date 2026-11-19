@@ -61,7 +61,9 @@ are still required now.
 
 - `src/server.ts` (Express): security headers, legacy/alias 301s and remembered-language redirect
   (`legacy-redirects.ts`), `/sitemap.xml` + `/robots.txt` (`seo-files.ts`, generated from the same data the
-  app renders), the contact endpoint (SMTP settings in `.env.example`), static + SSR.
+  app renders), the contact endpoint `/api/contact` (`server/contact.ts`, SMTP settings in `.env.example`),
+  static + SSR. `server/localize-passthrough.ts` must stay the first import of `server.ts`: content data uses
+  `$localize`, and the Express entry runs outside the localized bundles.
 - `app.routes.server.ts`: public pages are prerendered (slug lists come from `core/data`), unknown slugs SSR
   with a real 404, authenticated areas (dashboard/admin/login) are client-only.
 - **API boundary**: features depend only on `EntityRepository<T>` (`core/api`). `injectRepository()` returns
@@ -74,7 +76,9 @@ are still required now.
   signed-in user.
 - **Admin resource registry** (`features/admin/resources/resource.registry.ts`): one declarative config per
   entity drives the generic list/edit pages. A new manageable entity is a config entry, not new pages.
-- **Articles are structured blocks**, not HTML (XSS-safe rendering, generated TOC).
+- **Articles are structured blocks**, not HTML (XSS-safe rendering, generated TOC). The admin edits them in a
+  small safe markup (`## heading`, `- list`, `> callout`, `[link](/path)`), parsed in
+  `features/admin/resources/article-markup.ts`.
 - **Hydration safety**: prerendered output must not depend on query params, session or storage in the first
   render; use `ClientReady` (`core/services/client-ready`) to apply those after hydration.
 - **Errors**: `GlobalErrorHandler` logs everything (`[Hajaro] Unhandled error`) but only toasts actionable

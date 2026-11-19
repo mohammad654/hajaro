@@ -19,6 +19,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       i18n-lead
       lead="Estimate your BMI, daily calories, protein, macros and water. Fill in your details once and every calculator updates straight away."
       [breadcrumbs]="breadcrumbs"
+      imageSrc="images/home/kitchen-scale-weighing-bowl.webp"
+      [imageBackground]="true"
+      imagePosition="center 55%"
     />
     <section class="section section--tight">
       <div class="container">

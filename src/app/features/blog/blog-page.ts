@@ -7,7 +7,8 @@ import {
   input,
   signal,
 } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { LocationStrategy } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
 import { ArticleStore } from '../../core/data-access/article.store';
 import { ARTICLE_CATEGORY_LABELS, ArticleCategory } from '../../core/models';
 import { injectNotFoundStatus } from '../../core/seo/http-status';
@@ -16,7 +17,7 @@ import { ArticleCard } from '../../shared/cards/article-card';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { PageHero } from '../../shared/ui/page-hero';
 import { Paginator, paginate } from '../../shared/ui/paginator';
-import { canonicalSlug } from '../../core/i18n/current-locale';
+import { canonicalSlug, lp } from '../../core/i18n/current-locale';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
 
 const PAGE_SIZE = 9;
@@ -33,6 +34,9 @@ const PAGE_SIZE = 9;
       i18n-lead
       lead="Practical articles on strength training, building muscle and eating for performance, written by a coach who trains every day."
       [breadcrumbs]="crumbs()"
+      imageSrc="images/home/dumbbells-apples-clipboard-flat-lay.webp"
+      [imageBackground]="true"
+      imagePosition="center 50%"
     />
 
     <section class="section section--tight">
@@ -40,7 +44,8 @@ const PAGE_SIZE = 9;
         <nav class="categories" i18n-aria-label aria-label="Blog categories">
           <a
             class="chip"
-            [routerLink]="'/blog' | localePath"
+            [attr.href]="href('/blog')"
+            (click)="go($event, '/blog')"
             [class.is-active]="!category()"
             [attr.aria-current]="!category() ? 'page' : null"
             i18n
@@ -49,7 +54,8 @@ const PAGE_SIZE = 9;
           @for (c of categories; track c[0]) {
             <a
               class="chip"
-              [routerLink]="['/blog/category', c[0]] | localePath"
+              [attr.href]="href('/blog/category/' + c[0])"
+              (click)="go($event, '/blog/category/' + c[0])"
               [class.is-active]="category() === c[0]"
               [attr.aria-current]="category() === c[0] ? 'page' : null"
               >{{ c[1] }}</a
@@ -91,13 +97,11 @@ const PAGE_SIZE = 9;
   styles: `
     .categories {
       display: flex;
+      flex-wrap: wrap;
       gap: var(--sp-2);
-      overflow-x: auto;
-      padding-bottom: var(--sp-2);
       margin-bottom: var(--sp-6);
     }
     .categories .chip {
-      flex-shrink: 0;
       text-decoration: none;
     }
     .empty {
@@ -109,6 +113,8 @@ export class BlogPage {
   private readonly articles = inject(ArticleStore);
   private readonly seo = inject(SeoService);
   private readonly markNotFound = injectNotFoundStatus();
+  private readonly router = inject(Router);
+  private readonly locationStrategy = inject(LocationStrategy);
 
   /** Route param on /blog/category/:category (public, per-language slug); undefined on /blog. */
   readonly categoryParam = input<string | undefined>(undefined, { alias: 'category' });
@@ -124,6 +130,19 @@ export class BlogPage {
   ][];
   protected readonly pageSize = PAGE_SIZE;
   protected readonly page = signal(1);
+
+  /** Category chips switch the list without jumping back to the top of the page. */
+  protected href(canonicalPath: string): string {
+    return this.locationStrategy.prepareExternalUrl(lp(canonicalPath));
+  }
+
+  protected go(event: MouseEvent, canonicalPath: string): void {
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+      return;
+    }
+    event.preventDefault();
+    void this.router.navigateByUrl(lp(canonicalPath), { scroll: 'manual' });
+  }
 
   protected readonly categoryLabel = computed(() => {
     const c = this.category();

@@ -4,22 +4,37 @@ import { SiteContentStore } from '../../core/data-access/site-content.store';
 import { CredentialItem } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
+import { Icon } from '../../shared/ui/icon/icon';
 import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
+
+/** Temporary stock photo, also on the homepage, shown only until a real trainer photo is set. */
+const DEMO_TRAINER_PHOTO = {
+  src: 'images/home/luissantos2020-fitness-5991125_1920.jpg',
+  alt: $localize`Muscular man leaning forward and gripping a bar, in black and white`,
+  position: '45% center',
+};
 
 /** Bracketed text marks copy the trainer still needs to replace. */
 const isPlaceholder = (text: string) => text.trim().startsWith('[');
 
 @Component({
   selector: 'app-about-page',
-  imports: [LocalePathPipe, RouterLink, PageHero, MediaFrame, CtaSection],
+  imports: [LocalePathPipe, RouterLink, PageHero, MediaFrame, CtaSection, Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './about-page.html',
   styleUrl: './about-page.scss',
 })
 export class AboutPage {
   protected readonly content = inject(SiteContentStore).content;
+
+  protected readonly photo = computed(() => {
+    const c = this.content();
+    return c.trainerPhotoUrl
+      ? { src: c.trainerPhotoUrl, alt: c.trainerPhotoAlt ?? '', position: 'center' }
+      : DEMO_TRAINER_PHOTO;
+  });
 
   protected readonly bio = computed(() =>
     this.content().trainerBio.filter((p) => !isPlaceholder(p)),
@@ -36,6 +51,9 @@ export class AboutPage {
       { title: $localize`Achievements`, items: verified(c.achievements) },
     ].filter((group) => group.items.length > 0);
   });
+
+  /** One icon per method step: assess, plan, train, adjust. */
+  protected readonly methodIcons = ['search', 'clipboard', 'dumbbell', 'refresh'];
 
   protected readonly breadcrumbs = [{ label: $localize`About`, url: '/about' }];
 

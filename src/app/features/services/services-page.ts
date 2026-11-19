@@ -23,7 +23,9 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       i18n-lead
       lead="In-person training, online coaching, contest prep and food guidance. Pick what fits your goal, or ask me and we'll work it out together."
       [breadcrumbs]="breadcrumbs"
-      [imagePlaceholder]="true"
+      imageSrc="images/home/louisbauer-sports-1882719_1920.jpg"
+      [imageBackground]="true"
+      imagePosition="center 60%"
     />
 
     <section class="section" i18n-aria-label aria-label="All services">

@@ -34,6 +34,16 @@ const ARTICLE_IMAGES: Readonly<Record<string, ArticleImage>> = {
     alt: $localize`Determined athlete between battle ropes in a gym`,
     position: '50% 20%',
   },
+  'sleep-and-recovery-for-lifters': {
+    src: 'images/home/man-sleeping-dark-bedroom.webp',
+    alt: $localize`Man asleep under a dark blanket in a dim bedroom`,
+    position: 'center 40%',
+  },
+  'creatine-evidence-guide': {
+    src: 'images/home/supplement-powder-scoop.webp',
+    alt: $localize`White supplement powder spilling from a scoop`,
+    position: 'center',
+  },
 };
 
 /** The article's own image when it has one, otherwise its display photo, if any. */

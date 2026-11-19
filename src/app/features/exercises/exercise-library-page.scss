@@ -41,14 +41,8 @@
 .categories {
   display: flex;
   gap: var(--sp-2);
+  flex-wrap: wrap;
   margin-top: var(--sp-5);
-  overflow-x: auto;
-  padding-bottom: var(--sp-2);
-  scrollbar-width: thin;
-
-  .chip {
-    flex-shrink: 0;
-  }
 }
 
 .results-bar {

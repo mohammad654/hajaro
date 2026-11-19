@@ -31,6 +31,9 @@ type ComparisonKey = keyof Pick<
       i18n-lead
       lead="Prices are clear from the start. Pick a package, or ask me which one fits. Every package includes a plan written for you and access to the client dashboard."
       [breadcrumbs]="breadcrumbs"
+      imageSrc="images/home/barbell-plate-rubber-floor.webp"
+      [imageBackground]="true"
+      imagePosition="center 45%"
     />
 
     <section class="section" i18n-aria-label aria-label="Packages">

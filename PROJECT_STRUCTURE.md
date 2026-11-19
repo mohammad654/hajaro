@@ -100,35 +100,45 @@ Files are in `images/`, published at `images/home/`. Each file is used once.
 | Page | Spot | File | Status |
 |---|---|---|---|
 | Home | Hero carousel | `hireink-fitness-3679464_1920.jpg`, `johan_benitez99co-ai-generated-9372728_1920.png`, `zuzyusa-dumbbell-3167417_1920.jpg` | taken |
-| Home | Service cards | `useche360-ai-generated-8757611_1920.jpg`, `andrey_braynsk-man-5886567_1920.jpg`, `jandersnunes-slimming-8748460_1920.png` | taken |
+| Home | Service cards | `useche360-ai-generated-8757611_1920.jpg`, `andrey_braynsk-man-5886567_1920.jpg`, `jandersnunes-slimming-8748460_1920.png`, `images (2).jpeg` (Online Coaching, 678 px wide) | taken |
 | Home | Trainer teaser | `luissantos2020-fitness-5991125_1920.jpg` | taken (demo) |
 | Home | Process background | `louisbauer-sports-1882719_1920.jpg` | taken |
 | Home | Muscles preview | `iamfosna-man-7847247_1920.jpg`, `gomateyfitness-woman-9400023_1920.png`, `bdmh-man-9330135_1920.jpg` | taken |
-| Programs | Top | `arttower-man-4982014_1920.jpg` | placed |
-| Exercises | Top | `markusspiske-fitness-594143_1920.jpg` | placed |
+| Programs | Top (background) | `arttower-man-4982014_1920.jpg` | placed |
+| Exercises | Top (background) | `iamfosna-man-7847247_1920.jpg` (reused from the homepage muscles strip; darkened wide background here, square crop there) | placed (reuse) |
+| Blog | Top (background) | `dumbbells-apples-clipboard-flat-lay.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Blog + article | Progressive overload | `u_pcjeppoe5t-bodybuilder-8017875_1920.jpg` (top crop) | placed |
 | Blog + article | Squat technique | `layers-sketch-4801606_1920.jpg` | placed |
 | Blog + article | Fat loss | `front-view-young-female-sport-outfit-measuring-her-sizes-waist_140725-85472.avif` (top crop) | placed, low resolution |
 | Blog + article | Training consistency | `hansuan_fabregas-ai-generated-8706772_1920.jpg` | placed |
-| Blog + article | Protein, sleep, creatine | none | placeholder, see Deferred list |
-| About | Trainer photo | none | placeholder, see Deferred list |
+| Blog + article | Sleep and recovery | `man-sleeping-dark-bedroom.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| Blog + article | Creatine | `supplement-powder-scoop.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| Blog + article | Protein | none | placeholder, see Deferred list |
+| About | Trainer photo | `luissantos2020-fitness-5991125_1920.jpg` (reused from the homepage teaser, crop shifted left) | taken (demo) |
+| Transformations | Top (background) | `barbell-dark-gym-floor.webp` (Pexels, see `IMAGE_CREDITS.md`), equipment only, no people | stock |
 | Transformations | Before and after | none, real client photos only | placeholder, see Deferred list |
-| Services | Top | none | placeholder, see Deferred list |
-| Nutrition | Top | none | placeholder, see Deferred list |
+| Services | Top (background) | `louisbauer-sports-1882719_1920.jpg` (reused from the homepage process background) | placed (reuse) |
+| Nutrition | Top | `meal-prep-chicken-rice-broccoli.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
 | Exercise detail | Dumbbell Curl sidebar | `images.jpeg` | placed, small size only (662 px wide) |
 | Exercise detail | Other exercises | none | missing, see Deferred list |
 | Muscle chart | Intro card | `images (1).jpeg` | placed, small size only (678 px wide) |
 | Muscle chart | Overview | existing `images/anatomy/muscle-groups-overview.webp` | path fixed for sub-path hosting |
 | Login | Beside the form, desktop only | `marijakes-athlete-8806355_1920.jpg` | placed |
-| Service detail, program detail, planner, calculators, pricing, contact, legal, 404 | none | none | no image needed |
+| Workout planner | Top (background) | `markusspiske-fitness-594143_1920.jpg` (darkened) | placed |
+| Calculators | Top (background) | `kitchen-scale-weighing-bowl.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| Pricing | Top (background) | `barbell-plate-rubber-floor.webp` (Pexels, see `IMAGE_CREDITS.md`) | stock |
+| Service detail, program detail, contact, legal, 404 | none | none | no image needed |
 
 Viewed, not placed:
 - `u_40rcbxqe6b-fitness-8783745_1920.png`: abs anatomy drawing with uneven transparent edges.
 - `jensenartofficial-heart-7834314_1920.jpg`: heart and barbell logo, not a photo.
 - `b0red-barbell-3573104_1920.png`, `davector-fitness-10306707_1920.png`, `mcvec-sports-1975689_1920.png`: black silhouettes, vanish on the dark theme.
 - `mohamed_hassan-body-builder-7320519_1920.png`: brick-pattern flexing logo.
-- `images (2).jpeg`: floor sit-up; 678 px wide, and no exercise in the library matches it.
 - `images (3).jpeg`, `images (4).jpeg`: chalk and barbell, waist measure; too small.
+
+- `Pasted image (8).png`, `(9)`, `(10)`: full-body workout infographics, not photos.
+- `Pasted image (4).png`, `(16)`, `(24)`: workout infographics with other accounts' watermarks.
+- `Pasted image (14).png`, `(22)`, `(26)`: muscle-group and machine-exercise infographics; no food photo for Nutrition.
 
 Skipped by name and size: `jensenartofficial-heart-7834275_1920.jpg`, `jensenartofficial-heart-7834298_1920.jpg`, `clker-free-vector-images-strong-310874_1920.png`, `mohamed_hassan-silhouette-3378966_1920.png`, `handsome-strong-athletic-men-…-photo.jpg` (625×350).
 
@@ -180,19 +190,16 @@ Everything else lives on its own page.
 Things noticed during Phase 1 that belong to a later phase. Do not do them now.
 
 - Missing image: homepage trainer teaser shows a stock demo photo (`luissantos2020-fitness-5991125_1920.jpg`); replace it with a well-lit portrait or half-body photo of the real trainer (4:5) before launch.
-- Missing image: homepage Online Coaching card needs a photo of online coaching, such as a client checking in on a phone or laptop (4:3).
+- Review before launch: the homepage Online Coaching card uses a stand-in sit-up photo (`images (2).jpeg`, 678 px wide, licence unknown); a client checking in on a phone or laptop (4:3) would fit better.
 - Review before launch: the Personal Bodybuilding Coaching card uses an AI-generated photo (`useche360-ai-generated-8757611_1920.jpg`).
 - Review before launch: the muscles preview photo `gomateyfitness-woman-9400023_1920.png` looks AI-generated.
 - Review before launch: hero slide 2 uses an AI-generated photo (`johan_benitez99co-ai-generated-9372728_1920.png`).
 - Phase 3: run `npm run i18n` and add Dutch targets for the new homepage image alt texts and hero carousel text.
 - Phase 5: homepage photos are served at original size (the fat-loss PNG is 2.4 MB, hero slide 2 is 2 MB); add resized WebP/AVIF versions.
 - Re-enable Dutch: add 'nl' to the language config, restore the switcher, sync NL file.
-- Missing image: About, trainer photo needs a real portrait of the trainer (4:5).
-- Missing image: Services, top area needs the coach working with a client (3:2).
-- Missing image: Nutrition, top area needs high-protein food or meal prep (3:2).
+- Missing image: About, trainer photo shows the same stock demo photo as the homepage teaser; set `trainerPhotoUrl` to a real portrait of the trainer (4:5) before launch.
+- Missing image: Services, top area shows a reused dumbbell photo; the coach working with a client (3:2) would fit better.
 - Missing image: blog, protein article needs protein-rich food (16:9).
-- Missing image: blog, sleep and recovery article needs a rest or sleep scene (16:9).
-- Missing image: blog, creatine article needs a supplement scoop or shaker (16:9).
 - Missing image: Transformations, cards need real client before and after photos, published with consent (3:4).
 - Missing image: exercise detail pages need a demonstration photo per exercise (3:2); only Dumbbell Curl has one.
 - Review before launch: blog photos `hansuan_fabregas-ai-generated-8706772_1920.jpg` (AI-generated) and `u_pcjeppoe5t-bodybuilder-8017875_1920.jpg` (looks AI-generated).
@@ -238,6 +245,28 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Article: standard spacing and scroll reveal for related articles | `src/app/features/blog/article-page.html`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Login: athlete illustration beside the form on desktop | `src/app/features/auth/login-page.{html,scss,ts}`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Reviewed with no change needed: workout planner, calculators, contact, legal, 404 | `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Server no longer logs an error when a visitor cancels a page request | `src/server.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Home: photo on the Online Coaching card | `src/app/features/home/sections/home-services.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | About: demo trainer photo until a real one is set | `src/app/features/about/about-page.{ts,html}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | About: icons on the four "How I work" steps, hover state | `src/app/features/about/about-page.{ts,html,scss}`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Fixed image `sizes` values in pixels, which made NgOptimizedImage throw (About, exercise detail, muscle chart, login, article) | `src/app/features/{about/about-page,exercises/exercise-detail-page,muscle-chart/muscle-chart-page,auth/login-page,blog/article-page}.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Services: hero photo (reused dumbbell photo) instead of the placeholder | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Exercises: hero photo shows a lifter at the bench press instead of a dumbbell rack | `src/app/features/exercises/exercise-library-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Exercises: hero photo moved behind the text as a darkened background; page hero gained `imageBackground` | `src/app/shared/ui/page-hero.ts`, `src/app/features/exercises/exercise-library-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Workout planner: darkened dumbbell-rack photo as the hero background | `src/app/features/planner/workout-planner-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Nutrition hero: no food photo in `images/`, placeholder kept | `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Nutrition: downloaded Pexels meal-prep photo in the hero | `images/meal-prep-chicken-rice-broccoli.webp`, `IMAGE_CREDITS.md`, `src/app/features/nutrition/nutrition-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Calculators: downloaded Pexels kitchen-scale photo in the hero | `images/kitchen-scale-weighing-bowl.webp`, `IMAGE_CREDITS.md`, `src/app/features/nutrition/calculators-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Blog: downloaded Pexels photos for the sleep and creatine articles (cards and article pages) | `images/{man-sleeping-dark-bedroom,supplement-powder-scoop}.webp`, `IMAGE_CREDITS.md`, `src/app/shared/cards/article-card.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Calculators: hero photo moved behind the text as a darkened background | `src/app/features/nutrition/calculators-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Transformations: downloaded Pexels barbell photo as a darkened hero background (equipment only, no people) | `images/barbell-dark-gym-floor.webp`, `IMAGE_CREDITS.md`, `src/app/features/transformations/transformations-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Pricing: downloaded Pexels barbell photo as a darkened hero background | `images/barbell-plate-rubber-floor.webp`, `IMAGE_CREDITS.md`, `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Blog: downloaded Pexels flat lay (dumbbells, apples, clipboard) as a darkened hero background | `images/dumbbells-apples-clipboard-flat-lay.webp`, `IMAGE_CREDITS.md`, `src/app/features/blog/blog-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Blog and Exercises: category chips wrap onto new lines instead of scrolling sideways | `src/app/features/blog/blog-page.ts`, `src/app/features/exercises/exercise-library-page.scss`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Blog: choosing a category keeps the scroll position instead of jumping to the top | `src/app/features/blog/blog-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | About: method step icons in the corner opposite the number (styles were stale in the dev server); Services: hero photo moved behind the text as a darkened background | `src/app/features/services/services-page.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Programs: hero photo moved behind the text as a darkened background | `src/app/features/programs/programs-page.html`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | CLAUDE.md review: added the server's `$localize` passthrough import order and the admin article markup | `CLAUDE.md`, `PROJECT_STRUCTURE.md`
 
 ---
 

@@ -16,6 +16,9 @@ import { WorkoutPlanner } from './workout-planner';
       i18n-lead
       lead="Build routines from any program or muscle group, set your own sets, reps and rest, then log weights and reps as you train and look back at every workout."
       [breadcrumbs]="breadcrumbs"
+      imageSrc="images/home/markusspiske-fitness-594143_1920.jpg"
+      [imageBackground]="true"
+      imagePosition="center 55%"
     />
     <section class="section section--tight">
       <div class="container">

@@ -1,17 +1,34 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { Breadcrumbs, Crumb } from './breadcrumbs';
 import { MediaFrame } from './media-frame';
 
 /**
  * Standard header for inner pages: breadcrumbs, eyebrow, the page's single H1 and a lead paragraph,
- * with an optional photo, or a placeholder for a missing photo, beside the text.
+ * with an optional photo beside the text (or behind it, with `imageBackground`), or a placeholder.
  */
 @Component({
   selector: 'app-page-hero',
-  imports: [Breadcrumbs, MediaFrame],
+  imports: [NgOptimizedImage, Breadcrumbs, MediaFrame],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <header class="page-hero" [class.page-hero--media]="imageSrc() || imagePlaceholder()">
+    <header
+      class="page-hero"
+      [class.page-hero--media]="!imageBackground() && (imageSrc() || imagePlaceholder())"
+      [class.page-hero--bg]="imageBackground() && imageSrc()"
+    >
+      @if (imageBackground() && imageSrc()) {
+        <div class="page-hero__bg">
+          <img
+            [ngSrc]="imageSrc()"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            [style.object-position]="imagePosition()"
+          />
+        </div>
+      }
       <div class="container page-hero__inner">
         <div class="reveal">
           @if (breadcrumbs().length) {
@@ -26,7 +43,7 @@ import { MediaFrame } from './media-frame';
           }
           <ng-content />
         </div>
-        @if (imageSrc() || imagePlaceholder()) {
+        @if (!imageBackground() && (imageSrc() || imagePlaceholder())) {
           <app-media-frame
             [src]="imageSrc()"
             [alt]="imageAlt()"
@@ -53,11 +70,37 @@ import { MediaFrame } from './media-frame';
       content: '';
       position: absolute;
       inset: auto 0 0;
+      z-index: 1;
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--c-accent-line), transparent);
     }
     h1 {
       max-width: 18ch;
+    }
+    .page-hero--bg {
+      display: grid;
+      align-items: center;
+      min-height: clamp(360px, 52vh, 540px);
+    }
+    .page-hero__bg {
+      position: absolute;
+      inset: 0;
+    }
+    .page-hero__bg img {
+      object-fit: cover;
+    }
+    /* Darken the photo so the text stays readable; lighter on the right on wide screens. */
+    .page-hero__bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgb(11 11 12 / 72%), rgb(11 11 12 / 90%));
+    }
+    .page-hero--bg .page-hero__inner {
+      position: relative;
+    }
+    .page-hero--bg .lead {
+      color: var(--c-text);
     }
     .lead {
       margin-bottom: 0;
@@ -79,6 +122,11 @@ import { MediaFrame } from './media-frame';
       app-media-frame {
         max-width: none;
       }
+      .page-hero__bg::after {
+        background:
+          linear-gradient(90deg, var(--c-bg) 0%, rgb(11 11 12 / 88%) 38%, rgb(11 11 12 / 35%) 100%),
+          linear-gradient(0deg, var(--c-bg), transparent 35%);
+      }
     }
   `,
 })
@@ -91,4 +139,6 @@ export class PageHero {
   readonly imageAlt = input('');
   readonly imagePosition = input('center');
   readonly imagePlaceholder = input(false);
+  /** Show the photo as a darkened background behind the text instead of beside it. */
+  readonly imageBackground = input(false);
 }

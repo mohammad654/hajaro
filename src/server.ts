@@ -130,7 +130,11 @@ app.use((req, res, next) => {
       if (!response.headers.has('cache-control')) res.setHeader('Cache-Control', 'no-cache');
       return writeResponseToNodeResponse(response, res);
     })
-    .catch(next);
+    .catch((error: unknown) => {
+      // The visitor refreshed or left during rendering, so there is nobody to answer or report to.
+      if (req.socket.destroyed && (error as Error | undefined)?.name === 'AbortError') return;
+      next(error);
+    });
 });
 
 /**
