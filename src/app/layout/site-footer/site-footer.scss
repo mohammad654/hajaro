@@ -75,9 +75,17 @@ ul {
   }
 }
 
-// Leave room at the very bottom so the fixed WhatsApp button never covers "Back to top".
+// Leave room at the very bottom so the fixed WhatsApp button never covers the legal text. On
+// phones the text is full width, so also leave room for the back-to-top button stacked above it.
 .footer--has-wa {
-  padding-bottom: calc(var(--sp-6) + 56px + var(--sp-4) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: calc(var(--sp-6) + 3.5rem + var(--sp-4) + env(safe-area-inset-bottom, 0px));
+
+  @include down($bp-md) {
+    padding-bottom: calc(
+      var(--sp-6) + 3.5rem + var(--sp-3) + var(--tap) + var(--sp-4) +
+        env(safe-area-inset-bottom, 0px)
+    );
+  }
 }
 
 .footer__social {
@@ -130,8 +138,7 @@ ul {
 }
 
 .footer__logo,
-.footer__social a,
-.footer__to-top {
+.footer__social a {
   transition:
     color var(--dur-fast) var(--ease),
     border-color var(--dur-fast) var(--ease),
@@ -150,8 +157,7 @@ ul {
     transform: scale(1.08);
   }
 
-  .footer__social a:hover,
-  .footer__to-top:hover {
+  .footer__social a:hover {
     transform: scale(1.1);
   }
 }
@@ -181,27 +187,6 @@ ul {
 .footer__bottom-text {
   display: grid;
   gap: var(--sp-2);
-}
-
-.footer__to-top {
-  display: inline-flex;
-  flex-shrink: 0;
-  align-items: center;
-  gap: var(--sp-2);
-  min-height: 40px;
-  padding: 0 var(--sp-4);
-  border: 1px solid var(--c-border-strong);
-  border-radius: var(--radius-pill);
-  background: transparent;
-  color: var(--c-text-muted);
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--c-accent);
-    border-color: var(--c-accent);
-  }
 }
 
 .footer__legal {

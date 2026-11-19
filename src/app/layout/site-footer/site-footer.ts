@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DOCUMENT, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FOOTER_NAV } from '../../core/config/navigation.config';
 import { SITE_CONFIG } from '../../core/config/site.config';
@@ -20,14 +20,4 @@ export class SiteFooter {
   protected readonly year = new Date().getFullYear();
   protected readonly whatsapp = whatsappHref();
   protected readonly whatsappPath = WHATSAPP_PATH;
-  private readonly document = inject(DOCUMENT);
-
-  /**
-   * Scrolls to the top (smooth unless the user prefers reduced motion — see the global
-   * `scroll-behavior` rule) and moves focus to the main content so keyboard users land there too.
-   */
-  protected scrollToTop(): void {
-    this.document.defaultView?.scrollTo({ top: 0 });
-    this.document.getElementById('main')?.focus({ preventScroll: true });
-  }
 }

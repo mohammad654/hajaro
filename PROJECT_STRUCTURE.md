@@ -331,6 +331,7 @@ Format: `YYYY-MM-DD | task | files`
 - 2026-11-19 | Pricing: shows the first 4 active packages by order (one row on desktop); cards, comparison table and offer schema use the same list; Contest Prep (order 5) stays in the data, contact form and service page | `src/app/features/pricing/pricing-page.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Shared CTA panel: downloaded Pexels overhead dumbbell photo as a darkened background, darkest behind the centred text | `images/dumbbells-overhead-dark-floor.webp`, `IMAGE_CREDITS.md`, `src/app/shared/ui/cta-section.ts`, `PROJECT_STRUCTURE.md`
 - 2026-11-19 | Fixed CTA photo `sizes` in pixels, which made NgOptimizedImage throw (NG02952) | `src/app/shared/ui/cta-section.ts`, `PROJECT_STRUCTURE.md`
+- 2026-11-19 | Floating back-to-top button: appears after 300 px of scrolling, stacked above the WhatsApp button, hidden while the mobile menu is open; removed the button from the footer; more footer bottom space on phones | `src/app/shared/ui/scroll-top-button.ts` (new), `src/app/layout/public-layout.ts`, `src/app/layout/site-footer/site-footer.{html,ts,scss}`, `PROJECT_STRUCTURE.md`
 
 ---
 
