@@ -5,6 +5,7 @@ import { CredentialItem } from '../../core/models';
 import { applyPageSeo } from '../../core/seo/page-seo';
 import { CtaSection } from '../../shared/ui/cta-section';
 import { Icon } from '../../shared/ui/icon/icon';
+import { IconName } from '../../shared/ui/icon/icons';
 import { MediaFrame } from '../../shared/ui/media-frame';
 import { PageHero } from '../../shared/ui/page-hero';
 import { LocalePathPipe } from '../../core/i18n/current-locale';
@@ -53,24 +54,33 @@ export class AboutPage {
   });
 
   /** One icon per method step: assess, plan, train, adjust. */
-  protected readonly methodIcons = ['search', 'clipboard', 'dumbbell', 'refresh'];
+  protected readonly methodIcons: readonly IconName[] = [
+    'search',
+    'clipboard',
+    'dumbbell',
+    'refresh',
+  ];
 
   protected readonly breadcrumbs = [{ label: $localize`About`, url: '/about' }];
 
-  protected readonly reasons = [
+  protected readonly reasons: readonly { icon: IconName; title: string; text: string }[] = [
     {
+      icon: 'target',
       title: $localize`A plan written for you`,
       text: $localize`Your plan fits your body, your schedule, your equipment and your goal. Nothing is copied from someone else.`,
     },
     {
+      icon: 'book',
       title: $localize`Based on evidence`,
       text: $localize`I base training and food advice on current research, and on what I see working with real people.`,
     },
     {
+      icon: 'message',
       title: $localize`Someone who checks in`,
       text: $localize`A weekly check-in and direct contact help you keep going when motivation drops.`,
     },
     {
+      icon: 'shield',
       title: $localize`Honest, health first`,
       text: $localize`No crash diets and no promises I can't keep. Progress you can hold on to.`,
     },

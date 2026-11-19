@@ -105,6 +105,9 @@
     <div class="grid grid--4 reveal-group">
       @for (reason of reasons; track reason.title) {
         <div class="card card--flat">
+          <span class="icon-tile reason__icon" aria-hidden="true">
+            <app-icon [name]="reason.icon" [size]="24" />
+          </span>
           <h3 class="card__title">{{ reason.title }}</h3>
           <p class="text-muted text-small">{{ reason.text }}</p>
         </div>

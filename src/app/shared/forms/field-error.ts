@@ -11,6 +11,7 @@ import { AbstractControl } from '@angular/forms';
 import { merge } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { validationMessage } from './validation-messages';
+import { Icon } from '../ui/icon/icon';
 
 /**
  * Displays the first validation error for a control once it has been touched.
@@ -18,10 +19,13 @@ import { validationMessage } from './validation-messages';
  */
 @Component({
   selector: 'app-field-error',
+  imports: [Icon],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (message(); as text) {
-      <span class="field__error" [id]="id()" role="alert">{{ text }}</span>
+      <span class="field__error" [id]="id()" role="alert"
+        ><app-icon name="alert" [size]="14" />{{ text }}</span
+      >
     }
   `,
 })
@@ -29,7 +33,7 @@ export class FieldError implements OnInit {
   private readonly destroyRef = inject(DestroyRef);
   readonly control = input.required<AbstractControl>();
   readonly id = input.required<string>();
-  readonly label = input('This field');
+  readonly label = input($localize`This field`);
 
   protected readonly message = signal<string | null>(null);
 
