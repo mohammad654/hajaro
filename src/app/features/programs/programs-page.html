@@ -105,11 +105,13 @@
   </div>
 </section>
 
-<app-cta-section
-  i18n-eyebrow
-  eyebrow="Want it made for you?"
-  i18n-title
-  title="A program written around you"
-  i18n-text
-  text="A ready-made program is a good start. With coaching, I fit every exercise, set and rep to your body, recovery and goal, and adjust it every week."
-/>
+@defer (hydrate on viewport) {
+  <app-cta-section
+    i18n-eyebrow
+    eyebrow="Want it made for you?"
+    i18n-title
+    title="A program written around you"
+    i18n-text
+    text="A ready-made program is a good start. With coaching, I fit every exercise, set and rep to your body, recovery and goal, and adjust it every week."
+  />
+}

@@ -83,14 +83,16 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
       </section>
     }
 
-    <app-cta-section
-      i18n-eyebrow
-      eyebrow="Nutrition coaching"
-      i18n-title
-      title="Food that fits your life"
-      i18n-text
-      text="Calorie and macro targets set for you, a practical meal structure, and weekly adjustments based on your progress."
-    />
+    @defer (hydrate on viewport) {
+      <app-cta-section
+        i18n-eyebrow
+        eyebrow="Nutrition coaching"
+        i18n-title
+        title="Food that fits your life"
+        i18n-text
+        text="Calorie and macro targets set for you, a practical meal structure, and weekly adjustments based on your progress."
+      />
+    }
   `,
   styles: `
     .hero-ctas {

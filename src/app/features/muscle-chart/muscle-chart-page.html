@@ -107,7 +107,9 @@
         progress and rest days. Open a split to see the full plan.
       </p>
     </div>
-    <app-split-programs />
+    @defer (hydrate on viewport) {
+      <app-split-programs />
+    }
   </div>
 </section>
 
@@ -144,11 +146,13 @@
   </div>
 </section>
 
-<app-cta-section
-  i18n-eyebrow
-  eyebrow="Made for you"
-  i18n-title
-  title="Want a chart written for your body?"
-  i18n-text
-  text="I write a workout chart around your goal, experience, recovery and equipment, and update it as you progress."
-/>
+@defer (hydrate on viewport) {
+  <app-cta-section
+    i18n-eyebrow
+    eyebrow="Made for you"
+    i18n-title
+    title="Want a chart written for your body?"
+    i18n-text
+    text="I write a workout chart around your goal, experience, recovery and equipment, and update it as you progress."
+  />
+}

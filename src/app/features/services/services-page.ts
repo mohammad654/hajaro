@@ -90,11 +90,15 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
           <p class="eyebrow" i18n>FAQ</p>
           <h2 id="faq-title" i18n>Frequently asked questions</h2>
         </div>
-        <app-faq-list [items]="faqs" />
+        @defer (hydrate on viewport) {
+          <app-faq-list [items]="faqs" />
+        }
       </div>
     </section>
 
-    <app-cta-section />
+    @defer (hydrate on viewport) {
+      <app-cta-section />
+    }
   `,
   styles: `
     .service {

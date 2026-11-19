@@ -24,13 +24,17 @@ import { HomeServices } from './sections/home-services';
       <app-home-process />
     }
 
-    <app-home-coach />
+    @defer (hydrate on viewport) {
+      <app-home-coach />
+    }
 
     @defer (hydrate on viewport) {
       <app-home-muscles />
     }
 
-    <app-cta-section />
+    @defer (hydrate on viewport) {
+      <app-cta-section />
+    }
   `,
 })
 export class HomePage {

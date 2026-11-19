@@ -40,14 +40,16 @@ import { LocalePathPipe } from '../../core/i18n/current-locale';
         </p>
       </div>
     </section>
-    <app-cta-section
-      i18n-eyebrow
-      eyebrow="More than an estimate"
-      i18n-title
-      title="Targets set for you"
-      i18n-text
-      text="A calculator gives you a starting point. With coaching, I use your real data (weight trend, performance and recovery) to set your targets and adjust them every week."
-    />
+    @defer (hydrate on viewport) {
+      <app-cta-section
+        i18n-eyebrow
+        eyebrow="More than an estimate"
+        i18n-title
+        title="Targets set for you"
+        i18n-text
+        text="A calculator gives you a starting point. With coaching, I use your real data (weight trend, performance and recovery) to set your targets and adjust them every week."
+      />
+    }
   `,
   styles: `
     .jump {

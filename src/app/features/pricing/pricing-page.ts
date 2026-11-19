@@ -112,11 +112,15 @@ type ComparisonKey = keyof Pick<
           <p class="eyebrow" i18n>FAQ</p>
           <h2 id="pricing-faq" i18n>Questions about prices</h2>
         </div>
-        <app-faq-list [items]="faqs" />
+        @defer (hydrate on viewport) {
+          <app-faq-list [items]="faqs" />
+        }
       </div>
     </section>
 
-    <app-cta-section />
+    @defer (hydrate on viewport) {
+      <app-cta-section />
+    }
   `,
   styles: `
     @use 'mixins' as *;

@@ -109,7 +109,9 @@
     </section>
   }
 
-  <app-cta-section />
+  @defer (hydrate on viewport) {
+    <app-cta-section />
+  }
 } @else {
   <app-not-found-content
     i18n-heading

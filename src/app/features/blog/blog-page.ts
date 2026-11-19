@@ -85,14 +85,16 @@ const PAGE_SIZE = 9;
       </div>
     </section>
 
-    <app-cta-section
-      i18n-eyebrow
-      eyebrow="Put it into practice"
-      i18n-title
-      title="Want a plan instead of more reading?"
-      i18n-text
-      text="I turn what you read into a plan written for you, with feedback every week."
-    />
+    @defer (hydrate on viewport) {
+      <app-cta-section
+        i18n-eyebrow
+        eyebrow="Put it into practice"
+        i18n-title
+        title="Want a plan instead of more reading?"
+        i18n-text
+        text="I turn what you read into a plan written for you, with feedback every week."
+      />
+    }
   `,
   styles: `
     .categories {
